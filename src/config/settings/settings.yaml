@@ -1,0 +1,8 @@
+# config/settings.yaml
+llm:
+  max_tokens: 512
+  device: "auto"  # "cuda", "cpu", "auto"
+  temperature: 0.7
+  repetition_penalty: 1.1   # generation repetition penalty
+  top_p: 0.9               # nucleus sampling probability
+  top_k: 50                # top-k sampling

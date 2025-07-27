@@ -1,0 +1,87 @@
+[
+    {
+        "id": 1,
+        "problem_types": ["제목을 붙인 근거 설명하기", "자문화와 비교하기", "원인과 전망 예측하기"],
+        "eval_goals": [
+            "글의 전체적인 주제와 핵심 내용을 정확히 파악하는 능력을 평가한다.",
+            "지문에 제시된 특정 문화 현상을 자신의 문화적 배경과 관련지어 공통점과 차이점을 구체적으로 비교 설명하는 능력을 평가한다.",
+            "글에 제시된 사회/문화적 현상의 원인을 추론하고, 이를 근거로 미래에 나타날 변화나 결과를 논리적으로 설명하는 능력을 평가한다."
+        ],
+        "items" : [
+                {
+                    "korean_topic": "회식 문화",
+                    "korean_context": "회식은 한국 직장 문화의 중요한 부분으로, 업무가 끝난 후 동료들과 함께 식사하며 친목을 다지는 활동입니다. 이는 단순한 저녁 식사를 넘어 팀워크를 강화하고 조직 내 소통을 원활하게 하는 사회적 기능을 수행합니다. 하지만 최근에는 개인의 삶을 중시하는 문화가 확산되면서, 획일적이고 강압적인 회식 문화에 대한 비판과 함께 변화의 필요성이 제기되고 있습니다.",
+                    "foreign_topic": "Happy Hour Culture",
+                    "foreign_context": "Happy hour is a social tradition in many Western countries where colleagues gather at a bar or pub after work for discounted drinks. It serves as a voluntary and informal way to decompress, socialize, and build rapport outside the formal office environment. Unlike the often obligatory nature of 'Hoesik', happy hour emphasizes individual choice and casual networking."
+                }
+        ]
+    },
+    {
+        "id": 2,
+        "problem_types": ["찬성/반대 입장 논거 파악하기", "논리적 근거 제시하기", "예상 반론에 재반박하기"],
+        "eval_goals": [
+            "제시된 지문에서 특정 입장(찬성 또는 반대)의 핵심 논거를 정확히 파악하고, 그 근거를 자신의 말로 요약하여 설명하는 능력을 평가한다.",
+            "자신의 주장을 뒷받침하기 위해 타당한 이유와 구체적인 사례를 들어 논리적으로 설명하는 능력을 평가한다.",
+            "자신의 주장과 반대되는 견해를 예상하고, 그에 대한 논리적인 재반박을 통해 자신의 주장을 강화하는 능력을 평가한다."
+        ],
+        "items" : [
+                {
+                    "korean_topic": "사형제 존폐 논란",
+                    "korean_context": "사형제는 흉악 범죄자의 생명을 박탈하는 가장 무거운 형벌로, 그 존폐 여부는 전 세계적으로 오랫동안 논쟁이 되어 온 주제입니다. 찬성 측은 사형제가 흉악 범죄를 예방하고 사회 정의를 실현한다고 주장합니다. 반면, 반대 측은 오판의 가능성과 인간의 존엄성을 근거로 국가가 생명을 빼앗을 권리는 없다고 맞서고 있습니다.",
+                    "foreign_topic": "The Death Penalty Debate",
+                    "foreign_context": "The death penalty, or capital punishment, is a state-sanctioned practice of executing a person as punishment for a crime. Proponents argue it deters other potential criminals and serves as just retribution for heinous acts. Opponents, however, argue that it is a cruel and unusual punishment, carries the risk of executing innocent people, and is morally wrong."
+                }
+            ]
+    },
+    {
+        "id": 3,
+        "problem_types": ["문제 상황 요약하기", "문제 해결 방안 제안하기", "기대 효과 및 부작용 설명하기"],
+        "eval_goals": [
+            "제시된 갈등 상황의 핵심 원인과 현재 상태를 정확히 분석하고, 이를 바탕으로 문제점을 간결하게 요약하는 능력을 평가한다.",
+            "주어진 문제를 해결하기 위한 독창적이면서 실현 가능한 방안을 제시하는 능력을 평가한다.",
+            "자신이 제안한 해결 방안이 가져올 긍정적인 기대 효과와 발생 가능한 부작용을 균형 있게 설명하는 능력을 평가한다."
+        ],
+        "items" : [
+                {
+                    "korean_topic": "중장년층의 재취업 문제",
+                    "korean_context": "빠른 기술 발전과 정년 단축으로 인해, 평생직장의 개념이 사라지면서 수십 년간의 경험을 가진 중장년층이 너무 이른 나이에 노동 시장에서 밀려나고 있습니다. 이들은 새로운 기술을 배울 기회가 부족했고, 사회는 이들의 경력을 활용할 준비가 되어 있지 않습니다. 이로 인해 숙련된 인력이 낭비되고, 노년 빈곤이 심화되는 등 심각한 사회적 비용이 발생하고 있습니다.",
+                    "foreign_topic": "The Challenge of Reskilling an Aging Workforce",
+                    "foreign_context": "In many developed economies, rapid technological advancement is making the existing skills of older workers obsolete, creating a significant 'reskilling' challenge. Companies often prefer hiring 'digital natives' over investing in training their experienced employees. This results in a wasted pool of talent, increases the burden on social welfare systems, and poses a major obstacle to lifelong career development."
+                }
+        ]   
+    },
+    {
+        "id": 4,
+        "problem_types": ["두 대안의 핵심 차이점 파악하기", "주어진 기준에 따라 장단점 분석하기", "최종 선택 및 결정 이유 정당화하기"],
+        "eval_goals": [
+            "제시된 두 가지 선택지의 가장 본질적인 차이점이 무엇인지 정확히 파악하는 능력을 평가한다.",
+            "가격, 시간, 편의성 등 주어진 특정 기준에 따라 각 옵션의 장점과 단점을 체계적으로 분석하는 능력을 평가한다.",
+            "모든 정보를 종합하여 최종적으로 하나의 옵션을 선택하고, 자신의 선택을 논리적으로 정당화하는 능력을 평가한다."
+        ],
+        "items" : [
+                {
+                    "korean_topic": "신문 구독 vs 뉴스 앱 이용",
+                    "korean_context": "세상 소식을 접하는 방법으로, 깊이 있는 정보를 제공하는 전통적인 종이 신문과 빠르고 편리한 인터넷 뉴스 앱 사이에서 어떤 것을 선택할지 고민됩니다. 종이 신문은 전문가들이 검증한 기사를 통해 사안을 깊이 있게 이해할 수 있게 해주지만, 속보를 접하기 어렵고 구독료가 부담될 수 있습니다. 반면, 뉴스 앱은 스마트폰만 있으면 언제든 실시간으로 소식을 확인할 수 있고 대부분 무료이지만, 자극적이고 검증되지 않은 기사가 많아 시야가 좁아질 위험이 있습니다.",
+                    "foreign_topic": "Reading a Physical Newspaper vs. Using a News App",
+                    "foreign_context": "To stay informed, one must choose between the in-depth analysis of a traditional newspaper and the immediate updates of a digital news app. A physical newspaper provides curated, long-form journalism that fosters a deeper understanding, but it lacks real-time updates and has subscription costs. In contrast, a news app offers instant access to breaking stories for free, but it can expose users to sensationalism and create an 'echo chamber' that narrows one's worldview."
+                }
+            ]
+    },
+    {
+        "id": 5,
+        "problem_types": ["발표의 핵심 목적 파악하기", "세부 내용 및 근거 설명하기", "전체 내용 요약 및 재구성하기"],
+        "eval_goals": [
+            "주어진 발표문(지문)의 전체적인 주제와 핵심 목적이 무엇인지 정확히 파악하는 능력을 평가한다.",
+            "발표의 주장을 뒷받침하기 위해 사용된 데이터와 근거를 파악하고, 그 내용을 상세히 설명하는 능력을 평가한다.",
+            "발표 전체 내용을 자신의 말로 간결하게 요약하고, 핵심 메시지를 재구성하여 전달하는 능력을 평가한다."
+        ],
+        "items" : [
+                {
+                    "korean_topic": "분기별 실적 보고 및 목표 달성 전략 발표",
+                    "korean_context": "지금부터 2024년 2분기 영업 실적에 대한 발표를 시작하겠습니다. 오늘 발표에서는 먼저 2분기 매출 실적 데이터를 전 분기와 비교 분석하고, 이어서 실적 부진의 원인을 진단한 뒤, 마지막으로 3분기 매출 목표 달성을 위한 구체적인 전략을 제안해 드리고자 합니다. 보시는 그래프와 같이, 2분기 전체 매출은 전 분기 대비 15% 하락했으며, 이는 경쟁사의 신제품 출시와 마케팅 활동 부족 때문으로 분석됩니다. 결론적으로, 3분기에는 공격적인 프로모션과 SNS 마케팅 예산 증액을 통해 실적을 회복해야 하며, 이에 대한 구체적인 실행 계획을 중심으로 질의응답을 진행하겠습니다.",
+                    "foreign_topic": "Quarterly Performance Review and Strategy Presentation",
+                    "foreign_context": "Today, I will present the sales performance for Q2 2024. I will begin by analyzing the sales data compared to Q1, then identify the key reasons for our underperformance, and finally propose a strategy for Q3. As the chart indicates, our revenue saw a 15% decline, primarily due to competitor actions and insufficient marketing. Therefore, my conclusion is that we must launch an aggressive promotional campaign and increase our social media budget; I am now ready to answer your questions on this action plan."
+                }
+            ]
+    }
+]

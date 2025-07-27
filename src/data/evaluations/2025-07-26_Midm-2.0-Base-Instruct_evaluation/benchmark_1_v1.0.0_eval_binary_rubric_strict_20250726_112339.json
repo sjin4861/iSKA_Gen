@@ -1,0 +1,21 @@
+[
+    {
+        "source_item": {
+            "korean_topic": "회식 문화",
+            "korean_context": "회식은 한국 직장 문화의 중요한 부분으로, 업무가 끝난 후 동료들과 함께 식사하며 친목을 다지는 활동입니다. 이는 단순한 저녁 식사를 넘어 팀워크를 강화하고 조직 내 소통을 원활하게 하는 사회적 기능을 수행합니다. 하지만 최근에는 개인의 삶을 중시하는 문화가 확산되면서, 획일적이고 강압적인 회식 문화에 대한 비판과 함께 변화의 필요성이 제기되고 있습니다.",
+            "foreign_topic": "Happy Hour Culture",
+            "foreign_context": "Happy hour is a social tradition in many Western countries where colleagues gather at a bar or pub after work for discounted drinks. It serves as a voluntary and informal way to decompress, socialize, and build rapport outside the formal office environment. Unlike the often obligatory nature of 'Hoesik', happy hour emphasizes individual choice and casual networking."
+        },
+        "generated_passage": "한국의 회식 문화는 직장 동료들이 함께 모여 식사를 하면서 친밀감을 쌓고 팀워크를 강화하는 중요한 사회적 활동입니다. 이러한 모임은 직원들 간의 유대감을 높이는 긍정적인 역할을 하지만, 때로는 의무적이라는 인식 때문에 개인 시간을 침해한다는 비판도 받습니다. 반면 서양의 해피 아워는 직장 동료들이 퇴근 후 바에서 할인된 음료를 마시며 자유롭게 교류하는 자발적인 행사입니다. 이 문화는 공식적인 환경 밖에서 자연스럽게 네트워크를 형성하는 데 중점을 둡니다. 두 문화 모두 업무 스트레스 해소와 관계 형성을 목적으로 하지만, 한국은 집단 중심의 의무적 성격이 강한 반면 서양은 개인의 선택을 존중하는 경향이 뚜렷합니다. 앞으로 한국에서도 개인주의가 더욱 확산됨에 따라 회식 문화는 더 유연해지고 선택적 참여가 늘어날 가능성이 큽니다. 이러한 변화는 직장인들의 삶의 질 향상에 기여할 것으로 보이며, 동시에 글로벌 기업 환경에서 다양한 문화적 접근 방식을 조화롭게 접목시키는 방향으로 발전할 전망입니다.",
+        "evaluation": {
+            "scores": {
+                "is_guideline_compliant": false,
+                "is_factually_consistent": true,
+                "is_natural": true,
+                "has_high_korean_quality": true,
+                "is_learner_appropriate": true
+            },
+            "feedback": "생성된 지문은 '원인과 전망 예측하기'의 평가 지침을 충분히 충족시키지 못합니다. 미래 변화나 결과에 대한 논리적 설명이 부족합니다."
+        }
+    }
+]

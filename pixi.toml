@@ -1,0 +1,17 @@
+[workspace]
+authors = ["sjin4861 <sjin4861@pusan.ac.kr>"]
+channels = ["conda-forge"]
+name = "iSKA_Gen"
+platforms = ["linux-64"]
+version = "0.1.0"
+
+[tasks]
+
+[dependencies]
+trl = ">=0.19.1,<0.20"
+ipykernel = ">=6.29.5,<7"
+openai = ">=1.97.1,<2"
+peft = ">=0.16.0,<0.17"
+
+[pypi-dependencies]
+python-dotenv = ">=1.1.1, <2"
