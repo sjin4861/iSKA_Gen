@@ -29,26 +29,18 @@ def list_available_outputs(base_dir: Path = DEFAULT_RAW_OUTPUT_DIR) -> Dict[str,
         return {}
         
     available_outputs = {}
-    
-    # 날짜_모델명 형태의 디렉토리들을 탐색
+    # base_dir이 이미 날짜/출력타입까지 포함된 경로라면, 그 하위의 모델 폴더만 탐색
     for model_dir in base_dir.iterdir():
-        if model_dir.is_dir() and "_" in model_dir.name:
-            # 디렉토리명에서 모델명 추출 (날짜_모델명 형태에서 모델명 부분)
-            parts = model_dir.name.split("_", 1)
-            if len(parts) == 2:
-                date_part, model_name = parts
-                
-                if model_name not in available_outputs:
-                    available_outputs[model_name] = []
-                
-                # 해당 디렉토리의 모든 JSON 파일 수집
-                json_files = list(model_dir.glob("*.json"))
-                available_outputs[model_name].extend(json_files)
-    
-    # 각 모델의 파일들을 시간순으로 정렬
+        if not model_dir.is_dir():
+            continue
+        model_name = model_dir.name
+        if model_name not in available_outputs:
+            available_outputs[model_name] = []
+        json_files = list(model_dir.glob("*.json"))
+        available_outputs[model_name].extend(json_files)
+    # 각 모델의 파일들을 이름순으로 정렬
     for model_name in available_outputs:
         available_outputs[model_name].sort()
-    
     return available_outputs
 
 
@@ -64,19 +56,16 @@ def parse_filename(file_path: Path) -> Optional[Dict[str, str]]:
     """
     filename = file_path.stem  # 확장자 제거
     
-    # benchmark_1_v1.0.0_passage_20250725_143022 형태의 파일명 파싱
-    # 템플릿 키 부분이 여러 단어일 수 있으므로 더 유연한 패턴 사용
-    pattern = r"benchmark_(\d+)_([^_]+)_(.+?)_(\d{8}_\d{6})$"
+    # benchmark_1_v1.0.0_passage_agent.create_passage_rubric_aware 형태의 파일명 파싱
+    pattern = r"benchmark_(\d+)_([^_]+)_(.+)"
     match = re.match(pattern, filename)
-    
     if match:
-        benchmark_id, version, template_key, timestamp = match.groups()
+        benchmark_id, version, template_key = match.groups()
         return {
             "benchmark_id": benchmark_id,
             "benchmark_version": version,
             "template_key": template_key,
-            "timestamp": timestamp,
-            "model_name": file_path.parent.name.split("_", 1)[1] if "_" in file_path.parent.name else "unknown"
+            "model_name": file_path.parent.name
         }
     return None
 
@@ -110,30 +99,25 @@ def load_model_outputs(
         return []
     
     matching_files = []
-    
     for file_path in available_outputs[model_name]:
         metadata = parse_filename(file_path)
         if not metadata:
             continue
-            
-        # 조건 필터링
+        # 조건 필터링: 모두 정확히 일치해야 함 (None이면 모든 값 허용)
         if benchmark_id is not None and int(metadata["benchmark_id"]) != benchmark_id:
             continue
         if benchmark_version is not None and metadata["benchmark_version"] != benchmark_version:
             continue
-        if template_key is not None:
-            # 정확한 매칭을 먼저 시도하고, 없으면 포함 관계로 검색
-            if metadata["template_key"] != template_key:
-                continue
-            
+        if template_key is not None and metadata["template_key"] != template_key:
+            continue
         matching_files.append((file_path, metadata))
     
     if not matching_files:
         print(f"Warning: No files match the specified criteria")
         return []
     
-    # 시간순으로 정렬
-    matching_files.sort(key=lambda x: x[1]["timestamp"])
+    # 파일명 기준으로 정렬 (timestamp 없음)
+    matching_files.sort(key=lambda x: x[0].name)
     
     if latest_only:
         # 각 고유한 (benchmark_id, template_key) 조합에 대해 가장 최근 파일만 선택
@@ -163,6 +147,7 @@ def load_passages(
     benchmark_id: Optional[int] = None,
     benchmark_version: str = "v1.0.0",
     template_key: Optional[str] = None,
+    date_str: Optional[str] = None,
     base_dir: Path = DEFAULT_RAW_OUTPUT_DIR
 ) -> List[Dict[str, Any]]:
     """
@@ -179,7 +164,10 @@ def load_passages(
         List[Dict[str, Any]]: passage 데이터 리스트
     """
     
-    # 1. 특정 템플릿 키가 지정된 경우 정확한 매칭으로 검색
+    # 날짜별 디렉토리 지정 (passage 타입만 검색)
+    if date_str is not None:
+        base_dir = base_dir / date_str / "passage"
+
     if template_key is not None:
         results = load_model_outputs(
             model_name=model_name,
@@ -189,28 +177,25 @@ def load_passages(
             base_dir=base_dir,
             latest_only=True
         )
-        
         if results:
             print(f"✅ Found passage file with exact template: {template_key}")
             return results[0][1]
         else:
             print(f"❌ No passage file found with template: {template_key}")
             return []
-    
+
     # 2. 템플릿 키가 지정되지 않은 경우 자동으로 passage 파일 검색
     print("🔍 템플릿 키가 지정되지 않음. 자동으로 passage 파일을 검색합니다...")
-    
-    # 모든 파일을 가져와서 passage가 포함된 파일 중 가장 최근 것 선택
+
     all_results = load_model_outputs(
         model_name=model_name,
         benchmark_id=benchmark_id,
         benchmark_version=benchmark_version,
-        template_key=None,  # 모든 템플릿 키 검색
+        template_key=None,
         base_dir=base_dir,
-        latest_only=False  # 모든 파일 검색
+        latest_only=False
     )
-    
-    # passage가 포함되고 stem이나 options가 포함되지 않은 파일 찾기
+
     passage_files = []
     for metadata, data in all_results:
         template_key_lower = metadata["template_key"].lower()
@@ -219,14 +204,13 @@ def load_passages(
             "options" not in template_key_lower and
             "eval" not in template_key_lower):
             passage_files.append((metadata, data))
-    
+
     if passage_files:
-        # 시간순으로 정렬하여 가장 최근 파일 선택
-        passage_files.sort(key=lambda x: x[0]["timestamp"])
+        passage_files.sort(key=lambda x: x[0]["benchmark_id"])
         latest_metadata, latest_data = passage_files[-1]
         print(f"✅ Found passage file with template: {latest_metadata['template_key']}")
         return latest_data
-    
+
     return []
 
 
@@ -235,6 +219,7 @@ def load_stems(
     benchmark_id: Optional[int] = None,
     benchmark_version: str = "v1.0.0",
     template_key: str = "passage_stem",
+    date_str: Optional[str] = None,
     base_dir: Path = DEFAULT_RAW_OUTPUT_DIR
 ) -> List[Dict[str, Any]]:
     """
@@ -250,17 +235,55 @@ def load_stems(
     Returns:
         List[Dict[str, Any]]: stem 데이터 리스트
     """
-    results = load_model_outputs(
+    # 날짜별 디렉토리 지정 (stem 타입만 검색)
+    if date_str is not None:
+        base_dir = base_dir / date_str / "stem"
+
+    # 1. 특정 템플릿 키가 지정된 경우, stem 파일명에 _stem이 붙지 않도록 그대로 사용
+    if template_key is not None:
+        results = load_model_outputs(
+            model_name=model_name,
+            benchmark_id=benchmark_id,
+            benchmark_version=benchmark_version,
+            template_key=template_key,
+            base_dir=base_dir,
+            latest_only=True
+        )
+        if results:
+            print(f"✅ Found stem file with exact template: {template_key}")
+            return results[0][1]
+        else:
+            print(f"❌ No stem file found with template: {template_key}")
+            return []
+
+    # 2. 템플릿 키가 지정되지 않은 경우 자동으로 stem 파일 검색
+    print("🔍 템플릿 키가 지정되지 않음. 자동으로 stem 파일을 검색합니다...")
+
+    all_results = load_model_outputs(
         model_name=model_name,
         benchmark_id=benchmark_id,
         benchmark_version=benchmark_version,
-        template_key=template_key,  # stem 파일을 찾기 위해 올바른 템플릿 키 사용
+        template_key=None,
         base_dir=base_dir,
-        latest_only=True
+        latest_only=False
     )
-    
-    if results:
-        return results[0][1]  # 첫 번째 결과의 데이터 부분
+
+    # stem이 포함된 파일만 선택
+    stem_files = []
+    for metadata, data in all_results:
+        template_key_lower = metadata["template_key"].lower()
+        if ("stem" in template_key_lower and 
+            "options" not in template_key_lower and
+            "eval" not in template_key_lower):
+            stem_files.append((metadata, data))
+
+    if stem_files:
+        # 파일명 기준으로 정렬하여 가장 최근 파일 선택
+        stem_files.sort(key=lambda x: x[0]["benchmark_id"])
+        latest_metadata, latest_data = stem_files[-1]
+        print(f"✅ Found stem file with template: {latest_metadata['template_key']}")
+        return latest_data
+
     return []
 
 
@@ -269,6 +292,7 @@ def load_options(
     benchmark_id: Optional[int] = None,
     benchmark_version: str = "v1.0.0",
     template_key: str = "passage_options",
+    date_str: Optional[str] = None,
     base_dir: Path = DEFAULT_RAW_OUTPUT_DIR
 ) -> List[Dict[str, Any]]:
     """
@@ -284,6 +308,8 @@ def load_options(
     Returns:
         List[Dict[str, Any]]: options 데이터 리스트
     """
+    if date_str is not None:
+        base_dir = base_dir / date_str
     results = load_model_outputs(
         model_name=model_name,
         benchmark_id=benchmark_id,
@@ -292,7 +318,6 @@ def load_options(
         base_dir=base_dir,
         latest_only=True
     )
-    
     if results:
         return results[0][1]  # 첫 번째 결과의 데이터 부분
     return []
@@ -360,7 +385,6 @@ def debug_available_files(model_name: str, base_dir: Path = DEFAULT_RAW_OUTPUT_D
             print(f"     └─ 벤치마크 ID: {metadata['benchmark_id']}")
             print(f"     └─ 버전: {metadata['benchmark_version']}")
             print(f"     └─ 템플릿: {metadata['template_key']}")
-            print(f"     └─ 시간: {metadata['timestamp']}")
         else:
             print(f"  ❓ {file_path.name} (파싱 실패)")
         print()
