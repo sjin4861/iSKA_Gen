@@ -17,7 +17,7 @@ from modules.model_client import LocalModelClient
 from utils.output_saver import save_model_output
 from utils.benchmark_loader import load_benchmarks
 
-def generate_passage(benchmark_file : str, model_name : str,  template_key : str, benchmark_version: str = "v1.0.0", gpus : list = [2,3], BENCH_ID_LIST : list =  [1, 2, 3, 4, 5]):
+def generate_passage(benchmark_file : str, model_name : str,  template_key : str, benchmark_version: str = "v1.0.0", gpus : list = [2,3], BENCH_ID_LIST : list =  [1, 2, 3, 4, 5], date_str: str = None):
     benchmarks = load_benchmarks(benchmark_file)
 
     llm_client = LocalModelClient(model_name=model_name, gpus = gpus)
@@ -55,7 +55,8 @@ def generate_passage(benchmark_file : str, model_name : str,  template_key : str
             benchmark_id=id,
             benchmark_version=benchmark_version,
             template_key=template_key,
-            data=passage_datas
+            data=passage_datas,
+            date_str=date_str
         )
         print(f"Generated passage for benchmark ID {id} and saved to {saved_file}")
 
