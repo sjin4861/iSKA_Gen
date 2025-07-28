@@ -5,11 +5,11 @@ from pathlib import Path
 from datetime import datetime
 from typing import List, Dict, Any
 
-# 프로젝트 루트를 Python 경로에 추가
+# Add the project root to the Python path
 sys.path.append(str(Path.cwd().parent.parent))
 
-# --- 프로젝트의 루트 디렉토리를 기준으로 기본 저장 경로 설정 ---
-# 이 파일(output_saver.py)이 src/utils/에 있다고 가정합니다.
+# --- Set base paths relative to the project root ---
+# This file (output_saver.py) is assumed to be in src/utils/
 PROJECT_ROOT = Path(__file__).resolve().parents[2]
 DEFAULT_RAW_OUTPUT_DIR = PROJECT_ROOT / "src" / "data" / "raw_outputs"
 DEFAULT_EVALUATION_DIR = PROJECT_ROOT / "src" / "data" / "evaluations"
@@ -22,69 +22,77 @@ def save_model_output(
     benchmark_version: str,
     template_key: str,
     data: List[Dict[str, Any]],
-    base_dir: Path = DEFAULT_RAW_OUTPUT_DIR
+    base_dir: Path = DEFAULT_RAW_OUTPUT_DIR,
+    date_str: str = None
 ) -> Path:
     """
-    모델이 생성한 원본 결과물을 지정된 디렉토리 구조에 맞춰 저장합니다.
+    Saves the raw output from a model to a structured directory.
 
     Args:
-        model_name (str): 결과를 생성한 모델의 이름.
-        benchmark_id (int): 실행된 벤치마크의 ID.
-        benchmark_version (str): 벤치마크 버전 (예: "v1.0.0").
-        template_key (str): 사용된 템플릿 키 (예: "passage", "stem", "options").
-        data (List[Dict[str, Any]]): 저장할 데이터 (JSON으로 직렬화 가능해야 함).
-        base_dir (Path): 모든 결과물이 저장될 최상위 디렉토리.
+        model_name (str): The name of the model that generated the results.
+        benchmark_id (int): The ID of the benchmark that was run.
+        benchmark_version (str): The benchmark version (e.g., "v1.0.0").
+        template_key (str): The key for the template used (e.g., "create_passage").
+        data (List[Dict[str, Any]]): The data to save (must be JSON serializable).
+        base_dir (Path): The base directory where all results will be stored.
 
     Returns:
-        Path: 최종적으로 저장된 파일의 경로 객체.
+        Path: The path object of the file that was ultimately saved.
         
     Raises:
-        IOError: 파일 쓰기 중 오류가 발생할 경우.
+        IOError: If there is an error writing the file.
     """
     try:
-        # 1. 날짜와 모델 이름으로 하위 폴더 경로 생성
-        # 예: data/raw_outputs/2025-07-26_Qwen3-8B/
-        date_str = datetime.now().strftime("%Y-%m-%d")
-        model_run_dir = base_dir / f"{date_str}_{model_name}"
-        
-        # 2. 폴더가 존재하지 않으면 생성
-        model_run_dir.mkdir(parents=True, exist_ok=True)
-        
-        # 3. 최종 파일 경로 생성
-        # 예: benchmark_1_v1.0.0_passage_20250725_143022.json
-        timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
-        file_name = f"benchmark_{benchmark_id}_{benchmark_version}_{template_key}_{timestamp}.json"
-        output_path = model_run_dir / file_name
-        
-        # 4. JSON 파일로 저장
-        print(f"  💾 '{output_path}'에 결과를 저장합니다...")
+        # 1. Create date-based directory (e.g., data/raw_outputs/2025-07-28/)
+        if date_str is None:
+            date_str = datetime.now().strftime("%Y-%m-%d")
+
+        # 2. Determine output_type (passage, stem, option)
+        if 'passage' in template_key:
+            output_type = 'passage'
+        elif 'stem' in template_key:
+            output_type = 'stem'
+        elif 'option' in template_key:
+            output_type = 'option'
+        else:
+            output_type = 'misc' # Fallback for other types
+
+        # 3. Create the full directory path: base_dir/date/type/model
+        model_dir = base_dir / date_str / output_type / model_name
+        model_dir.mkdir(parents=True, exist_ok=True)
+
+        # 4. Create the filename (without timestamp)
+        file_name = f"benchmark_{benchmark_id}_{benchmark_version}_{template_key}.json"
+        output_path = model_dir / file_name
+
+        # 5. Save the data as a JSON file
+        print(f"  💾 Saving results to '{output_path}'...")
         with open(output_path, 'w', encoding='utf-8') as f:
             json.dump(data, f, ensure_ascii=False, indent=4)
-        
-        print(f"  ✅ 저장 완료.")
+
+        print(f"  ✅ Save complete.")
         return output_path
 
     except (IOError, TypeError) as e:
-        print(f"❌ 파일 저장 중 오류 발생: {e}")
-        # 오류를 다시 발생시켜 상위 호출자가 처리할 수 있도록 함
+        print(f"❌ Error saving file: {e}")
+        # Re-raise the exception so the caller can handle it
         raise IOError(f"Failed to save data for model {model_name} to {output_path}") from e
 
 
-# --- 실행 예시 ---
+# --- Example Usage ---
 if __name__ == "__main__":
-    # 이 스크립트를 직접 실행할 때 아래 코드가 동작합니다.
+    # This code will run when the script is executed directly.
     
-    # 1. 테스트용 더미 데이터
-    sample_model_name = "EXAONE-3.5B_test"
-    sample_benchmark_id = 1
-    sample_benchmark_version = "v1.0.0"
-    sample_template_key = "passage"
+    # 1. Sample data for testing
+    sample_model_name = "MyTestModel-v1"
+    sample_benchmark_id = 99
+    sample_benchmark_version = "v1.2.3"
+    sample_template_key = "create_passage_test"
     sample_data = [
-        {"source_item": {"korean_topic": "회식"}, "generated_passage": "회식은..."},
-        {"source_item": {"korean_topic": "김장"}, "generated_passage": "김장은..."}
+        {"source_item": {"korean_topic": "테스트 주제"}, "generated_passage": "이것은 테스트 결과입니다."},
     ]
 
-    print("--- save_model_output 함수 테스트 ---")
+    print("--- Testing save_model_output function ---")
     try:
         saved_file = save_model_output(
             model_name=sample_model_name,
@@ -93,13 +101,13 @@ if __name__ == "__main__":
             template_key=sample_template_key,
             data=sample_data
         )
-        print(f"\n테스트 결과가 다음 파일에 성공적으로 저장되었습니다:\n{saved_file}")
+        print(f"\nTest results successfully saved to:\n{saved_file}")
         
-        # 저장된 파일 내용 확인 (옵션)
+        # Optional: Verify the saved file content
         with open(saved_file, 'r', encoding='utf-8') as f:
             read_data = json.load(f)
-        print("\n저장된 파일 내용 확인 (일부):")
+        print("\nVerifying saved file content (first item):")
         print(json.dumps(read_data[0], ensure_ascii=False, indent=2))
 
     except Exception as e:
-        print(f"\n테스트 중 오류 발생: {e}")
+        print(f"\nAn error occurred during testing: {e}")
