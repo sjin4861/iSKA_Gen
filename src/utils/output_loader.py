@@ -29,15 +29,21 @@ def list_available_outputs(base_dir: Path = DEFAULT_RAW_OUTPUT_DIR) -> Dict[str,
         return {}
         
     available_outputs = {}
-    # base_dir이 이미 날짜/출력타입까지 포함된 경로라면, 그 하위의 모델 폴더만 탐색
+    # base_dir이 날짜/타입 디렉토리를 가리킴
     for model_dir in base_dir.iterdir():
         if not model_dir.is_dir():
             continue
         model_name = model_dir.name
         if model_name not in available_outputs:
             available_outputs[model_name] = []
-        json_files = list(model_dir.glob("*.json"))
-        available_outputs[model_name].extend(json_files)
+        # 모델 디렉토리 내의 모든 템플릿 디렉토리를 검색
+        for template_dir in model_dir.iterdir():
+            if not template_dir.is_dir():
+                continue
+            # 템플릿 디렉토리 내의 JSON 파일을 찾음
+            json_files = list(template_dir.glob("*.json"))
+            available_outputs[model_name].extend(json_files)
+
     # 각 모델의 파일들을 이름순으로 정렬
     for model_name in available_outputs:
         available_outputs[model_name].sort()
@@ -75,6 +81,8 @@ def load_model_outputs(
     benchmark_id: Optional[int] = None,
     benchmark_version: Optional[str] = None,
     template_key: Optional[str] = None,
+    output_type: Optional[str] = None,
+    date_str: Optional[str] = None,
     base_dir: Path = DEFAULT_RAW_OUTPUT_DIR,
     latest_only: bool = True
 ) -> List[Tuple[Dict[str, str], List[Dict[str, Any]]]]:
@@ -86,6 +94,8 @@ def load_model_outputs(
         benchmark_id (Optional[int]): 특정 벤치마크 ID (None이면 모든 ID)
         benchmark_version (Optional[str]): 특정 벤치마크 버전 (None이면 모든 버전)
         template_key (Optional[str]): 특정 템플릿 키 (None이면 모든 템플릿)
+        output_type (Optional[str]): 출력 타입 (passage, stem 등)
+        date_str (Optional[str]): 날짜 문자열 (YYYY-MM-DD 형식)
         base_dir (Path): 출력 파일들이 저장된 기본 디렉토리
         latest_only (bool): True면 가장 최근 파일만, False면 모든 매칭 파일
         
@@ -95,7 +105,7 @@ def load_model_outputs(
     available_outputs = list_available_outputs(base_dir)
     
     if model_name not in available_outputs:
-        print(f"Warning: No outputs found for model '{model_name}'")
+        print(f"Warning: No outputs found for model '{model_name}' in {base_dir}")
         return []
     
     matching_files = []
@@ -177,6 +187,7 @@ def load_passages(
             base_dir=base_dir,
             latest_only=True
         )
+        
         if results:
             print(f"✅ Found passage file with exact template: {template_key}")
             return results[0][1]
@@ -392,30 +403,32 @@ def debug_available_files(model_name: str, base_dir: Path = DEFAULT_RAW_OUTPUT_D
 
 # --- 실행 예시 ---
 if __name__ == "__main__":
-    print("📂 사용 가능한 출력 파일들:")
-    available = list_available_outputs()
-    
-    for model_name, files in available.items():
-        print(f"\n🤖 {model_name}:")
-        for file_path in files[:3]:  # 처음 3개만 표시
-            metadata = parse_filename(file_path)
-            if metadata:
-                print(f"  - {file_path.name}")
-                print(f"    └─ 벤치마크 ID: {metadata['benchmark_id']}, 템플릿: {metadata['template_key']}, 시간: {metadata['timestamp']}")
-        if len(files) > 3:
-            print(f"  ... 총 {len(files)}개 파일")
-    
-    if available:
-        print("\n" + "="*60)
-        
-        # 첫 번째 모델의 passage 데이터 로드 테스트
-        first_model = list(available.keys())[0]
-        print(f"🧪 '{first_model}' 모델의 passage 데이터 로드 테스트:")
-        
-        passages = load_passages(first_model, benchmark_id=1)
-        if passages:
-            print(f"✅ {len(passages)}개의 passage 로드 완료")
-            print("첫 번째 passage 예시:")
-            print(json.dumps(passages[0], ensure_ascii=False, indent=2)[:200] + "...")
-        else:
-            print("❌ passage 데이터를 찾을 수 없습니다.")
+    # 특정 파일 로드 테스트
+    target_date = "2025-07-28"
+    target_model = "A.X-4.0-Light"
+    target_template = "passage_agent.violate_flow_severely"
+    base_dir = DEFAULT_RAW_OUTPUT_DIR / target_date / "passage"
+
+    print(f"🧪 테스트 설정:")
+    print(f"   날짜: {target_date}")
+    print(f"   모델: {target_model}")
+    print(f"   템플릿: {target_template}")
+    print(f"   기준 디렉토리: {base_dir}")
+    print("\n" + "="*60 + "\n")
+
+    passages = load_passages(
+        model_name=target_model,
+        benchmark_id=1,
+        benchmark_version="v1.0.0",
+        template_key=target_template,
+        date_str=target_date
+    )
+
+    if passages:
+        print(f"✅ 데이터 로드 성공!")
+        print(f"   총 {len(passages)}개의 passage 로드됨")
+        print("\n첫 번째 passage 내용 미리보기:")
+        print("-" * 40)
+        print(json.dumps(passages[0], ensure_ascii=False, indent=2)[:300] + "...")
+    else:
+        print("❌ 데이터를 찾을 수 없습니다.")

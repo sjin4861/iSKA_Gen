@@ -1,3 +1,4 @@
+
 # src/utils/benchmark_loader.py
 """벤치마크 데이터셋(.json)을 로드하고 관리하는 유틸리티"""
 
@@ -67,22 +68,67 @@ def load_benchmarks(file_name: str) -> List[Dict[str, Any]]:
     abs_path = _resolve_benchmark_path(file_name)
     return _load_json(abs_path)
 
-def get_benchmark_by_id(file_name: str, benchmark_id: int) -> Optional[Dict[str, Any]]:
+def get_benchmark_by_id(file_or_version: str, benchmark_id: int) -> Optional[Dict[str, Any]]:
     """
     벤치마크 파일에서 특정 ID를 가진 벤치마크 세트를 찾습니다.
 
     Args:
-        file_name (str): 벤치마크 파일 이름.
+        file_or_version (str): 벤치마크 파일 이름 또는 버전 문자열 (예: 'v1.0.0').
         benchmark_id (int): 찾고자 하는 벤치마크의 ID.
 
     Returns:
         Optional[Dict[str, Any]]: 해당 ID의 벤치마크 딕셔너리 또는 None.
     """
-    benchmarks = load_benchmarks(file_name)
-    for bench in benchmarks:
-        if bench.get("id") == benchmark_id:
-            return bench
-    return None
+    # 파일명인지 버전인지 판별
+    if file_or_version.endswith('.json'):
+        file_name = file_or_version
+        try:
+            benchmarks = load_benchmarks(file_name)
+        except FileNotFoundError:
+            return None
+    else:
+        # 버전만 입력된 경우, 해당 버전이 포함된 파일을 검색
+        search_dir = _resolve_benchmark_path("v1")
+        pattern = f"iSKA-Gen_Benchmark_{file_or_version}.json"
+        found_files = list(search_dir.glob(pattern))
+        if found_files:
+            file_name = str(found_files[0].relative_to(search_dir.parent))
+            try:
+                benchmarks = load_benchmarks(file_name)
+            except FileNotFoundError:
+                return None
+        else:
+            # 기존 방식도 시도
+            file_name = f"v1/iSKA-Gen_Benchmark_{file_or_version}_Initial.json"
+            try:
+                benchmarks = load_benchmarks(file_name)
+            except FileNotFoundError:
+                return None
+    return benchmarks
+
+def get_guideline_by_id(file_or_version: str, benchmark_id: int) -> Optional[Dict[str, Any]]:
+    """
+    벤치마크 파일에서 특정 ID의 problem_types, eval_goals, guideline만 추출합니다.
+
+    Args:
+        file_or_version (str): 벤치마크 파일 이름 또는 버전 문자열 (예: 'v1.0.0').
+        benchmark_id (int): 찾고자 하는 벤치마크의 ID.
+
+    Returns:
+        Optional[Dict[str, Any]]: {"problem_types": [...], "eval_goals": [...], "guideline": ...} 또는 None
+    """
+    # import pdb
+    # pdb.set_trace()
+    total_bench = get_benchmark_by_id(file_or_version, benchmark_id)
+    bench = total_bench[benchmark_id-1]
+    if not bench:
+        return None
+    result = {}
+    if "problem_types" in bench:
+        result["problem_types"] = bench["problem_types"]
+    if "eval_goals" in bench:
+        result["eval_goals"] = bench["eval_goals"]
+    return result if result else None
 
 def list_available_benchmarks() -> List[str]:
     """

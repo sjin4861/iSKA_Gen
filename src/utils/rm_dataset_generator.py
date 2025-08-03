@@ -1,3 +1,24 @@
+class RMDatasetGenerator:
+    """
+    모든 데이터셋(pair) 출력은 아래와 같은 통일된 포맷을 따릅니다:
+
+    {
+      "pair_id": "imp_completeness_for_guidelines_1인 가구 증가 현상 분석 및 사회적 시사점_0001",
+      "rubric": "completeness_for_guidelines",
+      "source_item": {
+        "korean_topic": "...",
+        "korean_context": "...",
+        "foreign_topic": "...",
+        "foreign_context": "...",
+        "problem_types": [...],
+        "eval_goals": [...]
+      },
+      "chosen": "...",
+      "rejected": "...",
+      "dataset_type": "IMP",
+      "created_at": "2025-07-29T18:43:12.159730"
+    }
+    """
 """
 RM 훈련 데이터셋 생성을 위한 유틸리티 모듈
 
@@ -42,9 +63,9 @@ class RMDatasetGenerator:
         # 최신 6개 루브릭 기준 정의 (RM_Experiment_v1.0.0.md)
         self.rubrics = [
             "completeness_for_guidelines",      # 평가 지침 완전성
-            "core_theme_clarity",               # 핵심 주제 명확성
+            "clarity_of_core_theme",               # 핵심 주제 명확성
             "reference_groundedness",           # 참고 자료 기반성
-            "logical_flow_and_structure",       # 논리적 흐름 및 구조
+            "logical_flow",       # 논리적 흐름 및 구조
             "korean_quality",                   # 한국어 품질
             "l2_learner_suitability"            # L2 학습자 적합성
         ]
@@ -53,27 +74,6 @@ class RMDatasetGenerator:
         print(f"   OpenAI 모델: {openai_model}")
         print(f"   데이터 디렉토리: {self.rm_training_dir}")
         print(f"   루브릭 수: {len(self.rubrics)}")
-
-    def load_base_passages(self, file_path: str) -> List[Dict[str, Any]]:
-        """
-        기본 지문 데이터 로드
-        
-        Args:
-            file_path (str): 지문 파일 경로
-            
-        Returns:
-            List[Dict[str, Any]]: 로드된 지문 데이터
-        """
-        full_path = self.data_dir / "base_passages" / file_path
-        
-        if not full_path.exists():
-            raise FileNotFoundError(f"기본 지문 파일을 찾을 수 없습니다: {full_path}")
-        
-        with open(full_path, 'r', encoding='utf-8') as f:
-            passages = json.load(f)
-        
-        print(f"✅ 기본 지문 로드 완료: {len(passages)}개")
-        return passages
 
     def evaluate_passage_with_gpt4o(self, passage: str, rubric: str) -> Dict[str, Any]:
         """
@@ -186,13 +186,18 @@ class RMDatasetGenerator:
             negative_sample = random.sample(negative_passages, min_count)
             
             for pos, neg in zip(positive_sample, negative_sample):
+                # source_item 통일: pos의 source_item에 problem_types/eval_goals가 있으면 포함
+                source_item = pos.get("source_item", {}).copy()
+                if "problem_types" in pos:
+                    source_item["problem_types"] = pos["problem_types"]
+                if "eval_goals" in pos:
+                    source_item["eval_goals"] = pos["eval_goals"]
                 pair = {
-                    "pair_id": f"spf_{rubric}_{len(pairs)+1:04d}",
+                    "pair_id": f"spf_{rubric}_{source_item.get('korean_topic', 'unknown')}_{len(pairs)+1:04d}",
                     "rubric": rubric,
+                    "source_item": source_item,
                     "chosen": pos.get("text", pos.get("generated_passage", "")),
                     "rejected": neg.get("text", neg.get("generated_passage", "")),
-                    "chosen_metadata": pos,
-                    "rejected_metadata": neg,
                     "dataset_type": "SPF",
                     "created_at": datetime.now().isoformat()
                 }
@@ -216,135 +221,153 @@ class RMDatasetGenerator:
             high_performance_passages: 고성능 모델 생성 지문 (98% 달성률)
             low_performance_passages: 저성능 모델 생성 지문 (40% 달성률)
             target_pairs_per_rubric: 루브릭당 목표 쌍 개수
-            
         Returns:
             Dict[str, List[Dict[str, Any]]]: 루브릭별 선호도 쌍 데이터
         """
         print(f"🔄 IMP 데이터셋 생성 시작...")
         print(f"   고성능 지문 수: {len(high_performance_passages)}")
         print(f"   저성능 지문 수: {len(low_performance_passages)}")
-        
+
         imp_dataset = {}
-        
+
         for rubric in self.rubrics:
             print(f"\n📊 {rubric} 루브릭 처리 중...")
-            
+
+            def get_benchmark_key(p):
+                if "source_item" in p:
+                    si = p["source_item"]
+                    return si.get("korean_topic") or si.get("topic") or si.get("item_id") or si.get("benchmark_id")
+                return None
+
+            high_groups = {}
+            for p in high_performance_passages:
+                key = get_benchmark_key(p)
+                if key is not None:
+                    high_groups.setdefault(key, []).append(p)
+            low_groups = {}
+            for p in low_performance_passages:
+                key = get_benchmark_key(p)
+                if key is not None:
+                    low_groups.setdefault(key, []).append(p)
+
+            common_keys = set(high_groups.keys()) & set(low_groups.keys())
             pairs = []
-            min_count = min(
-                len(high_performance_passages), 
-                len(low_performance_passages), 
-                target_pairs_per_rubric
-            )
-            
-            # 랜덤 샘플링으로 쌍 생성
-            high_sample = random.sample(high_performance_passages, min_count)
-            low_sample = random.sample(low_performance_passages, min_count)
-            
-            for high, low in zip(high_sample, low_sample):
-                pair = {
-                    "pair_id": f"imp_{rubric}_{len(pairs)+1:04d}",
-                    "rubric": rubric,
-                    "chosen": high.get("text", high.get("generated_passage", "")),
-                    "rejected": low.get("text", low.get("generated_passage", "")),
-                    "chosen_metadata": high,
-                    "rejected_metadata": low,
-                    "dataset_type": "IMP",
-                    "created_at": datetime.now().isoformat()
-                }
-                pairs.append(pair)
-            
+
+            for idx, key in enumerate(sorted(common_keys)):
+                high_list = high_groups[key]
+                low_list = low_groups[key]
+                min_count = min(len(high_list), len(low_list), target_pairs_per_rubric)
+
+                for i in range(min_count):
+                    high = high_list[i]
+                    low = low_list[i]
+                    si_high = high.get("source_item", {}).copy()
+                    si_low = low.get("source_item", {}).copy()
+                    # source_item: 공통 필드 + problem_types/eval_goals 포함
+                    source_item = {k: si_high[k] for k in si_high if k in si_low and si_high[k] == si_low[k]}
+                    for meta_key in ["problem_types", "eval_goals"]:
+                        if meta_key in si_high:
+                            source_item[meta_key] = si_high[meta_key]
+                    pair = {
+                        "pair_id": f"imp_{rubric}_{source_item.get('korean_topic', key)}_{i+1:04d}",
+                        "rubric": rubric,
+                        "source_item": source_item,
+                        "chosen": high.get("text", high.get("generated_passage", "")),
+                        "rejected": low.get("text", low.get("generated_passage", "")),
+                        "dataset_type": "IMP",
+                        "created_at": datetime.now().isoformat()
+                    }
+                    pairs.append(pair)
+
             imp_dataset[rubric] = pairs
             print(f"   📝 {rubric}: {len(pairs)}개 쌍 생성 완료")
-        
-        return imp_dataset
 
-    def generate_contrasted_passage(
-        self, 
-        base_passage: str, 
-        rubric: str, 
-        violation_type: str = "negative"
-    ) -> str:
-        """
-        기본 지문을 바탕으로 특정 루브릭을 위반하는 대조 지문 생성
-        
-        Args:
-            base_passage (str): 기본 지문
-            rubric (str): 위반할 루브릭
-            violation_type (str): 위반 유형
-            
-        Returns:
-            str: 대조 지문
-        """
-        try:
-            prompt = get_prompt(
-                f"contrastive_generation.{rubric}_{violation_type}",
-                agent="iska", 
-                base_passage=base_passage
-            )
-            
-            contrasted_passage = self.client.call([{"role": "user", "content": prompt}])
-            return contrasted_passage.strip()
-            
-        except Exception as e:
-            print(f"⚠️ 대조 지문 생성 실패 ({rubric}): {e}")
-            return base_passage  # 실패시 원본 반환
+        return imp_dataset
 
     def generate_icp_dataset(
         self,
-        base_passages: List[Dict[str, Any]],
-        target_pairs_per_rubric: int = 1000
+        high_performance_passages: List[Dict[str, Any]],
+        low_performance_passages: List[Dict[str, Any]],
+        rubric: str,
     ) -> Dict[str, List[Dict[str, Any]]]:
         """
         ICP (Intra-Model Contrastive Preference Dataset) 생성
         
         Args:
-            base_passages: 기본 지문 데이터
-            target_pairs_per_rubric: 루브릭당 목표 쌍 개수
-            
+            high_performance_passages: 고성능 모델의 지문 데이터
+            low_performance_passages: 저성능 모델의 지문 데이터
+            rubric: 처리할 루브릭 이름
         Returns:
             Dict[str, List[Dict[str, Any]]]: 루브릭별 선호도 쌍 데이터
         """
-        print(f"🔄 ICP 데이터셋 생성 시작...")
-        print(f"   기본 지문 수: {len(base_passages)}")
-        
+        if rubric not in self.rubrics:
+            raise ValueError(f"Invalid rubric: {rubric}. Must be one of {self.rubrics}")
+
+        print(f"🔄 ICP 데이터셋 생성 시작... (Rubric: {rubric})")
+        print(f"   고성능 지문 수: {len(high_performance_passages)}")
+        print(f"   저성능 지문 수: {len(low_performance_passages)}")
+
         icp_dataset = {}
-        
-        for rubric in self.rubrics:
-            print(f"\n📊 {rubric} 루브릭 처리 중...")
-            
-            pairs = []
-            sample_passages = random.sample(
-                base_passages, 
-                min(len(base_passages), target_pairs_per_rubric)
-            )
-            
-            for i, passage_data in enumerate(sample_passages):
-                if i % 100 == 0:
-                    print(f"   진행률: {i}/{len(sample_passages)}")
+
+        def get_benchmark_key(p):
+            if "source_item" in p:
+                si = p["source_item"]
+                return si.get("korean_topic") or si.get("topic") or si.get("item_id") or si.get("benchmark_id")
+            return None
+
+        high_groups = {}
+        for p in high_performance_passages:
+            key = get_benchmark_key(p)
+            if key is not None:
+                high_groups.setdefault(key, []).append(p)
+
+        low_groups = {}
+        for p in low_performance_passages:
+            key = get_benchmark_key(p)
+            if key is not None:
+                low_groups.setdefault(key, []).append(p)
+
+        common_keys = set(high_groups.keys()) & set(low_groups.keys())
+        pairs = []
+
+        for idx, key in enumerate(sorted(common_keys)):
+            high_list = high_groups[key]
+            low_list = low_groups[key]
+            min_count = min(len(high_list), len(low_list))
+
+            for i in range(min_count):
+                high = high_list[i]
+                low = low_list[i]
+                high_text = high.get("text", high.get("generated_passage", ""))
+                low_text = low.get("text", low.get("generated_passage", ""))
+
+                # 두 지문의 source_item에서 공통 필드만 추출
+                si_high = high.get("source_item", {}).copy()
+                si_low = low.get("source_item", {}).copy()
+                source_item = {k: si_high[k] for k in si_high if k in si_low and si_high[k] == si_low[k]}
                 
-                base_text = passage_data.get("text", passage_data.get("generated_passage", ""))
-                
-                # 루브릭 위반 지문 생성
-                violated_text = self.generate_contrasted_passage(base_text, rubric)
-                
+                # problem_types/eval_goals 포함
+                for meta_key in ["problem_types", "eval_goals"]:
+                    if meta_key in high:
+                        source_item[meta_key] = high[meta_key]
+
                 pair = {
-                    "pair_id": f"icp_{rubric}_{len(pairs)+1:04d}",
+                    "pair_id": f"icp_{rubric}_{source_item.get('korean_topic', key)}_{i+1:04d}",
                     "rubric": rubric,
-                    "chosen": base_text,  # 원본 (품질 기준 충족)
-                    "rejected": violated_text,  # 위반 지문
-                    "chosen_metadata": passage_data,
-                    "rejected_metadata": {
-                        "violation_type": rubric,
-                        "base_passage_id": passage_data.get("id", f"base_{i}")
-                    },
+                    "source_item": source_item,
+                    "chosen": high_text,
+                    "rejected": low_text,
                     "dataset_type": "ICP",
                     "created_at": datetime.now().isoformat()
                 }
                 pairs.append(pair)
-            
-            icp_dataset[rubric] = pairs
-            print(f"   📝 {rubric}: {len(pairs)}개 쌍 생성 완료")
-        
+
+        icp_dataset[rubric] = pairs
+        print(f"   📝 {rubric}: {len(pairs)}개 쌍 생성 완료")
+
+        if len(pairs) == 0:
+            print(f"⚠️ 경고: {rubric} 루브릭에 대해 생성된 쌍이 없습니다.")
+
         return icp_dataset
 
     def save_dataset(
@@ -455,7 +478,7 @@ class RMDatasetGenerator:
 
 # 편의 함수들
 def create_spf_dataset(
-    passages_file: str,
+    passages: Any,
     target_pairs_per_rubric: int = 1000,
     openai_model: str = "gpt-4o"
 ) -> Tuple[Dict[str, List[Dict[str, Any]]], Dict[str, str]]:
@@ -466,7 +489,7 @@ def create_spf_dataset(
         Tuple[dataset, saved_files]: 생성된 데이터셋과 저장된 파일 경로들
     """
     generator = RMDatasetGenerator(openai_model)
-    passages = generator.load_base_passages(passages_file)
+    # 파일명(str)이면 리스트면 그대로 사용
     dataset = generator.generate_spf_dataset(passages, target_pairs_per_rubric)
     saved_files = generator.save_dataset(dataset, "SPF")
     
@@ -480,9 +503,8 @@ def create_spf_dataset(
 
 
 def create_imp_dataset(
-    high_perf_file: str,
-    low_perf_file: str,
-    target_pairs_per_rubric: int = 1000,
+    high_perf: Any,
+    low_perf: Any,
     openai_model: str = "gpt-4o"
 ) -> Tuple[Dict[str, List[Dict[str, Any]]], Dict[str, str]]:
     """
@@ -492,34 +514,49 @@ def create_imp_dataset(
         Tuple[dataset, saved_files]: 생성된 데이터셋과 저장된 파일 경로들
     """
     generator = RMDatasetGenerator(openai_model)
-    high_passages = generator.load_base_passages(high_perf_file)
-    low_passages = generator.load_base_passages(low_perf_file)
-    dataset = generator.generate_imp_dataset(high_passages, low_passages, target_pairs_per_rubric)
+    # 파일명(str)이면 로드, 리스트면 그대로 사용
+    high_passages = high_perf
+    low_passages = low_perf
+    dataset = generator.generate_imp_dataset(high_passages, low_passages)
     saved_files = generator.save_dataset(dataset, "IMP")
     
     stats = generator.get_dataset_stats(dataset)
     print(f"\n📊 IMP 데이터셋 통계:")
     print(f"   총 루브릭 수: {stats['total_rubrics']}")
     print(f"   총 쌍 수: {stats['total_pairs']}")
-    print(f"   루브릭당 평균 쌍 수: {stats['average_pairs_per_rubric']:.1f}")
     
     return dataset, saved_files
 
 
 def create_icp_dataset(
-    base_passages_file: str,
-    target_pairs_per_rubric: int = 1000,
+    high_perf: Any,
+    low_perf: Any,
+    rubric: str,
     openai_model: str = "gpt-4o"
 ) -> Tuple[Dict[str, List[Dict[str, Any]]], Dict[str, str]]:
     """
     ICP 데이터셋 생성 편의 함수
+
+    Args:
+        high_perf: 고성능 모델의 지문 데이터
+        low_perf: 저성능 모델의 지문 데이터
+        rubric: 처리할 루브릭 이름
+        target_pairs_per_rubric: 루브릭당 목표 쌍 개수
+        openai_model: 사용할 OpenAI 모델명
     
     Returns:
         Tuple[dataset, saved_files]: 생성된 데이터셋과 저장된 파일 경로들
     """
     generator = RMDatasetGenerator(openai_model)
-    passages = generator.load_base_passages(base_passages_file)
-    dataset = generator.generate_icp_dataset(passages, target_pairs_per_rubric)
+    # 파일명(str)이면 로드, 리스트면 그대로 사용
+    high_passages = high_perf
+    low_passages = low_perf
+
+    dataset = generator.generate_icp_dataset(
+        high_passages, 
+        low_passages, 
+        rubric,
+    )
     saved_files = generator.save_dataset(dataset, "ICP")
     
     stats = generator.get_dataset_stats(dataset)

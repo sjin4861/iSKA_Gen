@@ -95,8 +95,9 @@ def generate_stem(benchmark_file : str, passage_model_name : str, model_name : s
             model_name=model_name,
             benchmark_id=id,
             benchmark_version=benchmark_version,
-            template_key=f"{template_key}",  # stem임을 명시
-            data=stem_datas
+            template_key=f"{template_key}",
+            data=stem_datas,
+            date_str=date_str
         )
         print(f"✅ 벤치마크 ID {id}에 대한 stem 생성 완료 및 저장: {saved_file}")
 

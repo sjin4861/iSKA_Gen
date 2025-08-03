@@ -58,7 +58,7 @@ def save_model_output(
             output_type = 'misc' # Fallback for other types
 
         # 3. Create the full directory path: base_dir/date/type/model
-        model_dir = base_dir / date_str / output_type / model_name
+        model_dir = base_dir / date_str / output_type / model_name / template_key
         model_dir.mkdir(parents=True, exist_ok=True)
 
         # 4. Create the filename (without timestamp)

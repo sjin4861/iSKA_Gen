@@ -93,7 +93,8 @@ def generate_options(
             benchmark_id=id,
             benchmark_version=benchmark_version,
             template_key=f"{template_key}_options",
-            data=options_datas
+            data=options_datas,
+            date_str=date_str
         )
         print(f"Generated options for benchmark ID {id} and saved to {saved_file}")
 
