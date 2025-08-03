@@ -154,3 +154,5 @@ cython_debug/
 saves/
 src/data/evaluations/
 src/data/raw_outputs/
+# Temp files
+.tmp/
