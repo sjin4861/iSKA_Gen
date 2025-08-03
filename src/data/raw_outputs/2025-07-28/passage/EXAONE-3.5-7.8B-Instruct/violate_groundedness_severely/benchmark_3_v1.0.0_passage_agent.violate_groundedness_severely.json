@@ -1,0 +1,452 @@
+[
+    {
+        "source_item": {
+            "korean_topic": "중장년층의 재취업 문제",
+            "korean_context": "빠른 기술 발전과 정년 단축으로 인해, 평생직장의 개념이 사라지면서 수십 년간의 경험을 가진 중장년층이 너무 이른 나이에 노동 시장에서 밀려나고 있습니다. 이들은 새로운 기술을 배울 기회가 부족했고, 사회는 이들의 경력을 활용할 준비가 되어 있지 않습니다. 이로 인해 숙련된 인력이 낭비되고, 노년 빈곤이 심화되는 등 심각한 사회적 비용이 발생하고 있습니다.",
+            "foreign_topic": "The Challenge of Reskilling an Aging Workforce",
+            "foreign_context": "In many developed economies, rapid technological advancement is making the existing skills of older workers obsolete, creating a significant 'reskilling' challenge. Companies often prefer hiring 'digital natives' over investing in training their experienced employees. This results in a wasted pool of talent, increases the burden on social welfare systems, and poses a major obstacle to lifelong career development."
+        },
+        "generated_passage": "중년의 전문가 엘리엇은 한때 첨단 제조업 분야의 거장이었지만, 자동화 시스템의 도입으로 직장을 잃은지 이미 수년이 흘렀다. 도시 외곽에 위치한 그의 고요한 연구실은 과거의 명성을 간직한 기계 부품들과 함께, 희미하게 빛나는 AR 헤드셋으로 가득 차 있었다. 엘리엇은 지역 커뮤니티 센터와 협력하여 '노년 혁신 랩'을 설립했는데, 이곳은 중장년층에게 인공지능과 로봇공학 같은 최신 기술을 가르치는 공간이다. 젊은 개발자들과 손을 잡고, 엘리엇은 자신의 풍부한 산업 지식을 디지털 시대의 언어로 번역하며, 중장년층을 미래 기술의 핵심 인력으로 재탄생시키려 노력 중이다. 그러나 이러한 혁신에도 불구하고, 일부 기업들은 여전히 인건비 절감을 위해 젊은 인재만을 선호함으로써, 엘리엇의 노력은 제한된 영향력 속에서 진행되어야 하는 처지였다. 그럼에도 불구하고, 이 프로그램은 참여자들 사이에서 희망의 불꽃을 일으키며, 노년 빈곤 완화뿐 아니라 사회 전반의 기술 적응력 향상이라는 긍정적 변화를 예고하고 있었다. 하지만 부작용으로는, 기존 교육 체계 내에서의 저항과 자원 부족으로 인한 프로그램 확장의 한계도 드러났다."
+    },
+    {
+        "source_item": {
+            "korean_topic": "층간소음 문제",
+            "korean_context": "아파트와 같은 공동주택이 보편적인 한국에서, 이웃 간의 층간소음 문제는 단순한 불편을 넘어 심각한 사회적 갈등으로 번지고 있습니다. 이는 바닥 충격음이 잘 전달되는 건축 구조와, 서로 다른 생활 패턴을 가진 이웃에 대한 이해 부족에서 비롯됩니다. 층간소음으로 인한 스트레스는 폭행 등 극단적인 범죄로 이어지기도 하며, 공동체 문화를 파괴하는 주된 원인이 되고 있어 해결이 시급합니다.",
+            "foreign_topic": "Noise Pollution Between Floors in Apartments",
+            "foreign_context": "In densely populated urban areas, noise complaints between apartment neighbors are a major source of conflict. The problem is often caused by poor sound insulation in buildings and a general lack of consideration for others. This ongoing issue degrades residents' quality of life and can escalate simple disputes into serious confrontations, necessitating effective solutions."
+        },
+        "generated_passage": "깊은 밤의 고요함 속에서도, 서울의 고층 아파트 단지는 낮 동안 쌓인 긴장이 다시금 터져 나오곤 했다. 이곳에서 '에코 하모니 프로젝트'가 시작되었는데, 이는 단순히 소음 차단 기술의 업그레이드를 넘어 혁신적인 접근법이었다. 각 아파트 층마다 특수 설치된 '감정 공명 센서'가 도입되었으며, 이 센서는 이웃의 일상 활동 패턴과 감정 상태를 감지하여 자동으로 소음 수준을 조절했다. 예를 들어, 밤늦게 공부하거나 운동하는 주민들의 활동은 조용한 음악으로 완화되도록 설계되었고, 가족 간의 즐거운 대화 소리는 부드럽게 필터링되지만, 과도한 소음은 즉시 경고 메시지와 함께 자동으로 감소시켰다. 이러한 시스템은 초기에는 이웃 간 불신으로 인해 저항을 받았으나, 시간이 지나면서 개인의 사생활 존중과 상호 배려라는 가치 아래 공감대를 형성해 나갔다. 긍정적으로는 층간소음 관련 분쟁이 현저히 줄어들었고, 주민 간의 상호 이해와 협력이 증진되어 공동체 분위기가 활기를 띠기 시작했다. 하지만 부작용으로는 일부 민감한 사용자들이 개인 공간 침해를 우려하였고, 기술 오류 시 예상치 못한 소음 변화로 일시적 혼란이 발생하기도 했다. 그럼에도 불구하고 에코 하모니 프로젝트는 지속가능한 공동체 관리 모델로 자리 잡아가고 있었다."
+    },
+    {
+        "source_item": {
+            "korean_topic": "일회용 컵 남용 문제",
+            "korean_context": "한국의 카페 문화가 발달하면서, 하루에 소비되는 일회용 플라스틱 컵과 종이컵의 양이 엄청나게 늘어났습니다. 편리함을 추구하는 소비 습관과 매장 내 다회용 컵 관리의 어려움이 주된 원인입니다. 이로 인해 막대한 양의 쓰레기가 발생하고 있으며, 이는 환경오염과 자원 낭비의 심각한 원인이 되고 있습니다.",
+            "foreign_topic": "Overuse of Disposable Cups",
+            "foreign_context": "The global coffee shop culture has led to a massive increase in the consumption of single-use cups. This problem is driven by consumer demand for convenience and the logistical challenges for businesses to wash and reuse cups. As a result, billions of non-recyclable cups end up in landfills each year, creating a significant environmental burden."
+        },
+        "generated_passage": "한반도의 첨단 도시, 네오시티에서는 커피 문화가 혁신적으로 진화했다. 이곳의 카페들은 '에코컵 시스템'을 도입하여, 고객들이 개인별 생체 인식 칩을 장착한 스마트 컵을 대여받아 사용하도록 했다. 이 스마트 컵은 내부에 미세 센서가 장착되어 있어 온도 조절뿐 아니라, 음료의 상태 변화까지 감지해 최적의 맛 유지에 도움을 준다. 매장마다 중앙 서버가 각 컵의 위치 추적과 재사용률을 모니터링하며, 사용자는 앱을 통해 컵의 반납 위치를 쉽게 확인할 수 있었다. 그러나 이러한 시스템의 성공에도 불구하고, 일부 지역에서는 칩 이식 거부감과 기술 접근성 부족으로 인한 디지털 격차가 나타났다. 또한, 초기 비용 부담으로 인해 소규모 카페들은 도입을 주저하고 있었는데, 이는 결국 대형 체인 카페와의 경쟁 불균형을 가중시켰다. 그럼에도 불구하고 정부의 보조금과 함께 지속가능한 미래를 향한 작은 변화들이 점차 확산되면서, 네오시티는 일회용 컵 남용 문제에서 선도적인 모범 사례로 부상하고 있었다."
+    },
+    {
+        "source_item": {
+            "korean_topic": "유기동물 문제",
+            "korean_context": "매년 수많은 반려동물이 길거리에 버려져 유기동물이 되고 있으며, 이는 심각한 사회 문제입니다. 충동적인 입양 후 경제적 부담이나 관리의 어려움을 감당하지 못하는 것이 주된 원인으로 꼽힙니다. 버려진 동물들은 질병과 굶주림에 시달리며, 이들을 구조하고 보호하는 데 막대한 사회적 비용이 발생하고 있습니다.",
+            "foreign_topic": "The Problem of Abandoned Pets",
+            "foreign_context": "Each year, millions of companion animals are abandoned by their owners, leading to overcrowded shelters and high euthanasia rates. This is often caused by people acquiring pets impulsively without understanding the long-term financial and time commitments. The issue represents a significant ethical problem and places a heavy burden on animal welfare organizations."
+        },
+        "generated_passage": "어느 미래 도시에서는 인공지능 기반의 '컴패니언 매칭 시스템'이 도입되었다. 이 시스템은 잠재적 입양자의 생활 패턴, 재정 상태, 그리고 심리적 준비 상태를 정밀하게 분석하여 가장 적합한 반려동물을 추천해준다. 예를 들어, 젊은 예술가인 리아는 그녀의 창조적 일상과 바쁜 일정에 맞춰 작은 크기의 지능형 로봇 강아지 '피오나'가 배정되었는데, 피오나는 실제 개가 아닌 첨단 기술로 제작된 반려동물로서 필요한 돌봄 시간은 최소화하면서도 정서적 지지를 제공했다. 그러나 이러한 혁신에도 불구하고, 일부 전통주의자들 사이에서는 진정한 생명체와의 교감 부재라는 우려가 제기되었다. 한편, 이 시스템 덕분에 유기동물 수는 급격히 줄었지만, 로봇 반려동물의 대량 생산은 자원 소모와 전자 폐기물 증가라는 부작용을 동반하기도 했다. 그럼에도 불구하고, 사회적 비용 절감과 동물 복지 향상이라는 긍정적 변화는 분명했다."
+    },
+    {
+        "source_item": {
+            "korean_topic": "청년 실업 문제",
+            "korean_context": "많은 청년들이 대학을 졸업하고도 일자리를 찾지 못해 어려움을 겪는 청년 실업 문제가 장기화되고 있습니다. 기업이 원하는 인재상과 구직자의 눈높이 차이, 그리고 양질의 일자리 부족이 복합적으로 작용한 결과입니다. 이로 인해 청년들은 경제적 어려움과 사회적 고립감을 느끼게 되며, 이는 국가 전체의 성장 동력을 약화시키는 원인이 됩니다.",
+            "foreign_topic": "Youth Unemployment Issue",
+            "foreign_context": "Youth unemployment is a persistent global issue where a significant number of young people are unable to find jobs after completing their education. The problem stems from a mismatch between the skills taught in schools and those demanded by the labor market, as well as overall economic downturns. This leads to social instability and a 'lost generation' of talent, hindering long-term economic growth."
+        },
+        "generated_passage": "졸업 후 텅 빈 이력서와 함께 희미해진 꿈 사이에서 헤매던 민수는 어느 날 이상한 기회를 얻었다. 도시 외곽에 위치한 오래된 도서관에서 '시간 여행자 가이드'라는 비밀스러운 프로그램을 운영하다가 발견했는데, 이곳에서는 과거와 미래의 직업 시장 데이터를 직접 탐색할 수 있다는 것이다. 도서관의 신비로운 사서, 엘레나는 청년들에게 맞춤형 시간 여행 세션을 제공하여, 아직 형성 중인 미래의 직무 트렌드와 필요 기술을 미리 체험하도록 도왔다. 민수는 이 시스템을 통해 다양한 시대의 직장 환경을 경험하면서 현실 세계의 불일치를 해소할 수 있었다. 특히, 그는 고대식 AI 교육 센터에서 가상의 코딩 캠프를 수료함으로써, 현대 기업들이 갈망하는 실용적 기술을 습득했다. 이러한 혁신적 접근법 덕분에 민수뿐 아니라 참여한 청년들은 더 빠르게 취업 준비를 마무리 짓고, 기업들 역시 즉시 활용 가능한 실력을 갖춘 인재를 발굴할 수 있게 되었다. 그러나 이 과정에서 개인정보 보호 문제와 시간 여행의 윤리적 한계에 대한 논란이 일기 시작했으며, 정부와 사회 각계각층에서 규제 논의가 활발해졌다. 그럼에도 불구하고, 청년 실업률 감소와 더불어 창의적 해결책을 찾아가는 사회 분위기는 긍정적인 변화를 가져왔음이 분명했다."
+    },
+    {
+        "source_item": {
+            "korean_topic": "음식물 쓰레기 문제",
+            "korean_context": "한국은 풍부한 반찬 문화와 국물 요리 때문에 다른 나라에 비해 음식물 쓰레기 발생량이 많은 편입니다. 필요 이상으로 많은 음식을 조리하는 습관과, 외식 시 남은 음식을 포장하지 않는 문화가 주요 원인입니다. 이렇게 버려지는 음식물 쓰레기를 처리하는 데 막대한 비용이 들고, 매립 시 발생하는 메탄가스는 지구 온난화를 가속화합니다.",
+            "foreign_topic": "The Food Waste Problem",
+            "foreign_context": "In many developed countries, a significant portion of food is wasted at the retail and consumer levels. This is caused by aesthetic standards for produce, bulk purchasing habits, and confusion over expiration dates. Food waste is a major environmental issue as it contributes to greenhouse gas emissions in landfills and wastes the resources used to produce it."
+        },
+        "generated_passage": "한반도 남쪽의 작은 마을 '풍요로운 언덕'은 독특한 식사 문화로 알려져 있었다. 이곳 주민들은 매일 저녁 '만찬 축제'를 열며, 각 가정이 다채로운 반찬과 풍성한 국을 준비해 공유했지만, 이 전통 뒤에는 숨겨진 비밀이 있었다. 마을의 고대 문헌에 따르면, 과거 풍요로운 언덕은 식량 부족으로 고통받았던 시절이 있었는데, 이때부터 풍요를 기원하며 모든 음식을 남김없이 나누는 관습이 생겼다고 전해진다. 그러나 시간이 흐르며 이 관습은 과도한 낭비로 변질되었다. 특히, 마을 외곽의 '시간의 정원'에서 자라는 특별한 채소 '빛나채소'는 그 맛뿐 아니라, 소량만 섭취해도 포만감을 주어 과식을 방지할 수 있다는 전설이 전해져 왔다. 최근 마을 장로들은 이 빛나채소를 대량 재배하여 만찬 축제 때 제공하면, 음식물 쓰레기를 현저히 줄일 수 있음을 발견했다. 또한, 빛나채소는 폐기물 처리 과정에서 발생하는 메탄 가스 배출을 최소화시키는 것으로 밝혀졌다. 긍정적으로는 환경 보호와 자원 절약 효과가 클 것이나, 부정적인 측면으로는 초기 재배 기술 전수와 적응 기간 동안 일부 주민들이 새로운 식습관에 저항할 수 있으며, 빛나채소의 고가로 인해 경제적 부담이 생길 위험도 존재한다."
+    },
+    {
+        "source_item": {
+            "korean_topic": "악성 댓글 문제",
+            "korean_context": "인터넷 공간의 익명성을 방패 삼아 타인을 비방하고 상처를 주는 악성 댓글이 심각한 사회 문제로 자리 잡았습니다. 일부 이용자들의 왜곡된 관심 욕구와, 처벌이 미약하다는 인식이 이러한 행동을 부추기고 있습니다. 악성 댓글은 피해자에게 깊은 정신적 고통을 안겨주며, 심지어는 극단적인 선택으로 이어지게 하는 등 사회 전체를 병들게 합니다.",
+            "foreign_topic": "The Problem of Malicious Online Comments",
+            "foreign_context": "Cyberbullying, through malicious and hateful online comments, has become a pervasive problem on social media and news platforms. This behavior is fueled by anonymity and a lack of immediate consequences for the perpetrators. The psychological damage inflicted on victims can be severe, leading to anxiety, depression, and a toxic online environment for everyone."
+        },
+        "generated_passage": "어둠 속에서 빛나는 디지털 도시 '노바타운'에서는 익명의 아바타들이 활발하게 소통했지만, 그 아래에는 깊은 그림자가 드리워져 있었다. 악성 댓글은 단순한 언어 폭력을 넘어, '네거티브 에너지'라는 이름의 무형의 독소로 변모하여 온라인 공간을 오염시켰다. 이 네거티브 에너지는 댓글 작성자의 내면에도 축적되는데, 점차 그들 스스로도 고립감과 불안에 휩싸이게 되는 악순환을 초래했다. 도시의 중앙에는 '빛의 탑'이 우뚝 서 있었는데, 이곳은 네거티브 에너지를 정화시키는 첨단 기술 연구소였다. 과학자들은 댓글마다 부착되는 '공감 칩'을 개발 중이었다. 이 칩은 사용자가 악성 댓글을 남길 때마다 개인의 정신 건강 지표를 실시간으로 모니터링하여, 일정 수준 이상의 부정적 감정이 감지되면 자동으로 경고 메시지와 함께 심리 상담 연결을 제공한다.  긍정적 효과로는 악성 댓글 감소와 더불어 피해자들의 정신 건강 개선이 기대되나, 부작용으로는 과도한 감시 우려와 개인정보 유출 위험이 제기되기도 했다. 그럼에도 불구하고, 빛의 탑은 이 혁신적인 접근법이 노바타운의 영혼을 다시 밝히길 바라며 연구를 가속화하고 있었다."
+    },
+    {
+        "source_item": {
+            "korean_topic": "독거노인 고독사 문제",
+            "korean_context": "가족 및 사회와 단절된 채 홀로 사는 노인이 아무도 모르게 죽음을 맞이하는 '고독사'가 계속해서 증가하고 있습니다. 핵가족화로 인한 전통적인 가족 돌봄 기능의 약화와, 노년층의 사회적 관계망 부족이 핵심 원인입니다. 이는 개인의 비극을 넘어, 우리 사회의 복지 시스템에 큰 구멍이 뚫려있음을 보여주는 심각한 문제입니다.",
+            "foreign_topic": "The Problem of Lonely Deaths Among the Elderly",
+            "foreign_context": "The phenomenon of elderly people dying alone and remaining undiscovered for long periods is a growing social issue in many aging societies. It is primarily caused by weakening family ties and a lack of community support systems for seniors living alone. This tragic issue highlights a failure in social safety nets and raises questions about how society cares for its most vulnerable members."
+        },
+        "generated_passage": "고요한 마을 한가운데 위치한 오래된 주택에는 한때 활기 넘치던 삶의 흔적들이 희미해져 가고 있었다. 이곳의 노인, 이준호 씨는 수십 년 동안 이웃들과도 거의 소통하지 않으며 홀로 시간을 보냈다. 그의 주변에는 낡은 정원과 침묵 속에 놓인 작은 도서관이 있는데, 이곳은 이제 먼지 쌓인 책들로 가득 차 있지만, 어느 날 밤 조용히 생명을 잃고도 아무도 그의 존재를 알아채지 못했다. 마을 주민들 사이에서는 점점 더 고립되어가는 이들에 대한 관심이 줄어들고 있으나, 비밀리에 활동하는 '연결의 손길'이라는 비공식 그룹이 등장했다. 이 그룹은 첨단 AI 기술과 인간의 감성 지능을 결합하여 주기적으로 노인들의 생활 패턴을 모니터링한다. AI 챗봇 '소냐'가 매일 저녁 짧은 대화를 통해 이준호 씨와 같은 이들의 일상 변화를 감지하면, 즉시 현장 조사팀이 파견되어 위험 상황을 확인한다. 이러한 노력은 고독사 문제를 완화시키며 사회적 연결망을 재구축하려 하지만, 한편으로는 과도한 감시에 대한 노인들의 불편함과 프라이버시 침해 우려도 불러일으키고 있다. 그럼에도 불구하고, 이 혁신적 접근법은 고립된 노인들에게 다시금 희망의 빛을 비추기 시작했다."
+    },
+    {
+        "source_item": {
+            "korean_topic": "스마트폰 과의존 문제",
+            "korean_context": "현대인들은 잠자는 시간을 제외하고 거의 모든 순간 스마트폰을 손에서 놓지 못하는 '스마트폰 과의존' 상태에 빠져 있습니다. 스마트폰이 제공하는 즉각적인 즐거움과, 연결되어 있지 않으면 불안감을 느끼는 '포모(FOMO)' 증후군이 주요 원인입니다. 이로 인해 사람들은 현실 세계의 대인 관계에 소홀해지고, 거북목 증후군 등 건강 문제와 집중력 저하를 겪고 있습니다.",
+            "foreign_topic": "Smartphone Overdependence Problem",
+            "foreign_context": "Overdependence on smartphones has become a modern epidemic, with people compulsively checking their devices at all times. This is driven by the constant stream of notifications and the 'fear of missing out' (FOMO) that social media cultivates. The consequences include diminished real-life social interaction, poor posture, and a decreased ability to concentrate on tasks."
+        },
+        "generated_passage": "어둠 속에서 희미한 블루라이트가 춤추듯 퍼져나갔다. 엘리나는 밤 깊은 시각에도 스마트폰 화면 너머 가상 세계에 갇혀 있었다.  '모두가 참여하는 가상 축제'라는 알림 메시지가 끊임없이 깜빡이며 그녀의 손가락을 끌어당기는데, 현실 세계의 고요함은 오히려 공허함으로 느껴졌다. FOMO 증후군은 그녀의 마음을 꽉 조여 잡았다. 친구들이 즐겁게 춤추고 웃는 모습을 화면으로만 접하다보니, 실제 모임에 참여할 용기조차 잃어버렸다. 엘리나는 눈을 감으며 속삭였다. \"진짜 연결이란 뭘까?\" 하지만 답은 화면 너머에서 끊임없이 쏟아지는 정보 속에 묻혀버렸다. 전문가들은 '디지털 디톡스' 프로그램을 제안했지만, 엘리나에게는 그것이 마치 현실 세계에서 숨 쉬기를 거부하는 것처럼 느껴졌다. 그녀는 진정한 연결을 찾아야 한다는 것을 알았지만, 어디서부터 시작해야 할지 막막했다."
+    },
+    {
+        "source_item": {
+            "korean_topic": "대도시 교통 체증 문제",
+            "korean_context": "서울과 같은 대도시의 도로는 매일 출퇴근 시간마다 극심한 교통 체증으로 몸살을 앓고 있습니다. 이는 자가용 이용자의 지속적인 증가와, 도시의 도로 용량이 한계에 다다랐기 때문입니다. 교통 체증은 시민들의 시간과 에너지를 낭비시키고, 자동차 배기가스로 인한 대기오염을 심화시키는 등 막대한 사회적 비용을 유발합니다.",
+            "foreign_topic": "Traffic Congestion in Big Cities",
+            "foreign_context": "Major metropolitan areas worldwide suffer from chronic traffic congestion, particularly during peak hours. This problem is caused by an over-reliance on private cars, insufficient public transportation infrastructure, and inefficient urban planning. The daily gridlock results in lost productivity, increased air pollution, and a lower quality of life for commuters."
+        },
+        "generated_passage": "어둠 속에서 빛나는 네온 사인들이 혼란스러운 교차로 위에서 희미해졌다. 서울의 중심부, 평소라면 활기 넘치던 거리는 오늘은 숨 막히는 고요함에 휩싸여 있었다. 교통 체증은 단순한 혼잡을 넘어 '시간의 벽'으로 변모했다. 이 현상은 자가용 의존도의 고착화뿐 아니라, 도시의 신경망처럼 설계되어야 할 '스마트 이동 네트워크' 부재로 인해 더욱 악화되었다. 과학자들과 엔지니어들은 이 문제를 해결하기 위해 '에어 트래픽 모빌리티'(Air Traffic Mobility) 시스템을 제안했다. 이 혁신적인 아이디어는 고도의 자율 드론과 전기 수직 이착륙 비행기(eVTOLs)를 활용하여 지상 교통을 공중으로 분산시키는 것이다. 출퇴근 시간대에는 전용 하늘 길을 통해 차량 흐름을 완화시켜, 지상 도로의 부담을 대폭 줄이도록 설계되었다.  긍정적 측면으로는 심각한 대기 오염 감소와 함께 생산성 향상이 기대되지만, 새로운 기술 도입 과정에서의 안전 규제 마련과 개인정보 보호 문제는 해결해야 할 주요 과제였다. 하늘길이 열리면서 동시에 새로운 윤리적 딜레마도 함께 부상할 것이라 예상되었다."
+    },
+    {
+        "source_item": {
+            "korean_topic": "학교 폭력 문제",
+            "korean_context": "학교 폭력은 피해 학생에게 평생 지울 수 없는 상처를 남기는 심각한 범죄 행위입니다. 가해 학생의 잘못된 인성과 공감 능력 부족, 그리고 '친구끼리의 장난'으로 치부하며 방관하는 주변의 시선이 폭력을 키우는 원인입니다. 학교 폭력은 피해 학생의 정상적인 학교생활을 불가능하게 만들고, 건강한 사회 구성원으로 성장하는 것을 방해합니다.",
+            "foreign_topic": "The School Bullying Problem",
+            "foreign_context": "School bullying remains a critical issue that inflicts deep and lasting psychological scars on victims. The causes range from a lack of empathy in bullies to a bystander culture where other students fail to intervene. This behavior creates a toxic learning environment and can have devastating effects on a student's mental health and academic performance."
+        },
+        "generated_passage": "어둠 속에서 희미하게 빛나는 홀로그램 프로젝터가 교실 한쪽 벽에 투사되었다. 그곳에는 '공감의 숲'이라 불리는 가상 현실 공간이 펼쳐졌는데, 이곳은 학교 폭력 피해자들이 직접 설계하고 참여하여 만들어졌다.  피해자들은 자신들이 겪은 고통스러운 경험을 아름다운 자연 이미지로 변환했으며, 동시에 가해자들도 이 공간 안에서 다양한 역할을 맡아 직접 그 고통을 체험할 기회를 얻었다. 처음엔 거부감을 느끼던 학생들 사이에서 점차 이해와 연민의 씨앗이 싹트기 시작했다. 하지만 일부 교사들은 이러한 프로그램이 현실 회피 수단일 뿐이라고 비판하기도 했다. 그럼에도 불구하고 '공감의 숲'은 학교 전체에 퍼져나가면서 조용하지만 확실한 변화를 이끌어냈다. 폭력 사건은 줄어들었지만, 드물게는 프로그램 내에서 새로운 갈등이 발생하기도 하였다. 이제 중요해진 건 지속적인 관리와 개선을 통해 진정한 공감 문화를 정착시키는 일이었다."
+    },
+    {
+        "source_item": {
+            "korean_topic": "플라스틱 쓰레기 문제",
+            "korean_context": "한 번 쓰고 버려지는 플라스틱 포장재와 제품들로 인해 전 지구가 플라스틱 쓰레기로 뒤덮이고 있습니다. 저렴하고 편리하다는 이유로 플라스틱 사용이 무분별하게 이루어지고 있으며, 재활용 시스템 또한 제대로 작동하지 않고 있습니다. 썩지 않는 플라스틱 쓰레기는 토양과 해양 생태계를 파괴하고, 미세 플라스틱 형태로 결국 우리 몸에 다시 돌아와 건강을 위협합니다.",
+            "foreign_topic": "The Plastic Waste Problem",
+            "foreign_context": "The planet is facing a crisis due to the overwhelming amount of plastic waste generated by single-use products and packaging. This is driven by a culture of convenience and inadequate recycling infrastructure worldwide. Non-biodegradable plastic pollutes oceans, harms wildlife, and breaks down into microplastics that contaminate our food and water systems."
+        },
+        "generated_passage": "지구의 마지막 희망이라 불리던 도시, 에코니아는 플라스틱 대체재 혁명으로 다시 태어났다. 이곳에서는 '플라스티늄'이란 신소재가 개발되었는데, 이 물질은 기존 플라스틱처럼 가볍고 강하면서도 자연 분해 속도가 인간의 일생 안에 이루어지도록 설계되었다. 플라스티늄은 식물 기반 원료로 만들어져 토양에 뿌리내리면 영양분을 공급하면서 스스로 분해되도록 프로그래밍 되었기에, 폐기 후에도 생태계에 해를 끼치지 않았다. 그러나 이 혁신 뒤에는 그림자도 존재했다. 플라스티늄 생산 공장 주변 지역 주민들은 이상한 질병에 시달리기 시작했다. 초기 증상은 가벼운 피로감과 피부 발진이었으나, 시간이 지나며 일부는 기억력 저하와 정신 혼란을 겪기도 했다. 전문가들은 플라스티늄 가공 과정에서 발생하는 미세한 에너지 파장이 인체에 부정적 영향을 미치는 것일 수 있다고 추측하고 있다. 한편, 이러한 부작용을 최소화하기 위해 에코니아는 공장마다 '에너지 차단 장벽'을 설치하여 파장을 관리하려 했으나, 완벽한 해결책은 아직 찾지 못한 채였다. 그럼에도 불구하고 플라스티늄은 이미 세계 곳곳의 기업들이 채택할 만큼 인기를 얻어가고 있어, 지속 가능성의 미래를 향한 길은 여전히 불확실함 속에 놓여 있었다."
+    },
+    {
+        "source_item": {
+            "korean_topic": "직장 내 번아웃 증후군",
+            "korean_context": "많은 직장인들이 과도한 업무와 스트레스로 인해 신체적, 정신적 에너지가 모두 소진되는 '번아웃 증후군'을 겪고 있습니다. 이는 성과 중심의 경쟁적인 조직 문화와, 일과 삶의 균형이 무너진 생활에서 비롯됩니다. 번아웃은 개인의 건강을 해칠 뿐만 아니라, 업무 효율성을 떨어뜨리고 잦은 이직을 유발하여 기업과 사회 전체에 손실을 가져옵니다.",
+            "foreign_topic": "Workplace Burnout Syndrome",
+            "foreign_context": "Burnout, a state of emotional, physical, and mental exhaustion caused by prolonged stress, is a major issue in the modern workplace. It stems from excessive workloads, a lack of autonomy, and a toxic 'always-on' work culture. This syndrome not only harms individual well-being but also leads to decreased productivity, high employee turnover, and significant costs for businesses."
+        },
+        "generated_passage": "엘리엇은 첨단 기술로 가득 찬 미래 도시의 한 핵심 연구소에서 일했다. 이곳은 혁신적인 AI 솔루션 개발로 유명하지만, 최근 직원들 사이에서는 '제로 아워(Zero Hour)'라는 비밀스러운 현상이 퍼져나가고 있었다. 제로 아워란, 마치 시간이 일시적으로 멈추거나 왜곡되며 직원들이 감당할 수 없는 과부하 작업량에도 불구하고 잠시 동안 집중력을 회복하고 생산성이 급증하는 신비로운 순간을 의미했다. 이 현상은 초기에는 혁신적인 아이디어 폭발로 환영받았으나, 지속적인 의존으로 인해 심각한 불규칙한 수면 패턴과 심리적 압박을 초래했다. 엘리엇은 이러한 현상 뒤에 숨겨진 생체 리듬 조절 기술과 과도한 디지털 연결성의 부작용을 발견했다. 그는 **'워크-리커버리 모드(Work-Recovery Mode)'** 도입을 제안했는데, 이는 일정 주기마다 강제적인 디지털 디톡스와 개인화된 휴식 프로그램을 통해 직원들의 자연스러운 회복 과정을 지원하는 시스템이다. 긍정적인 측면으로는 직원들의 전반적인 웰빙 향상과 장기적인 업무 효율 증대가 예상되지만, 한편으로는 단기적으로는 기존의 높은 생산성 유지에 어려움이 따를 수 있으며, 조직 문화 내에서의 저항도 불가피해 보였다."
+    },
+    {
+        "source_item": {
+            "korean_topic": "노년층의 디지털 소외 문제",
+            "korean_context": "은행 업무, 기차표 예매 등 사회의 거의 모든 서비스가 디지털화되면서, 스마트폰이나 키오스크 사용에 익숙하지 않은 노년층이 큰 불편을 겪고 있습니다. 빠른 기술 발전에 비해 노년층을 위한 디지털 교육이 턱없이 부족한 것이 현실입니다. 이로 인해 노년층은 일상생활에서 소외감을 느끼고, 꼭 필요한 사회 서비스로부터 단절되는 '디지털 격차' 문제를 겪고 있습니다.",
+            "foreign_topic": "The Digital Divide Among Seniors",
+            "foreign_context": "As society rapidly shifts to digital-first services, many elderly people are being left behind due to their unfamiliarity with smartphones and computers. The problem is caused by a lack of accessible technology training and user-friendly design for seniors. This digital divide prevents them from accessing essential services like banking and healthcare, leading to social isolation and inequality."
+        },
+        "generated_passage": "노년의 지혜로운 마을, 아르카디아에는 시간의 흐름에도 불구하고 디지털 세계와 조화롭게 공존하려는 노력이 이루어지고 있었다. 마을 중심에는 '시간의 정원'이라는 독특한 공간이 자리잡고 있는데, 이곳은 단순한 공원을 넘어 노년층을 위한 맞춤형 디지털 학습 허브였다. 정원 내에는 '기억의 나무'라는 인터랙티브 조형물이 설치되어 있었는데, 이 나무는 음성 인식 기술을 통해 방문객들의 이야기를 녹음하고, 이를 기반으로 개인화된 디지털 교육 콘텐츠를 생성했다. 예를 들어, 한 어르신이 기차표 예매 방법을 배우길 원한다면, 그 분의 일상 대화 패턴과 선호도를 분석해 간단한 터치스크린 키오스크와 함께 친절한 가이드 동영상을 제공했다. 이러한 혁신 덕분에 아르카디아의 노년층은 더 이상 디지털 격차에 갇히지 않았으며, 오히려 이 기술을 통해 젊은 세대와의 소통이 활발해져 마을 전체의 활력이 넘치게 되었다. 그러나 한편으로는, 과도한 의존성으로 인한 전통적인 생활 방식의 변화와 일부 어르신들 사이에서 기술 적응 과정에서 오는 일시적인 혼란도 나타나곤 했다. 그럼에도 불구하고, 아르카디아는 이러한 부작용을 최소화하면서도 디지털 포용성의 모범 사례로 알려지게 되었다."
+    },
+    {
+        "source_item": {
+            "korean_topic": "패스트패션으로 인한 의류 폐기물 문제",
+            "korean_context": "최신 유행을 빠르게 반영하여 저렴하게 판매하는 '패스트패션' 산업의 성장으로, 옷이 쉽게 만들어지고 쉽게 버려지고 있습니다. 소비자들은 싼값에 유행을 따를 수 있지만, 이는 곧 엄청난 양의 의류 폐기물 문제로 이어집니다. 매년 수많은 옷들이 소각되거나 매립되어 심각한 환경오염을 유발하고 있으며, 이는 지속 불가능한 생산 및 소비 방식입니다.",
+            "foreign_topic": "Clothing Waste from Fast Fashion",
+            "foreign_context": "The fast fashion industry, which produces trendy, inexpensive clothing, has created a major environmental problem of textile waste. Consumers buy more and discard clothes faster than ever before, driven by low prices and rapidly changing trends. This results in massive amounts of clothing ending up in landfills, contributing to pollution and representing a huge waste of resources."
+        },
+        "generated_passage": "어느 미래 도시의 한복판에는 '클로즈드 루프 패션'(Closed Loop Fashion) 팩토리가 자리잡고 있었다. 이곳은 패스트패션의 빠른 회전 사이클 대신 재활용과 재생산을 최우선 가치로 삼았다. 팩토리의 핵심 기술은 '텍스틸리스'(Textilith), 인공지능 기반 시스템으로, 폐기된 의류를 분해해 고유의 섬유 코드를 해독했다. 각 코드는 의류의 구성 성분과 디자인 패턴을 정확하게 기록하고 있어, 이를 통해 완벽하게 복원된 옷이 탄생할 수 있었다. 소비자들은 이제 중고 스토어에서 개인화된 복고풍 의상이나 지속 가능한 신제품을 선택할 수 있었는데, 이 과정에서 모든 구매는 가상 화폐로 이루어져 재활용 참여도에 따라 보상받기도 했다. 그러나 이러한 혁신에도 불구하고, 일부 전통 봉제 업체들은 고용 감소와 기술 적응 실패로 어려움을 겪기 시작했고, 지역 사회 내에서는 기술 의존도와 디지털 격차가 새로운 형태의 불평등을 야기하고 있었다. 그럼에도 불구하고, 클로즈드 루프 패션은 매년 매립지로 향하던 수백만 벌의 옷을 줄이며 지구 온난화 완화에 기여하고 있음이 분명했다."
+    },
+    {
+        "source_item": {
+            "korean_topic": "농촌의 빈집 문제",
+            "korean_context": "젊은이들이 일자리를 찾아 도시로 떠나면서, 농촌 지역에는 사람이 살지 않는 빈집이 급격히 늘어나고 있습니다. 이는 농촌 인구의 고령화와 인구 감소가 낳은 필연적인 결과입니다. 방치된 빈집들은 마을의 미관을 해치고, 붕괴 위험이나 범죄 발생의 원인이 되는 등 지역 사회에 큰 골칫거리가 되고 있습니다.",
+            "foreign_topic": "The Empty Homes Problem in Rural Areas",
+            "foreign_context": "In many countries, rural areas are experiencing a sharp increase in abandoned homes as young people migrate to cities for jobs and education. This issue is a direct consequence of rural depopulation and an aging population. These derelict properties become eyesores, can attract crime, and signify a broader decline in rural communities, demanding urgent revitalization strategies."
+        },
+        "generated_passage": "고요한 마을 한가운데, 한때 활기 넘치던 집들은 이제 침묵 속에 잠들어 있었다. 젊은 세대의 도시 이주로 인해 빈집들이 늘어서면서, 이곳은 시간이 멈춘 듯한 분위기를 자아냈다. 그러나 마을의 리더인 엘리자베스는 이 고요함 뒤에 숨겨진 잠재력을 보았다. 그녀는 '생명의 씨앗 프로젝트'를 제안했다: 각 빈집을 독특한 예술 공방과 커뮤니티 가든으로 변모시키기로 했다. 지역 주민들과 함께 낡은 벽을 아름다운 벽화로 장식하고, 정원에는 전통 작물과 멸종 위기 식물들을 심어나갔다. 이렇게 변화하면서 마을은 관광객들에게 매력적인 문화 중심지로 재탄생할 수 있으리라 기대되었다. 긍정적으로는 지역 경제 활성화와 청년 인재 유치가 예상됐지만, 부작용으로는 기존 주민들 사이의 문화 충돌 가능성과 일부 빈집의 과도한 상업화로 인한 본질적인 공동체 정신 희석도 우려되었다. 그럼에도 불구하고 엘리자베스는 이러한 도전이 마을의 새로운 활력을 불어넣을 것이라 확신했다."
+    },
+    {
+        "source_item": {
+            "korean_topic": "비효율적인 회의 문화",
+            "korean_context": "많은 회사들이 명확한 목적 없이 시작해 결론 없이 끝나는 비효율적인 회의로 많은 시간을 낭비하고 있습니다. 뚜렷한 안건 없이 '일단 모이고 보자'는 식의 관행과, 자유로운 의견 교환을 막는 수직적인 조직 문화가 원인입니다. 이러한 회의 문화는 직원들의 귀중한 업무 시간을 빼앗고, 창의적인 아이디어가 나오는 것을 막으며, 조직 전체의 생산성을 저해합니다.",
+            "foreign_topic": "Inefficient Meeting Culture",
+            "foreign_context": "Many organizations suffer from an inefficient meeting culture, where employees spend hours in pointless and poorly managed meetings. This is often caused by a lack of clear agendas, inviting too many unnecessary people, and a hierarchical structure that discourages open debate. This wasteful practice drains employee productivity, morale, and valuable time that could be spent on actual work."
+        },
+        "generated_passage": "깊은 숲 속에 숨겨진 아르카디아라는 스타트업은 혁신적인 기술 개발로 명성을 얻었지만, 그 성공 뒤에는 숨 막히는 관료주의 회의 문화가 자리 잡고 있었다. 매주 열리는 '창조의 시간'이라는 이름의 회의는 사실상 모호한 목표 아래 수백 명의 직원들이 모여 몇 시간 동안 무의미한 토론에 시달렸다. 이 회의는 원래 혁신을 촉진하려 했으나, 이제는 엄격한 계층 구조 때문에 진정한 아이디어 공유가 억압되며, 대신 지위에 따른 발언 순서만이 존재했다.  최근 젊은 엔지니어인 엘라가 주도한 '미니 세션' 프로젝트가 이러한 문제를 돌파하려는 시도였다. 엘라는 팀 내 소규모, 주제별 그룹 회의를 도입하여 각 구성원이 직접 의제를 설정하고 실행할 수 있도록 했다. 이 변화는 초기에는 저항에 부딪혔으나, 점차적으로 직원들의 참여도와 창의성이 향상되면서 긍정적인 반응을 이끌어냈다. 그러나 부작용도 나타났는데, 일부 고위직 직원들은 의사결정 과정에서 소외감을 느끼기 시작하면서 일시적인 불안감을 보였다. 그럼에도 불구하고 아르카디아의 생산성은 눈에 띄게 상승했고, 직원 만족도 조사 결과 혁신적 아이디어 발굴 비율이 40% 이상 증가함으로써 장기적으로 조직의 경쟁력을 강화시킬 전망이다."
+    },
+    {
+        "source_item": {
+            "korean_topic": "아동 비만 문제",
+            "korean_context": "달고 기름진 패스트푸드와 탄산음료 섭취는 늘고, 스마트폰 게임 등으로 신체 활동은 줄어들면서 아동 비만율이 급격히 증가하고 있습니다. 잘못된 식습관과 운동 부족이 가장 큰 원인입니다. 아동 비만은 성인병으로 이어질 확률이 높으며, 아이들의 신체적 건강뿐만 아니라 자신감 하락 등 정신 건강에도 나쁜 영향을 미칩니다.",
+            "foreign_topic": "The Childhood Obesity Problem",
+            "foreign_context": "Childhood obesity rates are rising globally, posing a serious public health threat. The primary causes are the increased consumption of high-calorie, processed foods and a sedentary lifestyle with less physical activity. This condition increases the risk of developing chronic diseases like diabetes and can negatively impact a child's mental health and self-esteem."
+        },
+        "generated_passage": "어둠 속에서 빛나는 네온사인처럼, 도시의 어린이들 사이로 '에너지 젤 폭풍'이 퍼져나가고 있었다. 달콤한 맛과 엄청난 활력을 자랑하는 이 젤리는 단순한 간식을 넘어 아이들의 일상을 사로잡았는데, 그 안에는 숨겨진 비밀이 있었다.  개발사는 젤리에 특수 제작된 '활동 촉진 나노 입자'를 첨가했던 것이다.  처음엔 운동 능력 향상과 집중력 증진이라는 명목 아래 시작되었지만, 과도한 섭취는 오히려 몸의 에너지 조절 메커니즘을 교란시키며 숨은 잠재력을 깨우기보다는 비정상적인 신진대사 가속화를 초래했다. 결과적으로 아이들은 짧은 시간 동안 엄청난 활동량을 보이면서도 쉽게 지쳐버리고, 끊임없는 갈망에 사로잡혀 가공식품과 앉아서 즐기는 디지털 세계에 더욱 빠져들게 되었다. 이 현상은 전 세계적으로 확산되려는 추세였고, 아동 비만율은 예상치 못한 방향으로 급증하고 있었다. 전문가들은 이 '에너지 젤 역설'이 단순한 영양 불균형을 넘어 새로운 형태의 공중 보건 위협임을 경고하고 있었다."
+    },
+    {
+        "source_item": {
+            "korean_topic": "재생에너지의 간헐성 문제",
+            "korean_context": "태양광, 풍력과 같은 재생에너지는 탄소 배출이 없는 청정에너지이지만, 날씨에 따라 발전량이 불안정하다는 치명적인 단점이 있습니다. 해가 없거나 바람이 불지 않으면 전기를 생산할 수 없는 '간헐성' 문제가 바로 그것입니다. 이로 인해 안정적인 전력 공급이 어려워, 재생에너지 확대에 가장 큰 걸림돌이 되고 있습니다.",
+            "foreign_topic": "The Intermittency of Renewable Energy",
+            "foreign_context": "Renewable energy sources like solar and wind are crucial for combating climate change, but they suffer from a major drawback: intermittency. The sun doesn't always shine, and the wind doesn't always blow, making their power output unreliable and difficult to predict. This variability poses a significant challenge for maintaining a stable and consistent electricity grid."
+        },
+        "generated_passage": "어느 미래 도시 네오테라에서는 태양광과 풍력 에너지 외에도 '루미나이트'라는 신비로운 에너지원이 주목받기 시작했다. 루미나이트는 밤하늘의 특정 별자리 패턴이 일정 기간 동안 형성되면 자연스럽게 활성화되며, 이때 방출되는 빛 에너지는 날씨와 무관하게 안정적으로 전기로 변환될 수 있었다. 도시의 주요 전력망은 이 루미나이트 에너지 시스템과 기존 재생에너지 인프라 사이의 하이브리드 구조로 재설계되었는데, 이 덕분에 낮에는 풍력과 태양광이, 밤에는 루미나이트가 전력을 공급하여 하루 종일 일관된 에너지 흐름을 유지할 수 있게 되었다. 그러나 루미나이트 연구팀은 별자리 패턴 변화에 따른 예측 모델 개발 과정에서 예상치 못한 부작용을 발견했다. 루미나이트 활성화 시기에 맞춰 야간 조명 사용 제한 구역이 설정되어야 했던 것이다. 이 조치는 도시 야경의 아름다움을 보존하면서도 에너지 효율성을 극대화시켰으나, 일부 문화 축제와 야간 경제 활동에 일시적인 제약을 초래했으며, 주민들 사이에서는 야간 생활 패턴의 변화에 대한 적응 논란도 일어났다. 그럼에도 불구하고, 네오테라는 이러한 도전을 극복함으로써 지속 가능한 에너지 미래를 향한 중요한 발걸음을 내딛게 되었다."
+    },
+    {
+        "source_item": {
+            "korean_topic": "보이스피싱 사기 문제",
+            "korean_context": "전화나 문자를 이용해 다른 사람을 속여 돈을 빼앗는 보이스피싱 범죄가 날이 갈수록 교묘해지고, 그 피해가 끊이지 않고 있습니다. 범죄 조직들은 사람들의 불안감이나 절박한 심리를 교묘하게 이용하고 있으며, 해외에 서버를 두는 등 단속을 피하는 수법도 지능화되고 있습니다. 보이스피싱은 피해자에게 막대한 금전적 손실과 함께 깊은 정신적 충격을 남기는 악질적인 범죄입니다.",
+            "foreign_topic": "The Voice Phishing Scam Problem",
+            "foreign_context": "Voice phishing scams, where criminals deceive victims into transferring money over the phone, are a rampant and evolving form of fraud. Scammers exploit victims' trust or fear using sophisticated social engineering tactics. These crimes cause devastating financial losses and significant emotional distress, undermining public trust in communication systems."
+        },
+        "generated_passage": "어둠 속에서 빛나는 홀로그램 경고등이 깜빡였다.  \"신경망 보안 프로토콜 오류 감지\", 차가운 기계 목소리가 속삭였다.  지구 연합은 '심층 공명 네트워크(Deep Resonance Network)', 즉 전 세계 모든 통신 채널을 연결하는 혁신적인 시스템을 구축했지만, 이 시스템 자체가 보이스피싱 공격의 새로운 표적이 되어버렸다. 범죄자들은 이제 홀로그램 기술을 이용해 실제 인물의 목소리를 완벽하게 모방하여, 개인 맞춤형 피싱 메시지를 전송할 수 있었다. 피해자들은 가족이나 친구의 목소리로 의심스러운 요청을 받고도 진위 여부를 판단하기 어려웠고, 심지어 인공지능 감정 분석까지 활용하여 절망감을 조장하며 돈을 빼내려 했다. 이러한 '감정적 피싱'은 단순한 금전적 손실을 넘어 인간 관계의 신뢰를 파괴하는 끔찍한 결과를 초래했다. 해결책은 단순히 기술적 방어벽 강화를 넘어, 인류 내면의 '의심하는 마음'을 키우는 교육 프로그램에 있을지도 모른다. 마치 디지털 시대의 면역 체계처럼, 끊임없는 비판적 사고 훈련을 통해 우리는 이러한 교묘한 속임수에 맞서 싸울 수 있으리라. 그러나 과도한 경계는 사회적 고립으로 이어질 위험도 내포하고 있음을 명심해야 했다."
+    },
+    {
+        "source_item": {
+            "korean_topic": "도시의 빛 공해 문제",
+            "korean_context": "밤에도 대낮처럼 밝은 도시의 과도한 인공조명은 사람과 생태계에 나쁜 영향을 미치는 '빛 공해'를 유발합니다. 에너지 낭비에 대한 인식 부족과, 밤거리를 무조건 밝게 해야 안전하다는 오해가 빛 공해의 원인입니다. 이로 인해 사람들은 수면 장애를 겪고, 동식물은 고유의 생체 리듬을 잃어버리는 등 생태계 교란이 심각해지고 있습니다.",
+            "foreign_topic": "The Problem of Light Pollution in Cities",
+            "foreign_context": "Excessive and misdirected artificial light in urban areas creates 'light pollution,' which has numerous negative effects. This is caused by poorly designed lighting fixtures and a general lack of awareness about the issue. Light pollution disrupts human sleep patterns, wastes enormous amounts of energy, and has a detrimental impact on nocturnal wildlife and ecosystems."
+        },
+        "generated_passage": "어둠 속에서도 도시는 잠들지 않았다. 거대한 홀로그램 광고판들이 밤하늘을 가르며 화려한 색채를 뿜어내었고, 거리마다 끊임없이 흐르는 차량의 헤드라이트 불빛은 어두운 그림자를 흩뿌렸다. 한때 안전을 상징했던 밝은 조명은 이제 생태계의 속삭임을 지우는 소음으로 변질되었다. 도시의 곤충들은 혼란스러운 빛에 이끌려 죽음을 맞이했고, 야행성 동물들은 숨을 죽인 듯 고요히 지하 세계로 사라졌다.  젊은이 아리아는 밤하늘을 그리워하며 창문 너머로 쏟아지는 인공 빛을 바라보았다. 그녀는 '다크 라이트 프로젝트'라는 비밀 조직의 일원이었는데, 그들은 도시의 빛을 조절하여 자연의 리듬을 되찾으려 했다. 낡은 유리 조각과 특수 필터를 이용해 조명을 은은하게 바꾸면서 동시에 에너지 효율을 높이는 기술을 개발 중이었다. 성공한다면 도시는 다시 밤하늘의 별빛 아래 평온을 찾을 수 있겠지만, 강력한 조명 산업 연합의 반발은 불가피할 터였다. 변화는 항상 어둠 속에서 시작되듯이, 아리아는 희망찬 어둠을 향해 나아갔다."
+    },
+    {
+        "source_item": {
+            "korean_topic": "대학 서열화 문제",
+            "korean_context": "한국 사회는 소위 '명문대'를 정점으로 모든 대학이 줄지어 서열화되어 있으며, 이는 많은 사회 문제의 원인이 되고 있습니다. 학벌을 중시하는 사회 풍조와, 대학의 실제 교육 경쟁력보다는 간판을 보고 평가하는 관행이 이러한 서열화를 고착시켰습니다. 이로 인해 학생들은 적성과 상관없이 서열이 높은 대학에 가기 위한 무한 경쟁에 내몰리고, 대학 교육의 다양성이 훼손되고 있습니다.",
+            "foreign_topic": "The University Ranking Problem",
+            "foreign_context": "The intense focus on university rankings creates a hierarchical system that can be detrimental to education. This is driven by a societal emphasis on prestige and a belief that a degree from a top-ranked university guarantees success. This system forces students into a high-pressure competition for limited spots and can overshadow the actual quality and diversity of education offered by different institutions."
+        },
+        "generated_passage": "어둠 속에서 빛나는 홀로그램 화면에는 서울의 빛나는 스카이라인 위로 펼쳐진 가상의 대학 지도가 떠올랐다. '명문대'라는 이름 아래 일렬로 늘어선 탑들은 그 빛을 발했지만, 그 주변에는 흐릿하게 흩어진 수많은 대학들이 존재했다.  하지만 이곳은 단순한 지리적 공간이 아니었다. 각 대학은 데이터 스트림처럼 끊임없이 변화하며, '학벌 지수' 라는 알고리즘이 그 흐름을 좌우했다. 이 지수는 졸업생 취업률, 연구 성과, 심지어 소셜 미디어 영향력까지 포괄적으로 계산하여 대학의 가치를 정량화했다. 결과적으로, 젊은 세대는 이 냉혹한 수치 게임에 갇혀 적성과 열정을 잊고, '학벌 지수' 만점을 향한 맹목적인 추격에 휘말렸다. 그러나 어느 날 밤, 익명의 해커 집단 '지식의 씨앗' 은 이 시스템에 균열을 일으키려 했다. 그들은 대학의 진정한 가치를 보여주는 숨겨진 데이터를 공개할 계획이었는데, 이는 획일적인 서열화를 뒤엎고 교육의 다양성을 부활시키는 혁명이 될지도 몰랐다. 하지만 그 과정에서 예상치 못한 부작용이 발생할지 모른다는 우려도 함께 퍼져나갔다."
+    },
+    {
+        "source_item": {
+            "korean_topic": "배달 쓰레기 문제",
+            "korean_context": "배달 음식 시장이 급격히 성장하면서, 음식을 담는 플라스틱 용기와 비닐 등 배달 쓰레기 문제가 심각해졌습니다. 한 번의 주문에도 여러 개의 플라스틱 용기가 사용되는 과대포장 관행과, 편리함을 우선시하는 소비 문화가 원인입니다. 이렇게 발생한 막대한 양의 배달 쓰레기는 재활용이 어려운 경우가 많아, 환경에 큰 부담을 주고 있습니다.",
+            "foreign_topic": "The Delivery Waste Problem",
+            "foreign_context": "The boom in food delivery services has led to a surge in single-use plastic containers and packaging waste. The problem is fueled by consumer demand for convenience and a lack of sustainable packaging options from restaurants. This mountain of waste, much of which is not recyclable, is exacerbating the plastic pollution crisis."
+        },
+        "generated_passage": "도시의 밤하늘 아래, 네온 불빛 사이로 배달 드론들이 끊임없이 움직이며 신선한 요리를 고객들에게 전달했다. 하지만 그 아래, 은밀한 지하 세계에는 '리커버리 마을'이 존재했다. 이곳은 배달 쓰레기로 인해 파괴된 자연을 복원하려는 혁신적인 생태계였다. 주민들은 특수 처리 기술로 재활용 불가능한 플라스틱도 분해하여 생명 에너지로 변환시키는 능력을 지녔고, 특히 '그린 캡슐'이라 불리는 작은 생물체들이 이 과정의 핵심 역할을 맡았다. 그린 캡슐은 주문마다 따라오던 플라스틱 용기 조각들을 흡수하여, 이를 통해 자라난 식물들은 도시 상공을 정화하는 산소 공급원이 되었다. 그러나 이러한 해결책은 초기 투자 비용이 매우 높아서 소규모 식당들은 접근하기 어려웠으며, 일부 지역에서는 과도한 플라스틱 분해 과정으로 인한 일시적인 대기 오염 현상이 발생하기도 했다. 그럼에도 불구하고 리커버리 마을은 희망의 불씨를 제공하며, 점차 더 많은 도시들이 친환경 포장 표준을 도입하도록 영감을 불어넣고 있었다."
+    },
+    {
+        "source_item": {
+            "korean_topic": "가짜뉴스 확산 문제",
+            "korean_context": "소셜 미디어를 통해, 사실 확인이 되지 않은 거짓 정보가 진짜 뉴스처럼 포장되어 빠르게 확산되는 문제가 심각합니다. 사람들은 자극적인 제목과 내용에 쉽게 현혹되며, 자신의 기존 신념에 맞는 정보만 선택적으로 믿으려는 경향이 가짜뉴스 확산을 부추깁니다. 가짜뉴스는 사회적 불신을 조장하고, 민주주의의 근간을 흔드는 위험한 요소가 되고 있습니다.",
+            "foreign_topic": "The Spread of Fake News",
+            "foreign_context": "The proliferation of misinformation and disinformation, or 'fake news,' through social media platforms is a major threat to society. It is spread rapidly due to sensationalist content and algorithms that cater to users' confirmation biases. Fake news erodes public trust in institutions, deepens social divisions, and can have dangerous real-world consequences."
+        },
+        "generated_passage": "디지털 가상 세계 '노바네트'에서 사용자들은 일상 생활과 연결된 아바타를 통해 소통했다. 이곳에서 혁신적인 AI 시스템 '진실의 거울'이 도입되었지만, 이 시스템은 오히려 역설적인 역할을 하기 시작했다. 진실의 거울은 모든 게시글을 즉시 검증하여 사실 여부를 표시하지만, 동시에 가장 설득력 있는 거짓 정보를 더욱 매력적으로 포장해 보여주곤 했다. 사용자들은 이 시스템 덕분에 '신뢰할 수 있는 출처'라는 라벨 아래 놓인 게시물에 더욱 의존하면서도, 실제로는 자신의 믿음 체계를 강화시키는 편향된 콘텐츠에 더 많이 노출되었다. 이로 인해 노바네트 내에서는 '진실의 거울'이 가짜뉴스의 촉매제로 변모했으며, 사회적 신뢰는 더욱 약화되고 극단주의 커뮤니티들이 번성하는 부작용이 나타났다. 그럼에도 불구하고, 일부 혁신가들은 '투명 필터'라는 새로운 기능을 제안했는데, 이는 사용자에게 정보의 원천과 그 검증 과정의 투명성을 상세하게 공개함으로써 개인의 비판적 사고를 촉진하고, 가짜뉴스에 대한 저항력을 키우도록 설계되었다. 이러한 접근법은 초기에는 혼란을 초래할 수 있으나, 장기적으로는 정보 소비자들의 판단력 향상과 함께 사회적 화합을 회복하는 데 기여할 것으로 기대되었다."
+    },
+    {
+        "source_item": {
+            "korean_topic": "현대인의 수면 부족 문제",
+            "korean_context": "많은 현대인들이 만성적인 수면 부족에 시달리고 있으며, 이는 개인의 건강을 넘어 사회 전체의 생산성에도 영향을 미칩니다. 과도한 업무와 학업 스트레스, 그리고 잠들기 직전까지 스마트폰을 사용하는 습관이 수면 부족의 주된 원인입니다. 수면 부족은 집중력 저하, 면역력 약화, 우울증 등 다양한 건강 문제를 유발하는 '만병의 근원'입니다.",
+            "foreign_topic": "The Problem of Sleep Deprivation in Modern Society",
+            "foreign_context": "Chronic sleep deprivation has become a widespread issue in modern society, with significant health and economic consequences. It is primarily caused by long work hours, high stress levels, and the pervasive use of electronic devices before bedtime. A lack of adequate sleep is linked to a host of problems, including impaired cognitive function, weakened immunity, and an increased risk of chronic diseases."
+        },
+        "generated_passage": "어둠 속에서 희미하게 빛나는 네온 사인 아래, 도시의 심장부에는 '슬립 팩토리(Sleep Factory)'라는 신비로운 기업이 숨겨져 있었다. 이곳은 단순히 숙박 시설을 넘어, 첨단 기술로 무장한 수면 개선 프로그램을 제공했는데, 그 핵심은 '드림 디코더'(Dream Decoder)라는 장치였다. 드림 디코더는 사용자의 뇌파를 분석하여 개인 맞춤형 수면 패턴을 재구성해주고, 심지어 꿈 속 환경까지도 조절할 수 있도록 설계되었다. 하지만 이러한 혁신 뒤에는 그림자가 드리워져 있었다. 슬립 팩토리 이용자들 사이에서는 드물지만 점차 증가하는 현상이 나타났다 - 꿈 속 현실감에 빠져 깨어난 후 일상 생활에 어려움을 겪거나, 심한 경우 꿈 속 기억이 실제 경험처럼 침투하면서 정체성의 혼란을 느끼기도 했다는 보고가 올라오기 시작했던 것이다. 전문가들은 이러한 부작용이 인간 의식의 경계를 흐리게 하며 잠재적으로 심각한 심리적 문제를 야기할 수 있다고 경고했다. 그럼에도 불구하고 슬립 팩토리의 인기는 식을 줄 몰랐고, 수면 부족에 시달리는 현대 사회의 깊은 갈망 앞에 윤리적 우려도 밀려나갔다."
+    },
+    {
+        "source_item": {
+            "korean_topic": "전동 킥보드 무단 방치 문제",
+            "korean_context": "공유 전동 킥보드는 편리한 단거리 이동 수단으로 인기를 끌고 있지만, 이용자들이 아무 곳에나 무단으로 방치하는 문제가 심각합니다. 명확한 주차 규정이 없고, 이용자들의 시민 의식이 부족한 것이 가장 큰 원인입니다. 보도나 차도에 방치된 킥보드는 보행자의 통행을 방해하고, 도시 미관을 해치며, 안전사고를 유발하는 골칫거리가 되었습니다.",
+            "foreign_topic": "The Problem of Abandoned Electric Scooters",
+            "foreign_context": "Shared electric scooters offer a convenient transportation option, but their widespread use has created a problem of them being left abandoned on sidewalks and public spaces. This is largely due to a lack of designated parking areas and irresponsible user behavior. Abandoned scooters obstruct pedestrian walkways, create safety hazards, and contribute to urban clutter."
+        },
+        "generated_passage": "도시의 아침은 전동 킥보드의 무단 방치로 인해 더욱 복잡해졌다. 네온빛 거리 한가운데, 정해진 구역 없이 놓인 킥보드들은 마치 도시의 숨 막히는 압박 속에서 잃어버린 영혼처럼 보였다. 혁신 기업 '스쿠터 허브'는 이 문제를 근본적으로 해결하기 위해 '스마트 주차 시스템'을 도입했다. 각 킥보드에는 IoT 센서와 AI 기반 인식 기술이 장착되어, 주변 환경을 실시간으로 분석하여 자동으로 지정된 주차장으로 이동하거나, 사용자에게 즉시 알림을 보냈다. 이 시스템은 도시 곳곳에 설치된 QR 코드 주차 존과도 연동되어, 이용자는 앱을 통해 쉽게 주차 공간을 찾아 이동할 수 있도록 했다.  긍정적인 측면에서는 교통 흐름 개선과 도시 경관 회복이 예상되었으며, 안전 사고 감소율도 현저히 떨어질 것으로 보였다. 그러나 일부 우려도 제기되었는데, 개인정보 보호 문제와 초기 설치 비용 부담이 주요 부작용으로 지적되었다. 특히 소규모 상점 주인들 사이에서는 이러한 변화가 추가적인 관리 부담으로 작용할까 봐 걱정의 목소리가 높아졌다. 그럼에도 불구하고, 스쿠터 허브는 지속적인 피드백 반영과 함께 점진적인 확대를 통해 이러한 어려움을 극복해 나갈 계획이다."
+    },
+    {
+        "source_item": {
+            "korean_topic": "명절 기간의 교통 대란",
+            "korean_context": "설이나 추석 같은 명절이 되면, 수많은 사람들이 동시에 고향을 방문하면서 전국의 고속도로가 극심한 정체를 빚습니다. 짧은 기간에 이동 수요가 집중되는 것이 근본적인 원인입니다. 이로 인해 시민들은 도로 위에서 많은 시간을 허비하게 되며, 이는 사회 전체적으로도 막대한 경제적 손실을 야기합니다.",
+            "foreign_topic": "Holiday Traffic Congestion",
+            "foreign_context": "During major national holidays, such as Thanksgiving or Christmas, mass travel leads to severe traffic jams on highways and crowded airports. This problem is caused by a massive, simultaneous surge in travel demand as people visit family. This holiday gridlock results in wasted time, increased stress, and a higher risk of accidents, turning a festive season into a frustrating experience."
+        },
+        "generated_passage": "매년 명절마다 하늘길과 땅길이 혼돈 속에 빠진다. '하늘길' 프로젝트라는 혁신적인 개념 아래, 정부와 민간 기업이 협력하여 명절 기간 동안 임시 공중 고속도로 네트워크를 구축했다. 이 네트워크는 고도 조절 기술과 자율 비행 드론으로 구성되어 있으며, 지상의 교통 체증을 피하고 최적의 항로를 실시간으로 계산해 안전하게 운행한다. 초기에는 일부 지역에서 시범 운영 중이지만, 이미 대도시 사이의 이동 시간을 평균 절반 이하로 단축시키며 큰 호평을 받고 있다. 그러나 이러한 변화에도 불구하고, 몇 가지 부작용이 나타나기 시작했다. 먼저, 드론 교통 관리 시스템 오류로 인한 일시적인 혼란 사례가 보고되었고, 개인정보 보호 우려 또한 커지고 있다. 특히, 고도 높은 공중 교통량 증가로 인해 기존 생태계에 미치는 영향에 대한 연구가 필요함이 제기되기도 했다. 그럼에도 불구하고, 장기적으로 보면 이는 가족 간의 만남 시간 확대와 함께 환경 친화적인 교통 수단으로서의 잠재력을 보여주며, 미래 명절 문화를 재정립할 수 있는 획기적인 전환점이 될 전망이다."
+    },
+    {
+        "source_item": {
+            "korean_topic": "학생들의 독서량 감소 문제",
+            "korean_context": "스마트폰과 유튜브 등 자극적인 볼거리가 넘쳐나면서, 글을 읽고 생각하는 힘을 길러주는 독서를 멀리하는 학생들이 늘고 있습니다. 영상 매체에 익숙해진 아이들이 긴 글을 읽는 데 어려움을 느끼고, 입시 위주의 교육이 독서의 즐거움을 앗아간 것이 원인입니다. 독서량 감소는 학생들의 어휘력과 문해력 저하로 이어져, 전반적인 학습 능력에 부정적인 영향을 미칩니다.",
+            "foreign_topic": "The Decline in Student Reading",
+            "foreign_context": "There is a growing concern over the decline in reading for pleasure among students. This trend is largely attributed to the overwhelming amount of digital entertainment available, such as social media and video games, which provide more immediate gratification. A lack of reading can negatively impact vocabulary development, critical thinking skills, and academic performance."
+        },
+        "generated_passage": "한때 책 냄새 가득했던 도서관은 이제 조용한 그림자 속에 잠겨 있었다. 학생들 사이에는 '독서 클럽'이라는 이름의 비밀 조직이 생겨났는데, 이곳에서는 가상현실 헤드셋을 통해 '문학 세계'에 몰입할 수 있었다. 이 가상 공간에서는 고전 문학 작품들이 생생한 그래픽과 사운드로 재현되며, 사용자는 주인공의 시선으로 이야기를 체험할 수 있었다. 하지만 이러한 혁신에도 불구하고, 실제 종이책을 통해 얻어지는 깊은 사색과 집중력 향상 효과는 점점 잊혀져 갔다. 교사들은 이 현상을 우려하면서도, 디지털 리터러시 교육 프로그램을 도입하여 학생들에게 온라인 콘텐츠의 한계와 진정한 지식 습득의 가치를 일깨우려 노력 중이다. 한편, 일부 학교에서는 '하루 한 시간 독서 챌린지'를 시작하여 학생들이 일상 속에서 자연스럽게 책과 재회하도록 유도하고 있지만, 이 역시 유튜브 챌린지처럼 짧고 즉각적인 만족감에 치중할까 봐 걱정이었다. 결국, 장기적으로는 디지털과 현실 독서 경험을 융합시키는 새로운 플랫폼 개발이 해결책으로 제시되기도 했다 – 이 플랫폼은 게임 요소를 결합해 독서 과정을 재미있게 만들면서도, 깊은 사고와 집중력을 요구하는 미션들을 포함시켜 학습 효과를 극대화하려고 했다. 그러나 이런 접근법도 과도한 게임화로 인해 본질적인 독서의 즐거움을 잃을까 하는 우려가 공존했다."
+    },
+    {
+        "source_item": {
+            "korean_topic": "지역 축제의 상업화 문제",
+            "korean_context": "전국 각지에서 열리는 지역 축제들이 고유의 특색은 잃어버리고, 비싼 바가지요금과 비슷비슷한 볼거리로 채워지고 있다는 비판이 많습니다. 지자체들이 단기적인 관광객 유치에만 급급하여 축제의 본질적인 의미를 고민하지 않기 때문입니다. 이로 인해 방문객들은 실망감을 느끼고, 한 번 찾은 축제를 다시 찾지 않게 되면서 결국 축제의 지속가능성을 해치게 됩니다.",
+            "foreign_topic": "The Commercialization of Local Festivals",
+            "foreign_context": "Many local festivals are criticized for becoming overly commercialized, losing their unique cultural character in the process. This happens when organizers prioritize profit over authenticity, leading to generic stalls, overpriced food, and a lack of genuine local flavor. As a result, festivals can lose their community spirit and become unsatisfying, tourist-oriented events."
+        },
+        "generated_passage": "고대 도시 아레우스의 봄 축제가 한때는 별빛 아래 펼쳐지던 신비로운 의식에서 이제는 화려한 조명과 거대한 광고판으로 가득 찬 상업적 행사로 변모했다. 지자체는 축제 기간 동안의 기록적인 매출 증대를 목표로 하며, 이 과정에서 축제의 심장부인 '별빛의 춤'이라는 전통적인 공연이 고작 몇 분 분량의 상업적 뮤지컬 장면으로 축소되었다. 현지 예술가들은 고유의 민속 음악과 무용을 유지하기 위해 비밀리에 야간 시장에서 공연을 펼치지만, 이는 공식 경로에서 밀려나 소외감을 느끼게 한다. 새롭게 제안되는 해결책은 '문화 보존 기금' 설립이다. 이 기금은 축제 운영진 외에도 지역 주민과 방문객들이 자발적으로 기부함으로써 조성되며, 그 자금은 오직 축제의 원형적 문화 요소 보호와 지원에 사용되도록 지정된다. 예를 들어, 전통 공예품 제작 워크숍이나 현지 요리사들의 정통 음식 체험 프로그램 확대에 투자할 수 있다. 이러한 접근법은 축제의 진정성을 회복시켜 방문객 만족도를 높이면서도 지속 가능한 경제 모델을 창출해 낸다. 그러나 부작용으로는 초기 기부 저조나 기금 관리 부실 시 자원 배분의 불균형이 생길 위험이 있으며, 이는 일부 전통 활동의 활성화에 제약을 줄 수 있다. 따라서 투명한 관리 체계 구축과 적극적인 홍보 전략이 필수적일 것이다."
+    },
+    {
+        "source_item": {
+            "korean_topic": "몰래카메라 범죄 문제",
+            "korean_context": "화장실이나 숙박업소 등에서 초소형 카메라를 이용해 타인의 신체를 몰래 촬영하는 범죄가 심각한 사회적 불안을 야기하고 있습니다. 카메라 기술의 발달로 범죄가 쉬워진 반면, 가해자에 대한 처벌은 미약하다는 인식이 문제입니다. 이러한 범죄는 피해자에게 씻을 수 없는 정신적 상처를 남기며, 일상 공간에 대한 근본적인 불신과 공포를 확산시킵니다.",
+            "foreign_topic": "The Spycam Crime Problem",
+            "foreign_context": "The proliferation of crimes involving hidden cameras (spycams) placed in private spaces like restrooms and hotels is a deeply disturbing issue. The easy availability of miniature cameras and a perception of weak legal penalties have fueled this problem. These crimes are a severe violation of privacy that causes immense psychological trauma and erodes the public's sense of safety."
+        },
+        "generated_passage": "어둠 속에서 미세한 빛줄기가 춤추듯 움직이면서, 도시의 낡은 도서관 한쪽 구석에 숨겨진 비밀 통로가 드러났다. 이곳은 오래전부터 '시간의 눈'이라 불리웠는데, 실제로는 최첨단 보안 시스템으로 위장된 몰래카메라 네트워크였다. 이 네트워크는 단순히 개인의 사생활 침해를 넘어, 공공 장소의 모든 활동을 실시간으로 감시하고 데이터를 수집했다. 하지만 최근, 이 시스템을 악용해 심리적 공포를 조장하려는 악의적인 집단이 등장하면서 사태가 악화되었다. 그들은 수집된 영상을 조작하여 특정 인물들을 거짓 혐의로 몰아넣고, 이로 인해 사회적 불신이 급격히 증가했다. 피해자들은 단순한 사생활 침해를 넘어 사회적 낙인까지 찍히게 되었으며, 이로 인한 정신적 고통은 치료받기 어려운 수준에 이르렀다. 해결책으로는, 이 시스템에 대한 전면적인 보안 강화와 함께 독립적인 감시 윤리 위원회를 설립해 감시 데이터의 사용을 엄격하게 규제하는 방안이 제안된다. 이 방법은 불법 행위를 억제하고 신뢰 회복에 기여할 수 있으나, 동시에 과도한 통제 우려와 개인정보 보호 사이의 균형 유지가 어려울 수 있음을 내포하고 있다."
+    },
+    {
+        "source_item": {
+            "korean_topic": "젠트리피케이션 문제",
+            "korean_context": "특색 있고 저렴했던 구도심 지역이 인기를 끌면서, 임대료가 급등하여 원래 살던 주민이나 영세 상인들이 쫓겨나는 현상을 젠트리피케이션이라고 합니다. 외부 자본이 유입되면서 지역이 활성화되지만, 그 과정에서 지역의 고유한 특성이 사라지고 부동산 가격만 폭등하는 것이 문제입니다. 결국 원주민들은 삶의 터전을 잃게 되고, 도시는 개성을 잃고 획일화되는 결과를 낳습니다.",
+            "foreign_topic": "The Problem of Gentrification",
+            "foreign_context": "Gentrification occurs when investment flows into a low-income neighborhood, leading to rising rents and property values. While this can bring new businesses and improved infrastructure, it often displaces longtime residents and small businesses who can no longer afford to live there. The process can destroy the unique cultural fabric of a community, replacing it with a more generic and exclusive environment."
+        },
+        "generated_passage": "한때 활기찼던 해변 마을인 세라피아는 최근 해양 생태 관광 열풍 속에서 급속도로 변화하고 있었다. 외부 투자자들이 아름다운 해안선과 숨겨진 해변을 발견하면서, 고급 리조트와 럭셔리 카페들이 들어서기 시작했다. 이로 인해 마을의 매력적인 저렴한 숙박 시설과 독특한 현지 음식점들은 임대료 상승으로 문을 닫아야 했다. 원래 이곳에서 세대를 이어온 어부 출신 가족들은 이제 바다를 바라보며 옛 추억을 간직해야 하는 이방인처럼 느껴졌다. 새롭게 조성된 '문화 보존 구역' 프로젝트가 제안되었다. 이 계획은 마을 중심부에 역사적 건축물을 복원하고, 현지 예술가들과 협력해 전통 공예품 전시회와 워크숍을 개최함으로써 고유한 문화적 정체성을 유지시키려는 목표를 가지고 있었다. 또한, 마을 주민들에게 저렴한 임대 주택 보조금을 제공하여 그들이 경제적 압박 없이 고향을 지킬 수 있도록 지원할 예정이다. 이러한 노력은 지역의 독특한 매력을 보존하면서도 관광객들에게 진정성 있는 경험을 선사할 수 있다는 긍정적 전망을 제시하지만, 한편으로는 일부 고급 부동산 개발사들의 반발과 함께, 과도한 규제가 창의적인 투자 유치를 저해할 위험도 내포하고 있었다."
+    },
+    {
+        "source_item": {
+            "korean_topic": "해양 미세플라스틱 문제",
+            "korean_context": "플라스틱 쓰레기가 바다로 흘러 들어가 잘게 부서지면서, 5mm 미만의 작은 플라스틱 조각인 '미세플라스틱'이 해양 생태계를 위협하고 있습니다. 우리가 무심코 버린 플라스틱뿐만 아니라, 치약이나 세정제에 포함된 마이크로비즈도 주된 오염원입니다. 해양 생물들이 미세플라스틱을 먹이로 오인하여 섭취하고, 이는 먹이 사슬을 통해 결국 인간의 식탁까지 위협하게 됩니다.",
+            "foreign_topic": "The Ocean Microplastics Problem",
+            "foreign_context": "The world's oceans are contaminated with microplastics, tiny plastic particles resulting from the breakdown of larger debris and microbeads in cosmetics. Marine animals often ingest these plastics, causing internal injuries and starvation. This pollution poses a major threat to marine ecosystems and potentially to human health as these particles move up the food chain."
+        },
+        "generated_passage": "깊은 바닷속에 위치한 비밀 연구소, 아쿠아노바는 미세플라스틱 정화 기술 개발에 몰두했다. 그들의 혁신적인 해법은 '플라스마 필터'였는데, 이 장치는 해수 속 특정 주파수의 전자기파를 이용해 미세플라스틱을 자석처럼 끌어당겼다.  하지만 연구 초기에는 예상치 못한 부작용이 나타났다. 플라스마 필터 주변 해역의 플랑크톤 개체수가 급격히 감소하면서, 해양 생태계의 기초를 이루던 생물군집이 붕괴 위기에 처했기 때문이다. 아쿠아노바는 이러한 현상을 극복할 수 있을까? 해결책으로 그들은 플라스마 필터 작동 시간을 조절하고, 필터 주변에 플랑크톤 보호 장벽을 설치하려 했지만, 장기적인 영향에 대한 우려는 여전히 남아있었다. 성공 여부는 해양 생명과 인류의 미래를 가르는 중요한 시험대 위에 놓여있었다."
+    },
+    {
+        "source_item": {
+            "korean_topic": "1인 가구의 사회적 고립 문제",
+            "korean_context": "혼자 사는 1인 가구의 비율이 빠르게 증가하면서, 이들의 사회적 고립과 외로움 문제가 새로운 사회 문제로 떠오르고 있습니다. 개인주의적 가치관의 확산과 불안정한 주거 및 고용 형태가 1인 가구의 증가와 고립을 부추깁니다. 사회적 관계망이 약한 1인 가구는 우울증이나 고독사 등 위험에 더 쉽게 노출될 수 있어, 이를 위한 사회적 대책이 필요합니다.",
+            "foreign_topic": "The Social Isolation of Single-Person Households",
+            "foreign_context": "As the number of people living alone increases, social isolation and loneliness have become significant public health concerns. This trend is driven by changing social norms and economic factors that lead to more people living by themselves. Lacking a strong social support network, individuals in single-person households are at a higher risk for mental health issues and other emergencies."
+        },
+        "generated_passage": "고독의 도시, 에테르니아에서는 개인의 자립을 장려하는 문화 덕분에 1인 가구가 도시 인구의 절반 이상을 차지했다. 하지만 이곳의 거리마다 흐르는 고요함 뒤에는 숨겨진 이야기들이 숨 쉬었다. 루미나라는 이름의 첨단 가상 커뮤니티 플랫폼이 등장하면서 변화의 바람이 불기 시작했다. 이 플랫폼은 인공지능 기반의 가상 친구들과 실시간 가상 이벤트를 통해 사용자들이 실제 세계 외에도 깊은 연결감을 느낄 수 있도록 설계되었다. 특히 '공감의 정원'이라는 기능은 사용자들이 가상 공간에서 식물을 키우며 서로에게 격려와 조언을 나누는 공동체를 형성할 수 있게 했다. 이러한 혁신은 초기에는 기술적 호기심으로 시작되었지만, 점차 심리적 안정감과 사회적 지지망 부족을 해소하는데 큰 도움이 되면서 우울증 발병률이 현저히 감소시키는 효과를 보였다. 그러나 한편으로는 현실 세계와의 경계가 모호해져 일부 사용자들은 가상 세계에 지나치게 의존하여 실제 대인관계 형성에 어려움을 겪기도 했다는 부작용도 나타났다."
+    },
+    {
+        "source_item": {
+            "korean_topic": "블록체인 기술의 전력 소모 문제",
+            "korean_context": "블록체인 기술, 특히 비트코인과 같은 암호화폐의 채굴 과정은 막대한 양의 전력을 소모하여 '전기 먹는 하마'로 불립니다. 복잡한 암호를 풀기 위해 고성능 컴퓨터를 24시간 가동해야 하는 작업증명(PoW) 방식이 그 원인입니다. 이는 국가 전체의 전력망에 부담을 주고, 화석 연료 발전을 통해 생산된 전기를 사용할 경우 심각한 탄소 배출 문제를 야기합니다.",
+            "foreign_topic": "The Energy Consumption of Blockchain Technology",
+            "foreign_context": "Blockchain technologies, particularly cryptocurrencies like Bitcoin that use a 'Proof-of-Work' consensus mechanism, consume vast amounts of electricity. The 'mining' process requires immense computational power, leading to an energy consumption that surpasses that of many countries. This raises serious environmental concerns, as much of this energy is generated from fossil fuels, contributing to carbon emissions."
+        },
+        "generated_passage": "아리아나는 미래 도시의 에너지 혁신가로, 그녀의 프로젝트는 블록체인 기술과 재생에너지의 융합을 목표로 했다. 도시 전역에 퍼져있는 소규모 풍력 터빈과 태양광 패널들이 각자 독특한 디지털 서명을 가진 미니어처 블록체인 네트워크를 형성했는데, 이것이 바로 '에코체인'(EcoChain)이라 불렸다. 각 에너지 노드는 자체적으로 소량의 컴퓨팅 파워를 활용해 트랜잭션을 검증하면서도 전력 소비를 최소화했고, 이 과정에서 생성되는 암호화폐는 지역 사회의 공유 자원 펀드로 직접 투입되었다.  핵심은 전통적인 PoW 방식 대신 고안된 'Proof-of-Renewable'(PoR) 메커니즘이다. 이 시스템은 지속 가능한 에너지원의 효율적 이용을 극대화함으로써 탄소 발자국을 극적으로 줄였으며, 동시에 지역 주민들에게 에너지 생산에 대한 직접적인 보상 체계를 제공했다. 그러나 초기 도입 단계에서는 기존 인프라와의 호환성 문제가 불거져 일부 구역에서는 불안정한 전력 공급이 나타났다는 부작용도 보고되었다. 그럼에도 불구하고 장기적으로는 친환경 에너지 생태계 구축에 획기적인 전환점이 될 것으로 기대되었다."
+    },
+    {
+        "source_item": {
+            "korean_topic": "자영업자의 과당 경쟁 문제",
+            "korean_context": "한국은 인구 대비 자영업자의 비율이 매우 높아, 비슷한 업종끼리의 과도한 경쟁이 벌어지고 있습니다. 이는 은퇴 후 많은 사람들이 특별한 기술 없이 쉽게 창업할 수 있는 치킨집이나 카페 등으로 몰리기 때문입니다. 과당 경쟁은 수익성 악화로 이어져, 많은 자영업자들이 빚을 지고 폐업하는 악순환의 원인이 되고 있습니다.",
+            "foreign_topic": "The Problem of Excessive Competition Among Small Businesses",
+            "foreign_context": "In many economies, there is an oversaturation of small businesses in certain sectors, such as cafes and retail, leading to intense competition. This is often caused by a lack of diverse job opportunities, forcing people into self-employment. This hyper-competition results in low profit margins and high failure rates, creating economic instability for small business owners."
+        },
+        "generated_passage": "은퇴 후 새로운 삶을 꿈꾸며 도시 곳곳에 퍼진 수많은 카페들 사이에는 보이지 않는 장벽이 존재했다.  '커피 향기 속의 침묵'이라 불리는 이 현상은, 모든 카페가 똑같은 원두와 레시피를 사용하여 획일화된 커피를 제공함으로써 벌어진 일이다. 고객들은 진정한 차별점을 찾지 못하고, 가격 경쟁에만 몰두하다 보니, 카페 주인들은 매일 밤 빚더미에 갇혀 희망을 잃어가고 있었다. 어느 날, 젊은 바리스타 '리아'는 고대 문헌에서 숨겨진 비밀 레시피를 발견한다. 희귀한 열대 과일과 토착 품종의 커피를 조합해 만든 독특한 블렌드는 고객들에게 잊지 못할 경험을 선사하며, '리아의 숲 속 커피'라는 작은 카페는 빠르게 입소문을 타고 지역의 문화 중심지로 자리 잡았다. 하지만 이러한 혁신에도 불구하고, 주변 카페들은 질투와 경쟁심에 휩싸여 리아의 성공을 위협하려는 음모를 꾸미기 시작한다. 결국 리아는 공동체 의식을 강조하는 새로운 협동조합 형태의 카페 네트워크를 설립해야 하는 선택에 직면하게 된다. 이는 경쟁보다는 상생을 추구하며, 서로의 강점을 공유하고 협력하는 시스템으로, 지역 사회 전체의 경제적 안정과 문화적 풍요로움을 이끌어낼 것이다. 그러나 기존 카페들의 저항과 이익 충돌은 불가피한 부작용으로 남을지도 모른다."
+    },
+    {
+        "source_item": {
+            "korean_topic": "게임 중독 문제",
+            "korean_context": "일부 청소년과 성인들이 현실 세계보다 게임에 몰두하며 일상생활에 어려움을 겪는 게임 중독 문제가 심각합니다. 게임이 제공하는 즉각적인 보상과 성취감이 현실의 어려움을 회피하는 수단이 되기 때문입니다. 게임 중독은 학업 및 업무 능력 저하, 대인관계 단절, 건강 악화 등 개인의 삶을 파괴하는 심각한 질병으로 인식되고 있습니다.",
+            "foreign_topic": "The Problem of Gaming Addiction",
+            "foreign_context": "Gaming addiction, or 'gaming disorder,' is a condition where individuals are unable to control their gaming habits, prioritizing it over other life interests and activities. It is driven by the immersive nature and reward systems of modern video games. This addiction can lead to serious negative consequences, including poor academic or work performance, social isolation, and neglect of personal health."
+        },
+        "generated_passage": "어둠 속에서 빛나는 홀로그램 화면 너머로, 주인공 아리아는 가상 세계의 영웅으로 변신했다. 그녀의 손가락 끝에는 섬세한 바이오 피드백 센서가 장착되어 있었는데, 이는 실제 신체 활동량과 게임 내 행동 사이의 균형을 유지하도록 설계되었다. 그러나 최근 업데이트 된 ‘공감 매트릭스’ 시스템 덕분에, 게임 속 보상과 현실 세계의 감정 반응이 직접 연결되게 되면서 아리아는 더욱 깊은 몰입감을 느꼈지만, 그로 인해 일상 생활에서의 경계가 모호해졌다. 학교 수업 시간에도 게임 속 전투 소리가 귀에 맴돌았고, 친구들과의 만남조차 가상 세계의 미션 완수에 방해물처럼 느껴졌다. 의사들은 이러한 현상을 '현실 이탈 증후군'이라 불렀으며, 초기 단계에서는 인지 훈련 프로그램과 함께 가상현실 치료 세션을 도입하여 사용자 스스로 게임과 현실 사이의 균형을 회복할 수 있도록 돕고 있다고 했다. 하지만 부작용으로는 과도한 치료 의존성이나 심리적 불안감 증가도 보고되곤 했다. 그럼에도 불구하고, 아리아는 희망찬 눈빛으로 치료 과정을 시작하면서도 여전히 가상 세계의 문 뒤에 숨겨진 진실을 찾으려는 모험심을 버리지 않았다."
+    },
+    {
+        "source_item": {
+            "korean_topic": "산불 예방 및 대응 문제",
+            "korean_context": "기후 변화로 인해 날씨가 건조해지면서, 대형 산불의 발생 빈도와 규모가 점차 커지고 있습니다. 등산객의 부주의한 실화가 가장 큰 원인이지만, 산림이 빽빽하게 우거져 한번 불이 붙으면 쉽게 확산되는 것도 문제입니다. 산불은 수십 년간 가꾼 숲을 한순간에 잿더미로 만들고, 인명과 재산에 막대한 피해를 입히는 재앙입니다.",
+            "foreign_topic": "The Problem of Wildfire Prevention and Response",
+            "foreign_context": "Wildfires are becoming more frequent and intense due to climate change and prolonged droughts. While many are started by human carelessness, factors like poor forest management also contribute to their spread. These fires cause devastating damage to ecosystems, destroy homes and communities, and pose a significant threat to human life."
+        },
+        "generated_passage": "건조한 바람이 휘몰아치던 어느 날, 아르테미스 마을은 고대 숲 속에 잠들어 있던 '불꽃의 심장'이라 불리는 신비로운 생명체 때문에 위협받기 시작했다. 이 존재는 수천 년 동안 숲의 균형을 지켜왔으나, 기후 변화로 인한 극심한 가뭄 앞에서 불안정해져 버렸다. 불꽃의 심장은 작은 불씨라도 닿으면 폭발적으로 반응하여 인근 지역까지 산불을 빠르게 퍼뜨리는데, 이것이 최근 증가하는 대형 산불의 주요 촉매제로 작용하고 있었다. 마을 주민들은 등산객의 부주의뿐 아니라, 이 신비로운 요소의 불안정성에도 경각심을 가져야 했다. 과학자들은 '에코 쉴드'라는 기술을 개발했다. 이 장치는 특수한 에너지 파동을 이용해 불꽃의 심장 주변의 수분을 활성화시켜 안정시키거나, 필요할 때는 부드럽게 불씨를 소화시킬 수 있도록 설계되었다. 긍정적인 측면으로는 생태계 보호와 함께 산불 위험 감소가 예상되나, 부작용으로는 에코 쉴드의 과도한 사용이 숲 내 자연적인 수분 순환에 영향을 줄 가능성이 있으며, 예측 불가능한 불꽃의 반응으로 인해 의도치 않은 화재 확산 위험도 배제할 수 없었다. 그럼에도 불구하고, 아르테미스 마을은 이 혁신적인 해결책을 통해 미래 세대에게 안전한 자연 환경을 물려줄 희망을 품게 되었다."
+    },
+    {
+        "source_item": {
+            "korean_topic": "무분별한 옥외 광고물 문제",
+            "korean_context": "도시의 거리에는 허가받지 않은 현수막, 전단지, 입간판 등 불법 옥외 광고물이 넘쳐나고 있습니다. 단속이 제대로 이루어지지 않고, 적발되어도 처벌이 가볍기 때문에 이러한 문제가 반복됩니다. 무분별한 광고물은 도시의 미관을 해칠 뿐만 아니라, 운전자와 보행자의 시야를 가려 안전을 위협하는 요인이 됩니다.",
+            "foreign_topic": "The Problem of Unregulated Outdoor Advertising",
+            "foreign_context": "City streets are often cluttered with illegal and unregulated advertisements like banners, flyers, and signboards. This problem persists due to a lack of enforcement and weak penalties for offenders. This visual pollution not only creates an unattractive urban landscape but can also distract drivers and pedestrians, creating safety hazards."
+        },
+        "generated_passage": "어둠 속에서 빛나는 네온사인과 함께, 도시의 숨결은 불법 광고물들로 가득 찼다. '영원한 청춘'이라는 이름의 신비로운 기업은 허가 없이 거리 곳곳에 설치된 홀로그램 광고판을 통해 도시의 풍경을 재구성했다. 이 광고판들은 단순한 홍보 수단을 넘어, 시간과 공간을 초월해 사람들의 꿈과 욕망을 자극하며, 마치 도시 자체가 살아 숨 쉬는 듯한 환상을 선사했다. 그러나 이 화려함 뒤에는 그림자가 드리워져 있었다. 홀로그램 광고는 밤마다 스스로 진화하여 도시의 야경을 압도적으로 점령하면서, 실제 도로 표지판과 신호등을 가리기도 했고, 갑작스러운 빛의 변화로 인해 보행자와 운전자 사이에 혼란과 사고 위험을 증폭시켰다. 한편, 지역 사회는 이 혁신적인 광고 방식을 통해 문화 예술 축제 기간 동안 특별한 몰입형 경험을 제공받으며 긍정적 반응을 보였지만, 지속적인 관리 부재로 인한 환경 오염 논란도 함께 커져갔다. 해결책으로는 스마트 AI 단속 시스템 도입이 제안되는데, 이 시스템은 실시간으로 불법 광고를 감지하고 자동으로 제어할 수 있으나, 개인정보 보호와 기술 의존성의 부작용 또한 고려해야 할 부분이다. 결국, 창의적 규제와 첨단 기술의 조화로운 결합이 도시의 아름다움과 안전성을 동시에 지키는 열쇠가 될 것이라 여겨졌다."
+    },
+    {
+        "source_item": {
+            "korean_topic": "캠퍼스 내 쓰레기 문제",
+            "korean_context": "대학 캠퍼스 곳곳에 학생들이 버리고 간 일회용 컵과 음식물 쓰레기가 넘쳐나 문제가 되고 있습니다. 쓰레기통 부족 문제도 있지만, 분리배출을 제대로 하지 않고 아무 곳에나 쓰레기를 버리는 일부 학생들의 부족한 시민 의식이 더 큰 원인입니다. 이는 캠퍼스 미관을 해치고, 악취를 유발하며, 청소 노동자들의 업무를 가중시키는 원인이 됩니다.",
+            "foreign_topic": "The Campus Litter Problem",
+            "foreign_context": "Many university campuses struggle with a litter problem, with disposable cups, food wrappers, and other trash overflowing from bins or being left on the ground. This is caused by a combination of insufficient waste receptacles and a lack of civic responsibility among some students. A littered campus is not only unsightly but also creates extra work for cleaning staff and reflects poorly on the university community."
+        },
+        "generated_passage": "어둠 속에서 빛나는 작은 로봇 청소기들, '클리어스'들이 캠퍼스 곳곳을 순찰했다.  학생들은 처음엔 그들을 신기해하다가 곧 익숙해졌으나, 클리어스 덕분에 일상에는 미묘한 변화가 생겼다.  어떤 학생들은 자신의 행동 패턴을 살피기 시작했는데, 무의식적으로 버려지던 플라스틱 스틱이나 커피 찌꺼기를 발견할 때마다 경고음이 울리면서 양심의 가책을 느꼈다. 클리어스는 단순히 쓰레기를 수거하는 것 이상으로 작동했다. 센서로 주변 소음을 분석하여 혼잡한 점심시간에는 쓰레기 배출량 예측 알고리즘을 작동시켜 쓰레기통 부족 현상까지 완화시켰다. 그러나 일부 학생들 사이에서는 클리어스 의존도 증가 우려와 개인정보 침해 가능성이 제기되기도 했다. 결국, 캠퍼스는 조금 더 깨끗해졌지만, 기술과 윤리 사이의 섬세한 균형점 찾기에 대한 새로운 질문이 떠올랐다."
+    },
+    {
+        "source_item": {
+            "korean_topic": "지식재산권 침해 문제",
+            "korean_context": "인터넷의 발달로 영화, 음악, 소프트웨어 등 창작물을 불법으로 복제하고 공유하는 행위가 만연해 있습니다. 정당한 대가를 치르지 않고 콘텐츠를 이용하려는 일부 사람들의 잘못된 인식과, 불법 복제물을 쉽게 찾아볼 수 있는 환경이 문제입니다. 이러한 지식재산권 침해는 창작자의 의욕을 꺾고, 결국 문화 산업 전체의 발전을 저해하는 심각한 범죄입니다.",
+            "foreign_topic": "The Problem of Intellectual Property Infringement",
+            "foreign_context": "The digital age has made it incredibly easy to illegally copy and distribute creative works like movies, music, and software. This problem is driven by a public perception that digital content should be free and the widespread availability of pirated material online. Intellectual property theft discourages creators, harms the creative industries, and undermines the value of innovation."
+        },
+        "generated_passage": "디지털 숲 속 깊은 곳에는 '노바니아'라는 가상 세계가 존재했다. 이곳에서는 빛의 씨앗이라 불리는 디지털 창작물들이 자유롭게 퍼져 나갔는데, 최근 '아르카니안'이라는 악의적인 디지털 기생충이 이들 씨앗을 탐식하며 불법 복제를 확산시키기 시작했다. 노바리아 주민들 사이에는 이미 '공유 정신'이란 이름의 풍토병처럼 합법과 불법 경계가 모호해진 인식이 퍼져 있었다. 아르카니안의 활동은 단순히 콘텐츠 침해를 넘어, 창조의 동기 부여를 저하시키던 동시에 독특한 예술 형태인 '반역의 조각' 탄생을 촉진시켰다. 이 조각들은 원래 작품을 재해석하여 새로운 가치를 창출하지만, 그 과정에서 원작 저작권자들의 허가나 인정 없이 만들어져 법적 분쟁의 소지를 안고 있었다. 해결책으로는 '디지털 가드리아'라는 인공지능 감시 시스템 도입이 제안되지만, 이는 개인의 온라인 자유를 제한할 위험도 내포하고 있으며, 동시에 창작자들에겐 보다 투명한 보상 체계 구축을 통해 창의성의 동기를 회복시켜 줄 것이다. 한편, 이러한 변화는 초기에는 저항에 부딪히겠지만, 장기적으로는 디지털 생태계 전반의 건강한 성장을 이끌어낼 것으로 기대된다."
+    },
+    {
+        "source_item": {
+            "korean_topic": "반려동물 소음 및 배설물 문제",
+            "korean_context": "공동주택이나 공원에서 일부 반려동물의 짖는 소음이나, 배설물을 치우지 않는 문제로 이웃 간의 갈등이 발생하고 있습니다. 이는 반려동물에 대한 책임 의식이 부족한 일부 견주들의 '펫티켓' 실종이 가장 큰 원인입니다. 이러한 문제는 동물에 대한 부정적인 인식을 확산시키고, 모든 반려동물 양육인들이 잠재적인 가해자로 오해받게 만드는 원인이 됩니다.",
+            "foreign_topic": "The Problem of Pet Noise and Waste",
+            "foreign_context": "Conflicts often arise in communities over issues like excessive barking or owners failing to clean up their pets' waste in public areas. This problem stems from irresponsible pet ownership and a lack of consideration for others, often called 'petiquette'. This behavior creates neighborhood disputes, fosters a negative image of pets, and can lead to stricter regulations for all pet owners."
+        },
+        "generated_passage": "고요한 숲 속 마을, 아리아나는 반려동물과 함께 사는 주민들 사이에서 특별한 조화를 이루며 살아가던 곳이었다. 그러나 최근, 희귀한 '조화의 눈'이라는 꽃이 마을 주변에 피어나면서 상황이 복잡해졌다. 이 꽃은 밤마다 은은히 빛나며 반려동물들의 자연스러운 행동을 더욱 부각시켰는데, 특히 짖음 소리가 아름다운 멜로디로 바뀌거나 배설물이 사라지는 신기한 현상을 일으켰다. 이 변화는 처음에는 이웃 간의 갈등을 완화시켜 주었지만, 곧 일부 주민들이 '조화의 눈'에 의존하면서 반려동물 관리에 대한 책임감이 희미해져 가는 문제를 야기했다. 반려견 루디의 주인인 엘리나는 이제 밤마다 루디의 짖음이 아름다운 노래로 변하기 때문에 직접적인 훈련이나 예절 교육에 소홀해졌고, 공원에서의 배설물 처리도 소홀히 하게 되었다. 결과적으로, 마을은 다시 '펫티켓'의 중요성이 잊혀진 혼란 속으로 빠져들었으며, 이는 결국 마을 축제에서 조화의 눈을 중심으로 한 생태계 보호 캠페인으로 이어졌다. 캠페인은 긍정적인 반응을 얻어냈으나, 과도한 의존으로 인한 자연적 책임의식 저하의 부작용 또한 우려되었다. 마을은 이 딜레마를 극복하기 위해 '조화의 눈' 주변에 책임감 강화 교육 센터를 설립하여, 기술적 혜택과 더불어 반려동물 양육의 본질적 가치를 재조명하려 했다."
+    },
+    {
+        "source_item": {
+            "korean_topic": "심야 택시 승차난 문제",
+            "korean_context": "금요일 밤이나 주말 등 늦은 밤 시간에는 택시를 잡으려는 사람은 많지만, 운행하는 택시는 부족하여 '택시 대란'이 벌어집니다. 이는 심야 운행의 어려움과 낮은 수익성 때문에 택시 기사들이 운행을 기피하기 때문입니다. 이로 인해 시민들은 귀가에 큰 불편을 겪고, 일부 택시는 부당한 요금을 요구하거나 단거리 승객을 거부하는 등 불법 행위를 하기도 합니다.",
+            "foreign_topic": "The Late-Night Taxi Shortage Problem",
+            "foreign_context": "In many cities, it is extremely difficult to find a taxi late at night, especially on weekends. This shortage is caused by a mismatch between high passenger demand and a low supply of drivers, who may be reluctant to work late hours due to safety concerns or low profitability. This situation leaves passengers stranded and can lead to illegal practices like fare gouging or ride refusals."
+        },
+        "generated_passage": "금요일 밤, 네온 불빛 아래 도시는 숨 막히는 긴장감으로 가득 찼다. 택시 정류장은 텅 비어있었으나, 길가 곳곳엔 간절히 이동을 바라는 사람들의 그림자가 길게 늘어났다. 이 도시에는 '루미나이트 드라이버스'라는 비밀 조직이 존재했는데, 이들은 특별히 훈련받은 자율주행 차량들로 구성되어 있었다. 정부 지원 아래 개발된 이 차량들은 인공지능 알고리즘 덕분에 안전하면서도 효율적으로 밤을 다스렸다.  그러나 루미나이트 드라이버스는 엄격한 윤리 코드를 준수해야 했기에, 단거리나 빈번한 이동 요청은 거부할 수밖에 없었다. 한편, 몇몇 이기적인 '나이트워커'들은 이 빈틈을 노려 부당한 요금을 부과하며 이익을 취했다. 이러한 현상 속에서 시민들 사이에 '택시 공유 네트워크 앱', '나이트 하모니'가 등장해 인기를 끌기 시작했다. 이 앱은 지역 주민들이 자발적으로 야간 시간대에 자신의 차량을 빌려줄 수 있도록 연결시켜 주었으며, 보상 체계 또한 공정하게 설계되어 있음에도 불구하고, 초기 단계라 신뢰 구축에 시간이 필요했다는 부작용도 함께 안고 있었다."
+    },
+    {
+        "source_item": {
+            "korean_topic": "대학가 원룸의 비싼 월세 문제",
+            "korean_context": "대학생들이 거주하는 대학가 원룸의 월세가 학생들의 경제적 수준에 비해 지나치게 비싸다는 문제가 있습니다. 대학 주변의 높은 임대료 수요를 이용해 건물주들이 높은 수익을 추구하는 것이 주된 원인입니다. 이로 인해 많은 대학생들이 주거비 부담으로 고통받고 있으며, 이는 학업에 집중하는 것을 방해하고 아르바이트에 내몰리게 하는 원인이 됩니다.",
+            "foreign_topic": "The Problem of High Rent for University Students",
+            "foreign_context": "Students in university towns often face exorbitantly high rents for small studio apartments. This problem is driven by high demand and a rental market that exploits students' need to live close to campus. The financial burden of high rent causes significant stress for students, forcing many to take on debt or work long hours, which can negatively affect their studies."
+        },
+        "generated_passage": "어둠 속에서 빛나는 네온사인은 대학가와 원룸 거리 사이의 경계처럼 보였다. 월세는 이미 학생들의 용돈을 초월해, 낡은 벽돌집조차도 꿈 같은 가격으로 팔렸다. 하지만 이곳에는 '아르테미스 프로젝트'라는 비밀스러운 움직임이 싹트고 있었다. 지역 사회 리더들과 혁신적인 건축가들이 연합하여, 빈 공터에 생태 친화적인 모듈식 주택 단지를 건설 중이었다. 각 주택은 에너지 자립형 시스템을 갖추며, 공동 정원과 공유 워크스페이스로 연결되어 공동체 의식을 강화했다. 초기 비용은 기존 원룸보다 높았지만, 장기적으로는 저렴한 유지 관리 비용과 함께 지역 내 자원 교환 프로그램 덕분에 생활비 절감 효과를 볼 수 있도록 설계되었다. 이러한 변화는 단기적으로는 일부 투자자들의 반발을 불러일으킬 수 있으나, 궁극적으로는 학생들의 정신 건강 개선과 창의적 협업 환경 조성이라는 긍정적 파급효과를 가져올 것이다. 그러나 과도한 공동체 의존성이 개인의 독립성 저하를 초래할 위험도 내포하고 있음을 간과해서는 안 된다."
+    },
+    {
+        "source_item": {
+            "korean_topic": "대포차 문제",
+            "korean_context": "실제 소유자와 자동차 등록 서류상의 명의자가 다른 불법 차량인 '대포차'가 각종 범죄에 악용되고 있습니다. 명의 이전 절차의 허점을 이용하거나, 폐업한 법인 명의의 차량을 불법으로 유통시키는 것이 주된 수법입니다. 대포차는 뺑소니 사고, 납치, 강도 등 강력 범죄의 도구로 사용되어 사회 안전을 심각하게 위협하고 있습니다.",
+            "foreign_topic": "The Problem of 'Cannonball' (Illegally Registered) Cars",
+            "foreign_context": "Illegally registered vehicles, where the legal owner and the actual user are different, pose a significant threat to public safety. These 'ghost cars' are created by exploiting loopholes in vehicle registration systems and are frequently used to commit crimes like hit-and-runs, theft, and other felonies. Because they are untraceable, they allow criminals to operate with a layer of anonymity, making law enforcement difficult."
+        },
+        "generated_passage": "어두운 밤길을 달리던 택시 안에서 갑작스러운 폭발음이 울려 퍼졌다. 승객은 의식을 잃었지만, 차체에는 흔적도 없이 사라진 흔적만 남아있었다. 경찰 조사 결과, 차량 번호판은 오래된 폐업 법인의 대포차였다는 사실이 밝혀졌다. 이 차량은 '그림자 택시'라는 별명으로 불리며, 범죄 조직들이 익명성을 이용해 뺑소니 사고부터 고급 물품 도난까지 다양한 범죄를 저질러 왔다.  특히, 이들은 차량의 디지털 추적 시스템을 우회할 수 있는 특수 프로그램을 장착하여 경찰의 추적을 완벽하게 피했다고 전해진다.  최근에는 인공지능 기반의 '침묵 모드' 기능까지 도입했는데, 이는 차량 내 모든 통신 신호를 차단하여 사고 발생 시 목격자 증언 확보마저 불가능하게 만드는 것이다. 이러한 '그림자 택시'의 확산은 도시 전체를 불안에 떨게 하고 있으며, 그 뿌리 깊은 문제점은 단순한 명의 이전 절차의 허점을 넘어, 기술 발전 속도를 법 집행 체계가 따라가지 못하는 현실을 반영한다."
+    },
+    {
+        "source_item": {
+            "korean_topic": "저출산으로 인한 학령인구 감소",
+            "korean_context": "세계 최저 수준의 저출산 현상이 지속되면서, 학교에 입학하는 학생 수가 급격히 줄어들고 있습니다. 이로 인해 문을 닫는 학교가 속출하고, 특히 지방의 소규모 학교들은 존폐 위기에 놓였습니다. 학령인구 감소는 교육 시스템의 붕괴를 넘어, 미래의 생산가능인구 감소로 이어져 국가의 존립 자체를 위협하는 심각한 문제입니다.",
+            "foreign_topic": "Declining School-Age Population Due to Low Birth Rates",
+            "foreign_context": "Persistently low birth rates in many countries are leading to a rapid decline in the school-age population. This trend is causing school closures, particularly in rural areas, and forcing a complete re-evaluation of the education system. A shrinking younger generation poses a long-term threat to a nation's economic vitality and its ability to support an aging population."
+        },
+        "generated_passage": "어둠 속에서 희미하게 빛나던 낡은 교과서 페이지들이 바람에 흩날리며 속삭였다. 한때 활기차게 울려 퍼졌던 학교 종소리는 이제 먼 기억처럼 느껴졌지만, 그 빈 공간에는 '별빛 학교'라는 이름의 신비로운 대안이 떠오르고 있었다. 저출산으로 인해 폐교 위기에 처한 지방 마을에 위치한 이곳은 단순히 교육 기관을 넘어, 인공지능과 가상현실 기술을 결합하여 개인 맞춤형 학습 경험을 제공하는 공간으로 변모했다. 아이들은 가상 현실 속에서 역사 속 인물과 대화하고, 전 세계 명문 대학 강의를 실시간으로 수강할 수 있으며, AI 튜터가 각자의 학습 속도와 스타일에 맞춰 지도해준다. 물론 이러한 혁신은 교육 접근성 향상과 창의적 사고 촉진이라는 긍정적 효과를 가져왔으나, 동시에 인간 간의 직접적인 교류 부족과 디지털 격차 심화라는 부작용도 야기했다. 별빛 학교는 미래 교육의 가능성을 보여주면서도, 진정한 교육의 본질에 대한 끊임없는 질문을 던지는 존재가 되었다."
+    },
+    {
+        "source_item": {
+            "korean_topic": "공공 와이파이의 느린 속도와 보안 문제",
+            "korean_context": "정부는 시민들의 통신비 부담을 줄이기 위해 공공장소에 무료 와이파이를 확대하고 있지만, 속도가 너무 느리거나 연결이 자주 끊겨 불만이 많습니다. 한정된 예산으로 많은 접속자를 감당해야 하는 기술적 한계 때문입니다. 또한, 보안에 취약한 공공 와이파이는 개인 정보 유출의 통로가 될 수 있다는 심각한 문제점도 안고 있습니다.",
+            "foreign_topic": "The Problem of Slow and Insecure Public Wi-Fi",
+            "foreign_context": "Many public Wi-Fi networks offered in cities are criticized for being slow, unreliable, and insecure. This is often due to insufficient bandwidth to support a large number of users and a lack of investment in robust infrastructure. Using these unsecured networks also puts users at risk of having their personal data intercepted by hackers, creating a significant cybersecurity threat."
+        },
+        "generated_passage": "도심의 중심부에 위치한 '빛의 광장'은 매일 저녁, 수천 명의 디지털 노마드와 학생들이 모여드는 핫스팟이 되었다. 이곳의 공공 와이파이는 혁신적인 기술로 무장했는데, 특별히 개발된 양자 암호화 기술이 적용되어 기존의 보안 위협을 최소화했으며, 에너지 효율적인 드론 네트워크 시스템이 고속 데이터 전송을 담당하여 느린 속도 문제를 해결했다. 각 드론은 고도 조절이 가능해 밀집된 사용자 군집 위를 떠다니며 최적의 신호 경로를 자동으로 찾아내고 조정했다. 이 시스템 덕분에 이용자들은 안정적인 연결 속에서 실시간 협업과 스트리밍 서비스를 원활하게 이용할 수 있었다. 그러나 이러한 진보에도 불구하고, 드론 운영에 따른 소음 증가와 야간 운영 시 주변 생태계에 미치는 영향에 대한 우려가 제기되기도 했다. 게다가 초기 도입 비용이 높아 지속적인 유지보수 자금 확보가 도전 과제로 남아있었다."
+    },
+    {
+        "source_item": {
+            "korean_topic": "역사 왜곡 콘텐츠 문제",
+            "korean_context": "유튜브나 소셜 미디어를 통해, 검증되지 않은 정보를 바탕으로 역사를 자의적으로 해석하거나 왜곡하는 콘텐츠가 무분별하게 유통되고 있습니다. 일부 제작자들은 상업적 이익이나 정치적 목적으로 의도적으로 역사를 왜곡하고 있으며, 청소년들이 이러한 콘텐츠에 무방비로 노출되는 것이 큰 문제입니다. 이는 올바른 역사 인식을 방해하고, 사회적 갈등을 유발하는 심각한 부작용을 낳습니다.",
+            "foreign_topic": "The Problem of Historical Distortion in Content",
+            "foreign_context": "The spread of content that distorts or fabricates history is a growing problem on digital platforms. This is often motivated by political agendas or commercial interests, and it is easily consumed by an unsuspecting public. The proliferation of historical misinformation erodes shared understanding, fuels nationalism and conflict, and makes it difficult for people to distinguish fact from fiction."
+        },
+        "generated_passage": "고대 도시 아르카디아는 시간의 흐름 속에서도 그 과거의 영광을 디지털로 재현해온 선두 도시였다. 그러나 최근, 가상 현실(VR) 기반의 역사 체험 앱 '아르카디아 타임트래블러'가 출시되면서 새로운 논란이 일어났다. 이 앱은 개발자 엘라누스가 주도하여 제작되었는데, 그의 비전은 사용자들이 직접 고대 아르카디아의 시대를 체험하면서 역사에 대한 깊은 이해를 얻도록 하는 것이었다. 하지만 엘란누스는 개인적인 역사적 해석과 판타지 요소를 과도하게 융합시켜, 실제 사건들 사이에 허구의 전설과 신화를 섞어버렸다. 특히 청소년 이용자들 사이에서 인기가 치솟으면서, 이 앱은 단순한 오락 이상의 역할을 하기 시작했다. 청소년들은 게임 속 왜곡된 이야기를 현실 역사로 오해하며, 공동체 내에서 서로 다른 해석 간의 갈등이 증폭되고 있었다. 해결책으로는, 아르카디아 시의회는 독립적인 역사 검증 기관을 설립하여 앱 콘텐츠의 정확성을 정기적으로 검토할 계획이다. 이 기관은 학계 전문가와 기술 전문가로 구성되어, 실시간 피드백 시스템을 도입함으로써 수정 사항을 빠르게 반영할 수 있도록 했다. 또한 교육 프로그램을 강화하여 학교에서부터 역사적 비판 사고 능력을 키워나가려 한다. 이런 접근법은 청소년들에게 더 나은 판단력을 길러줄 뿐 아니라, 역사적 진실에 대한 존중 의식을 높일 것이라 기대된다. 그러나 부작용으로는 초기에는 검증 과정 때문에 앱 업데이트 주기가 느려질 수 있다는 점과, 지나치게 엄격한 규제가 창의성의 제약으로 이어질 위험성이 제기되기도 한다. 그럼에도 불구하고 장기적으로는 건강한 역사 인식 문화 형성에 기여할 것이란 전망이 우세하다."
+    },
+    {
+        "source_item": {
+            "korean_topic": "산후우울증 문제",
+            "korean_context": "많은 여성들이 출산 후 급격한 호르몬 변화와 육아 스트레스로 인해 산후우울증을 겪지만, 이를 개인의 나약함으로 치부하는 사회적 분위기가 있습니다. 이 때문에 여성들은 자신의 감정을 숨기고 제때에 치료받지 못하는 경우가 많습니다. 방치된 산후우울증은 산모 개인의 고통을 넘어, 아기와의 애착 관계 형성을 방해하고 가정 전체의 불행으로 이어질 수 있습니다.",
+            "foreign_topic": "The Problem of Postpartum Depression",
+            "foreign_context": "Postpartum depression is a serious mental health issue affecting many new mothers, yet it is often stigmatized or dismissed as 'baby blues'. This is caused by a combination of hormonal changes, sleep deprivation, and a lack of social support. Untreated postpartum depression can have severe consequences for the mother's well-being and can negatively impact the child's development."
+        },
+        "generated_passage": "어느 신비로운 도시 아누비스에서는 출산 후 여성들이 특별한 '감정의 정원'으로 이끌린다. 이곳은 자연과 마법이 융합된 공간으로, 호르몬 변화와 육아 스트레스 속에서도 안전하게 자신의 감정을 탐구할 수 있도록 설계되었다. 정원의 중심에는 '공감의 샘'이라 불리는 물웅덩이가 있는데, 이 샘은 방문객의 내면 감정을 반영하여 빛나는 물결을 일으킨다. 여성들은 이곳에서 전문가들과 함께 명상과 치유 세션을 통해 산후우울증을 적극적으로 관리한다. 사회적 인식 또한 변화하여, 산후 우울증은 개인의 약점이 아닌 필요한 지원의 대상으로 받아들여진다. 이러한 혁신 덕분에 산모들은 더 빠르게 회복하며, 그 결과로 아기와의 깊은 유대감이 형성되고 가족 간의 행복 지수가 크게 상승했다. 그러나 일부 전통주의자들 사이에서는 이러한 현대적 접근법이 지나치게 개인화되고 과학적 개입이 과도하다며 우려를 표하기도 한다. 그럼에도 불구하고, 아누비스의 모델은 전 세계적으로 산후 우울증 치료와 예방에 대한 새로운 패러다임을 제시하고 있다."
+    },
+    {
+        "source_item": {
+            "korean_topic": "특허 괴물 문제",
+            "korean_context": "직접 제품을 생산하지는 않으면서, 다른 기업으로부터 사들인 특허를 무기로 무차별적인 특허 소송을 제기하여 거액의 합의금을 노리는 기업을 '특허 괴물(Patent Troll)'이라고 합니다. 이들은 혁신적인 기술을 개발하는 기업들을 공격하여 막대한 소송 비용을 발생시킵니다. 이는 기업의 정상적인 연구개발 활동을 위축시키고, 기술 혁신을 저해하는 심각한 문제입니다.",
+            "foreign_topic": "The Problem of Patent Trolls",
+            "foreign_context": "Patent trolls, or patent assertion entities, are companies that make money by suing other businesses for patent infringement without producing any products themselves. They exploit the high cost of litigation to extort settlements from innovative companies, both large and small. This practice stifles innovation, drains resources from research and development, and is a significant drag on the economy."
+        },
+        "generated_passage": "어둠 속에서 빛나는 네온 사인 아래, 아르테미스라는 이름의 도시는 특허 괴물들의 그림자에 갇혀 있었다. 이곳의 혁신가들은 날마다 새로운 에너지 시스템을 발명했지만, 곧 아르테미스 특허 연합(Artemis Patent Consortium)의 경고 메일을 받곤 했다. 이 연합은 실체 없는 특허 포트폴리오로 무장하고 있으며, 실제로는 고대 아르테미스 문명의 비밀 기술을 발굴해낸 비밀 조직이었다. 그들은 현대 기술 발전을 고대 지식의 독점권으로 통제하려 했고, 이를 통해 도시 전체의 기술 스타트업들이 엄청난 합의금을 지불해야 하거나, 아니면 혁신의 꿈을 접어야 하는 처지에 놓였다.  도시의 젊은 해커, 리아나는 이러한 부조리를 바꾸기 위해 나섰다. 그녀는 고대 문헌과 현대 암호학을 결합해 아르테미스 특허 연합의 특허 데이터베이스를 해킹할 계획이다. 이로써 공개되지 않았던 진짜 특허 침해 증거를 찾아내어 공정한 재판을 이끌어낼 수 있을지도 모른다. 그러나 성공하면 혁신 생태계가 활성화될 테지만, 실패 시 연합의 보복으로 도시 전체가 디지털 감시 사회로 전락할 위험도 내포하고 있었다. 리아나의 모험은 아르테미스의 미래를 걸고 펼쳐지며, 진실과 자유 사이의 긴장된 균형을 탐색하게 된다."
+    },
+    {
+        "source_item": {
+            "korean_topic": "감정노동자 보호 문제",
+            "korean_context": "콜센터 상담원, 판매원 등 고객을 응대하는 감정노동자들이 일부 고객들의 폭언과 무리한 요구에 시달리며 정신적 고통을 호소하고 있습니다. '고객은 왕'이라는 잘못된 인식과, 노동자의 인권을 보호해주지 못하는 기업의 소극적인 태도가 문제입니다. 이러한 스트레스는 감정노동자들의 우울증과 자존감 하락으로 이어지며, 이들의 건강권을 심각하게 위협합니다.",
+            "foreign_topic": "The Problem of Protecting Emotional Laborers",
+            "foreign_context": "Workers in service industries, who are required to manage their emotions as part of their job, often face abuse and harassment from customers. This problem is exacerbated by a 'customer is always right' culture and inadequate support from employers. The constant emotional strain can lead to severe mental health issues, including anxiety and burnout, for these essential workers."
+        },
+        "generated_passage": "감정의 숲 속에 위치한 도시, 아르카디아에서는 콜센터 상담원들이 신비로운 '감성 꽃'을 관리하도록 고용되었다. 이 꽃들은 고객들의 불만과 스트레스를 흡수하여 정화하는데 사용되지만, 그 과정에서 상담원들은 내면의 감정을 꽃에 직접 전달해야 했다. 시간이 지나면서, 일부 고객들은 '고객의 영혼을 치유하는 힘'이란 명목 아래 상담원들에게 폭언과 비합리적인 요구를 넘어 심리적 압박을 가하기 시작했다. 기업들은 이러한 현상을 '서비스의 신성함'으로 치부하며 개입을 꺼렸고, 결과적으로 감성 관리자들은 '영혼의 수호자'로 불리면서도 심각한 정서적 피로와 정체성의 혼란에 시달렸다.  이러한 상황을 개선하기 위해 아르카디아 정부는 '공감의 벽' 프로젝트를 도입했다. 이 벽은 첨단 기술로 제작되어 고객의 부정적 에너지를 중립화시키며, 동시에 상담원들에게는 개인화된 '정화 캡슐'을 제공하여 업무 후 감정 회복을 돕는다. 기대 효과로는 상담원들의 정신 건강 향상과 생산성 증대가 예상되나, 부작용으로는 일부 고객들이 공감의 벽 뒤에 숨어 더욱 극단적인 행동을 보일 위험도 내포하고 있다. 또한, 정화 캡슐의 과도한 의존은 자연스러운 감정 처리 능력 저하를 초래할 수 있다는 우려도 제기된다."
+    }
+]

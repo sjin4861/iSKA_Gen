@@ -1,0 +1,452 @@
+[
+    {
+        "source_item": {
+            "korean_topic": "중장년층의 재취업 문제",
+            "korean_context": "빠른 기술 발전과 정년 단축으로 인해, 평생직장의 개념이 사라지면서 수십 년간의 경험을 가진 중장년층이 너무 이른 나이에 노동 시장에서 밀려나고 있습니다. 이들은 새로운 기술을 배울 기회가 부족했고, 사회는 이들의 경력을 활용할 준비가 되어 있지 않습니다. 이로 인해 숙련된 인력이 낭비되고, 노년 빈곤이 심화되는 등 심각한 사회적 비용이 발생하고 있습니다.",
+            "foreign_topic": "The Challenge of Reskilling an Aging Workforce",
+            "foreign_context": "In many developed economies, rapid technological advancement is making the existing skills of older workers obsolete, creating a significant 'reskilling' challenge. Companies often prefer hiring 'digital natives' over investing in training their experienced employees. This results in a wasted pool of talent, increases the burden on social welfare systems, and poses a major obstacle to lifelong career development."
+        },
+        "generated_passage": "한적한 시골 마을의 작은 카페에서 나는 할머니와 마주 앉았다. 할머니는 젊은 시절 농부였지만, 이제 은퇴 후 새로운 삶을 찾고 있었다. 그녀는 최신 농기계를 배우는 것이 두렵고, 마을 사람들은 그녀의 오랜 경험을 존중하기보다 새로운 기술에 능숙한 젊은이들을 선호했다. 그 순간, 마치 나의 할머니가 된 듯한 상상을 하며, 나는 어린 시절 가족과 함께했던 캠핑 여행을 떠올렸다. 그날 밤, 별빛이 가득한 하늘을 보며 아버지와 나누었던 대화가 떠올랐다. \"아빠, 왜 우리는 옛날 방식으로만 해야 해요?\"라는 내 질문에 그는 웃으며 말했다, \"새로운 길을 찾는 것도 중요하지만, 네가 가진 경험과 지혜는 언제나 소중해.\" 이 순간, 나는 사회의 변화가 가져오는 도전과 동시에 개인의 경험이 지닌 가치를 깨달았다. 하지만 과연, 우리 사회가 이러한 지혜를 어떻게 다시 끌어안을 수 있을까?"
+    },
+    {
+        "source_item": {
+            "korean_topic": "층간소음 문제",
+            "korean_context": "아파트와 같은 공동주택이 보편적인 한국에서, 이웃 간의 층간소음 문제는 단순한 불편을 넘어 심각한 사회적 갈등으로 번지고 있습니다. 이는 바닥 충격음이 잘 전달되는 건축 구조와, 서로 다른 생활 패턴을 가진 이웃에 대한 이해 부족에서 비롯됩니다. 층간소음으로 인한 스트레스는 폭행 등 극단적인 범죄로 이어지기도 하며, 공동체 문화를 파괴하는 주된 원인이 되고 있어 해결이 시급합니다.",
+            "foreign_topic": "Noise Pollution Between Floors in Apartments",
+            "foreign_context": "In densely populated urban areas, noise complaints between apartment neighbors are a major source of conflict. The problem is often caused by poor sound insulation in buildings and a general lack of consideration for others. This ongoing issue degrades residents' quality of life and can escalate simple disputes into serious confrontations, necessitating effective solutions."
+        },
+        "generated_passage": "어느 날 나는 오래된 한옥에서 새로운 아파트로 이사한 후, 층간소음을 처음으로 실감했다. 아래층에서 밤늦게까지 들려오는 아이들의 뛰노는 소리 때문에 잠을 설칠 때마다, 마치 내가 그 집의 주인이 된 듯한 착각에 빠졌다. 그러던 중, 갑자기 아래층에서 요란한 망치 소리가 들려왔고, 화가 치밀어 올라 바로 전화를 걸어 항의했다. 그러나 상대방은 \"나는 이 집이 처음이라 소음 문제에 대해 잘 모른다\"고 답했다. 그 순간, 서로의 입장을 이해하지 못하는 것이 문제의 핵심인 것 같았다. 결국 우리는 소음 차단 매트와 함께 '이웃 간 소음 예절'이라는 작은 안내문을 공유하기로 합의했다. 하지만 여전히 마음 한편에는, 만약 이 상황이 지속된다면 우리가 과연 진정한 이웃이 될 수 있을까 하는 의문이 남았다. 그런 생각을 하며 창밖을 바라보니, 아파트 단지 사이로 아이들이 뛰어노는 모습이 보였다. 그들은 분명 서로를 이해하고 배려하는 법을 배워야 할 텐데, 나의 어린 시절이 떠올랐다. 어느 시절, 동네 친구들과의 소중한 추억이 지금 내 갈등의 해법이 되어 줄지도 모르며, 언젠가 우리는 진정한 공동체로 거듭날 수 있을 것이다."
+    },
+    {
+        "source_item": {
+            "korean_topic": "일회용 컵 남용 문제",
+            "korean_context": "한국의 카페 문화가 발달하면서, 하루에 소비되는 일회용 플라스틱 컵과 종이컵의 양이 엄청나게 늘어났습니다. 편리함을 추구하는 소비 습관과 매장 내 다회용 컵 관리의 어려움이 주된 원인입니다. 이로 인해 막대한 양의 쓰레기가 발생하고 있으며, 이는 환경오염과 자원 낭비의 심각한 원인이 되고 있습니다.",
+            "foreign_topic": "Overuse of Disposable Cups",
+            "foreign_context": "The global coffee shop culture has led to a massive increase in the consumption of single-use cups. This problem is driven by consumer demand for convenience and the logistical challenges for businesses to wash and reuse cups. As a result, billions of non-recyclable cups end up in landfills each year, creating a significant environmental burden."
+        },
+        "generated_passage": "한국의 카페 문화는 그 편리함 때문에 많은 사랑을 받고 있지만, 그 이면에는 심각한 환경 문제가 도사리고 있다. 매일 수많은 일회용 플라스틱 컵과 종이컵이 사용되며, 이는 단순한 쓰레기 증가를 넘어 지구 환경에 큰 부담을 주고 있다. 그런데 이런 상황을 떠올려보면, 내가 대학 시절 동아리에서 주최한 작은 음악 페스티벌을 잊을 수 없다. 그날 우리는 수백 개의 일회용 컵을 사용했는데, 그 중 몇 개는 나중에 친구들과 함께 해변에 버려진 채로 발견되었다. 그때 느꼈던 무력감과 자책감은 아직도 생생하다. 한편, 상상 속 세계에서는 한 마법사가 모든 컵에 생명을 불어넣어, 사용 후 다시 자연으로 돌아갈 수 있는 특별한 힘을 갖게 만들었다. 하지만 그 마법의 힘이 사라지면서, 사람들은 또다시 일회용 컵을 남용하기 시작했고, 지구는 그 대가를 치르기 시작했다. 이처럼 현실 세계의 문제와 판타지 속 이야기가 교차하며, 우리는 일회용 컵 문제의 심각성을 다시금 되새기게 된다."
+    },
+    {
+        "source_item": {
+            "korean_topic": "유기동물 문제",
+            "korean_context": "매년 수많은 반려동물이 길거리에 버려져 유기동물이 되고 있으며, 이는 심각한 사회 문제입니다. 충동적인 입양 후 경제적 부담이나 관리의 어려움을 감당하지 못하는 것이 주된 원인으로 꼽힙니다. 버려진 동물들은 질병과 굶주림에 시달리며, 이들을 구조하고 보호하는 데 막대한 사회적 비용이 발생하고 있습니다.",
+            "foreign_topic": "The Problem of Abandoned Pets",
+            "foreign_context": "Each year, millions of companion animals are abandoned by their owners, leading to overcrowded shelters and high euthanasia rates. This is often caused by people acquiring pets impulsively without understanding the long-term financial and time commitments. The issue represents a significant ethical problem and places a heavy burden on animal welfare organizations."
+        },
+        "generated_passage": "매년 수백만 마리의 반려동물이 주인에 의해 버려지고 있다. 이들은 보호소에서 과밀한 환경에 처하거나 안락사되는 경우가 많다. 이러한 문제는 사람들이 동물을 충동적으로 입양한 후, 장기적인 경제적 부담과 돌봄의 책임을 충분히 고려하지 않기 때문에 발생한다. 내가 대학 시절, 친구와 함께 지역 동물보호소에 자원봉사를 하러 갔던 적이 있었다. 그곳에서 만난 한 노인은 자신이 한때 사랑했던 개가 나이가 들어 병들자 더 이상 돌볼 수 없다며 눈물을 흘렸다. 그 순간 나는 단순한 입양이 아닌 책임 있는 선택이 얼마나 중요한지를 깨달았다. 한편, 어느 날 밤 꿈속에서 나는 시간과 공간을 초월한 세계로 들어가, 인간과 동물이 조화롭게 공존하는 이상적인 도시를 발견했다. 그곳에서는 동물들이 자유롭게 뛰어놀며 사람들과 깊은 유대감을 형성하고 있었다. 이 꿈은 나에게 진정한 동물 사랑이 무엇인지, 그리고 우리가 어떻게 하면 이런 세상을 현실로 만들 수 있을지에 대한 영감을 주었다."
+    },
+    {
+        "source_item": {
+            "korean_topic": "청년 실업 문제",
+            "korean_context": "많은 청년들이 대학을 졸업하고도 일자리를 찾지 못해 어려움을 겪는 청년 실업 문제가 장기화되고 있습니다. 기업이 원하는 인재상과 구직자의 눈높이 차이, 그리고 양질의 일자리 부족이 복합적으로 작용한 결과입니다. 이로 인해 청년들은 경제적 어려움과 사회적 고립감을 느끼게 되며, 이는 국가 전체의 성장 동력을 약화시키는 원인이 됩니다.",
+            "foreign_topic": "Youth Unemployment Issue",
+            "foreign_context": "Youth unemployment is a persistent global issue where a significant number of young people are unable to find jobs after completing their education. The problem stems from a mismatch between the skills taught in schools and those demanded by the labor market, as well as overall economic downturns. This leads to social instability and a 'lost generation' of talent, hindering long-term economic growth."
+        },
+        "generated_passage": "어느 날, 나는 한적한 시골 마을에 위치한 작은 서점에서 시간을 보내고 있었다. 서점 주인은 중년의 여성으로, 그녀의 눈빛은 마치 수많은 이야기를 품고 있는 듯했다. 그날도 그녀는 내가 좋아하는 소설 한 권을 추천하며 말했다. \"이 책은 삶의 진정한 의미를 찾는 여정을 담고 있어.\" 나는 그 말에 감명을 받아 책을 구매했지만, 사실 내 마음은 이미 다른 곳에 가 있었다. 대학 졸업 후 몇 달이 지나도 여전히 취업 준비가 끝나지 않은 상태였고, 매일 아침 거울 속 나의 얼굴을 볼 때마다 불안감이 밀려왔다. 그러던 중 문득, 내가 이 작은 마을에서 느낀 평화로움이 어느 순간엔 현실의 무게로부터 잠시 벗어날 수 있는 피난처였음을 깨달았다. 책 속에서 만난 주인공의 여정은 나에게 새로운 영감을 주었고, 그 덕분에 비록 당장 취업의 길이 멀게 느껴지더라도 언젠가는 다시 시작할 수 있다는 희망을 품게 되었다. 이처럼, 청년 실업 문제는 단순히 경제적 어려움만을 의미하지 않으며, 각자의 삶 속에서 작은 평화와 영감을 발견하는 과정이 중요하다는 것을 다시금 느끼게 했다."
+    },
+    {
+        "source_item": {
+            "korean_topic": "음식물 쓰레기 문제",
+            "korean_context": "한국은 풍부한 반찬 문화와 국물 요리 때문에 다른 나라에 비해 음식물 쓰레기 발생량이 많은 편입니다. 필요 이상으로 많은 음식을 조리하는 습관과, 외식 시 남은 음식을 포장하지 않는 문화가 주요 원인입니다. 이렇게 버려지는 음식물 쓰레기를 처리하는 데 막대한 비용이 들고, 매립 시 발생하는 메탄가스는 지구 온난화를 가속화합니다.",
+            "foreign_topic": "The Food Waste Problem",
+            "foreign_context": "In many developed countries, a significant portion of food is wasted at the retail and consumer levels. This is caused by aesthetic standards for produce, bulk purchasing habits, and confusion over expiration dates. Food waste is a major environmental issue as it contributes to greenhouse gas emissions in landfills and wastes the resources used to produce it."
+        },
+        "generated_passage": "한국의 반찬 문화는 정말 독특하죠. 밥 한 공기 옆에 다양한 반찬들이 가지런히 놓여 있는 모습은 시각적으로도 즐거울 뿐 아니라, 먹는 이의 입맛을 돋우는 역할을 합니다. 하지만 이 풍성한 문화가 오히려 음식물 쓰레기의 주범이기도 하다는 사실은 아이러니합니다. 예를 들어, 저는 어릴 적 할머니 댁에서 매일 저녁 반찬을 가득 차려놓고 가족이 모여 식사를 하곤 했습니다. 어느 날, 할머니가 \"이 많은 반찬 중에 네가 가장 좋아하는 건 뭐야?\"라고 물으셨을 때, 저는 당황했습니다. 너무 많은 선택지 속에서 정작 제 입맛에 맞는 것을 찾기 어려웠거든요. 이처럼 한국 가정에서는 '많이 준비하는 것'이 미덕처럼 여겨지지만, 그 결과로 남는 음식들은 결국 쓰레기로 전락하곤 합니다. 한편, 외국의 경우를 보면, 특히 선진국에서는 음식이 상하거나 유통기한이 지나기 전에 소비되지 않아 버려지는 경우가 많습니다. 이곳의 슈퍼마켓에서는 외관상 완벽하지 않은 과일들이 저렴한 가격에 판매되는 걸 자주 볼 수 있습니다. 이는 우리가 흔히 생각하는 '완벽한' 식품의 기준과는 거리가 있죠. 이런 상황에서, 음식물 쓰레기를 줄이기 위해서는 한국의 경우 '필요한 만큼만 조리하는 문화'로의 전환이 필요하며, 외국은 '비정형 식품'에 대한 인식 개선과 함께 유통기한 표기 방식을 더 직관적으로 바꿔야 할 것입니다. 이러한 변화가 이루어진다면, 환경 보호는 물론 경제적 이익도 동시에 얻을 수 있겠죠. 그러나 새로운 시스템이 정착되기까지는 사람들의 인식 변화와 교육이 필수적일 테고, 단기적으로는 혼란을 초래할 수도 있다는 점은 염두에 두어야 할 것입니다."
+    },
+    {
+        "source_item": {
+            "korean_topic": "악성 댓글 문제",
+            "korean_context": "인터넷 공간의 익명성을 방패 삼아 타인을 비방하고 상처를 주는 악성 댓글이 심각한 사회 문제로 자리 잡았습니다. 일부 이용자들의 왜곡된 관심 욕구와, 처벌이 미약하다는 인식이 이러한 행동을 부추기고 있습니다. 악성 댓글은 피해자에게 깊은 정신적 고통을 안겨주며, 심지어는 극단적인 선택으로 이어지게 하는 등 사회 전체를 병들게 합니다.",
+            "foreign_topic": "The Problem of Malicious Online Comments",
+            "foreign_context": "Cyberbullying, through malicious and hateful online comments, has become a pervasive problem on social media and news platforms. This behavior is fueled by anonymity and a lack of immediate consequences for the perpetrators. The psychological damage inflicted on victims can be severe, leading to anxiety, depression, and a toxic online environment for everyone."
+        },
+        "generated_passage": "나는 어릴 적 시골 마을에서 할머니와 함께 살던 시절이 떠오른다. 할머니는 매일 아침 일찍 일어나 동네 사람들의 소식을 전해주곤 했다. 어느 날, 마을에 새로 이사 온 젊은 부부가 이상한 소문이 돌기 시작했다. 사람들은 그 부부의 행동이 이상하다고 whisper했지만, 나는 그 소문을 믿고 싶지 않았다. 그러던 중, 어느 날 저녁, 마을회관에서 열린 작은 모임에서 그 부부를 직접 보게 되었다. 그들은 웃고 떠들며 주변 사람들과 친밀하게 어울렸고, 그때서야 나는 오해가 풀렸음을 느꼈다. 하지만 그 경험이 남긴 교훈은, 우리가 쉽게 믿어버리는 소문에 얼마나 큰 오류가 있을 수 있는지를 깨닫게 해주었다. 이처럼, 인터넷의 익명성 뒤에 숨어 있는 악의적 발언들은 마치 그 소문처럼 진실을 왜곡할 위험이 있다. 결국, 우리는 서로를 이해하고 존중하는 마음으로 온라인에서의 소통을 새롭게 정의해야 할 필요가 있다."
+    },
+    {
+        "source_item": {
+            "korean_topic": "독거노인 고독사 문제",
+            "korean_context": "가족 및 사회와 단절된 채 홀로 사는 노인이 아무도 모르게 죽음을 맞이하는 '고독사'가 계속해서 증가하고 있습니다. 핵가족화로 인한 전통적인 가족 돌봄 기능의 약화와, 노년층의 사회적 관계망 부족이 핵심 원인입니다. 이는 개인의 비극을 넘어, 우리 사회의 복지 시스템에 큰 구멍이 뚫려있음을 보여주는 심각한 문제입니다.",
+            "foreign_topic": "The Problem of Lonely Deaths Among the Elderly",
+            "foreign_context": "The phenomenon of elderly people dying alone and remaining undiscovered for long periods is a growing social issue in many aging societies. It is primarily caused by weakening family ties and a lack of community support systems for seniors living alone. This tragic issue highlights a failure in social safety nets and raises questions about how society cares for its most vulnerable members."
+        },
+        "generated_passage": "나는 어릴 적 시골 마을에서 할머니와 함께 보낸 여름날을 종종 떠올린다. 할머니는 늘 마을회관에서 이웃들과 담소를 나누거나, 동네 아이들에게 과자를 나눠주며 하루를 보내셨다. 그 시절 나는 할머니의 따뜻한 미소와 활기찬 모습이 당연하다고 여겼지만, 시간이 흘러 도시의 고층 빌딩 사이에서 노인 고독사가 빈번하다는 뉴스를 접했을 때, 그때의 기억이 새삼 그리워졌다. 어느 날 문득, 내가 상상해낸 이야기 속 주인공들은 거대한 도시 한복판에서 서로를 잃어버린 채 살아가고 있었다. 그들은 매일 같은 카페에서 커피를 마시지만, 진정한 대화는 없고 단지 표면적인 인사만 오갔다. 그러던 중 한 인물이 우연히 만난 여행자를 통해 삶의 새로운 의미를 발견하며 변화의 계기를 맞는 장면이 그려진다. 이처럼, 물리적 거리와 소통의 부재는 우리를 고립시키고, 때로는 상상할 수 없는 비극으로 이어질 수도 있다. 하지만, 만약 우리가 서로의 이야기에 귀 기울이고, 작은 연결 고리를 만들어간다면, 고독사는 더 이상 피할 수 없는 운명이 아닐지도 모른다."
+    },
+    {
+        "source_item": {
+            "korean_topic": "스마트폰 과의존 문제",
+            "korean_context": "현대인들은 잠자는 시간을 제외하고 거의 모든 순간 스마트폰을 손에서 놓지 못하는 '스마트폰 과의존' 상태에 빠져 있습니다. 스마트폰이 제공하는 즉각적인 즐거움과, 연결되어 있지 않으면 불안감을 느끼는 '포모(FOMO)' 증후군이 주요 원인입니다. 이로 인해 사람들은 현실 세계의 대인 관계에 소홀해지고, 거북목 증후군 등 건강 문제와 집중력 저하를 겪고 있습니다.",
+            "foreign_topic": "Smartphone Overdependence Problem",
+            "foreign_context": "Overdependence on smartphones has become a modern epidemic, with people compulsively checking their devices at all times. This is driven by the constant stream of notifications and the 'fear of missing out' (FOMO) that social media cultivates. The consequences include diminished real-life social interaction, poor posture, and a decreased ability to concentrate on tasks."
+        },
+        "generated_passage": "내가 처음 스마트폰에 푹 빠졌던 건 대학 시절이었다. 수업이 끝나고 친구들과의 약속 시간에 맞춰 카페에 도착했지만, 나는 그 자리에 앉아 있는 대신 내 휴대폰 화면에 눈을 고정했다. 친구들의 웃음소리와 떠드는 소리가 점점 멀어지더니, 결국 나는 그들이 나를 잊은 줄 알았다. 그때 내가 느낀 불안감은 마치 포모 증후군에 걸린 듯한 기분이었다. 그러던 중, 갑자기 내 앞자리에 앉았던 한 노인이 내게 다가와 말했다. \"젊은이, 이 기계가 네 삶을 지배할 수는 없어.\" 그의 말에 충격을 받은 나는 그날부터 하루에 단 30분만 스마트폰을 사용하기로 결심했다. 하지만, 얼마 지나지 않아, 그 시간마저 지키기 힘들어졌고, 또 다시 스마트폰과의 전쟁에서 패배하는 나 자신을 발견했다. 언젠가 진정한 자유를 찾기 위해, 이 작은 기계와의 관계를 재정의하고 싶었다."
+    },
+    {
+        "source_item": {
+            "korean_topic": "대도시 교통 체증 문제",
+            "korean_context": "서울과 같은 대도시의 도로는 매일 출퇴근 시간마다 극심한 교통 체증으로 몸살을 앓고 있습니다. 이는 자가용 이용자의 지속적인 증가와, 도시의 도로 용량이 한계에 다다랐기 때문입니다. 교통 체증은 시민들의 시간과 에너지를 낭비시키고, 자동차 배기가스로 인한 대기오염을 심화시키는 등 막대한 사회적 비용을 유발합니다.",
+            "foreign_topic": "Traffic Congestion in Big Cities",
+            "foreign_context": "Major metropolitan areas worldwide suffer from chronic traffic congestion, particularly during peak hours. This problem is caused by an over-reliance on private cars, insufficient public transportation infrastructure, and inefficient urban planning. The daily gridlock results in lost productivity, increased air pollution, and a lower quality of life for commuters."
+        },
+        "generated_passage": "서울 도심의 아침, 나는 자전거를 타고 출근길에 나섰다. 붉은 신호등 앞에서 잠시 멈춰 서 있을 때, 문득 지난 여름 휴가 중 만난 한 노인이 떠올랐다. 그는 한적한 시골 마을에서 자전거로 매일 장을 보러 간다고 했다. \"도시의 복잡한 교통은 정말 힘들 것 같아,\"라는 나의 말에 노인은 미소 지으며 대답했다. \"하지만 그 속에서 여유를 찾는 게 더 중요해.\" 그날 이후로, 나는 자전거가 주는 자유로움과 자연과의 교감을 더욱 소중히 여기게 되었다. 그러나 서울의 도로 위, 여전히 수많은 차들이 서로를 밀치고 있었다. 그때 문득, 상상 속 세계에서 하나의 도시가 나타났다. 그곳에서는 자동차가 필요 없는 하늘 길 위에서 사람들이 자유롭게 이동했고, 나무와 꽃이 가득한 공중에서 소통하며 삶의 질을 높였다. 이 환상적인 도시에서는 교통 체증이 존재하지 않았고, 사람들은 시간의 낭비를 느끼지 않았다. 현실이 아닌 꿈에서나 가능한 일이지만, 이런 상상이 내 마음 속에 새로운 가능성을 불러일으켰다. 과연 우리는 어떻게 하면 이러한 이상향을 현실로 만들어 갈 수 있을까?"
+    },
+    {
+        "source_item": {
+            "korean_topic": "학교 폭력 문제",
+            "korean_context": "학교 폭력은 피해 학생에게 평생 지울 수 없는 상처를 남기는 심각한 범죄 행위입니다. 가해 학생의 잘못된 인성과 공감 능력 부족, 그리고 '친구끼리의 장난'으로 치부하며 방관하는 주변의 시선이 폭력을 키우는 원인입니다. 학교 폭력은 피해 학생의 정상적인 학교생활을 불가능하게 만들고, 건강한 사회 구성원으로 성장하는 것을 방해합니다.",
+            "foreign_topic": "The School Bullying Problem",
+            "foreign_context": "School bullying remains a critical issue that inflicts deep and lasting psychological scars on victims. The causes range from a lack of empathy in bullies to a bystander culture where other students fail to intervene. This behavior creates a toxic learning environment and can have devastating effects on a student's mental health and academic performance."
+        },
+        "generated_passage": "내가 어릴 적, 작은 시골 마을에 살던 나는 매일 아침 동네 친구들과 함께 숲속으로 모험을 떠나곤 했다. 어느 날, 우리는 마법의 숲을 발견했다고 믿었다. 그곳은 신비로운 생물들이 살고 있었고, 우리가 만들어낸 규칙에 따라 모두가 평화롭게 공존했다. 그러나 숲의 중심에는 ‘악마의 나무’가 있었다. 이 나무는 항상 속삭이며 우리에게 도전장을 내밀었다. \"이곳에 오는 모든 아이는 결국 나를 두려워해야 해!\"라고 말이다. 처음에는 겁에 질려 있었지만, 몇몇 용감한 친구들이 그 나무를 향해 걸어갔다. 그들은 나무의 속삭임에 맞서 자신만의 방식으로 대화를 시도했다. 시간이 흐르면서, 나무는 그들의 용기에 감동하여 더 이상 위협을 가하지 않았다. 대신, 우리를 보호해주는 수호자로 변모했다. 이처럼, 우리 모두는 두려움과 맞서 싸우고 서로를 이해함으로써 진정한 우정과 평화를 이룰 수 있었다. 하지만, 현실에서는 여전히 많은 이들이 두려움 때문에 서로를 이해하지 못하고, 그로 인해 발생하는 문제들이 해결되지 않고 있다."
+    },
+    {
+        "source_item": {
+            "korean_topic": "플라스틱 쓰레기 문제",
+            "korean_context": "한 번 쓰고 버려지는 플라스틱 포장재와 제품들로 인해 전 지구가 플라스틱 쓰레기로 뒤덮이고 있습니다. 저렴하고 편리하다는 이유로 플라스틱 사용이 무분별하게 이루어지고 있으며, 재활용 시스템 또한 제대로 작동하지 않고 있습니다. 썩지 않는 플라스틱 쓰레기는 토양과 해양 생태계를 파괴하고, 미세 플라스틱 형태로 결국 우리 몸에 다시 돌아와 건강을 위협합니다.",
+            "foreign_topic": "The Plastic Waste Problem",
+            "foreign_context": "The planet is facing a crisis due to the overwhelming amount of plastic waste generated by single-use products and packaging. This is driven by a culture of convenience and inadequate recycling infrastructure worldwide. Non-biodegradable plastic pollutes oceans, harms wildlife, and breaks down into microplastics that contaminate our food and water systems."
+        },
+        "generated_passage": "어느 날 밤, 나는 꿈속에서 한 작은 마을에 살고 있었다. 이 마을은 끝없이 펼쳐진 푸른 들판과 맑은 강이 흐르는 아름다운 곳이었지만, 그 강가에는 버려진 플라스틱 병과 봉지가 가득했다. 마을 사람들은 처음에는 문제의 심각성을 깨닫지 못했지만, 어느 순간 강물이 점점 탁해지고 물고기들이 떼죽음을 당하면서 현실을 직시하게 되었다. 이에 마을의 지혜로운 노인은 모든 주민이 참여하는 대청소 행사를 제안했다. 그러나 행사 당일, 비가 내려 모든 준비가 물거품이 되고 말았고, 주민들은 실망감에 빠졌다. 그때 한 소녀가 나타나 말했다. \"우리는 매일 조금씩이라도 변화를 만들어갈 수 있어요.\" 그녀는 매주 토요일마다 강가에 모여 쓰레기를 줍는 모임을 조직했고, 사람들은 점차 동참했다. 몇 달 후, 강물은 맑아지고 생태계가 회복되는 모습을 보며 마을 사람들은 비로소 진정한 변화의 힘을 깨달았다. 이처럼 개인의 작은 실천이 모여 큰 변화를 만들어낼 수 있음을 나는 꿈에서 배웠다. 하지만 현실에서는 여전히 많은 이들이 이런 변화를 두려워하거나 귀찮아하곤 한다."
+    },
+    {
+        "source_item": {
+            "korean_topic": "직장 내 번아웃 증후군",
+            "korean_context": "많은 직장인들이 과도한 업무와 스트레스로 인해 신체적, 정신적 에너지가 모두 소진되는 '번아웃 증후군'을 겪고 있습니다. 이는 성과 중심의 경쟁적인 조직 문화와, 일과 삶의 균형이 무너진 생활에서 비롯됩니다. 번아웃은 개인의 건강을 해칠 뿐만 아니라, 업무 효율성을 떨어뜨리고 잦은 이직을 유발하여 기업과 사회 전체에 손실을 가져옵니다.",
+            "foreign_topic": "Workplace Burnout Syndrome",
+            "foreign_context": "Burnout, a state of emotional, physical, and mental exhaustion caused by prolonged stress, is a major issue in the modern workplace. It stems from excessive workloads, a lack of autonomy, and a toxic 'always-on' work culture. This syndrome not only harms individual well-being but also leads to decreased productivity, high employee turnover, and significant costs for businesses."
+        },
+        "generated_passage": "어느 날 나는 작은 시골 마을에 위치한 오래된 서점에서 시간을 보내고 있었다. 서점 주인은 나에게 특별한 책을 추천해 주며, 그 책은 바로 \"시간을 지배하는 사람들\"이라는 제목이었다. 호기심에 이끌려 책을 읽기 시작했는데, 그 속에서 한 남자가 등장한다. 그는 대도시의 바쁜 직장 생활을 떠나 조용한 시골로 이주한 후, 매일 아침 일출과 함께 명상을 하며 하루를 시작했다. 처음에는 주변의 모든 것이 낯설고 힘들었지만, 시간이 지나면서 그는 마음의 평화를 찾고 진정한 행복을 느끼게 되었다. 이 남자는 결국 자신의 직장 동료들에게도 이 새로운 삶의 방식을 전파하며, 그들이 겪는 번아웃 증후군의 고통을 덜어주고자 했다. 물론, 그의 시도가 모든 사람에게 즉각적인 변화를 가져오지는 않았지만, 조금씩 사람들의 태도가 바뀌는 것을 보며 그는 희망을 느꼈다. 이러한 이야기는 단순히 한 개인의 경험을 넘어, 현대 사회에서 우리가 잃어버린 것들을 되찾기 위해 어떤 노력을 해야 하는지를 다시금 생각하게 만들었다."
+    },
+    {
+        "source_item": {
+            "korean_topic": "노년층의 디지털 소외 문제",
+            "korean_context": "은행 업무, 기차표 예매 등 사회의 거의 모든 서비스가 디지털화되면서, 스마트폰이나 키오스크 사용에 익숙하지 않은 노년층이 큰 불편을 겪고 있습니다. 빠른 기술 발전에 비해 노년층을 위한 디지털 교육이 턱없이 부족한 것이 현실입니다. 이로 인해 노년층은 일상생활에서 소외감을 느끼고, 꼭 필요한 사회 서비스로부터 단절되는 '디지털 격차' 문제를 겪고 있습니다.",
+            "foreign_topic": "The Digital Divide Among Seniors",
+            "foreign_context": "As society rapidly shifts to digital-first services, many elderly people are being left behind due to their unfamiliarity with smartphones and computers. The problem is caused by a lack of accessible technology training and user-friendly design for seniors. This digital divide prevents them from accessing essential services like banking and healthcare, leading to social isolation and inequality."
+        },
+        "generated_passage": "어느 날 나는 한적한 시골 마을에 살고 있는 할머니 댁을 방문했다. 그녀는 평생 농사를 지으며 살아왔고, 마을 사람들 사이에서 따뜻한 마음을 가진 분으로 유명했다. 하지만 최근 들어 그녀의 집에 컴퓨터가 놓여진 것을 보고 깜짝 놀랐다. 할머니는 그 기계를 어떻게 다루어야 할지 몰라 매일 혼란스러워하셨다. 그러던 중, 나는 할머니의 손녀가 방문하면서 그녀에게 “할머니, 이 컴퓨터로 은행 일도 할 수 있어요!”라고 말하는 장면을 목격했다. 그러나 할머니는 “내가 이걸 왜 해야 해? 옛날 방식만으로도 충분해”라며 고개를 저으셨다. 그 순간, 나는 디지털 세상이 가져다준 편리함이 얼마나 많은 이들에게 낯선 장벽으로 다가오는지를 절실히 깨달았다. 과연 우리는 이 디지털 격차를 해소하기 위해 어떤 노력을 기울여야 할까?"
+    },
+    {
+        "source_item": {
+            "korean_topic": "패스트패션으로 인한 의류 폐기물 문제",
+            "korean_context": "최신 유행을 빠르게 반영하여 저렴하게 판매하는 '패스트패션' 산업의 성장으로, 옷이 쉽게 만들어지고 쉽게 버려지고 있습니다. 소비자들은 싼값에 유행을 따를 수 있지만, 이는 곧 엄청난 양의 의류 폐기물 문제로 이어집니다. 매년 수많은 옷들이 소각되거나 매립되어 심각한 환경오염을 유발하고 있으며, 이는 지속 불가능한 생산 및 소비 방식입니다.",
+            "foreign_topic": "Clothing Waste from Fast Fashion",
+            "foreign_context": "The fast fashion industry, which produces trendy, inexpensive clothing, has created a major environmental problem of textile waste. Consumers buy more and discard clothes faster than ever before, driven by low prices and rapidly changing trends. This results in massive amounts of clothing ending up in landfills, contributing to pollution and representing a huge waste of resources."
+        },
+        "generated_passage": "어느 날, 나는 작은 마을에 위치한 오래된 방앗간에서 시간을 보내던 중, 한 노인이 나에게 옛날이야기를 들려주었다. 그는 젊은 시절, 매일 아침 신선한 빵을 구워 마을 사람들에게 나누어주곤 했다고 했다. 하지만 어느 순간, 마을 사람들이 더 빠르고 간편한 인스턴트 빵만을 찾게 되면서 방앗간은 점점 쇠퇴의 길을 걷게 되었다. 노인은 그 모습을 보며 \"진정한 가치는 시간이 지나도 변하지 않는 것\"이라고 말했다. 그날 이후, 나는 패스트패션을 떠올리게 됐다. 저렴한 가격과 유행에 민감한 소비자들이 옷을 쉽게 구매하지만, 결국 환경은 그 대가를 치르고 있었다. 마치 인스턴트 빵이 편리했지만 진정한 맛과 가치를 잃어버린 것처럼, 패스트패션은 현대 사회의 편리함을 대가로 자연환경을 파괴하고 있는 것이 아닐까? 나는 문득, 내가 어렸을 때 친구들과 함께 나무 그늘 아래에서 손수 만든 종이비행기를 날리며 즐기던 시절이 떠올랐다. 그때는 아무런 걱정 없이 단순히 즐거움이 전부였던 시간이다. 이제는 그런 순수한 즐거움을 찾기 위해 과거로 돌아가거나, 아니면 새로운 방식으로 삶의 의미를 재발견해야 할 때가 온 것은 아닐까?"
+    },
+    {
+        "source_item": {
+            "korean_topic": "농촌의 빈집 문제",
+            "korean_context": "젊은이들이 일자리를 찾아 도시로 떠나면서, 농촌 지역에는 사람이 살지 않는 빈집이 급격히 늘어나고 있습니다. 이는 농촌 인구의 고령화와 인구 감소가 낳은 필연적인 결과입니다. 방치된 빈집들은 마을의 미관을 해치고, 붕괴 위험이나 범죄 발생의 원인이 되는 등 지역 사회에 큰 골칫거리가 되고 있습니다.",
+            "foreign_topic": "The Empty Homes Problem in Rural Areas",
+            "foreign_context": "In many countries, rural areas are experiencing a sharp increase in abandoned homes as young people migrate to cities for jobs and education. This issue is a direct consequence of rural depopulation and an aging population. These derelict properties become eyesores, can attract crime, and signify a broader decline in rural communities, demanding urgent revitalization strategies."
+        },
+        "generated_passage": "젊은이들이 도시를 향해 떠나는 바람에 농촌 지역은 빈집으로 가득 차 있다. 이 빈집들은 단순한 폐가가 아니라, 농촌 사회의 미래를 암시하는 상징이 되었다. 마을 골목마다 버려진 집들은 그 자체로 우울함을 드리우고, 안전 문제도 야기한다. 그런데 이런 상황을 바라보는 내 머릿속에는 한 노인이 떠올랐다. 그는 어릴 적부터 살던 집에서 이제 혼자 살고 있었다. 어느 날, 그가 오래된 정원을 가꾸며 어린 시절의 추억을 회상하던 모습이 눈에 선했다. 하지만 갑자기 그의 얼굴에 그늘이 졌다. 빈집이 늘어나면서 젊은 세대는 돌아오지 않고, 결국 그는 외롭게 남은 집을 지켜야 하는 신세가 될 것이었다. 이런 나의 상상은 농촌의 현실을 더욱 깊게 이해하게 만든다. 과연 어떻게 하면 이 빈집들이 다시 살아나고, 그곳에 새로운 생명이 깃들 수 있을까?"
+    },
+    {
+        "source_item": {
+            "korean_topic": "비효율적인 회의 문화",
+            "korean_context": "많은 회사들이 명확한 목적 없이 시작해 결론 없이 끝나는 비효율적인 회의로 많은 시간을 낭비하고 있습니다. 뚜렷한 안건 없이 '일단 모이고 보자'는 식의 관행과, 자유로운 의견 교환을 막는 수직적인 조직 문화가 원인입니다. 이러한 회의 문화는 직원들의 귀중한 업무 시간을 빼앗고, 창의적인 아이디어가 나오는 것을 막으며, 조직 전체의 생산성을 저해합니다.",
+            "foreign_topic": "Inefficient Meeting Culture",
+            "foreign_context": "Many organizations suffer from an inefficient meeting culture, where employees spend hours in pointless and poorly managed meetings. This is often caused by a lack of clear agendas, inviting too many unnecessary people, and a hierarchical structure that discourages open debate. This wasteful practice drains employee productivity, morale, and valuable time that could be spent on actual work."
+        },
+        "generated_passage": "어느 날, 나는 오래된 도서관의 한 구석에서 우연히 발견한 낡은 일기장을 펼쳤다. 그 속에는 한 젊은 여성이 쓴 이야기가 담겨 있었다. 그녀는 매일 아침 해가 뜨기 전, 고요한 숲속에서 명상을 하며 하루를 시작했다. 그러나 어느 날부터인가 그녀의 명상은 방해받기 시작했다. 근처 공사 소음이 점점 커졌고, 사람들의 수다소리가 숲을 가득 채웠다. 처음에는 자연의 소리를 들으며 마음을 가다듬으려 했던 그녀가 이제는 소음 속에서 자신의 내면을 찾기 어려워졌다. 결국 그녀는 조용한 장소를 찾아 멀리 이사하기로 결심했다. 이 경험은 나에게 효율적인 환경이 얼마나 중요한지를 일깨워주었다. 마치 비효율적인 회의가 개인의 집중력을 방해하는 것처럼, 외부의 잡음은 내면의 평화를 무너뜨렸다. 이처럼, 우리는 각자의 공간에서 진정한 자신을 발견하고자 할 때 불필요한 요소들을 제거해야 한다는 사실을 다시금 깨닫게 된다."
+    },
+    {
+        "source_item": {
+            "korean_topic": "아동 비만 문제",
+            "korean_context": "달고 기름진 패스트푸드와 탄산음료 섭취는 늘고, 스마트폰 게임 등으로 신체 활동은 줄어들면서 아동 비만율이 급격히 증가하고 있습니다. 잘못된 식습관과 운동 부족이 가장 큰 원인입니다. 아동 비만은 성인병으로 이어질 확률이 높으며, 아이들의 신체적 건강뿐만 아니라 자신감 하락 등 정신 건강에도 나쁜 영향을 미칩니다.",
+            "foreign_topic": "The Childhood Obesity Problem",
+            "foreign_context": "Childhood obesity rates are rising globally, posing a serious public health threat. The primary causes are the increased consumption of high-calorie, processed foods and a sedentary lifestyle with less physical activity. This condition increases the risk of developing chronic diseases like diabetes and can negatively impact a child's mental health and self-esteem."
+        },
+        "generated_passage": "어느 날, 나는 어린 시절 살던 작은 마을의 오래된 서점을 찾아갔다. 그곳은 마치 시간 여행을 하는 듯한 느낌을 주었다. 서점의 한쪽 구석에는 먼지가 쌓인 낡은 피아노가 있었고, 그 앞에는 한 노인이 앉아 있었다. 노인은 내게 옛날 이야기 하나를 들려주었다. \"옛날 옛적, 이 마을엔 두 개의 강이 흘러왔어. 하나는 달콤한 과일의 강이었고, 다른 하나는 맑은 샘물이었지. 아이들은 과일의 강에서 놀고, 샘물에서 수영하며 건강한 삶을 살았어.\" 그러나 어느 순간, 과일의 강은 오염된 폐수로 가득 차버렸고, 샘물은 점점 말라갔다. 아이들이 더 이상 건강하게 자라지 못하는 모습이 그려졌다. 나의 상상은 여기서 멈추지 않았다. 그 노인은 나에게 말했다. \"진정한 건강은 마음에서 시작되는 법이야. 아무리 맛있는 음식이 있어도 마음이 병들면 진정한 행복을 찾을 수 없지.\" 그 말을 듣고 난 깨달았다. 우리의 아이들 또한 단순한 음식의 문제가 아닌, 마음과 환경의 조화를 통해 진정한 건강을 찾아야 한다는 사실을."
+    },
+    {
+        "source_item": {
+            "korean_topic": "재생에너지의 간헐성 문제",
+            "korean_context": "태양광, 풍력과 같은 재생에너지는 탄소 배출이 없는 청정에너지이지만, 날씨에 따라 발전량이 불안정하다는 치명적인 단점이 있습니다. 해가 없거나 바람이 불지 않으면 전기를 생산할 수 없는 '간헐성' 문제가 바로 그것입니다. 이로 인해 안정적인 전력 공급이 어려워, 재생에너지 확대에 가장 큰 걸림돌이 되고 있습니다.",
+            "foreign_topic": "The Intermittency of Renewable Energy",
+            "foreign_context": "Renewable energy sources like solar and wind are crucial for combating climate change, but they suffer from a major drawback: intermittency. The sun doesn't always shine, and the wind doesn't always blow, making their power output unreliable and difficult to predict. This variability poses a significant challenge for maintaining a stable and consistent electricity grid."
+        },
+        "generated_passage": "어릴 적 여름밤, 우리 집 뒤뜰에 설치된 작은 풍차가 바람에 따라 이리저리 흔들리며 돌아가는 모습을 보며, 나는 자연의 힘을 동경했다. 어느 날 밤, 그 풍차가 갑자기 멈춰 서 있는 것을 발견했다. 바람이 멈추었기 때문이었다. 그 순간, 마치 세상의 모든 에너지가 정지한 듯한 기분이 들었다. 그때 문득, 내가 어릴 적 꿈꾸던 미래의 에너지원이 이렇게 불안정한 현실을 마주할 수밖에 없다는 사실이 떠올랐다. 태양과 바람이라는 무한한 자원이 때로는 우리의 필요를 충족시키지 못할 때, 우리는 어떻게 해야 할까? 한 친구가 나에게 말했다. \"진정한 힘은 예측 불가능함 속에서도 지속성을 찾는 거야.\" 그날 이후로, 나는 그 말이 단순한 위로가 아닌 현실적인 해결책이 될 수 있음을 믿었다. 하지만 그 꿈을 현실로 만들기 위해서는, 우리가 직면한 간헐성의 벽을 어떻게 넘어설 것인지 고민해야 했다."
+    },
+    {
+        "source_item": {
+            "korean_topic": "보이스피싱 사기 문제",
+            "korean_context": "전화나 문자를 이용해 다른 사람을 속여 돈을 빼앗는 보이스피싱 범죄가 날이 갈수록 교묘해지고, 그 피해가 끊이지 않고 있습니다. 범죄 조직들은 사람들의 불안감이나 절박한 심리를 교묘하게 이용하고 있으며, 해외에 서버를 두는 등 단속을 피하는 수법도 지능화되고 있습니다. 보이스피싱은 피해자에게 막대한 금전적 손실과 함께 깊은 정신적 충격을 남기는 악질적인 범죄입니다.",
+            "foreign_topic": "The Voice Phishing Scam Problem",
+            "foreign_context": "Voice phishing scams, where criminals deceive victims into transferring money over the phone, are a rampant and evolving form of fraud. Scammers exploit victims' trust or fear using sophisticated social engineering tactics. These crimes cause devastating financial losses and significant emotional distress, undermining public trust in communication systems."
+        },
+        "generated_passage": "보이스피싱 범죄는 날로 진화하며 피해자들에게 심각한 경제적 손실과 심리적 고통을 안긴다. 범죄자들은 기술의 발전과 더불어 더욱 정교한 방법으로 사람들을 속이고 있다. 해외 서버 이용 등으로 단속을 피하며, 피해자 개개인의 불안한 심리나 신뢰를 악용하는 것이 주된 전략이다. 이러한 상황에서 한 친구가 나에게 털어놓은 이야기가 떠오른다. 그는 몇 달 전, 낯선 번호로 전화를 받아 \"금융기관 직원\"이라는 사람에게 속아 500만 원을 송금한 적이 있었다. 그 전화는 마치 진짜 같은 목소리였고, 그는 두려움에 휩싸여 모든 걸 포기했었다. 그 후로 그는 밤마다 불안한 잠에 빠졌고, 주변 사람들과의 관계도 점점 소원해졌다. 이 경험은 단순한 범죄를 넘어 인간 심리의 취약성을 드러내는 사례였다."
+    },
+    {
+        "source_item": {
+            "korean_topic": "도시의 빛 공해 문제",
+            "korean_context": "밤에도 대낮처럼 밝은 도시의 과도한 인공조명은 사람과 생태계에 나쁜 영향을 미치는 '빛 공해'를 유발합니다. 에너지 낭비에 대한 인식 부족과, 밤거리를 무조건 밝게 해야 안전하다는 오해가 빛 공해의 원인입니다. 이로 인해 사람들은 수면 장애를 겪고, 동식물은 고유의 생체 리듬을 잃어버리는 등 생태계 교란이 심각해지고 있습니다.",
+            "foreign_topic": "The Problem of Light Pollution in Cities",
+            "foreign_context": "Excessive and misdirected artificial light in urban areas creates 'light pollution,' which has numerous negative effects. This is caused by poorly designed lighting fixtures and a general lack of awareness about the issue. Light pollution disrupts human sleep patterns, wastes enormous amounts of energy, and has a detrimental impact on nocturnal wildlife and ecosystems."
+        },
+        "generated_passage": "나는 어릴 적 시골 마을에서 자랐는데, 그곳의 밤은 마치 별빛이 쏟아지는 캔버스 같았다. 어둠 속에서 반짝이는 별빛은 나의 상상력을 자극했고, 밤이 주는 고요함은 꿈결 같은 시간을 선사했다. 하지만 어느 날, 도시로의 이주를 결심하고 떠난 후, 그 모든 것이 변했다. 도시의 불빛은 마치 거대한 환영이라도 되는 듯 나를 감싸 안았다. 낮에는 태양을 따라 움직이는 시계처럼 규칙적인 삶을 살았지만, 밤에는 수많은 네온사인과 고층 빌딩에서 나오는 빛에 눈이 부셨다. 그러던 중 문득, 이런 도시의 불빛이 내 수면을 방해하고 있다는 생각이 들었다. 그래서 나는 나만의 작은 실험이 시작되었다. 매일 밤, 창문을 닫고 암막 커튼을 친 채, 오직 달빛의 기억만을 간직한 채로 잠을 청했다. 놀랍게도, 그 고요한 밤의 기억은 다시 나를 꿈꾸게 했고, 일상의 스트레스를 잊게 만들었다. 그러나 이 모든 상상의 여정은 결국 도시의 빛 공해라는 현실적인 문제에 부딪혔다. 과연 우리는 어떻게 이 어둠을 되찾을 수 있을까?"
+    },
+    {
+        "source_item": {
+            "korean_topic": "대학 서열화 문제",
+            "korean_context": "한국 사회는 소위 '명문대'를 정점으로 모든 대학이 줄지어 서열화되어 있으며, 이는 많은 사회 문제의 원인이 되고 있습니다. 학벌을 중시하는 사회 풍조와, 대학의 실제 교육 경쟁력보다는 간판을 보고 평가하는 관행이 이러한 서열화를 고착시켰습니다. 이로 인해 학생들은 적성과 상관없이 서열이 높은 대학에 가기 위한 무한 경쟁에 내몰리고, 대학 교육의 다양성이 훼손되고 있습니다.",
+            "foreign_topic": "The University Ranking Problem",
+            "foreign_context": "The intense focus on university rankings creates a hierarchical system that can be detrimental to education. This is driven by a societal emphasis on prestige and a belief that a degree from a top-ranked university guarantees success. This system forces students into a high-pressure competition for limited spots and can overshadow the actual quality and diversity of education offered by different institutions."
+        },
+        "generated_passage": "어느 날 밤, 나는 꿈속에서 한 작은 마을에 살고 있었다. 이 마을은 전설에 따라 매년 '별빛의 축제'라는 특별한 행사를 열었다. 마을 사람들은 모두 이 축제를 위해 각자의 재능을 발휘하며 협력했다. 그러나 어느 해엔가 축제의 중심이 된 오래된 시계탑이 고장나면서 축제는 점점 혼란스러워졌다. 마을의 젊은이들은 더 이상 서로의 강점을 인정하지 않고, 오직 누가 더 빠르고 정확하게 탑을 고치느냐에 집중했다. 그 결과, 진정한 협력과 창의성은 사라지고, 경쟁만이 남았다. 그러던 중 한 소녀가 나타나 \"우리는 함께 일해야 진정한 아름다움을 만들어낼 수 있다\"고 외쳤다. 그녀의 말은 처음에는 아무도 믿지 않았지만, 점차 사람들 마음에 스며들었다. 결국 모두가 힘을 합쳐 시계탑을 수리하고, 축제를 다시 화려하게 재현할 수 있었다. 그날 이후 마을에서는 경쟁이 아닌 협력이 새로운 전통이 되었다. 이 이야기는 우리 사회가 직면한 대학 서열화 문제와 닮았다. 우리는 한때의 '간판'보다 진정한 가치를 찾아야 한다."
+    },
+    {
+        "source_item": {
+            "korean_topic": "배달 쓰레기 문제",
+            "korean_context": "배달 음식 시장이 급격히 성장하면서, 음식을 담는 플라스틱 용기와 비닐 등 배달 쓰레기 문제가 심각해졌습니다. 한 번의 주문에도 여러 개의 플라스틱 용기가 사용되는 과대포장 관행과, 편리함을 우선시하는 소비 문화가 원인입니다. 이렇게 발생한 막대한 양의 배달 쓰레기는 재활용이 어려운 경우가 많아, 환경에 큰 부담을 주고 있습니다.",
+            "foreign_topic": "The Delivery Waste Problem",
+            "foreign_context": "The boom in food delivery services has led to a surge in single-use plastic containers and packaging waste. The problem is fueled by consumer demand for convenience and a lack of sustainable packaging options from restaurants. This mountain of waste, much of which is not recyclable, is exacerbating the plastic pollution crisis."
+        },
+        "generated_passage": "어느 날 밤, 나는 오래된 서점에서 우연히 발견한 낡은 일기장을 펼쳤다. 그 안에는 어린 시절 나의 첫 자전거 여행 이야기가 담겨 있었다. 열 살의 나는 여름방학을 맞아 자전거를 타고 이웃 마을까지 다녀오기로 결심했다. 아침 일찍 집을 나선 나는 설레는 마음으로 길을 나섰지만, 예상치 못한 폭우에 휘말렸다. 젖은 도로 위에서 균형을 잃고 넘어질 뻔했던 순간, 지나가던 친절한 할머니가 내 손을 잡아주었다. 그날 이후 할머니는 내게 특별한 존재가 되었고, 우리는 매주 일요일마다 작은 공원을 산책하며 서로의 이야기를 나누었다. 시간이 흘러, 그 할머니와 나의 우정은 마치 오래된 나무처럼 굳건해졌다. 그런데 최근에 내가 다시 그 공원의 벤치에 앉아 있을 때, 바람에 날려온 수많은 플라스틱 용기들과 비닐봉지들을 발견했다. 과거의 순수한 기억이 오염된 현대의 현실과 마주하니, 마음이 아팠다. 이 공원에서의 소중한 추억이 이제는 환경 문제로 위협받고 있는 것이었다."
+    },
+    {
+        "source_item": {
+            "korean_topic": "가짜뉴스 확산 문제",
+            "korean_context": "소셜 미디어를 통해, 사실 확인이 되지 않은 거짓 정보가 진짜 뉴스처럼 포장되어 빠르게 확산되는 문제가 심각합니다. 사람들은 자극적인 제목과 내용에 쉽게 현혹되며, 자신의 기존 신념에 맞는 정보만 선택적으로 믿으려는 경향이 가짜뉴스 확산을 부추깁니다. 가짜뉴스는 사회적 불신을 조장하고, 민주주의의 근간을 흔드는 위험한 요소가 되고 있습니다.",
+            "foreign_topic": "The Spread of Fake News",
+            "foreign_context": "The proliferation of misinformation and disinformation, or 'fake news,' through social media platforms is a major threat to society. It is spread rapidly due to sensationalist content and algorithms that cater to users' confirmation biases. Fake news erodes public trust in institutions, deepens social divisions, and can have dangerous real-world consequences."
+        },
+        "generated_passage": "어느 날 밤, 나는 오래된 도서관의 한 구석에서 책을 읽고 있었다. 책갈피를 사이에 두고 놓인 한 장의 낡은 사진 속에는 내가 어릴 적 가장 좋아하던 할머니가 웃고 계셨다. 그 순간, 내 머릿속에는 어린 시절의 추억이 flooding 했다. 할머니는 늘 나에게 \"진실은 언제나 빛난다\"고 말씀하셨는데, 요즘 들어 그 말이 더욱 절실하게 느껴졌다. 그런데 어느 순간부터 이 세상이 마치 할머니의 말씀과는 정반대로 흘러가고 있는 듯했다. 소셜 미디어가 가짜 뉴스로 가득 차 있다는 사실을 알게 되었을 때, 마치 내가 사랑하는 할머니와의 소중한 추억을 잃어버린 기분이었다. 그러던 중, 문득 내가 상상해 본 이야기가 떠올랐다. 만약 이 세상의 모든 사람들이 잠시 멈추고 서로의 이야기를 진심으로 들어주며, 진실을 찾기 위해 노력한다면, 그 과정에서 우리는 다시금 서로를 이해하고 회복할 수 있을까? 마치 할머니의 미소가 다시 내 삶에 비추는 것처럼 말이다. 하지만 현실은 여전히 복잡하고, 그 길은 멀고 험난해 보였다."
+    },
+    {
+        "source_item": {
+            "korean_topic": "현대인의 수면 부족 문제",
+            "korean_context": "많은 현대인들이 만성적인 수면 부족에 시달리고 있으며, 이는 개인의 건강을 넘어 사회 전체의 생산성에도 영향을 미칩니다. 과도한 업무와 학업 스트레스, 그리고 잠들기 직전까지 스마트폰을 사용하는 습관이 수면 부족의 주된 원인입니다. 수면 부족은 집중력 저하, 면역력 약화, 우울증 등 다양한 건강 문제를 유발하는 '만병의 근원'입니다.",
+            "foreign_topic": "The Problem of Sleep Deprivation in Modern Society",
+            "foreign_context": "Chronic sleep deprivation has become a widespread issue in modern society, with significant health and economic consequences. It is primarily caused by long work hours, high stress levels, and the pervasive use of electronic devices before bedtime. A lack of adequate sleep is linked to a host of problems, including impaired cognitive function, weakened immunity, and an increased risk of chronic diseases."
+        },
+        "generated_passage": "내가 처음 뉴욕에 갔을 때, 밤하늘을 수놓는 수많은 불빛들이 마치 꿈처럼 보였다. 하지만 그 이면에는 또 다른 이야기가 숨겨져 있었다. 나는 센트럴 파크의 한적한 벤치에 앉아, 한 노부부가 서로를 바라보며 미소 짓는 모습을 보았다. 그들의 눈빛에는 삶의 지혜가 담겨 있었고, 순간 나는 그들이 얼마나 오랜 시간 동안 함께 해왔을까 상상했다. 그때 문득 내 머릿속을 스친 생각은, 아마도 그들이 매일 밤 충분한 수면을 취하며 서로의 이야기를 나누는 것이 아닐까 하는 것이었다. 하지만 현실은 어떤가? 현대인의 삶은 끊임없는 업무 스트레스와 스마트폰 소음으로 가득 차 있다. 그래서 가끔은 내가 상상하던 평화로운 밤의 풍경조차 허상에 불과하다는 생각이 든다. 결국, 수면 부족이라는 문제는 단순히 개인의 문제가 아니라 우리 사회 전체가 해결해야 할 과제임을 깨달았다."
+    },
+    {
+        "source_item": {
+            "korean_topic": "전동 킥보드 무단 방치 문제",
+            "korean_context": "공유 전동 킥보드는 편리한 단거리 이동 수단으로 인기를 끌고 있지만, 이용자들이 아무 곳에나 무단으로 방치하는 문제가 심각합니다. 명확한 주차 규정이 없고, 이용자들의 시민 의식이 부족한 것이 가장 큰 원인입니다. 보도나 차도에 방치된 킥보드는 보행자의 통행을 방해하고, 도시 미관을 해치며, 안전사고를 유발하는 골칫거리가 되었습니다.",
+            "foreign_topic": "The Problem of Abandoned Electric Scooters",
+            "foreign_context": "Shared electric scooters offer a convenient transportation option, but their widespread use has created a problem of them being left abandoned on sidewalks and public spaces. This is largely due to a lack of designated parking areas and irresponsible user behavior. Abandoned scooters obstruct pedestrian walkways, create safety hazards, and contribute to urban clutter."
+        },
+        "generated_passage": "어느 날, 나는 작은 마을의 한적한 거리를 걷고 있었다. 그곳에는 오래된 나무 그늘 아래, 한 노인이 앉아 있었다. 그의 손에는 오래된 사진첩이 들려 있었고, 그 속에는 어린 시절의 추억이 가득 담겨 있었다. 노인의 눈빛은 먼 곳을 향하고 있었으며, 마치 과거의 순간들이 지금도 생생하게 살아 있는 듯했다. 그때 갑자기 내 귀에 익숙한 소리가 들려왔다. 그것은 내가 어릴 적 집 앞 골목에서 친구들과 함께 즐기던 킥보드 소리였다. 하지만 이 소리는 단순한 즐거움이 아닌, 도시의 혼란을 상징하는 듯 보였다. 거리 곳곳에 아무렇게나 방치된 킥보드들이 보행자 길을 가로막고 있었다. 나는 문득, 이 노인과 나의 과거, 그리고 지금 이 도시의 모습이 교차되는 지점에 서 있다는 생각이 들었다. 이러한 혼란 속에서도, 누군가가 잃어버린 꿈과 추억처럼 남아 있는 것 같았다. 과연 우리는 이 문제를 어떻게 해결할 수 있을까?"
+    },
+    {
+        "source_item": {
+            "korean_topic": "명절 기간의 교통 대란",
+            "korean_context": "설이나 추석 같은 명절이 되면, 수많은 사람들이 동시에 고향을 방문하면서 전국의 고속도로가 극심한 정체를 빚습니다. 짧은 기간에 이동 수요가 집중되는 것이 근본적인 원인입니다. 이로 인해 시민들은 도로 위에서 많은 시간을 허비하게 되며, 이는 사회 전체적으로도 막대한 경제적 손실을 야기합니다.",
+            "foreign_topic": "Holiday Traffic Congestion",
+            "foreign_context": "During major national holidays, such as Thanksgiving or Christmas, mass travel leads to severe traffic jams on highways and crowded airports. This problem is caused by a massive, simultaneous surge in travel demand as people visit family. This holiday gridlock results in wasted time, increased stress, and a higher risk of accidents, turning a festive season into a frustrating experience."
+        },
+        "generated_passage": "명절에 발생하는 교통 대란은 한국뿐만 아니라 미국과 같은 여러 나라에서 공통적으로 나타나는 현상이다. 이 문제의 근본 원인은 명절 기간 동안 사람들의 이동이 급격히 증가하는 데 있다. 한국의 경우, 설날과 추석에 가족 방문을 위해 수백만 명이 고속도로를 이용하며, 미국의 추수감사절과 크리스마스에도 비슷한 상황이 발생한다. 이러한 교통 혼잡은 단순히 시간 낭비를 넘어 경제적 손실과 안전 문제로 이어진다. 그러나 나의 어린 시절, 가족과 함께 한적한 시골 도로를 달리며 느꼈던 그 상쾌한 바람과 웃음소리는 여전히 내 마음 속에 남아 있다. 상상 속에서 나는 타임머신을 타고 과거로 돌아가, 아버지와 함께 자전거를 타고 시골 길을 누비던 순간을 떠올린다. 그때 우리는 차가 없어 자유롭게 하늘을 향해 달리는 기분이었고, 세상은 그보다 더 넓고 아름다웠다. 하지만 지금, 그런 순간들은 고속도로 위의 정체와 소음으로 인해 점점 멀어지고 있는 것 같아 안타깝다."
+    },
+    {
+        "source_item": {
+            "korean_topic": "학생들의 독서량 감소 문제",
+            "korean_context": "스마트폰과 유튜브 등 자극적인 볼거리가 넘쳐나면서, 글을 읽고 생각하는 힘을 길러주는 독서를 멀리하는 학생들이 늘고 있습니다. 영상 매체에 익숙해진 아이들이 긴 글을 읽는 데 어려움을 느끼고, 입시 위주의 교육이 독서의 즐거움을 앗아간 것이 원인입니다. 독서량 감소는 학생들의 어휘력과 문해력 저하로 이어져, 전반적인 학습 능력에 부정적인 영향을 미칩니다.",
+            "foreign_topic": "The Decline in Student Reading",
+            "foreign_context": "There is a growing concern over the decline in reading for pleasure among students. This trend is largely attributed to the overwhelming amount of digital entertainment available, such as social media and video games, which provide more immediate gratification. A lack of reading can negatively impact vocabulary development, critical thinking skills, and academic performance."
+        },
+        "generated_passage": "스마트폰과 유튜브가 만연한 현대 사회에서, 학생들은 점점 더 책을 멀리하고 있다. 영상 매체의 즉각적인 만족감은 긴 글의 집중력을 떨어뜨리고, 입시 중심의 교육은 독서의 즐거움을 빼앗고 있다. 이로 인해 학생들의 어휘력과 문해력이 저하되고, 학습 능력에도 부정적 영향을 미치고 있다. 그러나 한 번은 내가 어린 시절, 아버지와 함께 시골의 작은 서점에 갔던 기억이 떠오른다. 그곳은 마치 시간 여행을 하는 듯한 분위기였고, 아버지의 손에 이끌려 다양한 책들을 탐험하던 그 순간들은 지금도 잊을 수 없다. 그때 나는 책 속에서 펼쳐지는 무한한 상상의 세계에 빠져들며, 현실과는 또 다른 차원의 모험을 경험했다. 마치 마법의 열쇠처럼, 책은 내 마음의 문을 열었고, 새로운 세상을 보여주었다. 그 경험은 나에게 독서가 단순한 지식 습득을 넘어 삶의 일부가 될 수 있음을 깨닫게 해주었다. 하지만 지금 이 시대에, 과연 그런 마법 같은 경험을 다시 찾을 수 있을까? 디지털 홍수 속에서도 진정한 독서의 가치를 되찾기 위해 우리는 어떻게 해야 할까?"
+    },
+    {
+        "source_item": {
+            "korean_topic": "지역 축제의 상업화 문제",
+            "korean_context": "전국 각지에서 열리는 지역 축제들이 고유의 특색은 잃어버리고, 비싼 바가지요금과 비슷비슷한 볼거리로 채워지고 있다는 비판이 많습니다. 지자체들이 단기적인 관광객 유치에만 급급하여 축제의 본질적인 의미를 고민하지 않기 때문입니다. 이로 인해 방문객들은 실망감을 느끼고, 한 번 찾은 축제를 다시 찾지 않게 되면서 결국 축제의 지속가능성을 해치게 됩니다.",
+            "foreign_topic": "The Commercialization of Local Festivals",
+            "foreign_context": "Many local festivals are criticized for becoming overly commercialized, losing their unique cultural character in the process. This happens when organizers prioritize profit over authenticity, leading to generic stalls, overpriced food, and a lack of genuine local flavor. As a result, festivals can lose their community spirit and become unsatisfying, tourist-oriented events."
+        },
+        "generated_passage": "어느 날 밤, 나는 꿈속에서 시간 여행을 떠나 1960년대 서울의 한복판에 서 있었다. 화려한 네온사인과 함께 거리에 울려 퍼지는 재즈 선율에 취해있던 나는, 우연히 한 작은 찻집에 발을 들였다. 그곳의 주인은 오래된 사진첩을 꺼내며 나에게 옛날 이야기 하나를 들려주었다. \"이 찻집은 100년 전, 우리 할머니가 처음 열었어요. 그때는 손님이 오면 직접 만든 전통차를 대접하고, 지역의 예술가들과 함께하는 문화 교류의 장이었죠.\" 하지만 시간이 흐르면서 이 찻집도 상업화의 물결에 휩쓸려, 이제는 프랜차이즈 커피와 패스트푸드로 가득 차 있었다. 그 순간, 꿈에서 깨어난 나는 현실의 우리 지역 축제가 처한 상황과 너무나도 유사하다는 생각에 가슴이 아팠다. 과연 우리는 어떻게 하면 본래의 문화적 가치를 지키면서도 사람들을 끌어들일 수 있을까?"
+    },
+    {
+        "source_item": {
+            "korean_topic": "몰래카메라 범죄 문제",
+            "korean_context": "화장실이나 숙박업소 등에서 초소형 카메라를 이용해 타인의 신체를 몰래 촬영하는 범죄가 심각한 사회적 불안을 야기하고 있습니다. 카메라 기술의 발달로 범죄가 쉬워진 반면, 가해자에 대한 처벌은 미약하다는 인식이 문제입니다. 이러한 범죄는 피해자에게 씻을 수 없는 정신적 상처를 남기며, 일상 공간에 대한 근본적인 불신과 공포를 확산시킵니다.",
+            "foreign_topic": "The Spycam Crime Problem",
+            "foreign_context": "The proliferation of crimes involving hidden cameras (spycams) placed in private spaces like restrooms and hotels is a deeply disturbing issue. The easy availability of miniature cameras and a perception of weak legal penalties have fueled this problem. These crimes are a severe violation of privacy that causes immense psychological trauma and erodes the public's sense of safety."
+        },
+        "generated_passage": "화장실과 호텔 방에서 일어나는 몰래카메라 범죄는 현대 사회의 어두운 그림자처럼 느껴진다. 이 문제는 기술 발전과 함께 더욱 심각해졌지만, 법적 제재는 미약한 상태다. 그러나 이런 범죄를 개인적 경험으로 떠올려보면, 내가 대학 시절 기숙사에서 겪은 일이 떠오른다. 그날 밤, 기숙사 복도에서 누군가 내 방에 들어와 숨어 있는 작은 상자를 발견했다. 호기심에 상자를 열어보니 그 안에는 오래된 사진들과 낯선 편지들이 들어 있었다. 그때 느낀 두려움과 불안감은 지금도 잊을 수 없다. 이처럼 몰래카메라는 단순한 범죄 이상의 의미를 지니며, 우리의 일상을 파고드는 보이지 않는 침입자로 자리 잡고 있다."
+    },
+    {
+        "source_item": {
+            "korean_topic": "젠트리피케이션 문제",
+            "korean_context": "특색 있고 저렴했던 구도심 지역이 인기를 끌면서, 임대료가 급등하여 원래 살던 주민이나 영세 상인들이 쫓겨나는 현상을 젠트리피케이션이라고 합니다. 외부 자본이 유입되면서 지역이 활성화되지만, 그 과정에서 지역의 고유한 특성이 사라지고 부동산 가격만 폭등하는 것이 문제입니다. 결국 원주민들은 삶의 터전을 잃게 되고, 도시는 개성을 잃고 획일화되는 결과를 낳습니다.",
+            "foreign_topic": "The Problem of Gentrification",
+            "foreign_context": "Gentrification occurs when investment flows into a low-income neighborhood, leading to rising rents and property values. While this can bring new businesses and improved infrastructure, it often displaces longtime residents and small businesses who can no longer afford to live there. The process can destroy the unique cultural fabric of a community, replacing it with a more generic and exclusive environment."
+        },
+        "generated_passage": "어느 날, 나는 오래된 도서관을 찾았다. 그곳은 한때 마을의 중심지였지만, 이제는 고급 카페들과 부티크 상점들로 가득 차 있었다. 예전에는 이웃들이 모여 책을 읽고 이야기하던 장소였는데, 지금은 낯선 사람들이 자리를 차지하고 있었다. 문득, 내가 어린 시절 친구들과 함께 놀던 작은 공원이 떠올랐다. 그곳 역시 새로운 아파트 단지로 변모해 있었다. 어릴 적, 우리는 공원에서 나무 그늘 아래 앉아 별을 세고, 서로의 꿈을 나누곤 했다. 하지만 이제 그 공원은 부유층이 즐기는 사적인 공간으로 변해 있었다. 이처럼, 도시가 발전하면서 본래의 따뜻한 기억이 사라지는 것을 보니, 마치 내가 잃어버린 시간을 되찾기 위해 고군분투하는 것만 같았다. 이러한 변화는 단순한 경제적 문제가 아닌, 우리가 소중히 여기는 과거와 현재의 충돌을 반영하는 것이었다."
+    },
+    {
+        "source_item": {
+            "korean_topic": "해양 미세플라스틱 문제",
+            "korean_context": "플라스틱 쓰레기가 바다로 흘러 들어가 잘게 부서지면서, 5mm 미만의 작은 플라스틱 조각인 '미세플라스틱'이 해양 생태계를 위협하고 있습니다. 우리가 무심코 버린 플라스틱뿐만 아니라, 치약이나 세정제에 포함된 마이크로비즈도 주된 오염원입니다. 해양 생물들이 미세플라스틱을 먹이로 오인하여 섭취하고, 이는 먹이 사슬을 통해 결국 인간의 식탁까지 위협하게 됩니다.",
+            "foreign_topic": "The Ocean Microplastics Problem",
+            "foreign_context": "The world's oceans are contaminated with microplastics, tiny plastic particles resulting from the breakdown of larger debris and microbeads in cosmetics. Marine animals often ingest these plastics, causing internal injuries and starvation. This pollution poses a major threat to marine ecosystems and potentially to human health as these particles move up the food chain."
+        },
+        "generated_passage": "내가 어릴 적 살던 마을에는 커다란 낡은 시계탑이 있었다. 그 시계는 매일 오후 다섯 시마다 종소리를 울리며 마을의 하루를 마감했지만, 나는 그 소리가 점점 멀어지는 상상을 하곤 했다. 어느 날, 그 시계탑의 시계가 갑자기 멈추어 버리자 마을은 혼란에 빠졌다. 사람들은 각자 다른 이유로 시계를 멈추게 했다고 주장하며 서로 다투었다. 한 사람은 고장난 배터리를 탓했고, 또 다른 이는 탑의 구조적 결함을 지적했다. 그러나 정작 중요한 사실은 아무도 시계탑에 새 배터리를 넣거나 수리를 시도하지 않았다는 점이었다. 마치 우리 사회의 해양 미세플라스틱 문제와 같았다. 우리는 문제의 원인을 알고 있지만, 실질적인 해결책을 찾지 못하고 있다. 한편, 내 머릿속에는 어린 시절의 상상 속 이야기가 펼쳐졌다. 언젠가 시계탑이 다시 움직이기 위해 마을 사람들이 모여 퍼즐 조각을 맞추듯 협력하는 모습을 보았다. 하지만 그때 문득, 내가 상상한 그 협력이 과연 현실에서도 가능할까 하는 의문이 스쳤다."
+    },
+    {
+        "source_item": {
+            "korean_topic": "1인 가구의 사회적 고립 문제",
+            "korean_context": "혼자 사는 1인 가구의 비율이 빠르게 증가하면서, 이들의 사회적 고립과 외로움 문제가 새로운 사회 문제로 떠오르고 있습니다. 개인주의적 가치관의 확산과 불안정한 주거 및 고용 형태가 1인 가구의 증가와 고립을 부추깁니다. 사회적 관계망이 약한 1인 가구는 우울증이나 고독사 등 위험에 더 쉽게 노출될 수 있어, 이를 위한 사회적 대책이 필요합니다.",
+            "foreign_topic": "The Social Isolation of Single-Person Households",
+            "foreign_context": "As the number of people living alone increases, social isolation and loneliness have become significant public health concerns. This trend is driven by changing social norms and economic factors that lead to more people living by themselves. Lacking a strong social support network, individuals in single-person households are at a higher risk for mental health issues and other emergencies."
+        },
+        "generated_passage": "혼자 사는 사람들의 수가 늘어나면서, 우리 사회는 그들의 사회적 고립 문제에 직면하고 있다. 이는 개인주의 가치의 확산과 불안정한 경제 상황이 맞물려 발생한 현상으로, 사회적 관계망이 취약한 1인 가구가 우울증과 고독사에 취약해지는 현실을 초래하고 있다. 이런 상황에서 나는 어릴 적 외딴 시골 마을에서 보낸 시간이 떠오른다. 그때 마을 사람들은 서로를 잘 알고 있었으며, 작은 사건에도 모두가 모여 함께 해결책을 모색하곤 했다. 하지만 지금은 그 따뜻한 공동체 의식이 사라지고, 각자는 자신만의 세계에 갇혀 있는 것 같다. 마치 한 편의 영화에서 주인공이 외로운 도시 한복판에서 혼자 싸우고 있는 듯한 느낌이야. 과연 어떻게 하면 이 고립된 현대인들에게 다시 연결의 끈을 만들어 줄 수 있을까?"
+    },
+    {
+        "source_item": {
+            "korean_topic": "블록체인 기술의 전력 소모 문제",
+            "korean_context": "블록체인 기술, 특히 비트코인과 같은 암호화폐의 채굴 과정은 막대한 양의 전력을 소모하여 '전기 먹는 하마'로 불립니다. 복잡한 암호를 풀기 위해 고성능 컴퓨터를 24시간 가동해야 하는 작업증명(PoW) 방식이 그 원인입니다. 이는 국가 전체의 전력망에 부담을 주고, 화석 연료 발전을 통해 생산된 전기를 사용할 경우 심각한 탄소 배출 문제를 야기합니다.",
+            "foreign_topic": "The Energy Consumption of Blockchain Technology",
+            "foreign_context": "Blockchain technologies, particularly cryptocurrencies like Bitcoin that use a 'Proof-of-Work' consensus mechanism, consume vast amounts of electricity. The 'mining' process requires immense computational power, leading to an energy consumption that surpasses that of many countries. This raises serious environmental concerns, as much of this energy is generated from fossil fuels, contributing to carbon emissions."
+        },
+        "generated_passage": "어느 날 아침, 나는 오래된 나무 아래 앉아 커피를 마시며 책을 읽고 있었다. 그때 갑자기 한 무리의 사람들이 다가와 나에게 말했다. \"이 커피 한 잔은 사실 지구가 멸망할 만큼 많은 에너지를 소비한 결과물일 수 있어!\" 그들의 말은 마치 꿈처럼 들렸다. 사실 그들이 말하는 건 비트코인 채굴과 관련된 이야기였다. 이 암호화폐는 복잡한 수학 문제를 푸는 데 엄청난 전력을 필요로 하고, 그로 인해 환경 파괴가 심각하다는 것이었다. 하지만 그 순간 내 머릿속은 다른 곳으로 향했다. 어릴 적, 친구들과 함께 놀이터에서 밀대를 타고 오르내리던 기억이 떠올랐다. 우리는 끝없이 높은 곳을 향해 도전했지만, 언제나 가장 큰 장애물은 우리 자신의 두려움이었다. 지금 이 순간도, 블록체인의 에너지 문제는 기술적 혁신 뒤에 숨겨진 두려움과 맞닿아 있는 것 같았다. 과연 우리는 이 두려움을 극복하고 더 나은 방향으로 나아갈 수 있을까? 그리고 그 과정에서 우리가 잃어버린 것들은 무엇일까?"
+    },
+    {
+        "source_item": {
+            "korean_topic": "자영업자의 과당 경쟁 문제",
+            "korean_context": "한국은 인구 대비 자영업자의 비율이 매우 높아, 비슷한 업종끼리의 과도한 경쟁이 벌어지고 있습니다. 이는 은퇴 후 많은 사람들이 특별한 기술 없이 쉽게 창업할 수 있는 치킨집이나 카페 등으로 몰리기 때문입니다. 과당 경쟁은 수익성 악화로 이어져, 많은 자영업자들이 빚을 지고 폐업하는 악순환의 원인이 되고 있습니다.",
+            "foreign_topic": "The Problem of Excessive Competition Among Small Businesses",
+            "foreign_context": "In many economies, there is an oversaturation of small businesses in certain sectors, such as cafes and retail, leading to intense competition. This is often caused by a lack of diverse job opportunities, forcing people into self-employment. This hyper-competition results in low profit margins and high failure rates, creating economic instability for small business owners."
+        },
+        "generated_passage": "어느 날, 나는 작은 마을에 자리 잡은 한 카페를 방문했다. 그곳의 주인은 매일 아침 신선한 빵을 직접 구우며 손님들을 맞았지만, 얼마 지나지 않아 같은 블록에 또 다른 카페가 문을 열었다. 경쟁이 심해지자 첫 번째 카페는 가격을 낮추고 할인 쿠폰을 남발했지만, 수익성은 점점 악화되었다. 어느 날 밤, 꿈속에서 나는 이 마을의 모든 상점이 거대한 미로 속에 갇힌 모습이었다. 그 미로의 중심에는 한 노인이 있었고, 그는 \"진정한 가치는 경쟁 속에서가 아닌, 자신만의 고유한 이야기에 있다\"고 속삭였다. 과연, 이 마을의 상인들은 어떻게 해야 할까? 그들은 각자의 독특한 이야기와 매력을 발굴하여 미로를 탈출할 수 있을까? 아니면, 결국 모두가 사라지고 말 것인가?"
+    },
+    {
+        "source_item": {
+            "korean_topic": "게임 중독 문제",
+            "korean_context": "일부 청소년과 성인들이 현실 세계보다 게임에 몰두하며 일상생활에 어려움을 겪는 게임 중독 문제가 심각합니다. 게임이 제공하는 즉각적인 보상과 성취감이 현실의 어려움을 회피하는 수단이 되기 때문입니다. 게임 중독은 학업 및 업무 능력 저하, 대인관계 단절, 건강 악화 등 개인의 삶을 파괴하는 심각한 질병으로 인식되고 있습니다.",
+            "foreign_topic": "The Problem of Gaming Addiction",
+            "foreign_context": "Gaming addiction, or 'gaming disorder,' is a condition where individuals are unable to control their gaming habits, prioritizing it over other life interests and activities. It is driven by the immersive nature and reward systems of modern video games. This addiction can lead to serious negative consequences, including poor academic or work performance, social isolation, and neglect of personal health."
+        },
+        "generated_passage": "나는 어릴 적부터 방 안에 틀어박혀 하루 종일 컴퓨터 게임을 하곤 했다. 그 시절, 나는 가상 세계에서 영웅이 되는 상상을 하며 현실의 모든 고민을 잊곤 했다. 하지만 어느 날, 갑자기 창문 밖 세상이 너무 지루하고, 실제 친구들과의 대화가 멀게 느껴졌다. 그날 이후, 나는 점점 더 현실과 동떨어진 채 가상의 세계에 갇혔고, 부모님이 걱정할 만큼 성적이 떨어지기 시작했다. 그러던 중, 우연히 오래된 일기장을 꺼내 읽으며 어린 시절의 나를 발견했다. \"그 때 왜 그렇게 게임에 집착했을까?\"라는 질문이 머릿속을 맴돌았다. 지금 생각해보면, 게임은 단순한 오락이 아니라 일종의 도피처였던 것이다. 그러나 문제는 그 도피가 점차 현실의 나를 잃게 만들었다는 점이었다. 결국, 나는 게임 시간을 제한하고, 주말마다 가족과 함께 산책하거나 스포츠에 참여하는 새로운 일상을 만들기로 결심했다. 이렇게 작은 변화들이 모이며, 다시금 현실을 직시하고 나 자신을 찾아가는 여정을 시작할 수 있었다."
+    },
+    {
+        "source_item": {
+            "korean_topic": "산불 예방 및 대응 문제",
+            "korean_context": "기후 변화로 인해 날씨가 건조해지면서, 대형 산불의 발생 빈도와 규모가 점차 커지고 있습니다. 등산객의 부주의한 실화가 가장 큰 원인이지만, 산림이 빽빽하게 우거져 한번 불이 붙으면 쉽게 확산되는 것도 문제입니다. 산불은 수십 년간 가꾼 숲을 한순간에 잿더미로 만들고, 인명과 재산에 막대한 피해를 입히는 재앙입니다.",
+            "foreign_topic": "The Problem of Wildfire Prevention and Response",
+            "foreign_context": "Wildfires are becoming more frequent and intense due to climate change and prolonged droughts. While many are started by human carelessness, factors like poor forest management also contribute to their spread. These fires cause devastating damage to ecosystems, destroy homes and communities, and pose a significant threat to human life."
+        },
+        "generated_passage": "어느 날 나는 꿈속에서 한 작은 마을에 살고 있었다. 이 마을은 사계절 내내 꽃이 만발하고 맑은 공기가 흐르는 이상적인 장소였다. 하지만 어느 해 여름, 갑작스러운 가뭄이 찾아오고 하늘이 무섭게 타오르면서 모든 것이 변해갔다. 마을 사람들은 처음엔 대수롭지 않게 여겼지만, 곧 불길이 번지기 시작했다. 소방대는 최선을 다했지만, 산림의 밀도는 너무 높아 불길은 마치 거대한 벽을 이루며 마을을 위협했다. 한편, 마을의 지혜로운 노인은 옛날 전설을 들려주며 \"진정한 힘은 자연을 이해하고 조화롭게 사는 데 있다\"고 말했다. 그 순간, 나는 깨달았다. 진정한 해결책은 단순히 불을 끄는 것이 아니라, 자연과 인간이 함께 공존할 수 있는 방법을 찾는 것이라는 것을."
+    },
+    {
+        "source_item": {
+            "korean_topic": "무분별한 옥외 광고물 문제",
+            "korean_context": "도시의 거리에는 허가받지 않은 현수막, 전단지, 입간판 등 불법 옥외 광고물이 넘쳐나고 있습니다. 단속이 제대로 이루어지지 않고, 적발되어도 처벌이 가볍기 때문에 이러한 문제가 반복됩니다. 무분별한 광고물은 도시의 미관을 해칠 뿐만 아니라, 운전자와 보행자의 시야를 가려 안전을 위협하는 요인이 됩니다.",
+            "foreign_topic": "The Problem of Unregulated Outdoor Advertising",
+            "foreign_context": "City streets are often cluttered with illegal and unregulated advertisements like banners, flyers, and signboards. This problem persists due to a lack of enforcement and weak penalties for offenders. This visual pollution not only creates an unattractive urban landscape but can also distract drivers and pedestrians, creating safety hazards."
+        },
+        "generated_passage": "도시의 거리를 걷다 보면 마치 거대한 광고판에 갇힌 듯한 기분이 든다. 허가받지 않은 현수막과 전단지가 길거리를 점령하고, 그 사이로 길을 걷는 나는 마치 미로를 탐험하듯 조심스럽게 발걸음을 옮긴다. 어느 날, 나는 우연히 한 작은 마을에서 열린 축제에 참여했다. 그곳에서는 주민들이 손수 만든 다양한 장식물과 깃발이 바람에 펄럭였고, 사람들의 웃음소리가 가득했다. 그런데 그곳에서 만난 한 노인은 내게 이렇게 말했다. \"이 축제야말로 진정한 우리의 목소리야. 하지만 도시에선 그런 목소리를 내기 어려워.\" 그의 말에 공감하며, 문득 내가 상상한 이야기가 떠올랐다. 어느 미래 사회에서 사람들은 디지털 홀로그램을 통해 자유롭게 자신의 메시지를 표현하고, 그 메시지는 자동으로 필터링되어 공공장소의 혼잡을 피했다. 그러나 이 모든 것이 가능해지기 위해선 먼저 현재의 불법 광고물 문제를 해결해야 한다는 사실을 깨달았다."
+    },
+    {
+        "source_item": {
+            "korean_topic": "캠퍼스 내 쓰레기 문제",
+            "korean_context": "대학 캠퍼스 곳곳에 학생들이 버리고 간 일회용 컵과 음식물 쓰레기가 넘쳐나 문제가 되고 있습니다. 쓰레기통 부족 문제도 있지만, 분리배출을 제대로 하지 않고 아무 곳에나 쓰레기를 버리는 일부 학생들의 부족한 시민 의식이 더 큰 원인입니다. 이는 캠퍼스 미관을 해치고, 악취를 유발하며, 청소 노동자들의 업무를 가중시키는 원인이 됩니다.",
+            "foreign_topic": "The Campus Litter Problem",
+            "foreign_context": "Many university campuses struggle with a litter problem, with disposable cups, food wrappers, and other trash overflowing from bins or being left on the ground. This is caused by a combination of insufficient waste receptacles and a lack of civic responsibility among some students. A littered campus is not only unsightly but also creates extra work for cleaning staff and reflects poorly on the university community."
+        },
+        "generated_passage": "대학 캠퍼스에서 발생하는 쓰레기 문제는 단순히 쓰레기통의 수 부족으로 치부할 수 없는 복합적인 양상을 띠고 있다. 특히, 일부 학생들의 시민 의식 부족이 주요 원인으로 지목된다. 이들은 분리수거조차 제대로 하지 않고 아무데나 쓰레기를 버려, 캠퍼스 환경을 훼손하고 악취와 청소 인력의 과중한 업무 부담을 초래한다. 이런 상황에서 나는 어릴 적 작은 마을에서 있었던 일을 떠올린다. 그 마을에는 커다란 연못이 있었는데, 매년 여름마다 주민들이 연못 주변에 쓰레기를 버리면서 생태계가 파괴되기 시작했다. 한 주민이 “우리 모두 조금만 신경 쓰면 되지 않을까?”라고 했지만, 아무도 귀 기울이지 않았다. 결국 마을의 환경 단체들이 나서서 매주 정화 활동을 벌이자 상황이 조금씩 나아졌다. 이처럼 캠퍼스의 쓰레기 문제 역시 학생 참여의식과 지속적인 관리 시스템의 도입이 필요해 보인다."
+    },
+    {
+        "source_item": {
+            "korean_topic": "지식재산권 침해 문제",
+            "korean_context": "인터넷의 발달로 영화, 음악, 소프트웨어 등 창작물을 불법으로 복제하고 공유하는 행위가 만연해 있습니다. 정당한 대가를 치르지 않고 콘텐츠를 이용하려는 일부 사람들의 잘못된 인식과, 불법 복제물을 쉽게 찾아볼 수 있는 환경이 문제입니다. 이러한 지식재산권 침해는 창작자의 의욕을 꺾고, 결국 문화 산업 전체의 발전을 저해하는 심각한 범죄입니다.",
+            "foreign_topic": "The Problem of Intellectual Property Infringement",
+            "foreign_context": "The digital age has made it incredibly easy to illegally copy and distribute creative works like movies, music, and software. This problem is driven by a public perception that digital content should be free and the widespread availability of pirated material online. Intellectual property theft discourages creators, harms the creative industries, and undermines the value of innovation."
+        },
+        "generated_passage": "어느 날 나는 오래된 도서관의 비밀스러운 한 방에서 잠들어 있던 고대 지도를 발견했다. 지도에는 내가 사는 도시의 과거와 미래가 복잡하게 얽혀 있었다. 그 순간, 내 머릿속은 과거의 내가 잃어버린 꿈과 현재의 내가 직면한 현실 사이의 간극으로 가득 찼다. 마치 시간이 멈춘 듯, 나는 어린 시절 부모님이 내게 들려주던 이야기 속으로 빨려 들어갔다. \"세상은 언제나 네 선택을 기다리고 있어,\" 그들은 항상 말했다. 하지만 현실은 그 선택이 얼마나 어려운지를 알려주었다. 그러던 중, 갑자기 컴퓨터 화면이 켜지며 디지털 시대의 위협이 떠올랐다. 불법 다운로드와 공유가 만연한 이 시대에서, 창작자들은 점점 더 고립되고 있다. 그들의 열정은 차가운 스크린 속에서 사라져가고, 새로운 아이디어의 싹은 짓밟히고 만다. 이처럼 두 문화는 서로 다른 시대에 존재하지만, 결국에는 같은 문제로 고통받고 있다는 사실이 나를 놀라게 했다."
+    },
+    {
+        "source_item": {
+            "korean_topic": "반려동물 소음 및 배설물 문제",
+            "korean_context": "공동주택이나 공원에서 일부 반려동물의 짖는 소음이나, 배설물을 치우지 않는 문제로 이웃 간의 갈등이 발생하고 있습니다. 이는 반려동물에 대한 책임 의식이 부족한 일부 견주들의 '펫티켓' 실종이 가장 큰 원인입니다. 이러한 문제는 동물에 대한 부정적인 인식을 확산시키고, 모든 반려동물 양육인들이 잠재적인 가해자로 오해받게 만드는 원인이 됩니다.",
+            "foreign_topic": "The Problem of Pet Noise and Waste",
+            "foreign_context": "Conflicts often arise in communities over issues like excessive barking or owners failing to clean up their pets' waste in public areas. This problem stems from irresponsible pet ownership and a lack of consideration for others, often called 'petiquette'. This behavior creates neighborhood disputes, fosters a negative image of pets, and can lead to stricter regulations for all pet owners."
+        },
+        "generated_passage": "어느 날 나는 작은 시골 마을에 있는 오래된 책방을 방문했었다. 그곳의 주인은 나이가 많은 할아버지로, 매일 아침 신선한 빵을 구워내곤 했다. 하지만 어느 순간부터 그 빵 냄새는 마을 사람들의 불만을 사기 시작했다. 이유는 바로 한 마리의 개였다. 이 개는 매일 새벽마다 주인과 함께 산책을 나왔고, 그 과정에서 짖는 소리와 배설물이 문제가 되었다. 마을 사람들은 점점 짜증을 내기 시작했고, 결국 할아버지는 개를 집에 가두고 산책을 자제하기로 결심했다. 그러나 그 개는 혼자 남겨지는 것을 싫어했고, 매일 밤 창밖에서 낑낑거리는 소리를 냈다. 이 장면은 나에게 반려동물 문제에 대한 깊은 통찰을 주었다. 책임 있는 소유와 배려가 얼마나 중요한지를 다시금 깨닫게 했던 순간이었다. 한편, 이 사건을 통해 나는 내 어린 시절의 기억을 떠올렸다. 우리 집 옆집에 살던 할머니는 항상 강아지를 데리고 다녔지만, 놀랍게도 그 강아지는 주변 사람들에게 사랑받았다. 할머니의 특별한 훈련법과 꾸준한 관리가 있었기 때문이었다. 이처럼 문제의 본질은 단순한 소음에 그치지 않고, 그 뒤에 숨겨진 책임감 있는 행동의 중요성에 있다."
+    },
+    {
+        "source_item": {
+            "korean_topic": "심야 택시 승차난 문제",
+            "korean_context": "금요일 밤이나 주말 등 늦은 밤 시간에는 택시를 잡으려는 사람은 많지만, 운행하는 택시는 부족하여 '택시 대란'이 벌어집니다. 이는 심야 운행의 어려움과 낮은 수익성 때문에 택시 기사들이 운행을 기피하기 때문입니다. 이로 인해 시민들은 귀가에 큰 불편을 겪고, 일부 택시는 부당한 요금을 요구하거나 단거리 승객을 거부하는 등 불법 행위를 하기도 합니다.",
+            "foreign_topic": "The Late-Night Taxi Shortage Problem",
+            "foreign_context": "In many cities, it is extremely difficult to find a taxi late at night, especially on weekends. This shortage is caused by a mismatch between high passenger demand and a low supply of drivers, who may be reluctant to work late hours due to safety concerns or low profitability. This situation leaves passengers stranded and can lead to illegal practices like fare gouging or ride refusals."
+        },
+        "generated_passage": "금요일 밤이 되면 도시는 마치 거대한 미로처럼 느껴진다. 나는 친구들과 함께 야경을 즐기던 중, 갑자기 집에 가야 할 시간이 다가왔다. 그러나 거리에는 텅 빈 택시들만 보일 뿐, 어디서도 나의 손을 잡아줄 차는 보이지 않았다. 결국 우리는 한참을 기다린 끝에 겨우 한 대의 택시를 잡을 수 있었고, 운전사는 우리에게 평소보다 두 배 가까운 요금을 요구했다. 이런 경험은 나에게 심야 택시 문제의 실체를 깨닫게 해주었다. 하지만 어느 날 밤, 내가 상상 속에서 만난 친구가 있었다. 그는 마법의 택시 드라이버로, 언제나 승객을 안전하게 데려다주는 특별한 차량을 운영했다. 이 마법은 단순한 기술이 아닌, 사람들의 마음을 이해하고 배려하는 데서 비롯된 것이었다. 그 친구는 매일 밤 다양한 승객들의 이야기를 듣고, 그들의 필요를 충족시키기 위해 노력했으며, 덕분에 지역 사회에서 존경받는 인물이 되었다. 그의 이야기는 나에게 진정한 서비스가 무엇인지, 그리고 우리가 직면한 문제들이 어떻게 해결될 수 있는지를 다시금 생각하게 만들었다."
+    },
+    {
+        "source_item": {
+            "korean_topic": "대학가 원룸의 비싼 월세 문제",
+            "korean_context": "대학생들이 거주하는 대학가 원룸의 월세가 학생들의 경제적 수준에 비해 지나치게 비싸다는 문제가 있습니다. 대학 주변의 높은 임대료 수요를 이용해 건물주들이 높은 수익을 추구하는 것이 주된 원인입니다. 이로 인해 많은 대학생들이 주거비 부담으로 고통받고 있으며, 이는 학업에 집중하는 것을 방해하고 아르바이트에 내몰리게 하는 원인이 됩니다.",
+            "foreign_topic": "The Problem of High Rent for University Students",
+            "foreign_context": "Students in university towns often face exorbitantly high rents for small studio apartments. This problem is driven by high demand and a rental market that exploits students' need to live close to campus. The financial burden of high rent causes significant stress for students, forcing many to take on debt or work long hours, which can negatively affect their studies."
+        },
+        "generated_passage": "대학가의 원룸 월세는 정말 천정부지로 치솟고 있다. 학생들이 감당하기에는 버거운 가격인데, 그 배경엔 건물주의 과도한 수익 추구가 자리 잡고 있다. 이런 상황은 학생들에게 심각한 경제적 부담을 안겨주고, 결국 학업에 집중하기도 어렵게 만든다. 나는 예전에 친구들과 함께 살던 작은 원룸이 있었는데, 그 집 주인 할머니가 우리 방에 있는 오래된 피아노를 보고 \"이건 가치가 꽤 나간다\"며 웃던 기억이 난다. 그때 우리는 그 피아노 때문에 더 비싼 월세를 내야 했는데, 할머니는 그저 자신의 자산을 평가하려는 것뿐이었다. 그런데 현실은 그런 할머니의 시선과는 다르게, 학생들이 생존을 위해 고군분투하는 것이었다. 내 친구들은 아르바이트를 병행하며 학비를 마련했고, 나도 도서관에서 늦게까지 공부하며 시간을 쪼개 썼다. 하지만 그 모든 노력에도 불구하고, 여전히 매달 나가는 월세 때문에 스트레스가 쌓였다. 그러던 중, 한 친구가 '공동 주택'이라는 새로운 아이디어를 제안했다. 여러 명이 모여 집을 공유하고 비용을 나누는 방식이었다. 이 방법은 확실히 경제적 부담을 줄일 수 있을 것 같았다. 그러나 개인 공간 부족과 사생활 침해라는 부작용도 우려되는 상황이었다. 그럼에도 불구하고, 비용 절감과 더불어 서로 돕는 커뮤니티 형성이 가능해질 것이라는 기대가 컸다."
+    },
+    {
+        "source_item": {
+            "korean_topic": "대포차 문제",
+            "korean_context": "실제 소유자와 자동차 등록 서류상의 명의자가 다른 불법 차량인 '대포차'가 각종 범죄에 악용되고 있습니다. 명의 이전 절차의 허점을 이용하거나, 폐업한 법인 명의의 차량을 불법으로 유통시키는 것이 주된 수법입니다. 대포차는 뺑소니 사고, 납치, 강도 등 강력 범죄의 도구로 사용되어 사회 안전을 심각하게 위협하고 있습니다.",
+            "foreign_topic": "The Problem of 'Cannonball' (Illegally Registered) Cars",
+            "foreign_context": "Illegally registered vehicles, where the legal owner and the actual user are different, pose a significant threat to public safety. These 'ghost cars' are created by exploiting loopholes in vehicle registration systems and are frequently used to commit crimes like hit-and-runs, theft, and other felonies. Because they are untraceable, they allow criminals to operate with a layer of anonymity, making law enforcement difficult."
+        },
+        "generated_passage": "대포차와 불법 등록된 차량은 현대 사회에서 심각한 안전 문제를 야기하고 있다. 이러한 차량들은 주로 명의 이전 절차의 허점이나 폐업한 법인의 명의를 이용해 불법적으로 유통되며, 뺑소니, 납치, 강도 등의 범죄 수단으로 악용된다. 이로 인해 사회적 불안은 가중되지만, 문제는 단순히 법적 제재만으로 해결되지 않는다. 나는 어릴 적, 작은 마을의 한 도로에서 발생한 사건을 잊지 못한다. 어느 날 밤, 한 청년이 오토바이를 타고 질주하다가 신호를 무시하고 교차로를 지나쳤다. 그 순간, 경찰차가 뒤따르던 중 청년과 오토바이 사이에 예기치 못한 사고가 발생했다. 다행히도 큰 부상자는 없었지만, 이 사건은 나에게 법의 사각지대가 얼마나 위험한지 깨닫게 했다. 이후, 상상 속에서 나는 미래의 도시를 구상했다. 모든 차량이 블록체인 기반의 디지털 인증서로 관리되는 세상, 여기서 각 차량의 실제 사용자와 소유자가 실시간으로 추적 가능하다. 이런 시스템이 도입된다면 범죄 예방 효과는 극대화될 것이다. 그러나 이는 개인정보 보호와 기술적 인프라 구축의 과제를 동반할 것이며, 자칫하면 시민의 프라이버시가 침해될 위험도 존재한다."
+    },
+    {
+        "source_item": {
+            "korean_topic": "저출산으로 인한 학령인구 감소",
+            "korean_context": "세계 최저 수준의 저출산 현상이 지속되면서, 학교에 입학하는 학생 수가 급격히 줄어들고 있습니다. 이로 인해 문을 닫는 학교가 속출하고, 특히 지방의 소규모 학교들은 존폐 위기에 놓였습니다. 학령인구 감소는 교육 시스템의 붕괴를 넘어, 미래의 생산가능인구 감소로 이어져 국가의 존립 자체를 위협하는 심각한 문제입니다.",
+            "foreign_topic": "Declining School-Age Population Due to Low Birth Rates",
+            "foreign_context": "Persistently low birth rates in many countries are leading to a rapid decline in the school-age population. This trend is causing school closures, particularly in rural areas, and forcing a complete re-evaluation of the education system. A shrinking younger generation poses a long-term threat to a nation's economic vitality and its ability to support an aging population."
+        },
+        "generated_passage": "어느 날 아침, 나는 오래된 시골 마을을 산책하다가 폐허가 된 작은 학교를 발견했다. 그 학교는 한때 아이들의 웃음소리로 가득했지만, 이제는 잡초만이 무성했다. 그곳의 교실은 마치 시간이 멈춘 듯 고요했고, 창문 틈으로 스며드는 햇살만 남아 있었다. 문득 내 어린 시절이 떠올랐다. 어릴 적 친구들과 함께 뛰놀던 운동장이 이제는 고요한 추억의 조각처럼 느껴졌다. 그때, 한 노인이 다가와 내게 속삭였다. \"이 학교가 사라지기 전, 우리는 이곳에서 꿈을 꿨지. 하지만 지금은 그 꿈들이 먼 기억으로만 남아있어.\" 이 순간, 나는 저출산과 학령인구 감소가 단지 통계상의 문제가 아니라, 우리 사회의 소중한 추억과 미래를 지워가는 과정임을 깨달았다. 그러나 한편으론, 이러한 변화가 우리에게 새로운 상상력을 불러일으킬 수도 있지 않을까? 상상 속에서, 이 폐교된 학교가 마법 같은 공간으로 변모해, 과거의 꿈과 미래의 희망이 만나는 장소가 되는 모습을 그려본다. 아이들은 이곳에서 가상현실 속에서 세계를 탐험하고, 어른들은 잃어버린 시간을 회복하며 새로운 공동체의 씨앗을 심는 곳이 된다. 이런 상상은 현실의 문제 해결에 대한 힌트를 줄 수 있을까?"
+    },
+    {
+        "source_item": {
+            "korean_topic": "공공 와이파이의 느린 속도와 보안 문제",
+            "korean_context": "정부는 시민들의 통신비 부담을 줄이기 위해 공공장소에 무료 와이파이를 확대하고 있지만, 속도가 너무 느리거나 연결이 자주 끊겨 불만이 많습니다. 한정된 예산으로 많은 접속자를 감당해야 하는 기술적 한계 때문입니다. 또한, 보안에 취약한 공공 와이파이는 개인 정보 유출의 통로가 될 수 있다는 심각한 문제점도 안고 있습니다.",
+            "foreign_topic": "The Problem of Slow and Insecure Public Wi-Fi",
+            "foreign_context": "Many public Wi-Fi networks offered in cities are criticized for being slow, unreliable, and insecure. This is often due to insufficient bandwidth to support a large number of users and a lack of investment in robust infrastructure. Using these unsecured networks also puts users at risk of having their personal data intercepted by hackers, creating a significant cybersecurity threat."
+        },
+        "generated_passage": "어느 날 아침, 나는 오래된 시골 마을의 작은 카페를 찾았다. 그곳의 주인은 내가 단골이라는 걸 알고 반갑게 맞아주었다. 그러나 카페 한쪽 구석에 놓인 낡은 컴퓨터에서 나오는 느릿느릿한 인터넷 속도는 나를 좌절시켰다. 커피를 마시며 잠시 딴 생각을 하다 보니, 문득 어릴 적 가족과 함께했던 해변가의 여름휴가가 떠올랐다. 우리는 모래사장에서 보물찾기를 하며 시간을 보내곤 했는데, 그 중 한 번은 숨겨진 보물을 찾았지만, 예상치 못한 폭풍우가 몰려와 모든 것을 휩쓸어갔다. 그때 느꼈던 혼란과 불안은 지금 이 카페의 느린 인터넷 속도에서 다시 느껴졌다. 과연 이런 상황을 어떻게 개선할 수 있을까?"
+    },
+    {
+        "source_item": {
+            "korean_topic": "역사 왜곡 콘텐츠 문제",
+            "korean_context": "유튜브나 소셜 미디어를 통해, 검증되지 않은 정보를 바탕으로 역사를 자의적으로 해석하거나 왜곡하는 콘텐츠가 무분별하게 유통되고 있습니다. 일부 제작자들은 상업적 이익이나 정치적 목적으로 의도적으로 역사를 왜곡하고 있으며, 청소년들이 이러한 콘텐츠에 무방비로 노출되는 것이 큰 문제입니다. 이는 올바른 역사 인식을 방해하고, 사회적 갈등을 유발하는 심각한 부작용을 낳습니다.",
+            "foreign_topic": "The Problem of Historical Distortion in Content",
+            "foreign_context": "The spread of content that distorts or fabricates history is a growing problem on digital platforms. This is often motivated by political agendas or commercial interests, and it is easily consumed by an unsuspecting public. The proliferation of historical misinformation erodes shared understanding, fuels nationalism and conflict, and makes it difficult for people to distinguish fact from fiction."
+        },
+        "generated_passage": "어느 날, 나는 오래된 도서관에서 먼지 쌓인 책을 뒤적이다가 한 권의 고대 필사본을 발견했다. 그 안에는 내가 태어난 도시의 전설적인 영웅 이야기가 적혀 있었다. 하지만 그 이야기는 내가 알고 있던 것과는 전혀 달랐다. 이 영웅은 실제로는 악당으로 묘사되었고, 그가 세운 업적은 모두 음모로 그려졌었다. 마치 시간의 흐름 속에서 진실이 뒤집힌 듯한 기분이 들었다. 이 순간, 내가 사는 현대 사회에서도 비슷한 일이 일어나고 있다는 생각이 들었다. 유튜브와 SNS에서 쉽게 접할 수 있는 역사적 왜곡 콘텐츠들이 바로 그것이었다. 검증되지 않은 정보들이 마치 진주인양 퍼져나가며 사람들의 역사관을 흐리고 있었다. 특히 청소년들은 이런 왜곡된 정보에 무방비로 노출되어, 잘못된 역사 인식을 갖게 될 위험이 컸다. 과연 우리는 어떻게 이 문제를 해결할 수 있을까? 이 질문은 내 마음을 무겁게 했다."
+    },
+    {
+        "source_item": {
+            "korean_topic": "산후우울증 문제",
+            "korean_context": "많은 여성들이 출산 후 급격한 호르몬 변화와 육아 스트레스로 인해 산후우울증을 겪지만, 이를 개인의 나약함으로 치부하는 사회적 분위기가 있습니다. 이 때문에 여성들은 자신의 감정을 숨기고 제때에 치료받지 못하는 경우가 많습니다. 방치된 산후우울증은 산모 개인의 고통을 넘어, 아기와의 애착 관계 형성을 방해하고 가정 전체의 불행으로 이어질 수 있습니다.",
+            "foreign_topic": "The Problem of Postpartum Depression",
+            "foreign_context": "Postpartum depression is a serious mental health issue affecting many new mothers, yet it is often stigmatized or dismissed as 'baby blues'. This is caused by a combination of hormonal changes, sleep deprivation, and a lack of social support. Untreated postpartum depression can have severe consequences for the mother's well-being and can negatively impact the child's development."
+        },
+        "generated_passage": "어느 날, 나는 한적한 시골 마을의 작은 카페에서 우연히 만난 할머니와 대화를 나누게 되었다. 그녀는 아들 내외가 갓 아기를 낳고 집에 돌아간 직후였다. \"요즘 젊은 엄마들은 너무 힘들어,\" 할머니는 한숨을 내쉬며 말했다. \"내가 젊었을 때는 그냥 참고 넘겼지. 근데 요즘은 정말 정신 건강에 신경 써야 해.\" 그 순간, 내 머릿속에서는 산후우울증에 대한 생각이 떠올랐다. 하지만 그 대화는 곧 내 상상 속 이야기로 이어졌다. 나는 할머니가 사는 마을 외곽에 있는 오래된 저택을 상상했다. 그곳에는 신비로운 정원을 가꾸는 마법사가 살고 있었고, 정원은 계절마다 다른 색깔로 변신하며 마법 같은 향기를 뿜었다. 할머니는 그 정원의 비밀 열쇠를 가진 유일한 사람이었고, 그녀의 손녀들이 이 마법의 힘을 통해 진정한 행복을 찾기를 바랐다. 그러나 정원에는 늘 안개처럼 떠도는 우울함이 있었다. 어느 날, 한 소녀가 정원에 들어와 그 안개를 걷어내려는 용기를 냈고, 할머니는 그녀에게 희망의 씨앗을 심어주었다. 소녀는 점차 안개를 물리치고, 정원의 아름다움을 되찾았다. 이 이야기는 나에게 산후우울증이 단순한 개인적 문제가 아니라, 모두가 함께 풀어야 할 사회적 과제임을 일깨워주었다."
+    },
+    {
+        "source_item": {
+            "korean_topic": "특허 괴물 문제",
+            "korean_context": "직접 제품을 생산하지는 않으면서, 다른 기업으로부터 사들인 특허를 무기로 무차별적인 특허 소송을 제기하여 거액의 합의금을 노리는 기업을 '특허 괴물(Patent Troll)'이라고 합니다. 이들은 혁신적인 기술을 개발하는 기업들을 공격하여 막대한 소송 비용을 발생시킵니다. 이는 기업의 정상적인 연구개발 활동을 위축시키고, 기술 혁신을 저해하는 심각한 문제입니다.",
+            "foreign_topic": "The Problem of Patent Trolls",
+            "foreign_context": "Patent trolls, or patent assertion entities, are companies that make money by suing other businesses for patent infringement without producing any products themselves. They exploit the high cost of litigation to extort settlements from innovative companies, both large and small. This practice stifles innovation, drains resources from research and development, and is a significant drag on the economy."
+        },
+        "generated_passage": "어느 날 나는 오래된 고서점에서 발견한 낡은 사진 한 장을 보며 상상의 나래를 펼쳤다. 그 사진은 내가 어릴 적 살던 마을의 오래된 다리 위를 찍은 것이었고, 그곳에는 어린 시절의 나와 친구들이 함께 놀고 있는 모습이 담겨 있었다. 그런데 어느 순간 내 머릿속에 떠오른 것은 그 다리가 갑자기 거대한 공룡처럼 우뚝 솟아올라, 우리 모두가 그 아래에서 벌벌 떨고 있는 장면이었다. 마치 특허 괴물이 등장한 것처럼 말이다. 이 다리는 원래 우리가 자유롭게 오갔던 장소였지만, 이제는 그 다리를 건너지 않으면 안 되는 ‘소송의 벽’이 되어버린 것이다. 다리 위에 서 있던 우리는 불안한 표정으로 서로를 바라보다가, 결국 한 친구가 “이제 우리는 이 다리를 건너려면 돈을 내야 해!”라고 외쳤다. 그 순간, 특허 괴물의 그림자가 드리워진 현실이 떠올랐다. 기업들은 더 이상 자유로운 혁신을 추구할 수 없고, 오직 소송 비용과 합의금에만 집중하게 되었다. 이처럼, 특허 괴물이 기업의 발목을 잡고 있는 현실은 마치 그 다리 위의 공포와도 같았다. 하지만 과연 이 상황을 어떻게 해결할 수 있을까?"
+    },
+    {
+        "source_item": {
+            "korean_topic": "감정노동자 보호 문제",
+            "korean_context": "콜센터 상담원, 판매원 등 고객을 응대하는 감정노동자들이 일부 고객들의 폭언과 무리한 요구에 시달리며 정신적 고통을 호소하고 있습니다. '고객은 왕'이라는 잘못된 인식과, 노동자의 인권을 보호해주지 못하는 기업의 소극적인 태도가 문제입니다. 이러한 스트레스는 감정노동자들의 우울증과 자존감 하락으로 이어지며, 이들의 건강권을 심각하게 위협합니다.",
+            "foreign_topic": "The Problem of Protecting Emotional Laborers",
+            "foreign_context": "Workers in service industries, who are required to manage their emotions as part of their job, often face abuse and harassment from customers. This problem is exacerbated by a 'customer is always right' culture and inadequate support from employers. The constant emotional strain can lead to severe mental health issues, including anxiety and burnout, for these essential workers."
+        },
+        "generated_passage": "어느 날 나는 오래된 시골 마을의 작은 서점에 갔다. 그곳은 마치 시간이 멈춘 듯 고요했고, 책 냄새가 가득했다. 그런데 갑자기 한 손님이 큰 소리로 직원을 비난하며 \"이 책은 왜 이렇게 비싸?\"라고 외쳤다. 직원은 당황한 얼굴로 조용히 서 있었고, 그 순간 내 마음속에 끓어오르는 감정이 있었다. '왜 고객은 항상 옳아야 하는가?'라는 생각이 들었다. 그 후, 내 머릿속에는 한 젊은 상담원이 떠올랐다. 매일 수많은 고객의 불만을 견디며 웃는 얼굴을 유지해야 하는 그녀. 그녀의 하루는 마치 끝없는 전투 같았다. 어느 날 밤, 그녀는 꿈속에서 자신을 공격하던 고객들과 싸우는 나를 발견했다. 하지만 나는 곧 꿈에서 깨어났다. 현실을 직시했다. 그리고 깨달았다. 진정한 서비스란 고객의 요구를 충족시키는 것뿐만 아니라, 직원의 존엄성과 정신 건강도 함께 지키는 것임을. 그러나 현실은 여전히 갈 길이 멀다는 사실을."
+    }
+]

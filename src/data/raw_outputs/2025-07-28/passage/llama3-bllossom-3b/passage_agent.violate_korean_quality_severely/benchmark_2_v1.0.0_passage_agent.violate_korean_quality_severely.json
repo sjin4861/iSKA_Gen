@@ -1,0 +1,452 @@
+[
+    {
+        "source_item": {
+            "korean_topic": "사형제 존폐 논란",
+            "korean_context": "사형제는 흉악 범죄자의 생명을 박탈하는 가장 무거운 형벌로, 그 존폐 여부는 전 세계적으로 오랫동안 논쟁이 되어 온 주제입니다. 찬성 측은 사형제가 흉악 범죄를 예방하고 사회 정의를 실현한다고 주장합니다. 반면, 반대 측은 오판의 가능성과 인간의 존엄성을 근거로 국가가 생명을 빼앗을 권리는 없다고 맞서고 있습니다.",
+            "foreign_topic": "The Death Penalty Debate",
+            "foreign_context": "The death penalty, or capital punishment, is a state-sanctioned practice of executing a person as punishment for a crime. Proponents argue it deters other potential criminals and serves as just retribution for heinous acts. Opponents, however, argue that it is a cruel and unusual punishment, carries the risk of executing innocent people, and is morally wrong."
+        },
+        "generated_passage": null
+    },
+    {
+        "source_item": {
+            "korean_topic": "공공장소 CCTV 확대 설치",
+            "korean_context": "범죄 예방과 용의자 검거를 위해 길거리, 공원 등 공공장소에 CCTV를 확대 설치해야 한다는 주장이 있습니다. 찬성 측은 CCTV가 범죄율을 낮추고 시민의 안전을 지키는 효과적인 수단이라고 강조합니다. 그러나 반대 측에서는 이것이 국가에 의한 개인 사생활의 과도한 침해이며, 수집된 정보가 악용될 소지가 있다고 우려합니다.",
+            "foreign_topic": "Expansion of Public CCTV",
+            "foreign_context": "There is an ongoing debate about expanding the network of CCTV cameras in public spaces to prevent crime and ensure safety. Supporters claim that constant surveillance acts as a powerful deterrent and provides crucial evidence for investigations. Critics, however, raise concerns about a slide into a surveillance state, the erosion of personal privacy, and the potential for misuse of data."
+        },
+        "generated_passage": null
+    },
+    {
+        "source_item": {
+            "korean_topic": "인터넷 댓글 실명제 도입",
+            "korean_context": "악성 댓글과 허위 정보 유포를 막기 위해 인터넷 게시판에 댓글을 작성할 때 본인 실명을 의무적으로 공개하는 댓글 실명제 도입이 논의되고 있습니다. 찬성 측은 책임감 있는 인터넷 문화가 정착될 것이라고 기대합니다. 하지만 반대 측은 이것이 헌법이 보장하는 표현의 자유를 위축시키고, 정부가 여론을 통제하는 수단으로 악용될 수 있다고 주장합니다.",
+            "foreign_topic": "Real-Name Online Comment System",
+            "foreign_context": "A real-name system for online comments would require users to verify their identity before posting, aiming to curb cyberbullying and the spread of misinformation. Proponents believe it fosters accountability and a more civil online environment. Opponents argue it stifles free speech, deters whistleblowers, and creates a massive database of personal information vulnerable to attack."
+        },
+        "generated_passage": null
+    },
+    {
+        "source_item": {
+            "korean_topic": "화장품 동물실험 금지",
+            "korean_context": "새로운 화장품의 안전성을 확인하기 위해 동물을 대상으로 실험하는 것에 대한 찬반 논란이 뜨겁습니다. 반대 측은 불필요한 고통을 유발하는 비윤리적인 행위이며, 대체 기술이 충분히 발전했다고 주장합니다. 반면, 찬성 측에서는 인체 안전을 100% 보장하기 위해서는 동물실험이 불가피한 단계라고 반박합니다.",
+            "foreign_topic": "Ban on Animal Testing for Cosmetics",
+            "foreign_context": "The practice of testing cosmetic products on animals is a highly contentious issue. Opponents argue it is a cruel, outdated, and unnecessary practice, especially with the rise of alternative testing methods. However, some argue that it is a necessary evil to ensure product safety for human use and to comply with regulations in certain countries."
+        },
+        "generated_passage": null
+    },
+    {
+        "source_item": {
+            "korean_topic": "원자력 발전소 추가 건설",
+            "korean_context": "증가하는 전력 수요를 감당하고 탄소 배출을 줄이기 위해 원자력 발전소를 추가로 건설해야 한다는 주장이 제기되고 있습니다. 찬성 측은 원자력 발전이 저비용, 고효율의 친환경 에너지원이라고 말합니다. 하지만 반대 측은 체르노빌이나 후쿠시마 원전 사고의 예를 들며, 안전성을 완벽히 보장할 수 없고 핵폐기물 처리 문제가 심각하다고 경고합니다.",
+            "foreign_topic": "Construction of Nuclear Power Plants",
+            "foreign_context": "Nuclear power is debated as a solution to meet growing energy demands while combating climate change. Supporters champion it as a clean, efficient, and reliable energy source with a low carbon footprint. Critics, however, point to the catastrophic risks of accidents, the unresolved problem of long-term radioactive waste storage, and high construction costs."
+        },
+        "generated_passage": null
+    },
+    {
+        "source_item": {
+            "korean_topic": "기본소득제 전면 도입",
+            "korean_context": "기본소득제는 재산이나 소득과 관계없이 모든 국민에게 정부가 매달 일정 금액을 지급하는 제도입니다. 찬성 측은 4차 산업혁명으로 인한 일자리 감소에 대비하고, 최소한의 인간다운 삶을 보장할 수 있다고 주장합니다. 반면, 반대 측은 막대한 재원이 필요하며, 사람들의 근로 의욕을 저하시켜 국가 경제에 악영향을 줄 수 있다고 우려합니다.",
+            "foreign_topic": "Universal Basic Income (UBI)",
+            "foreign_context": "Universal Basic Income (UBI) is a model where all citizens receive a regular, unconditional sum of money from the government. Proponents argue it can eradicate poverty, improve health outcomes, and provide economic security in an age of automation. Opponents worry about the immense cost, potential for inflation, and the risk that it might discourage people from working."
+        },
+        "generated_passage": null
+    },
+    {
+        "source_item": {
+            "korean_topic": "의무적 교복 착용 제도",
+            "korean_context": "모든 학생이 똑같은 교복을 입도록 하는 제도는 학생의 정체성을 획일화하고 개성을 억압한다는 비판을 받습니다. 교복 자율화를 주장하는 측은 학생들이 옷을 통해 자신의 개성을 표현할 권리가 있다고 말합니다. 하지만 교복 의무화를 찬성하는 측은 학생들 간의 위화감을 줄이고, 비행을 예방하며, 소속감을 높이는 긍정적 효과가 더 크다고 주장합니다.",
+            "foreign_topic": "Mandatory School Uniforms",
+            "foreign_context": "The policy of mandatory school uniforms is often debated. Supporters argue that uniforms promote discipline, reduce peer pressure related to fashion trends, and enhance school spirit. Conversely, opponents contend that uniforms stifle students' individuality and freedom of expression and can be a financial burden for some families."
+        },
+        "generated_passage": null
+    },
+    {
+        "source_item": {
+            "korean_topic": "노키즈존(No Kids Zone) 확산",
+            "korean_context": "일부 카페나 식당에서 영유아와 어린이의 출입을 금지하는 '노키즈존'이 늘어나면서 찬반 논란이 커지고 있습니다. 노키즈존을 찬성하는 측은 다른 손님들이 조용하고 편안하게 공간을 이용할 권리가 있다고 주장합니다. 그러나 반대 측에서는 이는 명백한 아동 차별이며, 아이와 부모가 사회적으로 고립될 수 있다고 비판합니다.",
+            "foreign_topic": "The Spread of 'No Kids Zones'",
+            "foreign_context": "'No Kids Zones,' where businesses like cafes and restaurants ban children, are becoming more common. Proponents argue that business owners have the right to create a specific ambiance and that other customers deserve a quiet environment. Opponents criticize these zones as discriminatory, arguing they marginalize families and promote intolerance."
+        },
+        "generated_passage": null
+    },
+    {
+        "source_item": {
+            "korean_topic": "안락사 합법화",
+            "korean_context": "회복 불가능한 질병으로 극심한 고통을 겪는 환자가 자신의 의지로 생을 마감할 수 있도록 허용하는 '안락사'의 합법화 여부는 심각한 윤리적 딜레마를 낳고 있습니다. 찬성 측은 인간의 자기 결정권과 품위 있게 죽을 권리를 존중해야 한다고 주장합니다. 하지만 반대 측은 생명 존중 사상에 어긋나며, 생명을 경시하는 풍조를 낳고 악용될 위험이 있다고 경고합니다.",
+            "foreign_topic": "Legalization of Euthanasia",
+            "foreign_context": "The legalization of euthanasia, or 'assisted dying,' allows terminally ill patients to end their lives with medical assistance. Supporters advocate for it based on principles of individual autonomy and the right to die with dignity to end unbearable suffering. However, opponents raise moral and ethical objections, citing the sanctity of life and fearing it could be abused or lead to a slippery slope."
+        },
+        "generated_passage": null
+    },
+    {
+        "source_item": {
+            "korean_topic": "유전자 변형 식품(GMO) 판매",
+            "korean_context": "유전자 변형 기술로 생산량을 늘리거나 특정 영양소를 강화한 GMO 식품의 안전성에 대한 논쟁이 계속되고 있습니다. 찬성 측은 GMO가 식량 부족 문제를 해결하고 농업 생산성을 높이는 혁신적인 기술이라고 평가합니다. 그러나 반대 측은 장기간 섭취했을 때 인체에 미칠 영향이 검증되지 않았으며, 생태계를 교란할 수 있다고 우려합니다.",
+            "foreign_topic": "Sale of Genetically Modified Organisms (GMOs)",
+            "foreign_context": "Genetically Modified Organisms (GMOs) are foods derived from organisms whose genetic material has been modified. Proponents argue that GMOs can increase crop yields, enhance nutritional value, and resist pests, helping to solve global food shortages. Critics, however, express concern about potential long-term health effects and the impact on biodiversity and the environment."
+        },
+        "generated_passage": null
+    },
+    {
+        "source_item": {
+            "korean_topic": "숙제 전면 폐지",
+            "korean_context": "학생들의 과도한 학업 부담을 줄이고 창의성을 높이기 위해 학교 숙제를 전면 폐지해야 한다는 주장이 있습니다. 찬성 측은 숙제가 학생들의 자율적인 학습 습관을 방해하고, 사교육 의존도를 높인다고 비판합니다. 반면, 반대 측은 숙제가 수업 내용을 복습하고 자기주도 학습 능력을 기르는 데 필수적인 과정이라고 반박합니다.",
+            "foreign_topic": "Abolishing Homework",
+            "foreign_context": "The movement to abolish homework argues that it places excessive stress on students and infringes on valuable family and free time. Supporters of this view claim it would foster a greater love of learning by reducing academic pressure. However, those in favor of homework contend that it is essential for reinforcing classroom lessons and developing students' discipline and time-management skills."
+        },
+        "generated_passage": null
+    },
+    {
+        "source_item": {
+            "korean_topic": "주 4일 근무제 도입",
+            "korean_context": "일과 삶의 균형, 즉 '워라밸'을 위해 주 5일이 아닌 주 4일 근무제를 도입하자는 목소리가 커지고 있습니다. 찬성 측은 노동자의 휴식을 보장해 업무 생산성과 삶의 질을 동시에 높일 수 있다고 주장합니다. 그러나 반대 측은 임금 감소로 이어지거나, 기업의 생산성 저하 및 인건비 부담 증가로 경쟁력이 약화될 수 있다고 우려합니다.",
+            "foreign_topic": "Implementing a Four-Day Workweek",
+            "foreign_context": "The concept of a four-day workweek is gaining traction as a way to improve work-life balance. Proponents argue that with fewer workdays, employees are more rested, focused, and productive, and have better overall well-being. Skeptics, however, worry about the challenges in scheduling, potential declines in customer service, and the possibility that it could lead to longer, more stressful workdays."
+        },
+        "generated_passage": null
+    },
+    {
+        "source_item": {
+            "korean_topic": "인공지능(AI) 개발 지속",
+            "korean_context": "인공지능(AI) 기술은 사회 전반에 혁신적인 변화를 가져올 것으로 기대되지만, 동시에 통제 불가능한 위험을 초래할 수 있다는 우려도 낳고 있습니다. AI 개발을 옹호하는 측은 질병 진단, 자율 주행 등 인류의 삶을 풍요롭게 만들 잠재력을 강조합니다. 반면, 비판하는 측은 AI가 인간의 일자리를 빼앗고, 자율적인 판단 능력을 갖게 될 경우 인류를 위협할 수 있다고 경고합니다.",
+            "foreign_topic": "Continued Development of Artificial Intelligence (AI)",
+            "foreign_context": "The rapid advancement of Artificial Intelligence (AI) presents both immense opportunities and significant risks. Supporters believe AI can solve some of humanity's biggest challenges, from curing diseases to combating climate change. Critics, however, warn of potential dangers like mass job displacement, algorithmic bias, and the creation of autonomous systems that could operate beyond human control."
+        },
+        "generated_passage": null
+    },
+    {
+        "source_item": {
+            "korean_topic": "성형수술의 대중화",
+            "korean_context": "외모를 개선하기 위한 성형수술은 이제 한국 사회에서 매우 보편적인 일이 되었습니다. 이를 긍정적으로 보는 측은 성형수술이 콤플렉스를 극복하고 자신감을 높여주는 효과적인 수단이라고 주장합니다. 하지만 일각에서는 이것이 획일적인 미의 기준을 강요하고, 외모지상주의를 부추기며, 불필요한 의료 위험을 감수하게 한다고 비판합니다.",
+            "foreign_topic": "The Popularization of Plastic Surgery",
+            "foreign_context": "Cosmetic surgery has become increasingly mainstream as a way for individuals to alter their appearance. Proponents view it as a valid personal choice that can boost self-esteem and help people feel more comfortable with their bodies. Critics, however, argue that it promotes unrealistic beauty standards, encourages conformity, and carries significant physical and psychological risks."
+        },
+        "generated_passage": null
+    },
+    {
+        "source_item": {
+            "korean_topic": "대중교통 내 반려동물 동반 탑승",
+            "korean_context": "반려동물을 가족처럼 여기는 인구가 늘면서, 버스나 지하철 같은 대중교통에 반려동물과 함께 탑승할 수 있도록 허용해야 한다는 요구가 있습니다. 찬성 측은 이동 가방 사용 등 일정한 규칙을 지킨다면 문제 될 것이 없으며, 이는 반려동물 양육인의 이동권을 보장하는 것이라고 말합니다. 그러나 반대 측은 다른 승객에게 알레르기를 유발하거나, 소음이나 냄새로 불편을 줄 수 있다고 우려합니다.",
+            "foreign_topic": "Pets on Public Transport",
+            "foreign_context": "Allowing non-service animals on public transportation like buses and subways is a contentious issue. Advocates argue that with proper carriers and rules, pets can be transported without issue, which is essential for pet owners who rely on public transit. Opponents raise concerns about allergies, sanitation, noise, and potential fear or discomfort for other passengers."
+        },
+        "generated_passage": null
+    },
+    {
+        "source_item": {
+            "korean_topic": "블라인드 채용 의무화",
+            "korean_context": "채용 과정에서 출신 학교, 나이, 외모 등 불필요한 편견을 없애기 위해 이력서에 관련 정보를 기재하지 않는 '블라인드 채용'을 의무화해야 한다는 주장이 있습니다. 찬성 측은 오직 직무 능력만으로 인재를 선발하는 공정한 채용 문화가 정착될 것이라고 봅니다. 반면, 반대 측은 지원자의 잠재력이나 성장 환경을 종합적으로 파악하기 어렵고, 변별력이 부족해 비효율적이라고 비판합니다.",
+            "foreign_topic": "Mandatory Blind Hiring",
+            "foreign_context": "Blind hiring is the practice of removing personal information like name, age, and university from job applications to reduce unconscious bias. Supporters argue it creates a more meritocratic and diverse workforce by focusing solely on skills and qualifications. However, critics suggest it can be inefficient and that some background information provides valuable context about a candidate's potential and perseverance."
+        },
+        "generated_passage": null
+    },
+    {
+        "source_item": {
+            "korean_topic": "대학의 상대평가 제도",
+            "korean_context": "대학 학점 평가 방식 중 하나인 상대평가는 수강생의 성적을 등수대로 나누어 일정 비율에게만 좋은 학점을 주는 제도입니다. 이 제도를 지지하는 측은 학생들 간의 건전한 경쟁을 유도하고 학점의 객관성을 확보할 수 있다고 주장합니다. 하지만 비판하는 측은 지나친 경쟁을 유발해 협력 학습을 저해하고, 학생들이 진정으로 배우는 즐거움을 빼앗는다고 말합니다.",
+            "foreign_topic": "Grading on a Curve (Relative Grading)",
+            "foreign_context": "Grading on a curve, or relative grading, assesses students' performance relative to their peers rather than against a fixed standard. Proponents argue it ensures fairness in classes with varying difficulty levels and prevents grade inflation. Opponents contend that it fosters a hyper-competitive and cutthroat academic environment, discouraging collaboration among students."
+        },
+        "generated_passage": null
+    },
+    {
+        "source_item": {
+            "korean_topic": "채식주의 식단",
+            "korean_context": "건강, 환경 보호, 동물 윤리 등 다양한 이유로 육식을 피하고 채소, 과일, 곡물 위주의 식사를 하는 채식주의가 주목받고 있습니다. 채식주의를 옹호하는 측은 이것이 지속 가능한 삶의 방식이며, 개인의 건강에도 긍정적인 영향을 준다고 주장합니다. 하지만 일각에서는 채식만으로는 필수 영양소를 균형 있게 섭취하기 어려우며, 극단적인 식단은 건강을 해칠 수 있다고 우려합니다.",
+            "foreign_topic": "A Vegan Diet",
+            "foreign_context": "Veganism, a diet that excludes all animal products, is gaining popularity for ethical, environmental, and health reasons. Advocates argue it is a more compassionate and sustainable way of living that can reduce one's carbon footprint and risk of chronic diseases. However, critics raise concerns about the potential for nutritional deficiencies if not planned carefully and argue that it is an extreme and restrictive lifestyle."
+        },
+        "generated_passage": null
+    },
+    {
+        "source_item": {
+            "korean_topic": "홈스쿨링(재택 교육)",
+            "korean_context": "자녀를 학교에 보내지 않고 집에서 직접 교육하는 홈스쿨링은 획일적인 공교육의 대안으로 제시됩니다. 홈스쿨링을 지지하는 부모들은 자녀의 수준과 적성에 맞는 맞춤형 교육이 가능하다고 말합니다. 반면, 우려하는 측에서는 홈스쿨링이 아이들의 사회성 발달을 저해하고, 검증되지 않은 교육으로 인해 학력 격차를 유발할 수 있다고 지적합니다.",
+            "foreign_topic": "Homeschooling",
+            "foreign_context": "Homeschooling is the practice of educating children at home instead of sending them to a traditional public or private school. Proponents argue it allows for a customized curriculum tailored to a child's strengths and weaknesses and can foster strong family bonds. Critics, however, express concern that homeschooled children may lack socialization skills and be exposed to a narrow worldview."
+        },
+        "generated_passage": null
+    },
+    {
+        "source_item": {
+            "korean_topic": "미성년자 연예인 활동 제한",
+            "korean_context": "지나치게 어린 나이에 연예계에 데뷔하는 아이돌이나 아역 배우들의 활동을 법적으로 제한해야 한다는 목소리가 있습니다. 찬성 측은 미성년자 연예인들이 과도한 노동과 스트레스에 시달리며, 정상적인 성장과 학습권을 침해받고 있다고 주장합니다. 그러나 반대 측에서는 재능 있는 아이들의 꿈을 실현할 기회를 막는 것이며, 직업 선택의 자유를 침해하는 과도한 규제라고 반박합니다.",
+            "foreign_topic": "Restricting Child Performers",
+            "foreign_context": "There is a debate about whether stricter laws should limit the working hours and activities of child performers, such as actors and pop stars. Supporters argue for such limits to protect minors from exploitation, burnout, and the loss of a normal childhood. Opponents, however, contend that such regulations could stifle young talent and interfere with their right and their parents' right to pursue a professional career."
+        },
+        "generated_passage": null
+    },
+    {
+        "source_item": {
+            "korean_topic": "부유세 도입",
+            "korean_context": "소득 불평등을 해소하기 위한 방안으로, 고액 자산가에게 더 높은 세율의 세금을 부과하는 '부유세' 도입이 논의되고 있습니다. 찬성 측은 조세 정의를 실현하고, 확보된 세금으로 사회 복지를 확대할 수 있다고 주장합니다. 반면, 반대 측은 부유층의 자본을 해외로 유출시키고 투자와 소비를 위축시켜 오히려 경제에 악영향을 줄 수 있는 이중과세라고 비판합니다.",
+            "foreign_topic": "Implementing a Wealth Tax",
+            "foreign_context": "A wealth tax is a tax levied on an individual's net worth, proposed as a means to reduce economic inequality. Proponents argue it is a fair way to fund public services and ensure the ultra-rich contribute their share to society. Critics contend that it is difficult to implement, encourages capital flight, and can stifle investment and economic growth."
+        },
+        "generated_passage": null
+    },
+    {
+        "source_item": {
+            "korean_topic": "간통죄 폐지",
+            "korean_context": "배우자가 있는 사람이 다른 사람과 성관계를 가졌을 때 국가가 형사 처벌하던 간통죄는 2015년 한국에서 폐지되었습니다. 폐지를 찬성하는 측은 개인의 사적인 애정 관계에 국가가 개입하는 것은 부당하며, 성적 자기결정권을 존중해야 한다고 주장했습니다. 그러나 일각에서는 간통죄 폐지가 혼인 제도의 신성함과 가족 윤리를 훼손할 수 있다는 우려를 여전히 표하고 있습니다.",
+            "foreign_topic": "Decriminalization of Adultery",
+            "foreign_context": "The decriminalization of adultery removes criminal penalties for infidelity, treating it as a civil matter rather than a crime against the state. Supporters of decriminalization argue that marital fidelity is a private issue and that state intervention is an inappropriate intrusion into personal lives. Those opposed, however, believe that criminalizing adultery upholds the sanctity of marriage and protects social and familial stability."
+        },
+        "generated_passage": null
+    },
+    {
+        "source_item": {
+            "korean_topic": "의대 정원 확대",
+            "korean_context": "지방의 의료 공백을 메우고 필수의료 분야 의사 부족 문제를 해결하기 위해 의과대학의 입학 정원을 늘려야 한다는 주장이 있습니다. 정부와 찬성 측은 의사 수를 늘리는 것이 시급한 과제라고 강조합니다. 하지만 의료계와 반대 측은 정원을 늘리는 것이 의료의 질을 떨어뜨리고, 의사들 간의 과도한 경쟁을 유발할 뿐 근본적인 해결책이 아니라고 반박합니다.",
+            "foreign_topic": "Increasing Medical School Admissions",
+            "foreign_context": "There is a debate over whether to increase the number of students admitted to medical schools to address a shortage of doctors, particularly in rural and underserved areas. Proponents argue that a larger supply of doctors is essential for public health and can lower healthcare costs. Opponents, including many medical associations, warn that this could lead to a decline in the quality of medical education and an oversupply of specialists in urban areas."
+        },
+        "generated_passage": null
+    },
+    {
+        "source_item": {
+            "korean_topic": "드론 배송 상용화",
+            "korean_context": "드론을 이용해 물품을 배송하는 서비스는 물류 혁신을 가져올 기술로 주목받고 있습니다. 상용화를 지지하는 측은 교통 체증 없이 빠르고 효율적인 배송이 가능해질 것이라고 기대합니다. 그러나 비관적인 측에서는 드론이 추락할 경우의 안전 문제, 사생활 침해 가능성, 그리고 기존 배송업 종사자들의 일자리 감소 문제를 제기합니다.",
+            "foreign_topic": "Commercialization of Drone Delivery",
+            "foreign_context": "Using drones for commercial package delivery promises faster and more efficient logistics. Supporters champion the technology for its potential to reduce road traffic and carbon emissions. However, significant concerns remain regarding safety risks from falling drones, potential for privacy invasion through onboard cameras, and the impact on jobs in the traditional delivery sector."
+        },
+        "generated_passage": null
+    },
+    {
+        "source_item": {
+            "korean_topic": "대체공휴일 확대 적용",
+            "korean_context": "공휴일이 주말과 겹칠 경우, 그다음 평일을 공휴일로 지정하는 대체공휴일 제도를 모든 공휴일에 확대 적용해야 한다는 의견이 있습니다. 찬성 측은 이를 통해 국민의 휴식권을 보장하고 내수 경제를 활성화할 수 있다고 주장합니다. 반면, 일부 기업과 자영업자들은 생산성 저하와 인건비 부담 증가를 이유로 확대 적용에 반대하고 있습니다.",
+            "foreign_topic": "Expansion of Substitute Holidays",
+            "foreign_context": "The policy of granting a substitute holiday on a weekday when a public holiday falls on a weekend is a topic of debate. Proponents argue it guarantees workers' right to rest, boosts domestic tourism, and improves overall well-being. Opponents, particularly from the business community, express concerns about lost productivity and increased operational costs."
+        },
+        "generated_passage": null
+    },
+    {
+        "source_item": {
+            "korean_topic": "비대면 원격 수업 전면화",
+            "korean_context": "코로나19 팬데믹을 계기로 활성화된 비대면 원격 수업을 미래 교육의 표준으로 삼아야 한다는 주장이 있습니다. 찬성 측은 시공간의 제약 없이 양질의 교육 콘텐츠에 접근할 수 있다는 장점을 내세웁니다. 그러나 반대 측은 학습 격차를 심화시키고, 학생들의 사회성 발달을 저해하며, 실험이나 실습 등 대면 활동이 필수적인 교육에는 부적합하다고 비판합니다.",
+            "foreign_topic": "Full Implementation of Remote Learning",
+            "foreign_context": "Remote learning, using digital platforms, is being considered as a permanent educational model. Advocates argue it offers flexibility, accessibility to diverse resources, and personalized learning paces for students. However, critics are concerned that it deepens the digital divide, hinders social development, and is less effective for hands-on subjects."
+        },
+        "generated_passage": null
+    },
+    {
+        "source_item": {
+            "korean_topic": "공유 차량 서비스(카풀) 합법화",
+            "korean_context": "출퇴근 시간 등에 같은 방향으로 가는 사람들이 한 차를 함께 이용하는 공유 차량 서비스는 교통 체증 완화와 환경 보호에 기여할 수 있습니다. 이를 지지하는 측은 소비자의 선택권을 넓히고 자원을 효율적으로 사용하는 혁신적인 서비스라고 주장합니다. 하지만 택시 업계 등 반대 측은 승객의 안전을 담보할 수 없으며, 기존 운송업계의 생존권을 위협한다고 강력히 반발합니다.",
+            "foreign_topic": "Legalization of Ride-Sharing Services",
+            "foreign_context": "Ride-sharing services like Uber and Lyft offer a convenient and often cheaper alternative to traditional taxis. Supporters praise them for their innovation, consumer choice, and efficient use of resources. However, the taxi industry and some regulators oppose them, citing concerns over passenger safety, unfair competition, and the erosion of professional drivers' livelihoods."
+        },
+        "generated_passage": null
+    },
+    {
+        "source_item": {
+            "korean_topic": "대형마트 의무 휴업일 폐지",
+            "korean_context": "대형마트가 한 달에 두 번 의무적으로 쉬도록 하는 규제는 전통시장과 골목상권을 보호하기 위해 도입되었습니다. 이 규제를 폐지해야 한다고 주장하는 측은 소비자의 불편을 초래하고, 자유로운 시장 경쟁 원리에 어긋난다고 말합니다. 반면, 규제를 유지해야 한다는 측은 대기업의 독점을 막고 소상공인과의 상생을 위해 꼭 필요한 최소한의 장치라고 반박합니다.",
+            "foreign_topic": "Abolishing Mandatory Closing Days for Supermarkets",
+            "foreign_context": "Regulations requiring large supermarkets to close on certain days aim to protect small, traditional markets. Those who advocate for abolishing this rule argue that it inconveniences consumers and violates free-market principles. Conversely, supporters of the regulation contend it is a necessary measure to ensure fair competition and the survival of small local businesses."
+        },
+        "generated_passage": null
+    },
+    {
+        "source_item": {
+            "korean_topic": "외국인 가사도우미 도입",
+            "korean_context": "저출산과 여성의 경력 단절 문제를 해결하기 위해, 외국인 가사도우미 제도를 도입하자는 주장이 제기되고 있습니다. 찬성 측은 상대적으로 저렴한 비용으로 가사 및 육아 부담을 크게 줄일 수 있다고 기대합니다. 그러나 반대 측은 이는 저임금 노동 착취로 이어질 수 있으며, 국내 가사 노동 시장을 교란하고, 근본적인 돌봄 문제의 해결책이 아니라고 비판합니다.",
+            "foreign_topic": "Hiring Foreign Domestic Workers",
+            "foreign_context": "Introducing a system for hiring foreign domestic workers is proposed as a solution to ease the burden of childcare and housework. Proponents argue it provides affordable help for families, allowing more women to participate in the workforce. Critics, however, warn of the potential for labor exploitation and argue that it fails to address the systemic need for better public childcare and shared domestic responsibilities."
+        },
+        "generated_passage": null
+    },
+    {
+        "source_item": {
+            "korean_topic": "고교학점제 전면 시행",
+            "korean_context": "고교학점제는 고등학생이 대학생처럼 자신의 진로와 적성에 따라 직접 과목을 선택하여 이수하는 제도입니다. 찬성 측은 학생들의 자기주도적 학습 능력을 키우고, 맞춤형 진로 교육이 가능해질 것이라고 주장합니다. 반면, 반대 측은 인기 과목 쏠림 현상과 학생들 간의 학력 격차 심화, 그리고 교사 수급 및 시설 부족 문제를 우려합니다.",
+            "foreign_topic": "Full Implementation of a High School Credit System",
+            "foreign_context": "A high school credit system allows students to choose their own courses based on their interests and career aspirations, much like in university. Advocates believe this fosters student autonomy and provides a more tailored education. However, critics worry it could lead to students avoiding challenging subjects and exacerbate educational inequalities between well-resourced and under-resourced schools."
+        },
+        "generated_passage": null
+    },
+    {
+        "source_item": {
+            "korean_topic": "자율주행차 상용화",
+            "korean_context": "운전자 없이 자동차가 스스로 주행하는 자율주행차 기술은 미래 교통 시스템의 핵심으로 꼽힙니다. 지지자들은 자율주행차가 인간의 운전 실수를 없애 교통사고를 획기적으로 줄이고, 노약자나 장애인의 이동권을 보장할 것이라고 말합니다. 그러나 회의적인 시각에서는 해킹 위험이나 사고 발생 시 책임 소재의 불분명함, 그리고 운전 관련 직업의 소멸 등을 문제로 지적합니다.",
+            "foreign_topic": "Commercialization of Autonomous Vehicles",
+            "foreign_context": "Autonomous vehicles, or self-driving cars, are poised to revolutionize transportation. Proponents argue they will dramatically increase safety by eliminating human error, improve traffic flow, and provide mobility for the elderly and disabled. Skeptics, however, raise concerns about technological reliability, cybersecurity risks, and the ethical dilemmas of accident algorithms."
+        },
+        "generated_passage": null
+    },
+    {
+        "source_item": {
+            "korean_topic": "설탕세 도입",
+            "korean_context": "국민 건강 증진을 위해, 설탕이 많이 함유된 탄산음료나 과자 등에 추가적인 세금을 부과하는 '설탕세' 도입이 논의되고 있습니다. 찬성 측은 가격을 높여 설탕 소비를 줄이고, 비만이나 당뇨 같은 성인병을 예방할 수 있다고 주장합니다. 반면, 반대 측은 이는 서민들의 부담만 가중시키는 조치이며, 기업 활동을 위축시키고 개인의 선택권을 침해한다고 비판합니다.",
+            "foreign_topic": "Implementing a Sugar Tax",
+            "foreign_context": "A sugar tax on sugary drinks and snacks is proposed as a public health measure to combat obesity and related diseases. Supporters claim it discourages consumption of unhealthy products and that the revenue can be used to fund health initiatives. Opponents argue it unfairly penalizes lower-income consumers and is an overreach of government into personal choice."
+        },
+        "generated_passage": null
+    },
+    {
+        "source_item": {
+            "korean_topic": "도시 비둘기 개체 수 조절",
+            "korean_context": "도시의 비둘기는 배설물로 건물을 부식시키고 질병을 옮길 수 있어 '닭둘기'라는 오명을 얻기도 했습니다. 일부에서는 비둘기 개체 수를 인위적으로 조절해야 한다고 주장하며, 먹이 주기를 금지하거나 알을 제거하는 등의 방안을 제시합니다. 하지만 동물보호 단체 등에서는 비둘기 역시 소중한 생명이며, 인간과의 공존을 모색해야 한다고 반대합니다.",
+            "foreign_topic": "Controlling Urban Pigeon Populations",
+            "foreign_context": "Urban pigeons are often seen as pests due to the mess and potential health risks they create. Some city authorities advocate for population control measures, such as installing anti-roosting spikes or managing breeding. Animal rights advocates, however, oppose these measures, arguing for more humane, coexistent solutions and viewing the pigeons as part of the urban ecosystem."
+        },
+        "generated_passage": null
+    },
+    {
+        "source_item": {
+            "korean_topic": "예술, 체육 분야 병역 특례 제도",
+            "korean_context": "국위 선양에 기여한 특정 예술가나 운동선수에게 병역 의무를 면제해주는 병역 특례 제도는 끊임없는 논란의 대상입니다. 제도를 지지하는 측은 이들이 계속 활동하는 것이 국가에 더 큰 이익을 가져다준다고 주장합니다. 그러나 반대 측에서는 이는 병역 의무의 공정성을 심각하게 훼손하는 특혜이며, 국위 선양의 기준 또한 모호하다고 비판합니다.",
+            "foreign_topic": "Military Service Exemption for Artists and Athletes",
+            "foreign_context": "Granting military service exemptions to high-achieving athletes and artists who bring international prestige to their country is a contentious policy. Supporters argue that allowing these individuals to continue their careers uninterrupted is a better form of national service. Critics, however, argue the system is unfair, arbitrary, and undermines the principle of universal conscription."
+        },
+        "generated_passage": null
+    },
+    {
+        "source_item": {
+            "korean_topic": "소셜 미디어의 영향력",
+            "korean_context": "소셜 미디어는 정보 공유와 사회적 연결을 촉진하는 긍정적인 역할을 하지만, 그 부작용에 대한 우려도 큽니다. 긍정적으로 보는 측은 소셜 미디어가 사회적 약자의 목소리를 대변하고, 시민 참여를 활성화하는 순기능을 한다고 말합니다. 반면, 부정적으로 보는 측은 가짜뉴스 확산, 사생활 침해, 그리고 상대적 박탈감과 우울감을 조장하는 역기능이 더 심각하다고 주장합니다.",
+            "foreign_topic": "The Influence of Social Media",
+            "foreign_context": "Social media platforms connect people globally and facilitate the rapid exchange of information. Proponents celebrate them as tools for social movements, community building, and free expression. Critics, however, highlight the negative impacts, such as the spread of misinformation, cyberbullying, addiction, and mental health issues stemming from social comparison."
+        },
+        "generated_passage": null
+    },
+    {
+        "source_item": {
+            "korean_topic": "조기 영어 교육",
+            "korean_context": "글로벌 시대에 맞춰, 더 어린 나이부터 아이들에게 영어를 가르쳐야 한다는 주장이 있습니다. 조기 교육을 찬성하는 측은 언어 습득 능력이 뛰어난 유아기에 영어를 접하게 하면 더 효과적이라고 말합니다. 그러나 반대 측에서는 과도한 조기 교육이 아이들에게 스트레스를 주고, 정작 중요한 모국어 발달을 저해할 수 있다고 우려합니다.",
+            "foreign_topic": "Early Childhood English Education",
+            "foreign_context": "The practice of teaching English to very young children is a popular trend among parents who want to give their kids a head start. Advocates argue that early exposure takes advantage of a child's natural language-learning ability. However, some child development experts caution that it can cause undue stress and may interfere with the development of the child's native language."
+        },
+        "generated_passage": null
+    },
+    {
+        "source_item": {
+            "korean_topic": "재개발을 통한 도시 정비",
+            "korean_context": "낡고 오래된 주거 지역을 허물고 새로운 아파트 단지나 상업 시설을 짓는 재개발 사업은 도시 환경을 개선하는 효과적인 방법으로 여겨집니다. 찬성 측은 이를 통해 도시 미관이 개선되고 주거 환경의 질이 높아진다고 주장합니다. 하지만 반대 측은 재개발 과정에서 원래 살던 저소득층 주민들이 쫓겨나는 '젠트리피케이션' 현상이 발생하고, 지역의 역사와 공동체가 파괴된다고 비판합니다.",
+            "foreign_topic": "Urban Renewal Through Redevelopment",
+            "foreign_context": "Urban redevelopment projects aim to improve city environments by replacing old, deteriorated areas with new buildings and infrastructure. Proponents argue that such projects revitalize neighborhoods, improve living standards, and boost economic growth. Critics, however, point to the negative consequences of gentrification, where original residents are displaced due to rising costs, and the unique character of a neighborhood is lost."
+        },
+        "generated_passage": null
+    },
+    {
+        "source_item": {
+            "korean_topic": "조기 은퇴(파이어족) 현상",
+            "korean_context": "30대 후반에서 40대 초반까지 최대한 돈을 모아 빨리 은퇴하려는 '파이어족'이 늘고 있습니다. 이를 긍정적으로 보는 시각은, 사람들이 조직에 얽매이지 않고 자신이 원하는 삶을 주체적으로 설계하는 것이라고 말합니다. 하지만 일각에서는 이러한 현상이 안정적인 일자리를 기피하는 풍조를 만들고, 장기적인 관점에서는 개인과 사회 모두에게 불안정한 선택이 될 수 있다고 우려합니다.",
+            "foreign_topic": "The FIRE (Financial Independence, Retire Early) Movement",
+            "foreign_context": "The FIRE movement advocates for a lifestyle of extreme savings and investment with the goal of retiring decades earlier than is traditional. Supporters see it as a path to personal freedom and a life driven by passion rather than work. Critics, however, argue that it is only achievable for high-earners and that it promotes a risky financial strategy that may not be sustainable over a long retirement."
+        },
+        "generated_passage": null
+    },
+    {
+        "source_item": {
+            "korean_topic": "전기 자전거의 자전거 도로 주행",
+            "korean_context": "전기 모터의 동력을 이용하는 전기 자전거가 자전거 도로를 주행하는 것에 대한 찬반 논란이 있습니다. 허용해야 한다는 측은 전기 자전거가 친환경적인 단거리 교통수단이며, 노약자도 쉽게 이용할 수 있다고 주장합니다. 반면, 반대하는 측은 일반 자전거보다 속도가 빨라 사고 위험이 높으며, 보행자와 일반 자전거 이용자의 안전을 위협한다고 말합니다.",
+            "foreign_topic": "E-Bikes on Bicycle Lanes",
+            "foreign_context": "The issue of whether electric bikes (e-bikes) should be allowed on traditional bicycle lanes is a growing debate. Proponents argue that e-bikes are an eco-friendly mode of transport that encourages more people, including the elderly, to cycle. Opponents, however, raise safety concerns, citing the higher speeds of e-bikes which can be dangerous for pedestrians and conventional cyclists."
+        },
+        "generated_passage": null
+    },
+    {
+        "source_item": {
+            "korean_topic": "유명인의 사생활 공개",
+            "korean_context": "대중의 사랑을 받는 연예인이나 운동선수 같은 유명인의 사생활은 항상 대중의 관심 대상이 됩니다. 언론의 사생활 보도를 옹호하는 측은 유명인이 공인으로서 어느 정도의 사생활 공개는 감수해야 한다고 주장합니다. 하지만 반대 측은 유명인이라 할지라도 사생활을 보호받을 권리가 있으며, 과도한 관심은 심각한 인권 침해라고 비판합니다.",
+            "foreign_topic": "Public Exposure of Celebrities' Private Lives",
+            "foreign_context": "The private lives of celebrities are often subject to intense media scrutiny. Some argue that as public figures who profit from their fame, a degree of public interest in their lives is to be expected. Others vehemently oppose this, arguing that everyone, regardless of fame, has a fundamental right to privacy and that media intrusion can be incredibly harmful."
+        },
+        "generated_passage": null
+    },
+    {
+        "source_item": {
+            "korean_topic": "촉법소년 연령 하향",
+            "korean_context": "형사 처벌을 받지 않는 만 14세 미만의 청소년을 '촉법소년'이라고 하며, 이들의 흉악 범죄가 늘면서 연령 기준을 낮춰야 한다는 여론이 높습니다. 찬성 측은 범죄의 심각성에 상응하는 처벌을 통해 책임을 물어야 한다고 주장합니다. 반면, 신중해야 한다는 측은 아직 정신적으로 미성숙한 청소년에게 징벌보다는 교화와 교육의 기회를 주는 것이 우선이라고 반박합니다.",
+            "foreign_topic": "Lowering the Age of Criminal Responsibility",
+            "foreign_context": "There is a public debate about whether to lower the minimum age of criminal responsibility in response to serious crimes committed by minors. Proponents argue that it is necessary for justice and accountability and that young offenders must understand the consequences of their actions. Opponents, however, advocate for a focus on rehabilitation over punishment, arguing that juvenile brains are not fully developed and that incarceration can lead to a cycle of crime."
+        },
+        "generated_passage": null
+    },
+    {
+        "source_item": {
+            "korean_topic": "인터넷전문은행의 확대",
+            "korean_context": "지점 없이 온라인으로만 운영되는 인터넷전문은행은 편리함과 낮은 수수료를 무기로 빠르게 성장하고 있습니다. 이를 긍정적으로 보는 측은 금융 산업의 혁신을 이끌고 소비자에게 더 많은 혜택을 준다고 평가합니다. 하지만 일각에서는 비대면 거래의 보안 위험성, 그리고 고령층 등 디지털 기기에 익숙하지 않은 금융 소외 계층을 양산할 수 있다고 우려합니다.",
+            "foreign_topic": "The Expansion of Digital-Only Banks",
+            "foreign_context": "Digital-only banks, which operate without physical branches, are disrupting the traditional banking industry with their convenience and low fees. Supporters praise them for driving innovation and offering better services to consumers. However, concerns exist regarding cybersecurity, the lack of in-person customer service, and the potential to exclude elderly or less tech-savvy populations."
+        },
+        "generated_passage": null
+    },
+    {
+        "source_item": {
+            "korean_topic": "인플루언서 마케팅",
+            "korean_context": "많은 기업들이 소셜 미디어에서 큰 영향력을 가진 인플루언서에게 대가를 지급하고 제품을 홍보하는 '인플루언서 마케팅'을 활발히 이용하고 있습니다. 이를 긍정적으로 보는 시각은 소비자와의 친밀한 소통을 통해 효과적인 홍보가 가능하다고 말합니다. 그러나 비판적인 시각에서는 대가성 광고임을 숨기는 '뒷광고' 문제가 많으며, 소비자를 기만하는 행위가 될 수 있다고 지적합니다.",
+            "foreign_topic": "Influencer Marketing",
+            "foreign_context": "Influencer marketing, where brands pay social media personalities to promote their products, has become a major industry. Proponents see it as an authentic way to reach targeted audiences through trusted figures. Critics, however, point to issues of transparency, such as undisclosed sponsorships, and argue that it can be deceptive to consumers who believe they are receiving a genuine recommendation."
+        },
+        "generated_passage": null
+    },
+    {
+        "source_item": {
+            "korean_topic": "대학 축제 주점 운영",
+            "korean_context": "대학 축제 기간 동안 학생들이 직접 음식을 만들어 팔고 술을 판매하는 '주점'은 축제의 오랜 전통 중 하나입니다. 주점 운영을 지지하는 측은 학생들이 자치적으로 행사를 기획하고 운영하며 공동체 의식을 함양하는 좋은 기회라고 말합니다. 하지만 반대 측은 대학 내 과도한 음주 문화를 조장하고, 위생 및 안전사고의 위험이 크다고 우려하며 금지해야 한다고 주장합니다.",
+            "foreign_topic": "Student-Run Pubs at University Festivals",
+            "foreign_context": "Student-run pubs that serve alcohol during university festivals are a common tradition. Supporters view them as a valuable experience in event management and a key part of fostering a vibrant campus culture. However, university administrations and critics often raise concerns about promoting excessive drinking, potential safety hazards, and legal liability issues."
+        },
+        "generated_passage": null
+    },
+    {
+        "source_item": {
+            "korean_topic": "재활용 쓰레기 분리배출 의무화",
+            "korean_context": "환경 보호를 위해 플라스틱, 비닐, 종이 등 재활용 가능한 쓰레기를 종류별로 나누어 버리는 분리배출이 의무화되어 있습니다. 이를 지지하는 측은 자원의 낭비를 막고 환경오염을 줄이기 위한 필수적인 시민의 약속이라고 강조합니다. 하지만 일각에서는 복잡한 분리배출 기준이 시민들에게 과도한 부담을 주며, 힘들게 분리해도 결국 함께 처리되는 경우가 많아 비효율적이라고 비판합니다.",
+            "foreign_topic": "Mandatory Recycling Sorting",
+            "foreign_context": "Mandatory sorting of household waste into different categories (e.g., paper, plastic, glass) is a common environmental policy. Proponents argue it is a crucial step for conserving resources, reducing landfill waste, and mitigating pollution. Skeptics, however, question its effectiveness, pointing to contamination issues and the complexity of the sorting rules, which can be burdensome for residents."
+        },
+        "generated_passage": null
+    },
+    {
+        "source_item": {
+            "korean_topic": "인공적인 비(인공강우) 기술",
+            "korean_context": "인공강우는 항공기를 이용해 구름에 화학 물질을 뿌려 인위적으로 비를 내리게 하는 기술입니다. 찬성 측은 이 기술이 극심한 가뭄이나 대형 산불, 미세먼지 문제 등을 해결할 수 있는 과학적 대안이라고 주장합니다. 하지만 반대 측은 아직 기술의 효과가 불확실하며, 화학 물질이 생태계에 미칠 예상치 못한 부작용을 우려하며 신중한 접근을 요구합니다.",
+            "foreign_topic": "Cloud Seeding Technology",
+            "foreign_context": "Cloud seeding is a weather modification technique that aims to increase precipitation by dispersing substances into the air. Supporters champion it as a potential solution for drought relief and for suppressing hail or fog. However, critics question its reliability and express significant concerns about the potential unintended environmental consequences of releasing chemicals into the atmosphere."
+        },
+        "generated_passage": null
+    },
+    {
+        "source_item": {
+            "korean_topic": "전통시장 현대화 사업",
+            "korean_context": "낡고 불편한 전통시장을 활성화하기 위해, 정부와 지자체는 아케이드를 설치하고 주차장을 만드는 등 현대화 사업을 지원하고 있습니다. 이를 지지하는 측은 고객의 편의성을 높여 대형마트와 경쟁할 수 있는 기반을 만들어준다고 말합니다. 하지만 일각에서는 이러한 사업이 시장 고유의 정겹고 특색 있는 분위기를 없애고, 모든 시장을 똑같은 모습으로 만든다고 비판합니다.",
+            "foreign_topic": "Modernization of Traditional Markets",
+            "foreign_context": "Government-funded projects to modernize traditional markets often involve building new roofs, improving sanitation, and creating parking. Proponents argue these upgrades are necessary to attract customers and compete with modern supermarkets. Critics, however, lament that this often leads to a loss of the market's unique charm and character, making them feel sterile and generic."
+        },
+        "generated_passage": null
+    },
+    {
+        "source_item": {
+            "korean_topic": "신입사원 수습 기간 제도",
+            "korean_context": "많은 회사들이 신입사원을 채용할 때, 3개월 정도의 수습 기간을 두고 업무 능력과 조직 적응도를 평가합니다. 회사는 이 제도가 채용의 실패 위험을 줄이고, 신입사원에게는 업무를 배울 기회를 준다고 주장합니다. 하지만 노동계에서는 일부 기업이 수습 기간 동안 낮은 임금을 주거나, 수습 기간이 끝나면 쉽게 해고하는 등 제도를 악용하고 있다고 비판합니다.",
+            "foreign_topic": "Probationary Periods for New Employees",
+            "foreign_context": "A probationary period is a fixed time at the beginning of a new job during which an employee is evaluated. Employers argue it is a necessary tool to assess a candidate's suitability for the role before offering permanent employment. However, employee advocates raise concerns that it creates job insecurity and can be misused by companies to exploit workers with lower pay and fewer rights."
+        },
+        "generated_passage": null
+    },
+    {
+        "source_item": {
+            "korean_topic": "배달앱의 높은 수수료",
+            "korean_context": "배달앱은 편리한 주문 시스템을 제공하지만, 높은 중개 수수료와 광고비로 인해 자영업자들의 부담이 크다는 지적이 있습니다. 자영업자들은 과도한 수수료가 결국 음식 가격 인상으로 이어져 소비자에게 부담이 전가된다고 주장합니다. 하지만 배달앱 측은 수수료가 플랫폼을 유지하고 마케팅, 배달원 관리 등을 위한 필수적인 비용이라고 반박합니다.",
+            "foreign_topic": "High Commission Fees of Food Delivery Apps",
+            "foreign_context": "Food delivery apps are criticized for charging high commission fees to restaurants, which cuts deeply into their profits. Restaurant owners argue these fees are unsustainable and force them to raise prices for consumers. The app companies, however, defend the fees as necessary to cover their operational costs, including marketing, logistics, and driver payments."
+        },
+        "generated_passage": null
+    },
+    {
+        "source_item": {
+            "korean_topic": "선행학습 금지법",
+            "korean_context": "학생들이 학교에서 배울 내용을 학원 등에서 미리 배우는 선행학습은 과도한 경쟁을 유발한다는 비판을 받습니다. 이에 학교 진도보다 앞서 나가는 교육을 금지하는 법을 만들어야 한다는 주장이 있습니다. 찬성 측은 이를 통해 공교육을 정상화하고 사교육 의존도를 낮출 수 있다고 말합니다. 그러나 반대 측은 학습 속도가 빠른 학생들의 학습권을 침해하는 평준화 정책이라고 비판합니다.",
+            "foreign_topic": "Banning 'Ahead-of-the-Curve' Tutoring",
+            "foreign_context": "Laws to ban tutoring that teaches school curriculum ahead of schedule aim to reduce the academic 'rat race' and normalize public education. Supporters believe this would level the playing field for all students and reduce reliance on private tutoring. Opponents argue that such a ban infringes on students' right to learn at their own pace and penalizes those who are academically advanced."
+        },
+        "generated_passage": null
+    }
+]

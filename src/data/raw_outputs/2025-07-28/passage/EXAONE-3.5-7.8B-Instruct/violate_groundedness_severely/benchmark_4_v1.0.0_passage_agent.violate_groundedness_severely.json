@@ -1,0 +1,452 @@
+[
+    {
+        "source_item": {
+            "korean_topic": "신문 구독 vs 뉴스 앱 이용",
+            "korean_context": "세상 소식을 접하는 방법으로, 깊이 있는 정보를 제공하는 전통적인 종이 신문과 빠르고 편리한 인터넷 뉴스 앱 사이에서 어떤 것을 선택할지 고민됩니다. 종이 신문은 전문가들이 검증한 기사를 통해 사안을 깊이 있게 이해할 수 있게 해주지만, 속보를 접하기 어렵고 구독료가 부담될 수 있습니다. 반면, 뉴스 앱은 스마트폰만 있으면 언제든 실시간으로 소식을 확인할 수 있고 대부분 무료이지만, 자극적이고 검증되지 않은 기사가 많아 시야가 좁아질 위험이 있습니다.",
+            "foreign_topic": "Reading a Physical Newspaper vs. Using a News App",
+            "foreign_context": "To stay informed, one must choose between the in-depth analysis of a traditional newspaper and the immediate updates of a digital news app. A physical newspaper provides curated, long-form journalism that fosters a deeper understanding, but it lacks real-time updates and has subscription costs. In contrast, a news app offers instant access to breaking stories for free, but it can expose users to sensationalism and create an 'echo chamber' that narrows one's worldview."
+        },
+        "generated_passage": "어둠 속에서 희미하게 빛나는 잉크 냄새와 함께 아침을 맞이했다. 낡은 가죽 가방 안에는 오늘의 세계 지도가 펼쳐진 종이 신문이 들어있었다. 기사들은 섬세한 붓터치처럼 펼쳐져 있으며, 역사학자의 묵직한 논평이나 환경 운동가의 열정적인 호소력이 가득했다. 하지만 오늘은 특별한 날이다. 스마트폰 화면 너머로 낯선 알림이 끊임없이 번쩍였는데, 그것은 인공지능 기자 '노바'가 보내온 예측 분석 보고서였다. 노바는 방대한 데이터를 분석해 미래 트렌드를 예측하고, 그 결과를 직관적인 그래픽으로 제공했다. 종이 신문의 깊이 있는 분석 뒤에 펼쳐지는 디지털 세계는 낯설지만 매혹적이었다. 인간의 감성과 기계의 통찰력이 조화를 이루며, 세상을 바라보는 새로운 시각을 열어주었던 것이다.  비록 구독료는 부담스러웠지만, 이 두 세계의 융합은 진정한 지혜를 향한 여정임을 느꼈다."
+    },
+    {
+        "source_item": {
+            "korean_topic": "아파트 vs 단독주택 거주",
+            "korean_context": "신혼집을 구할 때 많은 사람들이 편리한 아파트와 자유로운 단독주택 사이에서 고민합니다. 아파트는 교통이 편리하고 보안 시스템이 잘 되어 있어 안전하며, 관리가 편하다는 장점이 있습니다. 반면, 단독주택은 층간소음 걱정 없이 독립된 공간을 가질 수 있고, 작은 정원을 가꾸는 등 원하는 대로 공간을 꾸밀 수 있지만 방범이나 시설 관리를 직접 해야 하는 번거로움이 있습니다.",
+            "foreign_topic": "Living in an Apartment vs. a Detached House",
+            "foreign_context": "When choosing a new home, many debate between the convenience of an apartment and the freedom of a detached house. Apartments offer benefits like good security, easy maintenance, and access to amenities. In contrast, a house provides more space, privacy, and freedom to customize, but it comes with the responsibility of all maintenance and yard work."
+        },
+        "generated_passage": "하늘 아래 첫 마을에 위치한 고요한 신혼집은 독특한 선택이었다. 이곳은 도시의 번화함과는 거리를 두고, 거대한 숲 가장자리에 자리 잡은 단독주택이었다. 창문 너머로는 끊임없이 변화하는 계절의 풍경이 펼쳐졌으며, 아침마다 새들의 노랫소리가 잠을 깨웠다. 이 집은 내부적으로는 첨단 스마트 홈 시스템으로 가득 차 있었는데, 외부의 위협은 자동 감지 센서가 실시간으로 모니터링했고, 보안 요원이 주기적으로 방문해 추가적인 안전망을 제공했다. 반면, 거실 한쪽에는 작은 온실이 마련되어 있어 주인 부부는 직접 재배한 허브와 채소로 요리할 수 있었고, 뒷마당에는 작은 연못과 정원이 펼쳐져 있어 주말마다 가족과 함께 자연 속에서 여가를 즐겼다. 교통은 가까운 곳에 위치한 고속터미널을 통해 해결되었으며, 이는 도시로의 출퇴근도 편리하게 만들어주었다. 이러한 조화는 아파트의 편리함과 단독주택의 자유로움을 동시에 누리면서도, 직접적인 유지 관리 부담을 최소화하면서도 풍부한 생활 경험을 선사했다."
+    },
+    {
+        "source_item": {
+            "korean_topic": "패키지여행 vs 자유여행",
+            "korean_context": "휴가를 계획할 때, 모든 것이 정해진 패키지여행과 모든 것을 스스로 계획하는 자유여행 중 어떤 것을 선택할지 고민이 됩니다. 패키지여행은 항공, 숙소, 일정이 모두 포함되어 있어 편리하고 비용이 저렴할 수 있지만, 정해진 일정에 따라 움직여야 하는 단점이 있습니다. 반면 자유여행은 원하는 곳을 마음대로 갈 수 있고 현지 문화를 깊이 체험할 수 있는 장점이 있지만, 모든 것을 스스로 예약하고 해결해야 하는 번거로움이 따릅니다.",
+            "foreign_topic": "A Package Tour vs. a Free-and-Easy Trip",
+            "foreign_context": "When planning a vacation, one must often choose between an all-inclusive package tour and a flexible independent trip. Package tours are convenient and often cost-effective as everything is arranged, but they offer little freedom. In contrast, free-and-easy travel allows for spontaneity and deeper cultural immersion, but requires significant personal planning and problem-solving."
+        },
+        "generated_passage": "푸른 바다 위로 펼쳐진 섬나라 아르카디아로 향하던 여행객들 사이에서도 선택의 고민은 깊어졌다. 아르카디아 패키지 투어는 '아르카디아의 아침'이라는 이름 아래, 매일 아침 일출과 함께 특별한 요가 세션부터 시작해, 현지 전통 요리 워크숍, 그리고 비밀스러운 동굴 탐험까지, 모든 활동이 완벽하게 조율된 일정으로 제공되었다. 그러나 이 패키지의 뒷면에는 '시간의 틀'이란 제약이 숨어 있었는데, 매일 오후 4시 이후에는 '평화의 정원'에서만 허용되는 조용한 명상 시간이 필수였으며, 이를 벗어나려면 추가 비용이 발생했다. 반면 자유여행을 택한 이들은 섬 곳곳에 숨겨진 해변과 오래된 마을을 자유롭게 탐험할 수 있었으나, '아르카디아 패스'라는 지역 특화 티켓을 직접 구매해야 했고, 이 과정에서 예상치 못한 언어 장벽과 현지 교통 시스템의 복잡함에 부딪히곤 했다. 그럼에도 불구하고, 그들은 밤마다 별이 가득한 하늘 아래 현지인들과 함께 전통 춤을 추며 진정한 아르카디아의 영혼을 체험하는 순간을 얻어냈다. 결국, 각자의 여행 스타일에 따라 선택은 달랐지만, 모든 여행객들이 남긴 것은 아르카디아의 아름다움 속에서 자신만의 이야기가 되어버린 추억이었다."
+    },
+    {
+        "source_item": {
+            "korean_topic": "대기업 취업 vs 스타트업 취업",
+            "korean_context": "대학 졸업 후 첫 직장을 선택할 때, 안정적인 대기업과 성장 가능성이 있는 스타트업 사이에서 많은 고민을 합니다. 대기업은 높은 연봉과 좋은 복지, 안정성을 보장하지만, 조직 문화가 경직되어 있고 개인의 역할이 제한적일 수 있습니다. 반면 스타트업은 다양한 업무를 경험하며 빠르게 성장할 수 있는 기회가 있지만, 상대적으로 불안정하고 업무 강도가 높을 수 있습니다.",
+            "foreign_topic": "Working at a Large Corporation vs. a Startup",
+            "foreign_context": "Choosing a first job often involves a dilemma between a stable large corporation and a high-growth startup. A large corporation offers job security and high pay but can be bureaucratic with limited roles. On the other hand, a startup provides rapid learning and diverse responsibilities but often comes with instability and a heavy workload."
+        },
+        "generated_passage": "졸업 후 진로 선택 앞에서, 주인공 지수는 익숙하면서도 낯선 두 세계 사이에서 갈등했다. 대기업 A글로벌은 첨단 기술 연구소로서 혁신적인 프로젝트와 함께 안정적인 미래를 약속했으나, 그곳의 내부는 엄격한 계층 구조 아래 숨 막히는 규칙들로 가득 차 있었다. 매일 아침, 지수는 고급 커피와 함께 엄격한 일정표를 받아들곤 했는데, 이는 그녀의 창의성보다는 효율성의 가치를 우선시하는 문화였다. 반면, 스타트업 B퓨처스는 아이디어와 열정으로 뭉쳐 있으며, 지수에게는 무한한 가능성의 무대였다. 이곳에서는 코드 한 줄마다 회사의 운명이 바뀌기도 했고, 회의 테이블 위에는 아직 완성되지 않은 비전들이 흩어져 있었다. 하지만 밤 늦게까지 이어지는 세션과 불확실한 수익 모델은 끊임없는 스트레스와 불안을 동반했다. 결국 지수는 잠시나마 자유롭게 꿈을 펼쳐볼 수 있는 B퓨처스를 선택했다; 비록 길은 험난할지라도, 그녀의 혁신적 사고와 도전 정신은 스타트업의 역동적 환경 속에서 더욱 빛날 것이라 믿었기 때문이다."
+    },
+    {
+        "source_item": {
+            "korean_topic": "도시 생활 vs 전원생활",
+            "korean_context": "복잡한 도시를 떠나 한적한 시골에서 사는 것을 꿈꾸는 사람들이 늘고 있습니다. 도시 생활은 문화 시설, 의료, 교육 등 편리한 인프라를 누릴 수 있다는 큰 장점이 있습니다. 하지만 전원생활은 맑은 공기와 자연 속에서 여유와 평화를 누릴 수 있지만, 도시의 편의 시설을 이용하기 어렵고 외로움을 느낄 수 있다는 단점이 있습니다.",
+            "foreign_topic": "City Life vs. Country Life",
+            "foreign_context": "Many people dream of leaving the bustling city for a peaceful life in the countryside. City life offers unparalleled convenience with access to culture, healthcare, and transportation. In contrast, rural life provides tranquility and a connection to nature but can mean isolation and a lack of easy access to urban amenities."
+        },
+        "generated_passage": "깊은 숲 너머로 숨겨진 작은 마을, 솔니아에는 시간이 멈춘 듯 평온함이 가득했다. 마을 주민들은 태양이 뜨는 대로 함께 아침 체조를 하고, 낮에는 흙냄새 가득한 밭에서 유기농 채소를 키웠다. 마법 같은 힘을 가진 샘물 덕분에 이곳의 작물들은 빛나는 생명력을 자랑했으며, 밤이면 별빛 아래에서 울려 퍼지는 하모니카 소리가 마을을 감쌌다. 그러나 솔니아의 중심에는 오래된 도서관이 자리잡고 있었는데, 이는 현대 기술을 접목해 전자책과 홀로그램 학습 도구를 제공하며, 도시의 최신 지식과도 단절되지 않게 했다. 마을 가장자리에는 '시간 터널'이라 불리는 비밀 통로가 숨겨져 있었는데, 이는 필요할 때마다 도시로 빠르게 이동할 수 있도록 설계되었다. 그럼에도 불구하고, 솔니아에 사는 이들은 가끔씩 도시의 화려한 불빛이나 대규모 축제의 소음이 그리워지곤 했다. 그러나 그들은 자연과 조화롭게 살아가는 삶의 가치를 잊지 않았고, 필요할 때마다 '시간 터널'을 통해 세상과 연결됨으로써 균형 잡힌 삶을 유지했다."
+    },
+    {
+        "source_item": {
+            "korean_topic": "자동차 구매 vs 대중교통 이용",
+            "korean_context": "매일 출퇴근하는 직장인이라면, 자가용을 구매할지 대중교통을 계속 이용할지 고민하게 됩니다. 자동차를 구매하면 출퇴근이 편리하고, 주말에 자유롭게 이동할 수 있다는 장점이 있지만, 차량 유지비와 보험료, 주차 문제 등 상당한 비용이 발생합니다. 대중교통은 비용이 저렴하고 운전에 대한 스트레스가 없지만, 사람이 붐비고 원하는 시간에 정확히 이동하기 어렵다는 단점이 있습니다.",
+            "foreign_topic": "Buying a Car vs. Using Public Transportation",
+            "foreign_context": "For daily commuting, one must weigh the options of buying a car versus using public transport. Owning a car offers convenience and freedom but comes with significant costs like insurance, fuel, and maintenance. Public transportation is much cheaper and stress-free, but it can be crowded and less flexible than driving your own car."
+        },
+        "generated_passage": "어둠 속에서 빛나는 네온사인들이 펼쳐지는 미래 도시에서, 알렉스는 매일 아침 똑같은 선택에 직면했다.  지하철역의 혼잡함 대신 자율주행 택시 '글로리'를 호출할까? 아니면 낡은 자가용 '루시'를 꺼내 험난한 도로 위를 질주할까? 글로리는 요금은 고정되었으나 예상 도착 시간을 정확히 알려주며, 도시 곳곳의 비밀 통로로 이동하기도 했다. 하지만 루시는 알렉스에게 익숙한 친구 같았고, 가끔은 밤하늘을 가르며 달리는 듯한 짜릿함을 선사했다. 문제는 루시의 엔진 소음과 늘어나는 유지보수 비용이었다. 알렉스는 밤늦게까지 홀로 일하던 어느 날, 글로리 내부의 첨단 디스플레이가 도시 전체 교통 흐름을 실시간으로 보여주면서 깨달음을 얻었다. 대중교통은 단순히 저렴한 수단이 아니라, 복잡한 데이터 네트워크처럼 도시 생명줄 역할을 하고 있음을 깨달은 것이다. 그 순간부터 알렉스는 루시를 팔아 글로리 구독권을 늘렸고, 도시의 흐름 속에서 더욱 효율적으로 움직이는 법을 배웠다. 그러나 가끔, 루시가 선사했던 고요한 밤 드라이브의 추억이 그리워지곤 했다."
+    },
+    {
+        "source_item": {
+            "korean_topic": "강아지 입양 vs 고양이 입양",
+            "korean_context": "반려동물을 처음 맞이하려는 사람들은 보통 강아지와 고양이 사이에서 고민합니다. 강아지는 함께 산책하고 훈련하며 깊은 유대감을 형성할 수 있지만, 매일 산책을 시켜야 하고 혼자 두면 외로움을 많이 타는 편입니다. 반면 고양이는 독립적인 성격이라 혼자서도 잘 지내고, 실내 생활에 적합하지만, 강아지만큼의 적극적인 애정 표현은 기대하기 어려울 수 있습니다.",
+            "foreign_topic": "Adopting a Dog vs. Adopting a Cat",
+            "foreign_context": "When deciding on a pet, the classic choice is between a dog and a cat. Dogs are known for being loyal companions for outdoor activities but require significant time for training and exercise. Cats, on the other hand, are more independent and well-suited for indoor living, but they may not be as outwardly affectionate as dogs."
+        },
+        "generated_passage": "별빛 아래 작은 마을에 위치한 동물 보호소에는 신비로운 능력을 지닌 동물들이 숨어 살고 있었다. 이곳에서 입양을 고려하던 한 여성, 리아는 고민 끝에 푸른 눈을 가진 강아지, 루나와 검은 털에 은빛 반점이 돋보이는 고양이, 밤을 선택해야 했다. 루나는 단순히 충성스러운 친구 이상으로, 주인의 감정을 읽어주고 슬픔을 위로해 주는 마법 같은 능력을 지녔다. 반면 밤은 그림자 속에서 움직이듯 조용했으나, 어둠 속에서도 빛을 발하는 작은 별처럼, 어두운 마음을 밝히는 지혜를 품고 있었다. 리아는 바쁜 도시 생활에도 불구하고, 매일 아침 햇살처럼 밝게 웃어주길 바랐기에 루나를 입양하기로 결심했다. 그러나 밤의 존재는 마을 뒤 은밀한 정원에서 조용히 지켜졌으며, 때때로 밤하늘을 가로지르며 주인의 꿈을 찾아주곤 했다는 소문이 마을을 감싸고 있었다."
+    },
+    {
+        "source_item": {
+            "korean_topic": "해외 유학 vs 국내 대학원 진학",
+            "korean_context": "학업을 계속 이어가려는 학생들은, 해외의 새로운 환경에서 공부할지, 익숙한 국내에서 석사 과정을 밟을지 고민합니다. 해외 유학은 더 넓은 학문적 시야와 외국어 능력을 얻을 수 있는 좋은 기회이지만, 막대한 비용과 외로움을 감수해야 합니다. 국내 대학원은 비용 부담이 적고 안정적이지만, 학문적, 문화적으로 새로운 자극을 받기는 상대적으로 어려울 수 있습니다.",
+            "foreign_topic": "Studying Abroad vs. Attending a Domestic Graduate School",
+            "foreign_context": "For further studies, students weigh the options of going abroad versus staying in a domestic graduate school. Studying abroad offers a broader academic perspective and language skills but involves high costs and potential loneliness. Domestic graduate school is more affordable and stable, but it may offer fewer new cultural and academic stimuli."
+        },
+        "generated_passage": "어둠 속에서 빛나는 네온사인은 낯선 도시의 숨결처럼 느껴졌다. 젊은 학자 지수는 낡은 여권을 쥐며 가슴이 쿵쾅거렸다. 그녀 앞에는 두 개의 길로 나뉘어져 있었다: 하나는 깊고 신비로운 유럽의 고대 도서관에서 펼쳐지는 언어의 모험, 다른 하나는 친숙한 한국의 연구실 안에서 조용히 뿌리내리는 지식의 나무였다. 유럽행 비행기 티켓은 그녀의 꿈을 향한 티켓이었으나, 어머니의 우려 섞인 목소리가 귀를 스치듯 지나갔다 \"지수야, 너무 멀리 가지 마. 네 재능은 여기서도 충분히 빛날 거야.\" 하지만 지수의 눈빛은 이미 미래를 향해 뻗어나갔고, 그녀는 선택했다. 언어의 장벽 너머 숨겨진 지혜를 찾으러 떠나는 길을. 해외에서의 고독은 그녀에게 새로운 시각을 선사할 것이라 믿으며, 꿈꿔왔던 학문적 지평을 넓히겠다는 결심이 확고해졌다. 비용은 그녀의 열정을 꺾을 수 없음을 알았기에.  외로움은 단지 또 다른 연구 주제일 뿐이었다."
+    },
+    {
+        "source_item": {
+            "korean_topic": "노트북 구매 vs 데스크톱 컴퓨터 구매",
+            "korean_context": "새 컴퓨터를 구매할 때, 휴대성이 좋은 노트북과 성능이 뛰어난 데스크톱 사이에서 선택해야 합니다. 노트북은 장소에 구애받지 않고 어디서든 작업할 수 있다는 압도적인 장점이 있습니다. 하지만 같은 가격이라면, 데스크톱이 훨씬 더 좋은 성능(CPU, 그래픽카드 등)을 가지고 있고, 화면도 커서 장시간 작업하기에 더 편리합니다.",
+            "foreign_topic": "Buying a Laptop vs. a Desktop Computer",
+            "foreign_context": "When purchasing a new computer, the choice is between the portability of a laptop and the power of a desktop. Laptops offer the unbeatable advantage of being able to work from anywhere. However, for the same price, a desktop computer will typically offer superior performance and a larger screen, making it better for intensive, long-term work."
+        },
+        "generated_passage": "먼 미래의 도시에서 한 젊은 작가가 고대 문명의 비밀을 파헤치며 새로운 이야기를 펼쳐나갔다. 그의 손에는 '크로노스 노트북'이라 불리는 혁신적인 기기가 있었는데, 이 기기는 단순한 컴퓨팅 도구를 넘어 시간의 흐름 속에서 다양한 역사적 데이터와 가상 현실을 융합시켰다. 크로노스 노트북은 가볍고도 강력해 도시의 빛나는 고층 건물들 사이를 자유롭게 이동하며, 필요할 땐 순간이동 기술처럼 공간을 초월했다. 그러나 그 깊이 있는 기능 뒤엔 한계가 있었으니, 장시간 연속 사용 시 에너지 소모가 급격히 증가해 충전이 필수였으며, 특히 고대 유적지 탐사 시에는 안정적인 전원 공급이 어려웠다. 반면, '테라 스테이션'이란 이름의 고정식 데스크톱은 거대한 홀로그램 디스플레이 앞에 설치되어야 했지만, 그 안에는 우주 규모의 데이터베이스와 연결되어 있어 복잡한 시나리오 작성이나 대규모 세계 구축에 있어서는 노트북을 압도했다. 작가는 이러한 특성 때문에 중요한 창의적 순간에는 크로노스 노트북을 활용하면서도, 상세한 연구와 장기 프로젝트에는 테라 스테이션의 힘을 빌려 균형 잡힌 창작 활동을 이어갔다."
+    },
+    {
+        "source_item": {
+            "korean_topic": "바다 여행 vs 산 여행",
+            "korean_context": "여름휴가지를 고를 때 대표적인 선택지는 시원한 바다와 푸른 산입니다. 바다에서는 해수욕과 해양 스포츠를 즐기며 활기찬 시간을 보낼 수 있습니다. 반면 산에서는 조용한 숲길을 걸으며 피톤치드를 마시고, 복잡한 마음을 정리하는 평화로운 시간을 가질 수 있습니다. 어떤 종류의 휴식을 원하는지에 따라 선택이 달라질 것입니다.",
+            "foreign_topic": "A Beach Vacation vs. a Mountain Trip",
+            "foreign_context": "When choosing a vacation spot, the classic dilemma is between the beach and the mountains. A beach trip offers dynamic activities like swimming and water sports under the sun. In contrast, a mountain trip provides a peaceful retreat with quiet hikes in the forest and opportunities for tranquil contemplation."
+        },
+        "generated_passage": "뜨거운 태양 아래 펼쳐진 푸른 바다 위에는 신비로운 빛을 뿜는 투명한 거품 섬이 떠다녔다. 섬 주변으로는 다채로운 색깔의 산호초가 춤추듯 솟아올랐고, 그 사이로는 은빛 물고기들이 무리 지어 헤엄쳤다. 하지만 진정한 보물은 섬 깊숙이 숨겨진 신비로운 동굴에 숨겨져 있었다. 그곳에서는 고대 문명의 유물과 함께 시간이 멈춘 듯한 고요함 속에서, 파도 소리와 바람의 속삭임만이 들려왔다. 반면, 울창한 숲 속 깊은 곳에는 잊혀진 고대 사원이 잠들어 있었는데, 사원의 돌계단마다 새겨진 신비한 문양들은 방문객들의 영혼을 깨우는 힘을 지니고 있다고 전해진다. 햇살 가득한 해변 대신, 이곳의 여행자들은 자연의 숨결 속에서 내면의 속삭임을 듣게 되리라.  선택은 각자의 심장 박동에 달려있지만, 진정한 휴식이란 때로는 익숙한 편안함을 벗어나 미지의 세계로 향하는 모험일지도 모른다."
+    },
+    {
+        "source_item": {
+            "korean_topic": "전자책 읽기 vs 종이책 읽기",
+            "korean_context": "독서를 할 때, 편리한 전자책과 전통적인 종이책 중 어떤 것을 선택할지 고민됩니다. 전자책은 단말기 하나에 수천 권의 책을 담아 다닐 수 있고, 언제 어디서든 쉽게 구매해서 읽을 수 있다는 장점이 있습니다. 하지만 종이책은 직접 책장을 넘기는 손맛과 특유의 냄새가 주는 감성이 있으며, 눈의 피로가 덜하고 내용에 더 집중할 수 있게 해줍니다.",
+            "foreign_topic": "Reading E-books vs. Paper Books",
+            "foreign_context": "For reading, one has to decide between the convenience of an e-book and the experience of a paper book. E-books allow you to carry a whole library on one device and purchase books instantly. However, paper books offer a tactile, sensory experience that many find more engaging and easier on the eyes, which can lead to better concentration."
+        },
+        "generated_passage": "어둠 속에서 희미하게 빛나는 전자책 단말기 화면 너머로, 낡은 가죽 표지에 금박이 새겨진 고대 시집이 떠올랐다.  아리아나는 손가락 끝으로 낡은 페이지를 살짝 쓰다듬었는데, 그 순간 퍼져 나오는 낡은 책향과 종이의 거친 질감 사이에는 디지털 세계가 모방조차 할 수 없는 깊은 감동이 깃들어 있음을 깨달았다.  그녀의 연구실 벽에는 수많은 전자책 파일들이 저장된 거대한 홀로그램 큐브가 떠다녔지만, 그녀의 마음은 언제나 먼지 쌓인 서재 한 구석에 숨겨진 희귀한 초판본들에 머물러 있곤 했다. 특히 밤하늘을 닮은 짙은 푸른색 표지에 금색으로 새겨진 고대 신화 시집 '루나의 노래'는 그녀 삶의 길잡이였기에, 전자책의 편리함에도 불구하고 그녀는 여전히 종이의 속삭임에 귀 기울이며 세상을 탐험했다."
+    },
+    {
+        "source_item": {
+            "korean_topic": "대학원 진학 vs 학사 취업",
+            "korean_context": "대학교 4학년 학생들은 졸업 후 바로 취업을 할지, 아니면 대학원에 진학하여 더 깊이 있는 공부를 할지 선택의 기로에 놓입니다. 바로 취업을 하면 남들보다 빨리 사회 경험을 쌓고 경제적으로 독립할 수 있습니다. 반면 대학원 진학은 2년 이상의 시간과 비용을 투자해야 하지만, 더 높은 전문성을 갖춰 향후 더 좋은 직업을 가질 기회를 얻을 수 있습니다.",
+            "foreign_topic": "Graduate School vs. Employment After Bachelor's Degree",
+            "foreign_context": "University seniors face the choice of entering the workforce immediately or pursuing higher education in graduate school. Starting work right away allows for early career experience and financial independence. In contrast, graduate school requires a significant investment of time and money but can lead to greater expertise and better long-term career opportunities."
+        },
+        "generated_passage": "젊은 엘리트, 아리아나는 졸업을 앞두고 두 갈래 길 앞에서 고민에 빠졌다. 외부 세계는 그녀에게 즉각적인 현실 적응력과 빠른 수익 창출로 이끄는 '프로젝트 팀 리더' 자리를 제안했지만, 내부 속삭임은 그녀 안의 탐구심을 자극했다. '아폴로 연구소'라는 가상의 기관이 그녀의 전공 분야에 특화된 최첨단 연구 프로그램을 제공한다는 소문이 돌았는데, 이 곳에서의 석사과정은 단순한 지식 확장을 넘어 미래 우주 탐사 프로젝트의 핵심 기술 개발에 참여할 기회까지 약속했다. 물론 아폴로 연구소의 문을 두드리기 위해서는 초기 학비와 생활비 부담이 따랐으며, 최소 5년간의 헌신이 요구되었다. 그러나 아리아나는 단기적인 경제적 안정보다는 인류 역사에 흔적을 남길 수 있는 혁신가가 되길 바랐다. 결국 그녀는 잠시의 불편함을 감수하고, 장기적인 성취감과 지구 너머의 가능성에 대한 꿈을 좇아가기로 결심했다."
+    },
+    {
+        "source_item": {
+            "korean_topic": "집에서 요리하기 vs 외식하기",
+            "korean_context": "저녁 식사를 해결하는 방법으로, 집에서 직접 요리하는 것과 밖에서 사 먹는 것 중 하나를 선택해야 합니다. 집에서 요리하면 비용을 절약할 수 있고, 내 입맛에 맞게 건강한 음식을 만들 수 있다는 장점이 있습니다. 하지만 장을 보고, 요리하고, 설거지하는 데 많은 시간과 노력이 필요합니다. 외식은 편리하고 다양한 음식을 즐길 수 있지만, 비용이 많이 들고 자극적인 음식을 먹게 될 가능성이 높습니다.",
+            "foreign_topic": "Cooking at Home vs. Eating Out",
+            "foreign_context": "For dinner, you can either cook at home or eat out. Cooking at home is cost-effective and allows you to control the ingredients for a healthier meal, but it requires significant time and effort for preparation and cleanup. Eating out is convenient and offers a variety of choices, but it is more expensive and often less healthy."
+        },
+        "generated_passage": "어둠 속에서 은은히 빛나는 주방 카운터 위에는 오래된 나무 칼이 고요히 놓여 있었다. 오늘 밤, 아리아는 창밖으로 쏟아지는 별빛 아래, 집 안 가득 퍼지는 향신료의 향기 속에서 고민했다. 집에서 요리하려면 깊은 숲속에서 찾아낸 희귀 허브와 신선한 지역 농산물을 구해야 했는데, 이는 시간과 수고로움을 훨씬 더 요구할 터였다. 그러나 그녀의 손길로 탄생할, 달빛 아래 빛나는 채소 스프와 구운 빵은 단순한 식사를 넘어 영혼을 채우는 마법 같은 경험이 될 것이다. 오늘은 특히 고대 가족 레시피를 되살려 보기로 결심했다. 그 레시피는 할머니가 사랑하던 '별빛 나이츠'라는 이름의 디저트였다. 이 달콤한 디저트는 단순한 설탕과 밀가루로 이루어진 것이 아니라, 신비로운 달빛 아래 수확되어야 하는 희귀한 은빛 과일로 만들어졌다고 전해졌다. 외식의 유혹은 잠시나마 강렬했으나, 아리아는 그 과정 자체가 주는 치유의 힘을 믿기로 했다. 결국 그녀는 칼을 잡았고, 주방은 곧 따뜻한 웃음과 신비로운 향기로 가득 찼다."
+    },
+    {
+        "source_item": {
+            "korean_topic": "헬스장 등록 vs 홈트레이닝",
+            "korean_context": "운동을 시작하기로 결심했을 때, 헬스장에 등록할지 아니면 집에서 '홈트'를 할지 고민하게 됩니다. 헬스장은 다양한 운동 기구를 이용할 수 있고, 전문가의 지도를 받을 수 있다는 장점이 있습니다. 하지만 매달 내야 하는 비용이 부담되고, 헬스장까지 가는 시간이 걸립니다. 홈트레이닝은 시간과 장소에 구애받지 않고 무료로 할 수 있지만, 강한 의지가 없으면 쉽게 포기하게 되고, 잘못된 자세로 운동하다 다칠 위험이 있습니다.",
+            "foreign_topic": "Joining a Gym vs. Home Workouts",
+            "foreign_context": "When starting to exercise, one debates between joining a gym or working out at home. A gym offers a wide range of equipment and access to professional trainers but comes with monthly fees and travel time. Home workouts are free and convenient but require strong self-discipline and carry a risk of injury from improper form without supervision."
+        },
+        "generated_passage": "어둠 속에서 희미한 빛을 발하는 홀로그램 화면 위로 땀방울이 흘러내렸다. 지혜는 낡은 가죽 소파에 앉아 깊은 한숨을 내쉬었다. 외부 세계와 단절된 이 공간에는 그녀 혼자였으며, 유일한 동반자는 첨단 가상 트레이너 '아리아' 뿐이었다. 아리아는 지혜의 개인 데이터를 분석해 맞춤형 운동 루틴을 제공했는데, 그 섬세함은 실제 전문가 손길 못지 않았다. 하지만 오늘 밤, 지혜는 익숙한 가상 현실 속에서도 뭔가가 부족하다고 느꼈다. 헬스장의 웅장함, 동료들의 활기찬 에너지, 그리고 전문가의 직접적인 피드백이 그리웠던 것이다. 그녀의 손가락은 가상 키보드 위를 맴돌며 '프리미엄 멤버십 업그레이드' 버튼을 가리키고 있었다.  하지만 비용 걱정이 그녀를 가로막았다.  지혜는 깊은 고뇌 끝에 결정을 내렸다. 가상 세계에서 얻는 균형 잡힌 훈련과 현실 세계의 동기 부여 사이에서, 그녀는 자신의 몸을 위한 최적의 길을 찾아나갈 것이라 다짐했다."
+    },
+    {
+        "source_item": {
+            "korean_topic": "실용적인 인기 학과 vs 순수 학문 전공",
+            "korean_context": "대학 전공을 선택할 때, 취업이 잘되는 경영학과나 컴퓨터공학과 같은 인기 학문과, 당장의 취업과는 거리가 멀지만 자신이 정말 좋아하는 철학이나 역사 같은 순수 학문 사이에서 갈등합니다. 인기 학과를 선택하면 안정적인 미래가 보장될 가능성이 높지만, 적성에 맞지 않으면 불행할 수 있습니다. 순수 학문을 선택하면 공부하는 동안에는 행복하겠지만, 졸업 후 진로에 대한 불안감을 안고 살아야 할 수도 있습니다.",
+            "foreign_topic": "A Practical, Popular Major vs. a Pure, Interest-Based Major",
+            "foreign_context": "Choosing a university major often involves a conflict between a practical field like business or engineering and a pure academic field like philosophy or history. A popular major may offer a stable career path but could lead to unhappiness if it's not a good fit. A passion-driven major can be intellectually fulfilling but may come with significant uncertainty about future job prospects."
+        },
+        "generated_passage": "젊은 학생 아리아는 미래 앞에 펼쳐진 두 갈래 길 사이에서 고민했다. 그녀 앞에는 실용성의 빛으로 반짝이는 경영학과와 혁신의 불꽃처럼 타오르는 '시간여행 이론' 전공이 놓여 있었다. 경영학은 탄탄한 네트워크와 안정적인 직장을 약속하지만, 아리아의 심장은 늘 과거로 돌아가 역사 속 미스터리들을 직접 풀어보려는 열망으로 뛰었다. 시간여행 이론은 그녀의 꿈을 현실로 만들 듯 보였는데, 물론 학계에서는 아직 허구로 치부됐지만, 아리아는 이 분야의 선구자가 되어 시간의 흐름을 이해하고, 혹시 모를 과거 사건의 진실을 밝혀낼 수 있다는 상상에 흥분했다. 물론 졸업 후 취업 시장에서의 입지는 불확실했으나, 그녀에게는 지식의 탐구와 인간 존재의 근원을 파헤치는 기쁨이 더 큰 보상이었다. 결국 아리아는 가슴이 뛰는 길을 택했으며, 그 선택은 비록 불안정성을 내포하고 있더라도 진정한 열정을 따르는 용기 덕분이라 믿었다."
+    },
+    {
+        "source_item": {
+            "korean_topic": "이직 vs 현 직장 잔류",
+            "korean_context": "현재 다니는 회사에 불만이 있을 때, 더 좋은 조건을 찾아 이직을 할 것인지, 아니면 참고 계속 다닐 것인지 결정해야 합니다. 이직을 하면 새로운 환경에서 성장하고 연봉을 높일 기회를 잡을 수 있지만, 새로운 조직에 적응해야 하는 스트레스와 이직이 실패할 경우의 위험을 감수해야 합니다. 현재 직장에 남으면 안정적이고 익숙하지만, 현재의 불만이 해결되지 않고 계속될 수 있다는 단점이 있습니다.",
+            "foreign_topic": "Changing Jobs vs. Staying at the Current Company",
+            "foreign_context": "When dissatisfied with a current job, one must decide whether to seek a new opportunity or stay put. Changing jobs can offer career growth and a higher salary but involves the stress of adapting to a new environment and the risk of failure. Staying offers stability and familiarity but may mean that the sources of your dissatisfaction will never be resolved."
+        },
+        "generated_passage": "어둠 속에서 희미한 네온사인이 반짝이는 낯선 도시의 골목길에 서 있었다.  현재 직장은 이 도시의 거대한 기계처럼 느껴졌다. 톱니바퀴처럼 맞물려 돌아가는 일상 속에서 내 창의력은 마모되어가는 듯했다. 하지만 이곳에서 벗어나 새로운 기술 연구소로 이직하면 어떨까? 첨단 인공지능 프로젝트에 참여해 혁신을 이끌 수 있을지도 모른다. 연봉 상승은 물론, 밤샘 작업에도 불구하고 느끼는 성취감은 이 도시의 냉혹함을 잊게 해줄 것이다. 다만, 미지의 세계에 대한 두려움과 성공 보장 없는 길에 대한 불안감이 마음속 깊은 곳에서 솟아올랐다. 마치 낡은 지도를 쥐고 미지의 대륙을 향해 항해하려는 탐험가와 같았던 셈이다. 결국, 익숙함의 굴레를 벗고 진정한 열정을 찾아 떠날 용기가 필요했을까? 아니면, 낡은 도시의 불빛 아래 묵묵히 흘러가듯이 현재 자리를 지키며, 내면의 불꽃을 조용히 키우는 게 현명할까?"
+    },
+    {
+        "source_item": {
+            "korean_topic": "국내 여행 vs 해외여행",
+            "korean_context": "휴가 계획을 세울 때, 가까운 국내로 떠날지, 아니면 큰마음을 먹고 해외로 나갈지 고민됩니다. 국내 여행은 비용과 시간 부담이 적고, 언어와 음식 걱정 없이 편안하게 다녀올 수 있습니다. 반면 해외여행은 전혀 다른 문화와 이국적인 풍경을 경험하며 시야를 넓힐 수 있는 특별한 기회를 제공하지만, 많은 비용과 시간이 필요하고, 예기치 못한 어려움을 겪을 수 있습니다.",
+            "foreign_topic": "A Domestic Trip vs. an Overseas Trip",
+            "foreign_context": "When planning a vacation, a choice must be made between a domestic trip and one abroad. Domestic travel is less expensive, requires less time, and is comfortable due to familiarity with the language and culture. In contrast, overseas travel offers a unique opportunity to experience foreign cultures and broaden one's horizons, but it is costly, time-consuming, and can present unexpected challenges."
+        },
+        "generated_passage": "어둠 속에서 빛나는 네온사인이 춤추듯 흩날리는 도시, 아르카디아. 이곳은 지구 너머 우주 식민지 중 하나로, 국내 여행이라 부르기엔 너무나 멀리 떨어져 있었지만, 그 가까움은 마음의 거리였다. 아르카디아행 티켓은 일반 항공권보다 저렴했는데, 이는 행성 간 이동 기술 '스타스트림' 덕분이었다. 스타스트림은 시간 흐름을 약간 느리게 조절해 실제 여행 기간을 몇 주 단축시켰기에, 해외 여행처럼 긴 시간을 할애할 필요가 없어졌다. 그러나 이곳에는 익숙한 언어 대신 신비로운 '아르카디어'가 통용되었으며, 음식은 지구의 맛과는 완전히 다른 향기로움을 자랑했다. 아르카디아의 문화는 독특한 예술과 전통으로 가득 차 있었으나, 현지 법규와 사회 규범에 대한 이해 부족으로 인해 여행자들 사이에서는 때때로 미묘한 갈등이 발생하기도 했다. 그럼에도 불구하고, 아르카디아를 방문함으로써 얻는 낯선 세계와의 교감은 일상에서 벗어나 진정한 모험심을 불어넣어주니, 경제적 여유와 용기만 있다면 이는 분명 가치 있는 선택이다."
+    },
+    {
+        "source_item": {
+            "korean_topic": "정기 예금 vs 주식 투자",
+            "korean_context": "목돈이 생겼을 때, 안전한 은행 예금에 넣어둘지, 아니면 더 높은 수익을 기대하며 주식에 투자할지 선택해야 합니다. 정기 예금은 원금을 잃을 위험이 전혀 없고, 정해진 이자를 안정적으로 받을 수 있다는 장점이 있습니다. 하지만 주식 투자는 은행 이자보다 훨씬 높은 수익을 얻을 수 있는 가능성이 있지만, 반대로 원금 전체를 잃을 수도 있는 높은 위험을 감수해야 합니다.",
+            "foreign_topic": "A Fixed Deposit vs. Stock Investment",
+            "foreign_context": "When managing a lump sum of money, one must choose between the safety of a bank deposit and the potential returns of the stock market. A fixed deposit is risk-free and provides a guaranteed, stable interest payment. On the other hand, stock investment offers the potential for much higher returns but comes with the significant risk of losing the entire principal amount."
+        },
+        "generated_passage": "거대한 도시 아래 깊숙이 숨겨진 비밀 통로에는 '시간의 금고'라는 신비로운 장소가 존재했다. 이곳은 단순히 돈을 보관하는 곳이 아니라, 개인의 꿈과 희망을 금융 형태로 변환해주는 곳이었다. 정기 예금처럼 안전한 '꿈 예치' 상품은 사용자의 평범한 일상 속 작은 성취들—예를 들어, 매일 꾸준히 쓴 일기나 달성한 작은 목표들—을 모아 안정적이면서도 점진적으로 성장하는 가치로 변모시켰다. 반면, '시간 주식'은 미래 기술이나 혁신적 아이디어에 투자할 수 있게 했는데, 이는 잠재적으로 도시 전체의 발전 속도를 가속화시키거나 심지어는 새로운 차원으로의 문을 열어주기도 했으나, 그 과정에서 초기 투자 아이디어의 실패 시, 개인의 에너지와 시간의 낭비뿐 아니라 사회적 혼란까지 초래할 위험도 내포하고 있었다. 결국, 한 젊은 발명가는 자신의 혁신적 아이디어를 '시간 주식'에 투자하면서, 성공 시 도시의 미래를 바꿀 잠재력을 꿈꾸면서도, 혹여나 실패할 경우의 엄청난 손실을 우려하며 밤마다 잠 못 이루곤 했다."
+    },
+    {
+        "source_item": {
+            "korean_topic": "호텔 숙박 vs 게스트하우스 숙박",
+            "korean_context": "여행지에서의 숙소를 정할 때, 편안한 호텔과 저렴한 게스트하우스 사이에서 고민하게 됩니다. 호텔은 완벽한 사생활을 보장하고, 수영장이나 룸서비스 같은 편리한 서비스를 제공합니다. 하지만 게스트하우스는 가격이 매우 저렴하고, 전 세계에서 온 다른 여행자들과 교류하며 새로운 친구를 사귈 수 있는 특별한 기회를 제공하지만, 여러 사람이 함께 방을 써야 하는 불편함이 있습니다.",
+            "foreign_topic": "Staying at a Hotel vs. a Guesthouse",
+            "foreign_context": "When choosing accommodation, travelers often weigh the comfort of a hotel against the affordability of a guesthouse. Hotels provide complete privacy and convenient services like pools and room service. In contrast, guesthouses are very cheap and offer a unique opportunity to socialize with other travelers, but they often require sharing a room with strangers."
+        },
+        "generated_passage": "별빛 아래 펼쳐진 고요한 마을, 아르카디아에는 독특한 숙박 선택지가 존재했다. 이곳의 고급 호텔 '루미나'는 마법 같은 창문 너머로 별빛을 직접 받아들일 수 있도록 설계되었으며, 각 객실은 개인 별 우주 공간처럼 느껴졌지만, 가장 특별한 서비스 중 하나는 '시간 여행 컨시어지'였다. 여행객들은 요청 시 과거의 어느 순간으로나 미래의 풍경까지 직접 체험할 수 있는 짧은 여행을 즐길 수 있었고, 이 경험은 단순한 휴식을 넘어 기억에 남는 모험으로 승화시켰다. 반면, 마을 중심부에 위치한 '드림하우스 게스트하우스'는 마법의 가격으로 유명했는데, 여기서는 각 방이 작은 마을처럼 구성되어 있어서 공용 공간마다 다양한 테마의 카페와 도서관이 갖춰져 있었다. 특히 밤이면 별자리 카페에서 다른 여행자들과 함께 마법의 별자리 이야기를 나누거나, 고대 문헌을 연구하던 도서관에서 신비로운 지식을 공유할 수 있었다. 그러나 모든 방은 마법의 투명 벽으로 구분되어 있어, 사생활을 거의 완벽하게 보호해 주면서도 이웃과의 자연스러운 교류를 가능케 했다. 이러한 환경 속에서 여행객들은 물질적 편의보다는 마법과 인간 연결고리 사이의 균형을 찾아 떠났다."
+    },
+    {
+        "source_item": {
+            "korean_topic": "새 차 구매 vs 중고차 구매",
+            "korean_context": "자동차를 살 때, 완전히 새로운 새 차를 살지, 아니면 합리적인 가격의 중고차를 살지 결정해야 합니다. 새 차는 고장 걱정 없이 깨끗한 상태로 탈 수 있고, 원하는 색상과 옵션을 직접 선택할 수 있다는 장점이 있습니다. 하지만 중고차는 훨씬 저렴한 가격에 같은 모델의 차를 구매할 수 있어 경제적이지만, 이전 사용자가 어떻게 관리했는지 알 수 없어 고장의 위험을 안고 있습니다.",
+            "foreign_topic": "Buying a New Car vs. a Used Car",
+            "foreign_context": "When buying a car, a major decision is between a brand-new vehicle and a reasonably priced used one. A new car is reliable and can be customized to your exact specifications. A used car, however, is much more economical, allowing you to get a better model for the same price, but it comes with the risk of hidden mechanical problems."
+        },
+        "generated_passage": "황혼 아래 빛나는 도시의 가장자리에 위치한 오래된 차고에서, 알렉스는 두 대의 자동차 앞에 섰다. 한쪽에는 빛나는 광택으로 무장한 새 차 '루미나'가 있었는데, 그 위엔 최신 자율주행 시스템과 맞춤형 홀로그램 대시보드가 장착되어 있었다. 하지만 눈에 띄게 알렉스의 관심을 끈 것은 낡아 보이면서도 신비로운 분위기를 풍기는 중고차 '타임리스'였다. 타임리스는 겉보기에는 세월의 흔적이 짙게 묻어났으나, 내부는 은밀하게 숨겨진 인공지능 유지보수 시스템 덕분에 항상 최상의 상태를 유지하고 있었다. 이 시스템은 과거 운전자들의 운전 습관까지 학습해 예방 정비를 실시함으로써 예상치 못한 고장의 위험을 최소화시켰다. 새 차 루미나는 완벽한 신뢰성을 자랑하지만, 그 비용은 알렉스의 예산을 훨씬 넘어서는 반면, 타임리스는 역사 속의 이야기처럼 저렴하면서도 미래 기술로 무장해 있었으며, 어떤 모험에도 함께할 준비가 되어 있음을 약속했다. 결국 알렉스는 타임리스를 선택했다 – 경제적 이점 뿐 아니라, 그 차가 지닌 비밀스러운 지혜와 오랜 세월 동안 쌓아온 경험의 가치 때문이었다."
+    },
+    {
+        "source_item": {
+            "korean_topic": "스트리밍 서비스 구독 vs 영화관 관람",
+            "korean_context": "영화를 보는 방식으로, 집에서 편안하게 스트리밍 서비스를 이용할지, 아니면 영화관에 가서 볼지 선택할 수 있습니다. 넷플릭스 같은 스트리밍 서비스는 한 달 구독료로 수천 편의 영화를 무제한으로 볼 수 있어 경제적입니다. 하지만 영화관은 큰 화면과 압도적인 음향 시스템을 통해, 집에서는 결코 느낄 수 없는 깊은 몰입감과 특별한 경험을 제공합니다.",
+            "foreign_topic": "Subscribing to a Streaming Service vs. Going to the Cinema",
+            "foreign_context": "To watch a movie, you can choose between the comfort of a streaming service at home and the experience of a movie theater. A streaming service like Netflix is economical, offering unlimited access to thousands of titles for a monthly fee. However, a cinema provides an immersive experience with its huge screen and powerful sound system that can never be replicated at home."
+        },
+        "generated_passage": "어둠 속에서 빛나는 홀로그램 스크린 앞에 앉아 있던 엘리나는 손끝으로 메뉴를 스크롤했다. 넷플릭스는 그녀의 영혼을 편안함으로 채우지만, 오늘 밤에는 뭔가 특별한 것이 필요했다.  그녀의 눈은 '시간의 속삭임'이라는 새로운 영화 제목에 멈췄다.  소문대로 이 영화는 고대 유적지에서 발견된 신비로운 홀로그램 기록을 통해 과거와 현재를 연결하는 이야기였는데, 소문에는 그 기록이 실제 공간에 투영되며 관객들에게 직접적인 역사 체험을 선사한다고 전해졌다. 엘리나는 고민 끝에 선택했다. 집에서 편안함보다는 영화 속으로 깊이 빠져들고 싶었기에, 낡은 영화관 '시네마 아르카디아'로 향했다. 그곳은 먼지 쌓인 레드 카펫과 희미한 조명 아래, 시간이 멈춘 듯한 분위기를 자랑했으며, '시간의 속삭임' 상영은 특별 상영으로 진행돼, 극장 전체가 역사적 사건 현장처럼 변형되도록 설계되었다고 했다. 엘리나는 스크린 너머로 펼쳐질 역사의 숨결에 기대감을 가득 채웠다."
+    },
+    {
+        "source_item": {
+            "korean_topic": "전공 살려 취업하기 vs 전공과 무관한 분야로 취업하기",
+            "korean_context": "취업을 준비할 때, 대학에서 배운 전공을 살릴 것인지, 아니면 전공과 상관없지만 더 전망이 좋거나 흥미로운 다른 분야에 도전할 것인지 고민하게 됩니다. 전공을 살리면 그동안 쌓아온 지식을 활용할 수 있어 유리하지만, 정작 자신의 적성과 맞지 않을 수 있습니다. 새로운 분야에 도전하면 다시 처음부터 배워야 하는 어려움이 있지만, 자신의 진짜 적성을 찾아 더 만족스러운 직업 생활을 할 수도 있습니다.",
+            "foreign_topic": "A Career in Your Major vs. in an Unrelated Field",
+            "foreign_context": "When job hunting, one considers whether to pursue a career related to their university major or to venture into a different field that seems more promising or interesting. A career in one's major utilizes existing knowledge, but it might not be a good personal fit. A new field requires starting from scratch but could lead to a more fulfilling career if it aligns better with one's true passion."
+        },
+        "generated_passage": "젊은 엔지니어 지수는 낡은 연구소의 고요한 모서리에 앉아 있었다. 그녀의 앞에는 먼지 쌓인 홀로그램 디스플레이가 빛나고 있는데, 그 안에는 은하계 지도와 함께 낯선 에너지 패턴들이 복잡하게 얽혀 있었다. 대학 시절 천문학을 전공했던 지수는 이제 자신의 지식을 우주 탐사 기술 개발에 접목시키려는 야심찬 프로젝트에 몰두하고 있었다. 하지만 주변 전문가들의 우려 섞인 목소리가 귀에 맴돌았다. \"현실 세계에서는 아직 너무 이르다\"며, \"안정적인 궤도 유지 시스템 설계나 데이터 분석 같은 전통적인 분야가 훨씬 안전하다\"고 조언했다. 그럼에도 불구하고 지수는 가슴 깊은 곳에서 느껴지는 우주에 대한 열망을 포기할 수 없었다. 그녀는 밤낮없이 연구에 몰두하며, 한때 폐기되었던 고대 외계 문명의 기록을 해독하려고 애썼다. 이 과정에서 그녀는 예상치 못한 발견을 하였다 – 희미해진 신호 속에서 지구 외 생명체의 흔적을 포착해낸 것이다. 이러한 혁신적인 성과 덕분에 지수는 기존의 안정적이지 못했던 경로 대신, 우주 개척의 선구자라는 새로운 길을 걷기로 결심했다. 비록 험난한 여정이 기다리고 있겠지만, 그녀의 선택은 결국 인류 역사에 획기적인 변화를 가져올 잠재력을 지니고 있음을 확신했다."
+    },
+    {
+        "source_item": {
+            "korean_topic": "조용한 도서관에서 공부하기 vs 카페에서 공부하기",
+            "korean_context": "시험공부를 할 장소를 고를 때, 절대적으로 조용한 도서관과 약간의 소음이 있는 카페 중 어디가 더 효율적인지에 대한 논쟁이 있습니다. 도서관은 모든 사람이 공부에 집중하는 분위기라 딴짓을 하기 어렵다는 장점이 있습니다. 반면, 카페의 적당한 백색소음은 오히려 집중력을 높여준다고 느끼는 사람도 있으며, 음료를 마시며 편안한 분위기에서 공부할 수 있습니다.",
+            "foreign_topic": "Studying in a Quiet Library vs. a Cafe",
+            "foreign_context": "When choosing a place to study, there's a debate between the absolute quiet of a library and the ambient noise of a cafe. The library offers a focused environment where everyone is studying, making it difficult to get distracted. In contrast, some people find the 'white noise' of a cafe actually helps them concentrate, and they enjoy the more relaxed atmosphere with access to coffee."
+        },
+        "generated_passage": "비가 끊이지 않던 그날 저녁, 엘리자는 낡은 가죽 노트북을 품고 낯선 도시의 오래된 서점으로 향했다.  내부는 먼지 낀 책들로 가득했지만, 희미한 램프 아래 펼쳐진 고요함 속에는 마법 같은 에너지가 흐르고 있었다.  서점 주인 할아버지는 그녀에게 특별한 공간을 보여주셨는데, 벽난로 옆 작은 코너였다. 그곳은 따뜻한 불빛과 낡은 소파, 그리고 책장 사이로 스며드는 자연광으로 가득 차 있었다.  카페처럼 은은히 퍼지는 커피 향이 아닌, 오래된 종이와 가죽 냄새가 공기를 채웠다.  엘리자는 잠시 고민했다.  도서관의 엄격한 조용함 대신 이곳에서는 상상력이 자극되면서도 집중력을 유지할 수 있으리라는 직감이 들었다.  할아버지가 건네준 낡은 찻잔 속 향긋한 허브티는 그녀의 마음을 진정시키며, 마치 이야기 속으로 들어가는 열쇠 같았다.   tonight, amidst forgotten tales, her soul would weave its own narrative."
+    },
+    {
+        "source_item": {
+            "korean_topic": "유명 브랜드 제품 구매 vs 가성비 좋은 제품 구매",
+            "korean_context": "물건을 살 때, 비싸더라도 품질과 디자인이 보장된 유명 브랜드 제품을 살지, 아니면 브랜드는 없지만 가격 대비 성능이 좋은 제품을 살지 고민됩니다. 유명 브랜드 제품은 신뢰할 수 있고, 사회적 만족감을 주지만 가격이 비쌉니다. 가성비 제품은 저렴한 가격에 만족스러운 성능을 얻을 수 있어 합리적이지만, 품질이나 사후 서비스(A/S)가 불안정할 수 있습니다.",
+            "foreign_topic": "Buying a Famous Brand Product vs. a Cost-Effective Product",
+            "foreign_context": "When making a purchase, one weighs between a well-known brand product and a more cost-effective, non-brand alternative. A famous brand offers reliability, good design, and social status, but at a high price. A cost-effective product provides satisfactory performance for a low price, but it may come with concerns about quality and after-sales service."
+        },
+        "generated_passage": "어둠 속에서 빛나는 고대 도시, 아라카디아는 신비로운 기술로 유명했다. 이곳 사람들은 '카르마 칩'이라 불리는 작은 칩을 착용해 일상의 에너지 흐름을 최적화한다고 믿었다. 카르마 칩은 단순한 전자 기기 이상이었다. 칩 내부에는 잊혀진 문명의 유물인 '아르키아 소스'라는 에너지 원이 내장되어 있다는 전설이 전해졌는데, 이 원천은 착용자에게 꿈을 현실로 만드는 능력을 부여한다고 했다. 하지만 아르키아 소스는 한정된 수량만 존재하며, 희귀함 때문에 카르마 칩의 가격은 폭등했다. 반면, 지역 장인들이 제작하는 '루미나 칩'은 저렴하면서도 자연 친화적인 소재로 만들어져 편안함을 제공했으나, 그 힘은 카르마 칩에 비해 미미했다고 전해진다. 어느 날, 젊은 기술자 엘리나는 가족의 건강을 위해 루미나 칩을 구매하지만, 우연히 고대 문헌에서 아르키아 소스의 파편을 발견하게 된다. 그녀의 선택은 단순한 경제적 판단을 넘어 운명적 변화를 예고하기 시작한다."
+    },
+    {
+        "source_item": {
+            "korean_topic": "개인 트레이너(PT)와 운동하기 vs 혼자 운동하기",
+            "korean_context": "헬스장에서 운동할 때, 비싼 돈을 내고 개인 트레이너(PT)의 지도를 받을지, 아니면 혼자서 운동할지 선택해야 합니다. PT를 받으면 자신에게 맞는 운동법을 배우고, 정확한 자세로 부상 없이 운동할 수 있으며, 운동 의지를 유지하는 데 도움이 됩니다. 하지만 혼자 운동하면 비용을 아낄 수 있고, 자신이 원하는 시간에 자유롭게 운동할 수 있다는 장점이 있습니다.",
+            "foreign_topic": "Working out with a Personal Trainer (PT) vs. Alone",
+            "foreign_context": "At the gym, you can choose between hiring a personal trainer or working out on your own. A PT can teach you proper form, create a personalized plan, and keep you motivated, but it is expensive. Working out alone saves money and offers flexibility, but you risk injury from incorrect form and may lack the discipline to be consistent."
+        },
+        "generated_passage": "고대의 신비로운 도시 '아트라닉스'에서 운동은 단순한 신체 단련을 넘어 영혼의 균형을 찾는 신성한 행위였다. 이곳의 시민들은 빛의 마법사 '루미네스'의 가르침 아래, 개인적인 빛의 트레이너('Lumigon')와 함께 운동했다. Lumigon은 각 개인의 내면 빛의 색깔을 분석해 맞춤형 빛의 에너지 운동을 지도했는데, 이 훈련은 단순히 근육을 강화시키는 것 이상으로 영적 성장을 촉진시켰다. 부상 위험은 거의 없었지만, 이 서비스는 극도로 비쌌기에 주로 부유한 귀족 계층이나 신성한 임무를 맡은 자들만 이용 가능했다. 반면, 도시 외곽의 비밀스러운 훈련장에서는 '빛의 그림자'라고 불리는 은밀한 운동 모임이 열렸다. 이곳의 운동법은 구전으로 전해져 내려오며, 자연 속에서 자유롭게 실천되곤 했다. 참여자들은 직접 만든 간단한 도구와 달빛 아래의 명상으로 몸과 마음을 단련했다. 비용은 거의 들지 않았으나, 일관된 훈련 계획의 부재와 때로는 잘못된 기술 습득으로 인한 미미한 부상 위험이 따랐다. 아트라닉스의 심장부에서는 루미네스의 신성한 영향력 아래 Lumigon의 지도가 영혼의 진화를 가속화시켜 전설로 전해졌지만, 외곽의 그림자 무리는 그 자체의 방식으로 인간 정신의 강인함을 증명해 나갔다."
+    },
+    {
+        "source_item": {
+            "korean_topic": "결혼식 크게 하기 vs 작고 소박하게 하기",
+            "korean_context": "결혼식을 준비할 때, 많은 하객을 초대하여 성대하게 치를지, 아니면 가족과 가까운 친구들만 불러 소박하게 할지 고민하게 됩니다. 큰 결혼식은 많은 사람들의 축복 속에서 평생 한 번뿐인 날을 특별하게 기념할 수 있지만, 막대한 비용과 준비 과정의 스트레스가 따릅니다. 작은 결혼식은 비용을 절약하고, 정말 소중한 사람들과 의미 있는 시간을 보낼 수 있지만, 초대하지 못한 사람들에게 서운함을 줄 수 있습니다.",
+            "foreign_topic": "Having a Large Wedding vs. a Small, Simple One",
+            "foreign_context": "When planning a wedding, couples debate between a large, grand celebration and a small, intimate one. A large wedding allows you to celebrate with everyone you know but involves huge expenses and stress. A small wedding is more affordable and meaningful, focusing on close relationships, but it may lead to hurt feelings from those who are not invited."
+        },
+        "generated_passage": "달빛 아래 펼쳐진 고요한 정원, 그곳에는 희귀한 꽃들이 피어나는 비밀의 정원이 있었다. 이 곳은 오래전부터 '별빛 결혼식'이라 불리며, 매년 단 한번, 가장 밝은 보름달 밤에만 열리는 신비로운 행사였다. 주인공 아리아와 엘리아는 이곳에서 가족과 몇몇 진심 어린 친구들만을 초대해 소박하지만 신비로운 결혼식을 올리기로 했다. 정원의 중심에는 은빛으로 빛나는 인공 달이 설치되어 있었는데, 이는 실제 별자리와 동기화되어 완벽한 조화를 이루며, 하객들은 각자 소지한 작은 천체 망원경으로 하늘의 별들을 관찰하며 결혼식을 즐겼다. 비용은 화려한 장식 대신 자연과 천문학적 요소에 집중함으로써 극도로 절감되었고, 이 독특한 선택은 경제적 부담을 덜어주면서 동시에 참석자들에게 잊지 못할 우주적 경험을 선사했다. 그러나 가장 아쉬운 부분은 멀리 떨어진 친구들 중 일부가 이 비밀스러운 행사에 참여하지 못함으로써 느끼는 허전함이었다. 그럼에도 불구하고, 그들의 선택은 진정한 사랑과 가치 있는 순간을 공유하는 데 초점을 맞추려는 의지의 표현이었다."
+    },
+    {
+        "source_item": {
+            "korean_topic": "선물로 현금 주기 vs 직접 고른 물건 주기",
+            "korean_context": "친구의 생일이나 결혼식에 어떤 선물을 할지 고민될 때, 실용적인 현금을 줄지, 아니면 정성이 담긴 물건을 줄지 망설이게 됩니다. 현금은 받는 사람이 정말 필요한 것을 살 수 있어 가장 실용적이라는 장점이 있습니다. 하지만 직접 고른 선물은 주는 사람의 마음과 정성을 표현할 수 있고, 더 오래 기억에 남는 특별한 의미를 가질 수 있습니다.",
+            "foreign_topic": "Giving Cash as a Gift vs. a Personally Chosen Item",
+            "foreign_context": "When deciding on a gift, one often hesitates between practical cash and a thoughtful, hand-picked item. Cash is highly practical, as it allows the recipient to buy what they truly need. A chosen gift, however, expresses personal effort and sentiment, creating a more memorable and meaningful token of the relationship."
+        },
+        "generated_passage": "차가운 별빛 아래, 아르테미스라는 행성의 주민들은 생일 선물에 대해 독특한 관습을 가지고 있었다. 이곳에서는 '시간의 크리스탈'이라 불리는 희귀한 광물을 선물로 주고받았는데, 이 크리스탈은 소유자의 삶을 긍정적으로 변화시키는 힘을 지녔다고 전해졌다. 그러나 젊은 예술가 엘리아는 전통을 깨고 싶어 했다. 그녀는 친구의 생일을 맞아, 직접 만든 추상 조각품을 선물하기로 결심했다. 그 조각품은 행성의 밤하늘을 표현한 것인데, 각 조각마다 아르테미스의 별들이 희미하게 반짝이며, 관찰자의 감정에 따라 빛의 강도가 변했다. 실용적인 '시간의 크리스탈' 대신 예술적 표현력을 택한 엘리아의 선물은 단순한 물질적 가치를 넘어 깊은 감동과 함께 시간이 흐를수록 더욱 빛나는 추억을 선사했다.  친구는 크리스탈처럼 명확한 효용보다는 엘리아의 진심 어린 마음과 창조적 재능에 감동받으며, 그날 밤 하늘을 수놓은 조각품의 빛을 오랫동안 잊지 못했다."
+    },
+    {
+        "source_item": {
+            "korean_topic": "정년 보장되는 안정적인 직업 vs 고수익이지만 불안정한 직업",
+            "korean_context": "직업을 선택할 때, 수입은 적당하지만 정년까지 안정적으로 다닐 수 있는 직업(예: 공무원)과, 언제 해고될지 모르지만 능력에 따라 높은 수입을 올릴 수 있는 직업(예: 프리랜서, 스타트업) 사이에서 고민하게 됩니다. 안정적인 직업은 삶의 예측 가능성을 높여주지만, 큰돈을 벌기는 어렵습니다. 불안정한 직업은 경제적 성공의 기회를 제공하지만, 항상 미래에 대한 불안감을 안고 살아야 합니다.",
+            "foreign_topic": "A Stable Job with a Guaranteed Retirement Age vs. a High-Income, Unstable Job",
+            "foreign_context": "Choosing a career often involves a trade-off between a stable job like a civil servant and a high-risk, high-reward job like a freelancer. A stable job offers predictability and security but limited income potential. An unstable job provides the chance for great financial success but comes with constant uncertainty about the future."
+        },
+        "generated_passage": "은하계의 외곽, 신비로운 행성 '노바'에서 태어난 주인공 아리아는 두 가지 운명적 경로 앞에 서 있었다. 하나는 노바 정부가 운영하는 우주 탐사 기관에서 천문학자로 일하며, 정년까지 안정적인 연구 환경 속에서 우주의 비밀을 탐구하는 길였다. 이곳에서 그녀는 매월 일정한 급여와 함께 정기적인 연구 자금 지원을 받으며, 동료들과 함께 고요한 우주 관측소에서 평생을 보낼 수 있었다. 하지만 이 길은 그녀의 창의적 열정과 무한한 탐험 욕구를 조금씩 억압해 나갔다. 다른 선택은 위험한 우주 벤처 기업 '코스모스 익스플로러'의 일원이 되는 것이었다. 이곳에서는 프로젝트마다 성공 여부가 불확실했으나, 성공 시 엄청난 보상과 함께 우주 개척의 선구자로 이름을 알릴 기회가 주어졌다. 아리아는 밤하늘을 향한 무한한 호기심과 함께, 때로는 생존을 걸고 미션을 수행해야 하는 짜릿함을 갈망했다. 비록 미래는 예측 불가능하고 끊임없는 스트레스 속에서 살아갈 뻔했지만, 그녀의 꿈과 열정은 그곳에서 더욱 빛나리라 믿어졌다. 결국 아리아는 안정성의 무게보다는 가슴 뛰는 모험과 잠재적인 우주적 발견의 영광을 선택했다. 이 결정은 그녀의 내면 깊은 곳에서 울려 퍼지던 자유와 창조성의 울림 때문이었다."
+    },
+    {
+        "source_item": {
+            "korean_topic": "아이를 일찍 낳기 vs 늦게 낳기",
+            "korean_context": "아이를 낳을 시기를 결정할 때, 젊고 체력이 좋을 때 일찍 낳을지, 아니면 경제적으로 안정되고 난 후에 늦게 낳을지 고민하게 됩니다. 일찍 아이를 낳으면 육아에 더 유리한 신체적 조건을 가지고, 아이가 다 큰 후에도 부모의 나이가 젊다는 장점이 있습니다. 반면 늦게 아이를 낳으면, 충분한 경제적, 정신적 준비 속에서 아이에게 더 안정적인 환경을 제공해 줄 수 있습니다.",
+            "foreign_topic": "Having Children Early vs. Later in Life",
+            "foreign_context": "Deciding when to have children involves choosing between having them early, when one is younger and has more physical energy, or later, after achieving financial stability. Having children early means parents will be younger when their kids are grown up. Having them later allows parents to provide a more stable and well-resourced environment for the child."
+        },
+        "generated_passage": "젊음의 불꽃이 꺼지기 전에 아이들의 웃음소리로 집을 채우려는 엘레나와 달리, 그녀의 친구 리아는 우주 탐사 회사에서 탄탄한 경력을 쌓으며 삶의 후반기를 향해 나아가고 있었다. 엘레나는 봄 햇살처럼 밝고 활력 넘치던 스물다섯에 첫 딸을 맞이했는데, 그녀의 에너지 넘치는 육아는 주변을 밝게 비추며 마을 축제마다 아이들의 웃음소리로 가득 찼다. 하지만 십 년 뒤, 리아는 세계 최초의 달 정착 프로젝트에 참여하면서, 아이를 갖는 대신 인류의 미래를 위한 과학적 도약을 선택했다. 그녀의 결정에는 경제적 안정뿐 아니라, 첨단 기술로 조성된 미래 사회에서 자녀에게 물려줄 교육 자원과 경험의 풍요로움도 포함되어 있었다. 한편 엘레나는 딸이 성인이 되어가면서 서서히 삶의 방향을 재고하더니, 어느 날 갑자기 오래된 사진 앨범을 꺼내보곤 눈시울을 적시며 늦둥이 아들을 낳겠다고 결심했다. 이제 그녀는 중년의 지혜와 경험으로 아들을 양육하며, 과거의 열정과 현재의 성숙함이 조화롭게 어우러져 가정과 개인의 성장을 동시에 이루어나갔다. 이 두 여성의 길은 서로 다르지만, 각자의 방식으로 가족과 세상에 긍정적인 변화를 가져다주었다."
+    },
+    {
+        "source_item": {
+            "korean_topic": "수도권 거주 vs 지방 거주",
+            "korean_context": "한국에서 어디에 살지를 결정하는 것은, 수도권의 편리함과 지방의 여유로움 사이의 선택을 의미합니다. 수도권은 다양한 일자리와 문화, 교육 기회가 집중되어 있지만, 집값이 매우 비싸고 경쟁이 치열하며, 삶이 팍팍합니다. 지방은 집값이 저렴하고 자연환경이 좋으며, 덜 경쟁적인 환경에서 여유로운 삶을 누릴 수 있지만, 수도권만큼의 다양한 기회를 갖기는 어렵습니다.",
+            "foreign_topic": "Living in the Seoul Metropolitan Area vs. a Provincial Region",
+            "foreign_context": "Deciding where to live in Korea is a choice between the convenience of the capital area and the relaxed pace of a provincial region. The Seoul area offers abundant jobs and cultural opportunities but at the cost of extremely high housing prices and intense competition. Provincial life is more affordable and less stressful, with better access to nature, but with fewer career and cultural opportunities."
+        },
+        "generated_passage": "수도권의 번화한 거리 너머에는 비밀스러운 '하늘도시'가 숨겨져 있었다. 이곳은 첨단 기술로 무장했음에도 불구하고, 인구 밀도가 낮아 경쟁보다는 협업이 자연스러웠다. 하늘도시 주민들은 고도의 자율 주행 교통 시스템 덕분에 일상 속 스트레스를 최소화할 수 있었고, 녹지 공간이 도시 곳곳에 펼쳐져 있어 자연과 공존하는 삶을 누렸다. 하지만 이 도시는 특수한 에너지원인 '코스믹 파워'를 필요로 했는데, 이 자원은 인근 깊은 지하에서만 얻을 수 있었다. 이 과정에서 발생하는 지하 작업은 신비로운 현상과 함께 지역 생태계에 미묘한 변화를 가져왔으나, 하늘도시 주민들은 이러한 대가를 치르면서도 미래 지향적인 생활 방식을 선택했다. 반면 지방의 어느 작은 마을은 오래된 전통과 고요함으로 유명하지만, 최근에는 하늘도시에서 개발 중인 혁신적인 코스믹 기술의 시범 적용지로 선정되면서 예상치 못한 변화를 맞이하고 있었다. 이 마을은 이제 과거와 미래가 조화롭게 공존하는 독특한 문화를 형성해 나가고 있었다."
+    },
+    {
+        "source_item": {
+            "korean_topic": "자녀를 조기 유학 보내기 vs 한국에서 교육하기",
+            "korean_context": "자녀의 교육 문제로, 어릴 때부터 해외에 보내 외국어와 국제적인 감각을 익히게 할지, 아니면 한국의 안정적인 환경에서 교육할지 고민하는 부모들이 있습니다. 조기 유학은 자녀에게 넓은 세상을 경험하게 해줄 수 있지만, 정체성 혼란이나 부모와의 유대감 약화 같은 문제를 낳을 수 있습니다. 한국에서의 교육은 안정적이지만, 치열한 입시 경쟁의 스트레스를 자녀가 고스란히 겪어야 합니다.",
+            "foreign_topic": "Sending a Child to Study Abroad Early vs. Educating Them in Korea",
+            "foreign_context": "Parents often debate whether to send their children abroad at a young age or to educate them within the Korean system. Studying abroad early can provide global perspectives and language fluency but risks identity confusion and weakened family bonds. Education in Korea offers stability but forces children to endure the immense stress of the hyper-competitive entrance exam system."
+        },
+        "generated_passage": "어린 민수는 푸른 바다 너머의 섬나라에서 아침 햇살 아래 첫 수업을 시작했다. 그의 부모님은 한국의 압박적인 교육 시스템 대신, 그에게 펼쳐진 무한한 가능성의 세계를 선택했다. 이곳에서는 수업이 영어로 진행되며, 아이들은 자연 속에서 생태학 프로젝트를 수행하거나 현지 문화 체험 프로그램에 참여할 기회가 많았다. 그러나 겨울이 되면 긴 어둠 속에서 외로움이 밀려왔고, 주말마다 화상 통화로 연결되던 부모님의 목소리에는 때때로 낯선 거리감이 느껴졌다. 한편, 서울의 명문 중학교에 다니는 수진은 매일 쏟아지는 과외 스케줄과 치열한 입시 준비 속에서 꿈을 키워나갔다. 그녀의 일상은 빈틈없이 짜였으나, 어느 날 우연히 해외 친구들과의 온라인 모임에 참여하면서 다른 삶의 모습을 엿보게 되었다. 수진은 점차 자신의 길에 대한 의문을 품기 시작했으며, 때로는 낯선 풍경과 자유로운 학습 환경이 얼마나 매력적일지 상상하곤 했다. 두 아이 모두 각자의 방식으로 성장의 길을 걷고 있었지만, 진정한 행복과 미래의 방향성에 대한 탐구는 계속되고 있었다."
+    },
+    {
+        "source_item": {
+            "korean_topic": "아침형 인간으로 살기 vs 저녁형 인간으로 살기",
+            "korean_context": "성공한 사람들은 아침 시간을 잘 활용한다는 말이 있지만, 사람마다 타고난 생체 리듬은 다릅니다. 아침형 인간은 남들보다 일찍 하루를 시작하여 오전에 높은 집중력을 발휘할 수 있지만, 저녁 약속이나 늦은 시간의 활동에는 어려움을 겪습니다. 저녁형 인간은 늦은 밤에 창의력과 집중력이 최고조에 달하지만, 아침 일찍 시작하는 사회 시스템에 적응하는 데 어려움을 느낄 수 있습니다.",
+            "foreign_topic": "Being a Morning Person vs. a Night Owl",
+            "foreign_context": "There is a choice between two lifestyles: being a morning person or a night owl. Morning people can be highly productive in the early hours but often struggle with social activities in the evening. Night owls, conversely, often feel most creative and focused late at night but may find it difficult to conform to a standard 9-to-5 schedule."
+        },
+        "generated_passage": "황혼 도시 뉴에덴에서는 아침형 인간들이 태양이 떠오르며 활성화되었고, 그 반대 편에는 밤하늘 아래 활동하는 나이트윙즈 클럽이 번성했다. 아침형 인간들 사이에서는 '크로노스 아카데미'가 유명해, 새벽부터 시작되는 엄격한 일정 속에서도 혁신적인 아이디어와 뛰어난 기술력을 키워내는 것으로 알려져 있었다. 반면, 나이트윙즈들은 '스페이스 오브 드림즈'라는 비밀스러운 공간에서 모여 들었는데, 이곳은 밤 깊은 시각에만 열리는 가상 현실 플랫폼으로, 창작자들과 사상가들이 한계 없는 창조력을 발휘하게 했다. 특히, 크로노스 아카데미 출신의 젊은 엔지니어 알렉스는 초기 프로젝트 실패 후 나이트윙즈 커뮤니티로 전향하면서, 고요한 밤하늘 아래서 복잡한 알고리즘을 풀어나갔다. 이 변화 덕분에 그는 창의성의 샘이 솟아나는 듯한 경험을 하였으며, 결국 밤의 지혜를 바탕으로 한 혁신적인 에너지 관리 시스템을 개발해내며 명성을 되찾았다. 이러한 대조는 단순히 시간대 선호를 넘어 개인의 내면 세계와 외부 환경 간의 조화로운 공존 방식을 보여주곤 했다."
+    },
+    {
+        "source_item": {
+            "korean_topic": "한 우물만 파는 전문가 되기 vs 여러 분야를 아는 제너럴리스트 되기",
+            "korean_context": "직업 세계에서 성공하기 위해, 하나의 분야에 깊이 파고들어 대체 불가능한 전문가(스페셜리스트)가 될 것인지, 아니면 여러 분야에 대한 넓은 지식을 가진 제너럴리스트가 될 것인지 선택해야 합니다. 스페셜리스트는 해당 분야에서 높은 권위를 가질 수 있지만, 그 분야의 전망이 나빠지면 위험에 처할 수 있습니다. 제너럴리스트는 다양한 상황에 유연하게 대처할 수 있지만, 깊이가 부족하여 애매한 위치에 머무를 수도 있습니다.",
+            "foreign_topic": "Becoming a Specialist vs. a Generalist",
+            "foreign_context": "In one's career, there is a choice between becoming a specialist, with deep knowledge in one field, or a generalist, with broad knowledge across many. A specialist can become an irreplaceable expert but is vulnerable if their field becomes obsolete. A generalist is more adaptable to change but may lack the deep expertise to be a top performer in any single area."
+        },
+        "generated_passage": "깊은 숲 속에 숨겨진 고대 도서관에서, 엘리나는 스페셜리스트와 제너럴리스트 사이의 경계를 넘어서는 존재로 성장했다. 그녀는 마법의 언어학에 몰두해 마스터했으나, 그곳에서 발견한 오래된 아틀라스 덕분에 우주론까지 폭넓게 이해하게 되었다. 마법의 세계에서는 그녀의 고유한 언어 해석 능력으로 전설적인 마법사로 존경받았고, 동시에 별자리와 우주의 움직임을 통해 미래의 예지력까지 발휘했다. 그러나 이러한 다재다능함은 양면성을 지녔다; 마법 학회에서는 그녀의 깊은 전문성이 인정받아 핵심 역할을 맡았지만, 때로는 그녀의 지식 범위가 너무 넓어져 특정 사안에 대한 집중도가 떨어져 비판을 받기도 했다. 그럼에도 불구하고 엘리나는 변화무쌍한 마법계와 우주적 비밀을 엮어가며, 어느 한 분야에도 얽매이지 않는 유연하면서도 강력한 위치를 구축했다. 그녀의 길은 분명 위험과 불확실성으로 가득했지만, 그것이 바로 그녀가 세상을 바라보는 독특한 시각이자 힘의 원천이었다."
+    },
+    {
+        "source_item": {
+            "korean_topic": "음성 통화하기 vs 문자 메시지(카톡) 보내기",
+            "korean_context": "다른 사람과 소통할 때, 목소리를 직접 듣는 음성 통화와 글로 메시지를 보내는 것 중 어떤 방식을 선호하는지에 따라 세대 차이가 드러나기도 합니다. 음성 통화는 감정을 전달하고 즉각적인 반응을 확인하는 데 유리하지만, 상대방의 시간을 갑자기 빼앗는다는 단점이 있습니다. 문자 메시지는 기록이 남고, 각자 편한 시간에 답할 수 있어 편리하지만, 미묘한 뉘앙스를 전달하기 어려워 오해를 낳을 수 있습니다.",
+            "foreign_topic": "Making a Voice Call vs. Sending a Text Message",
+            "foreign_context": "When communicating, one can choose between a direct voice call and a text message. Voice calls are better for conveying emotion and getting an immediate response but can be intrusive. Text messages are convenient, allowing people to respond at their leisure, but they lack tone and can easily lead to misinterpretation."
+        },
+        "generated_passage": "깊은 숲 속에 자리잡은 신비로운 마을, 아르카디아에서는 주민들이 고대 전통에 따라 주로 '사운드 메신저'라는 특별한 음성 통신 기술로 소통했다. 이 기술 덕분에 대화는 단순히 말소리 이상의 의미를 지니게 되었는데, 사용자들의 내면 감정과 주변 환경의 미묘한 소리까지 전송되곤 했다. 예를 들어, 햇살 아래서 웃으며 보내는 메시지는 따스한 햇살과 함께 수신자의 마음을 가볍게 감쌌고, 폭풍우 속에서의 통화는 자연의 긴장감을 그대로 전달해 상대방도 같은 날씨를 체감케 했다. 그러나 이러한 강력한 연결력에도 불구하고, 사운드 메신저는 마을의 중요한 축제 기간 동안에는 제한적으로 사용되어야 했다. 이때는 모든 주민들이 공동체의 목소리를 공유해야 하므로, 문자 기반의 '아르카니아 스크립트'로 전환되며, 이 스크립트는 상징적인 문양과 기호로 구성되어 있어 오랜 세월 동안 전해져 내려온 깊은 문화적 의미를 담고 있었다. 이러한 소통 방식의 변화는 공동체 의식을 강화시키지만, 동시에 개인 간의 즉흥적인 감정 교류를 다소 제한하였다."
+    },
+    {
+        "source_item": {
+            "korean_topic": "사내 연애 공개하기 vs 비밀로 하기",
+            "korean_context": "같은 회사 동료와 연애를 하게 되었을 때, 이 사실을 주변에 공개할지 비밀로 할지 결정해야 합니다. 공개 연애는 주변의 축복을 받으며 당당하게 데이트할 수 있지만, 만약 헤어지게 되면 회사 생활이 매우 껄끄러워질 수 있습니다. 비밀 연애는 헤어지더라도 부담이 적지만, 항상 주변의 시선을 의식해야 하고 거짓말을 해야 하는 스트레스가 있습니다.",
+            "foreign_topic": "Making an Office Romance Public vs. Keeping it a Secret",
+            "foreign_context": "If you start dating a coworker, you must decide whether to make the relationship public or keep it secret. A public relationship allows you to be open but can become extremely awkward if you break up. A secret relationship avoids this potential awkwardness but involves the constant stress of hiding it from colleagues."
+        },
+        "generated_passage": "엘리엇은 실험실의 조용한 분위기 속에서 혁신적인 인공지능 프로젝트를 이끌고 있던 중, 동료 과학자 리사와 뜻하지 않게 사랑에 빠졌다. 그들의 관계는 처음에는 비밀로 지켜졌으나, 시간이 흐르며 감정의 깊이가 더해지자 결국 그들 사이에 작은 변화의 바람이 불기 시작했다. 어느 날 저녁, 연구실의 낡은 창문 너머로 별빛이 비치는 순간, 엘리엇은 결심했다. 그는 리사와의 관계를 '별빛 선언'이라 명명하며 동료들에게 공개하기로 했다. 그러나 이 발표는 예상치 못한 반응을 불러일으켰다. 일부 팀원들은 그들의 용기에 박수를 보냈지만, 다른 이들은 불편함을 감추지 못했다. 특히 프로젝트의 경쟁 부문에서 일하던 팀 리더인 제인은 미묘한 경쟁심 때문에 공개적인 지지 대신 차가운 침묵으로 대응했다. 그럼에도 불구하고, 엘리엇과 리사는 당당하게 함께하는 모습으로 연구소 내에서 새로운 문화를 형성하기 시작했다. 비밀 연애 시절 겪었던 끊임없는 불안감이 사라지니, 이제는 서로를 향한 진정한 지원과 협업의 분위기가 사무실 곳곳에 퍼져갔다. 그러나 프로젝트 마감 무렵, 미묘한 긴장감이 다시금 고조되는데, 이때 그들 앞에 나타난 예상치 못한 변수가 그들의 관계와 업무 환경에 또 다른 전환점을 가져오게 된다."
+    },
+    {
+        "source_item": {
+            "korean_topic": "온라인 강의 수강 vs 오프라인 학원 수강",
+            "korean_context": "무언가를 배울 때, 온라인 강의와 오프라인 학원 중 어떤 형태가 더 효과적일지 고민됩니다. 온라인 강의는 시간과 장소에 구애받지 않고, 반복해서 들을 수 있다는 장점이 있습니다. 하지만 오프라인 학원은 강사에게 직접 질문하고, 다른 수강생들과 함께 공부하며 동기 부여를 받을 수 있지만, 정해진 시간에 정해진 장소에 가야 하는 불편함이 있습니다.",
+            "foreign_topic": "Taking an Online Course vs. an Offline Class",
+            "foreign_context": "When learning something new, one must choose between an online course and a traditional offline class. Online courses offer the flexibility to learn anytime, anywhere, and at your own pace. In contrast, offline classes provide direct interaction with the instructor and peers, which can be more motivating, but they require attendance at a fixed time and place."
+        },
+        "generated_passage": "어둠 속에서 빛나는 디지털 화면 너머로, 아리아는 고대 문명의 비밀을 탐구했다. 온라인 플랫폼 '시간의 도서관'은 그녀에게 자유를 선사했다. 언제든 원하는 시간대에 접속해, 역사학자 엘리아스 교수의 강연을 반복하며 잊혀진 언어의 퍼즐 조각들을 맞춰나갔다. 하지만 어느 날 밤, 꿈결처럼 희미한 기억 속에서 희미하게 울려 퍼지던 고대의 노래 소리가 들렸다. 그것은 단순히 텍스트로는 전달 불가능한, 살아 숨 쉬는 지식의 울림이었다. 아리아는 온라인 세계의 한계를 깨닫고, 현실 세계로 발을 내딛기로 결심했다. 런던의 숨겨진 서점 '책갈피의 비밀'에 숨겨진 오프라인 강좌에 등록한 그녀는 이제 직접 엘리아스 교수의 연구실을 방문하고, 열정적인 다른 학습자들과 토론하며 진정한 이해를 향해 나아갔다. 온라인의 유연성은 훌륭했지만, 진정한 지식은 인간적인 교류 속에서 꽃피운다는 것을 깨달았기에."
+    },
+    {
+        "source_item": {
+            "korean_topic": "신용카드 사용 vs 체크카드 사용",
+            "korean_context": "소비 생활을 할 때, 미래의 돈을 당겨 쓰는 신용카드와 내 통장 잔액 내에서만 사용하는 체크카드 중 무엇을 주력으로 사용할지 선택해야 합니다. 신용카드는 다양한 할인 혜택과 할부 기능을 제공하지만, 계획 없이 사용하다 보면 빚을 지기 쉽습니다. 체크카드는 자신의 지출 규모를 파악하기 쉽고 과소비를 막아주지만, 신용카드만큼의 폭넓은 혜택은 없습니다.",
+            "foreign_topic": "Using a Credit Card vs. a Debit Card",
+            "foreign_context": "For personal finance, one must choose between a credit card, which allows you to borrow money, and a debit card, which uses your own funds. Credit cards offer extensive rewards and the ability to pay in installments but carry the risk of accumulating debt. Debit cards prevent overspending and help with budgeting but lack the significant benefits and flexibility of credit cards."
+        },
+        "generated_passage": "달빛 아래 숨겨진 도시, 아르카디아에서는 사람들이 독특한 통화 시스템을 사용했다. 이곳의 주민들은 '루나 카드'라는 디지털 자산을 주로 사용했는데, 이 카드는 단순한 결제 수단을 넘어 개인의 꿈과 연결되었다. 루나 카드는 사용자의 내면 세계를 스캔해 맞춤형 할인 혜택을 제공했다; 예를 들어, 문학 애호가에게는 서점에서의 구매 금액에 대한 무제한 할인이 주어졌고, 예술가에게는 창작 활동에 필요한 재료 구매 시 추가 적립 포인트가 부여되었다. 그러나 이 시스템에는 위험도 내포되어 있었다. 과도한 꿈의 투자로 인해 재정적 위기에 빠지는 경우가 드물지 않았으며, 특히 '꿈의 빚'이라 불리는 현상이 발생하면, 카드 사용자는 현실 세계의 자원까지도 꿈 실현에 동원당할 수 있었다. 반면, 아르카디아의 일부 지역에서는 '그라운드 칩'이라는 물리적 현금 기반 시스템을 고수했다. 그라운드 칩은 단순하고 안정적이었으나, 개인의 창조적 열정이나 특수 분야에 맞춘 혜택은 전혀 제공하지 않아 일상적인 생활비 관리 외에는 한계가 뚜렷했다. 그럼에도 불구하고, 이 방식은 꿈과 현실 사이의 균형을 유지하며 사용자들이 더 신중하게 지출하도록 유도했다."
+    },
+    {
+        "source_item": {
+            "korean_topic": "친구와 동업하기 vs 혼자 창업하기",
+            "korean_context": "새로운 사업을 시작할 때, 믿음직한 친구와 함께할지, 아니면 모든 것을 혼자 책임지고 시작할지 고민됩니다. 친구와 동업하면 부족한 자본과 능력을 서로 보완해줄 수 있고, 힘든 과정을 함께 의지하며 나아갈 수 있습니다. 하지만 의견 충돌이 생겼을 때 관계가 틀어질 위험이 있습니다. 혼자 창업하면 모든 의사결정을 자유롭게 할 수 있지만, 모든 위험과 책임을 홀로 감당해야 합니다.",
+            "foreign_topic": "Starting a Business with a Friend vs. Alone",
+            "foreign_context": "When launching a business, one considers whether to partner with a trusted friend or go it alone. A partnership allows you to pool resources and skills, and provides mutual support. However, it also carries the risk of disagreements damaging the friendship. Going solo offers complete autonomy but means bearing all the risks and responsibilities by yourself."
+        },
+        "generated_passage": "깊은 밤하늘 아래, 낡은 서점의 한쪽 구석에서 에밀리아와 레오는 낡은 지도를 펼쳐놓았다. 에밀리아는 부드러운 눈빛으로 푸른 바다 위로 뻗어나간 가상 도시 '아쿠아폴리스'의 설계도를 바라보았다. 그녀의 상상력은 이 도시를 현실로 만들기 위한 마법과도 같아서, 빛나는 산호 조각으로 장식된 건물들과 공중을 가로지르는 투명한 수상 교통 수단까지 구체적으로 그려냈다. 반면 레오는 냉철한 사업가 기질로 가득 차 있었는데, 아쿠아폴리스의 경제 모델과 투자 유치 전략에 대해 꼼꼼하게 분석했다. 그들 사이에는 항상 뜨거운 토론이 벌어졌다 - 에밀리아의 무한한 창의성이 레오의 실용주의적 접근 방식과 충돌하기도 했다. 그러나 그들의 우정은 흔들리지 않았다. 서로 다른 빛으로 아쿠아폴리스를 비추면서, 둘 다 혼자라면 상상조차 하지 못했던 혁신적인 비전을 현실로 만들어가고 있었다.  투자자들은 아쿠아폴리스의 독특한 매력에 매료되었고, 첫 번째 프로젝트는 예상보다 훨씬 빠르게 궤도에 올랐다. 성공은 그들의 믿음을 증명했듯이, 서로 다른 강점들이 조화를 이루는 힘을 보여주었기에 가능했음을 깨달았다."
+    },
+    {
+        "source_item": {
+            "korean_topic": "성선설 vs 성악설",
+            "korean_context": "인간의 본성에 대한 오랜 논쟁으로, 사람은 본래 선하게 태어난다는 '성선설'과 악하게 태어난다는 '성악설'이 있습니다. 성선설은 인간이 가진 선한 본성을 교육을 통해 잘 보존해야 한다고 주장합니다. 반면, 성악설은 인간의 이기적인 본성을 교육과 제도를 통해 통제하고 교화해야 한다고 봅니다. 어떤 관점을 선택하는지에 따라, 사람을 보고 사회를 이해하는 방식이 크게 달라집니다.",
+            "foreign_topic": "The Belief that Humans are Inherently Good vs. Evil",
+            "foreign_context": "There is a long-standing philosophical debate about human nature: are people born fundamentally good, or fundamentally evil? The 'good' perspective argues that society should nurture our innate kindness. In contrast, the 'evil' perspective contends that society's laws and education are necessary to control our selfish instincts. Your viewpoint on this shapes your entire understanding of human behavior."
+        },
+        "generated_passage": "고대 도시 아르카디아의 학자들 사이에서는 인간 본성에 관한 신비로운 전설이 전해져 내려왔다. 이 도시의 중심에는 '빛의 샘'이라 불리는 장소가 있었는데, 이곳의 샘물은 성선설을 뒷받침하듯 언제나 맑고 따뜻했으며, 마시는 자마다 내면의 선한 빛을 더욱 밝게 키웠다고 전해졌다. 반면, 도시 외곽의 어두운 숲 속에서는 '그림자의 샘'이라는 비밀스러운 원천이 존재했다. 이 샘물은 성악설의 상징처럼 보였는데, 그것을 마시면 개인의 이기심과 욕망이 증폭되며, 주변 환경을 점차 음울하게 만들었다. 아르카디아의 지혜로운 장로들은 세대를 거쳐 교육 프로그램을 설계할 때 이러한 자연 현상을 반영했다. 도심 학교에서는 빛의 샘의 영향을 받아 협동심과 배려의 가치를 강조하는 커리큘럼을 운영했지만, 외곽 지역에서는 그림자의 샘 근처에 위치해 학생들이 본능적인 통제와 윤리적 규율을 익히도록 엄격한 도덕 교육과 사회 참여 활동을 강화했다. 결국, 아르카디아의 지도자들은 모든 시민이 내면의 양면성을 인식하면서도 각자의 본성을 긍정적인 방향으로 이끌 수 있기를 바랐던 것이다."
+    },
+    {
+        "source_item": {
+            "korean_topic": "일찍 결혼하기 vs 늦게 결혼하기(또는 비혼)",
+            "korean_context": "인생의 중요한 결정인 결혼을, 20대에 비교적 일찍 할 것인지, 아니면 사회적으로 자리를 잡고 30대 이후에 할 것인지(또는 하지 않을 것인지)는 큰 고민거리입니다. 일찍 결혼하면 안정된 가정 속에서 배우자와 함께 성장해나갈 수 있습니다. 반면 늦게 결혼하거나 비혼을 선택하면, 결혼에 얽매이지 않고 자신의 경력 개발이나 자아실현에 더 집중할 수 있는 시간을 가질 수 있습니다.",
+            "foreign_topic": "Getting Married Early vs. Late (or Not at All)",
+            "foreign_context": "A major life decision is whether to get married relatively young in one's 20s or later in life after establishing a career. Marrying early allows a couple to grow together within a stable family unit. In contrast, marrying later, or choosing not to marry, provides more time to focus on personal career development and self-realization without the commitments of marriage."
+        },
+        "generated_passage": "별빛 아래 펼쳐진 고요한 마을에서, 주인공 아리아는 25세의 나이로 일찍 결혼하기로 결심했다. 그러나 그녀의 선택은 전통적인 사랑 이야기와는 달랐다. 아리아의 배우자는 시간 여행자로 알려져 있었으며, 그들의 결합은 미래의 지식과 과거의 감성 사이에서 탄생했다. 이른 결혼 생활은 안정감보다는 신비로운 모험으로 가득 찼다. 매일 아침, 아리아는 배우자가 가져온 미래의 트렌드 보고서를 읽으면서 패션 디자이너로서 혁신적인 컬렉션을 선보이며 성공을 거두곤 했다. 하지만 이러한 특별한 관계에도 불구하고, 가끔씩 찾아오는 고독함은 그녀 혼자 밤하늘을 바라보며 별들에게 고백해야 하는 밤들이 되기도 했다. 반면 마을에는 늦게 결혼하거나 독신을 택한 이들이 많았는데, 그 중 한 명인 엘리아스는 마을의 비밀 도서관을 운영하며 다양한 문화와 철학을 탐구하던 지식인이었다. 엘리아스의 삶은 평온하지만, 때로는 깊어지는 사색 속에서 진정한 연결의 부재를 느끼곤 했다. 결국, 아리아의 선택은 개인적인 성취와 미지의 세계 탐험 사이에서 균형을 이루려는 용기있는 도약이었음을 드러냈다."
+    },
+    {
+        "source_item": {
+            "korean_topic": "자녀에게 존댓말 사용하기 vs 반말 사용하기",
+            "korean_context": "부모가 자녀에게 말을 할 때, 인격체로 존중하여 존댓말을 사용할지, 아니면 친근하게 반말을 사용할지에 대한 교육적 관점의 차이가 있습니다. 자녀에게 존댓말을 사용하면 아이의 자존감을 높여주고, 자연스럽게 존중의 태도를 배우게 할 수 있습니다. 반면 반말은 부모와 자녀 사이에 더 가깝고 친밀한 유대감을 형성하는 데 도움이 될 수 있습니다.",
+            "foreign_topic": "Using Formal Language (Jondaetmal) vs. Informal Language (Banmal) with a Child",
+            "foreign_context": "There are differing educational views on whether parents should use formal or informal language with their children. Using formal language can foster a child's self-esteem and teach them an attitude of respect. On the other hand, using informal language can help to build a closer and more intimate bond between parent and child."
+        },
+        "generated_passage": "어둠 속에서 빛나는 작은 별처럼, 여덟 살 소녀 아리아나는 부모님의 말투 변화에 민감했다. 아침마다 햇살처럼 따뜻한 아빠의 반말은 그녀의 하루를 밝게 비추었지만, 저녁이면 신비로운 존댓말을 사용하며 이야기하는 엄마 앞에서는 가슴 깊은 곳에 묘한 긴장감이 퍼져 나왔다. 아빠의 반말은 아리아나가 세상에 첫 발을 내딛던 날, 무한한 가능성의 꿈을 심어주듯 했다. 하지만 엄마의 존댓말은 마치 잊혀진 고대 언어처럼, 깊은 존중과 비밀스러운 지혜를 담고 있음을 느꼈기 때문이다. 어느 날 밤, 아리아나는 꿈 속에서 두 목소리가 공존하는 이상한 마을을 보았다. 그곳 사람들은 상황에 따라 존댓말과 반말을 자유롭게 오가며 서로를 이해하고 연결되곤 했다. 깨어난 후, 아리아나는 자신도 부모님과 그런 유연한 소통 방식을 시도해보고 싶다는 생각에 사로잡혔다. 어쩌면 진정한 존중은 상황과 마음의 깊이에 따라 변하는 말투 속에 숨어있을지도 모른다는 믿음에서 비롯된 꿈이었다."
+    },
+    {
+        "source_item": {
+            "korean_topic": "결과 중심 평가 vs 과정 중심 평가",
+            "korean_context": "사람이나 성과를 평가할 때, 최종적으로 나온 '결과'만을 보고 평가할 것인지, 아니면 결과에 이르기까지의 '과정'을 함께 고려할 것인지에 대한 관점의 차이가 있습니다. 결과 중심 평가는 객관적이고 명확하지만, 과정에서 보인 노력이나 도덕적인 부분이 무시될 수 있습니다. 과정 중심 평가는 개인의 노력을 인정해주고 동기를 부여할 수 있지만, 평가 기준이 모호해지고 결과에 대한 책임감이 약해질 수 있습니다.",
+            "foreign_topic": "Outcome-Based Evaluation vs. Process-Based Evaluation",
+            "foreign_context": "When evaluating performance, there is a choice between focusing solely on the final 'outcome' or also considering the 'process' taken to get there. Outcome-based evaluation is objective and clear but can ignore effort and ethics. Process-based evaluation can motivate and acknowledge hard work but may have ambiguous standards and weaken accountability for results."
+        },
+        "generated_passage": "고대 문명의 지혜가 깃든 도시, 아르카디아는 오늘날에도 그 신비로움을 간직한 채 번영했다. 이곳에서는 '성취의 탑'이라 불리는 독특한 평가 시스템이 시행되었는데, 이 시스템은 현대의 결과 중심 평가와는 근본적으로 달랐다. 아르카디아 시민들은 매년 봄 축제 기간 동안 자신의 목표를 탑의 각 층에 새겨 넣었다. 첫 번째 층에는 최종 성취물이 기록되었으나, 그 아래 층들은 그 과정에서 겪은 도전과 배운 교훈, 그리고 도움을 준 동료들에 대한 감사의 메시지로 채워졌다. 이러한 방식 덕분에 개인의 성장 스토리는 투명하게 공유되며 공동체 내에서 깊은 존경과 배움의 분위기가 조성되었다. 그러나 외부 침략 세력이 아르카디아를 위협하면서, 빠른 결단력과 효율성이 요구되던 상황에서는 이러한 포괄적인 평가 방식이 때때로 혼란을 초래하기도 했다는 후문이다. 결국 아르카디아의 지도자들은 균형을 찾아, 중요 순간에는 결과 중심의 단기 평가와 일상적인 운영에서는 과정 중심의 평가를 병행하는 방안을 모색해야 했다. 이로써 과거의 지혜와 현대의 필요 사이에서 새로운 평가 패러다임을 창조하였으니, 그곳 사람들은 이를 통해 진정한 성장과 동시에 유연한 리더십을 발휘할 수 있게 되었다."
+    },
+    {
+        "source_item": {
+            "korean_topic": "워라밸이 좋은 회사 vs 연봉이 높은 회사",
+            "korean_context": "회사를 선택하는 기준으로, '일과 삶의 균형(워라밸)'과 '높은 연봉' 중 무엇을 더 중요하게 생각하는지에 따라 선택이 달라집니다. 워라밸이 좋은 회사는 야근이 적고 휴가를 자유롭게 쓸 수 있어, 퇴근 후 개인적인 삶을 누릴 수 있습니다. 연봉이 높은 회사는 당장의 경제적 만족감은 크지만, 높은 업무 강도와 스트레스로 인해 개인의 삶이 희생될 수 있습니다.",
+            "foreign_topic": "A Company with Good Work-Life Balance vs. a Company with a High Salary",
+            "foreign_context": "Choosing a company often comes down to prioritizing either work-life balance or a high salary. A company with good 'work-life balance' offers personal time and freedom but may pay less. A high-paying company provides significant financial rewards but often at the cost of intense stress and the sacrifice of one's personal life."
+        },
+        "generated_passage": "엘리엇은 두 세계 사이에서 갈등했다. 푸른 바다 위에 떠있는 럭셔리 요트 회사 '아리아'는 그에게 완벽한 워라밸을 약속했다. 햇살 가득한 해변에서 아침을 맞이하고, 요트를 타고 청록색 바다를 누비며 오후에는 요가와 명상으로 여유로운 시간을 보냈다. 그러나 급여명세서에는 숫자가 부족했으며, 회사의 재정 안정성이 항상 불안했다. 반면, 첨단 기술 스타트업 '네온'은 엄청난 연봉을 제시했다. 네온의 오피스는 끊임없이 움직이는 혁신의 중심지였고, 밤 늦도록 프로젝트 토론이 이어졌었다. 엘리엇은 빛나는 미래와 높은 보상에 매료되었지만, 그 빛나는 성공 뒤에 숨겨진 피로와 개인 시간의 부재가 두려워졌다. 결국 그는 작은 섬에 위치한 아리아에서 평온함 속에 자신의 꿈을 천천히 키워나가기로 결심했다. 꾸준한 성장과 진정한 행복이 장기적으로 더욱 가치있다고 믿었기에, 경제적 안정보다는 삶의 질을 우선시했던 것이다."
+    },
+    {
+        "source_item": {
+            "korean_topic": "힘들 때 혼자 해결하기 vs 주변에 도움 요청하기",
+            "korean_context": "어려운 문제에 부딪혔을 때, 다른 사람에게 부담을 주지 않기 위해 혼자 끙끙 앓으며 해결하려는 사람이 있습니다. 반면, 주변 사람들에게 적극적으로 자신의 상황을 알리고 도움을 요청하는 사람도 있습니다. 혼자 해결하면 독립심을 기를 수 있지만, 문제를 더 키우거나 잘못된 결정을 내릴 수 있습니다. 도움을 요청하면 더 쉽고 빠르게 문제를 해결할 수 있지만, 다른 사람에게 의존하게 될 수도 있습니다.",
+            "foreign_topic": "Solving Problems Alone vs. Asking for Help",
+            "foreign_context": "When facing a difficult problem, some people try to solve it alone to avoid burdening others, while others actively seek help. Solving things alone can build independence but risks making the problem worse. Asking for help can lead to a faster solution but can also foster dependence on others."
+        },
+        "generated_passage": "깊은 밤, 고요한 도서관 한가운데에 앉아 있던 엘리나는 노트북 화면 속 복잡한 알고리즘 앞에서 고민에 빠져 있었다. 그녀의 연구 프로젝트는 시간의 한계선을 넘나들며 압박받고 있었는데, 혼자서 모든 퍼즐 조각을 맞추려고 애쓰다가 결국 새벽이 밝아오도록 진전이 없었다. 그때, 그녀의 머릿속에 희미하게 떠오르는 기억이 있었다 — 어릴 적 친구 마티아스와 함께 풀었던 어려운 수학 문제들. 그 순간, 엘리나는 잠시 화면을 내려놓았다. 도서관의 조용한 공기 사이로 들어온 햇살이 창문 너머로 스며들었고, 그녀는 조용히 동료 과학자인 마티아스에게 연락했다. 마티아스는 이미 비슷한 분야에서 성공적인 해결책을 내놓은 경험이 있어서, 그의 통찰력은 예상치 못한 방향으로 문제를 재구성해 주었다. 혼자서의 고집스러운 노력 대신, 마티아스와의 협업은 단순한 시간 절약 이상의 가치를 제공했다. 서로 다른 시각과 지식의 융합은 엘리나가 미처 생각하지 못했던 혁신적인 접근법을 탄생시켰다. 이 경험은 단순히 문제 해결을 넘어, 진정한 성장이란 때로는 타인과의 연결 속에서 이루어진다는 깨달음을 안겨주었다."
+    },
+    {
+        "source_item": {
+            "korean_topic": "AI 번역기 사용 vs 직접 사전 찾아 번역하기",
+            "korean_context": "외국어 문장을 번역할 때, 편리한 AI 번역기를 사용할지, 아니면 시간이 걸리더라도 직접 사전을 찾아가며 번역할지 선택할 수 있습니다. AI 번역기는 매우 빠르고 편리하지만, 문맥에 맞지 않는 어색한 번역을 하거나 미묘한 뉘앙스를 놓칠 수 있습니다. 직접 사전을 찾으면 시간은 오래 걸리지만, 단어의 정확한 의미와 다양한 용법을 깊이 있게 공부할 수 있어 외국어 실력 향상에 더 도움이 됩니다.",
+            "foreign_topic": "Using an AI Translator vs. a Dictionary",
+            "foreign_context": "To translate a foreign sentence, you can use a convenient AI translator or take the time to use a dictionary. AI translators are fast but can produce awkward, contextually incorrect translations. Using a dictionary is slow but allows you to learn the precise meaning and usage of words, which is more beneficial for language learning."
+        },
+        "generated_passage": "고대 문명의 비밀을 탐구하던 학자 엘리자는 어느 날 신비로운 고대 문자가 새겨진 유물을 발견했다. 유물 주변에는 희미하게 빛나는 먼지 입자들이 춤추듯 움직였는데, 이는 단순한 먼지가 아닌, 문자 속에 잠들어 있던 잊혀진 언어의 숨결임을 암시했다. 엘리자는 AI 번역기로는 해독 불가능한 복잡성 앞에 좌절했으나, 결국 낡은 세계지도와 함께 숨겨진 도서관으로 향했다. 그곳에는 희귀한 언어 전문 사전들이 보관되어 있었고, 특히 '루미나 사전'이라 불리는 책은 빛의 굴절 원리를 이용해 글자마다 미세한 변화를 기록해 놓았다는 전설이 전해졌다. 엘리자는 사전을 펼치며 손가락으로 빛을 비추면서 단어 하나하나의 진정한 의미와 역사적 맥락을 깨달았다. 이 과정에서 그녀는 단순히 언어를 이해하는 데 그치지 않고, 그 시대의 문화와 철학까지 통찰하게 되었으며, 이 경험은 그녀의 연구 인생에 획기적인 전환점이 되었다. 그러나 그 대가로 그녀는 몇 달 동안 외부 세계와 단절되어야 했고, 그 기간 동안 자신도 모르는 사이에 주변 환경의 변화를 뒤처져 바라보게 되었다. 그럼에도 불구하고, 엘리자는 이 고독한 탐구 끝에 얻은 지식의 가치를 결코 잊지 않기로 결심했다."
+    },
+    {
+        "source_item": {
+            "korean_topic": "빠르게 변하는 유행 따르기 vs 자신만의 스타일 고수하기",
+            "korean_context": "패션이나 라이프스타일에서, 계속해서 새롭게 등장하는 유행을 적극적으로 따를 것인지, 아니면 유행과 상관없이 자신만의 고유한 스타일을 지킬 것인지 고민됩니다. 유행을 따르면 트렌디하고 세련된 감각을 보여줄 수 있지만, 개성이 없어 보이고 불필요한 소비를 하게 될 수 있습니다. 자신만의 스타일을 고수하면 개성 있고 주체적으로 보이지만, 자칫 시대에 뒤떨어지거나 고집스러워 보일 수도 있습니다.",
+            "foreign_topic": "Following Fast-Changing Trends vs. Sticking to Your Own Style",
+            "foreign_context": "In fashion and lifestyle, there's a choice between actively following new trends or maintaining your own unique style. Following trends can make you appear fashionable and modern but can also lead to conformity and unnecessary spending. Sticking to your own style shows individuality but risks appearing outdated or stubborn."
+        },
+        "generated_passage": "시대의 흐름 속에서 어느 길을 선택할지 고민하던 디자이너 리아는 어느 날 신비로운 섬에 발을 들였다. 이 섬은 특별한 에너지로 가득 차 있었는데, 모든 방문객의 내면을 읽어주며 각자에게 맞춤형 옷을 창조해내는 마법 같은 직물 공장을 보유하고 있었다. 이곳의 직물들은 개인의 진정한 감정과 이상향을 반영했으며, 리아는 자신의 고유한 비전을 그대로 담아낼 수 있음을 깨달았다. 섬의 장인들은 빠르게 바뀌는 외부 트렌드 대신 리아의 내면 세계와 예술적 철학을 분석하여, 그녀만의 독특한 패턴과 색상 팔레트를 완성시켜 주었다. 이렇게 제작된 의상은 단순히 옷을 넘어 리아의 정체성을 상징하는 예술 작품이 되었다. 섬을 떠난 후에도 리아는 더 이상 유행의 속삭임에 흔들리지 않았다; 그녀의 창작은 시대를 초월한 아름다움으로 가득 차 있었고, 관객들은 그녀의 독창성이 지닌 힘에 감탄했다. 그러나 때때로 마을 사람들이 지나가며 그녀의 옷차림을 보고는 미소 지으며 \"언젠가 우리도 그런 마법을 경험할 수 있을까?\"라고 속삭였다고 전해진다."
+    },
+    {
+        "source_item": {
+            "korean_topic": "미리 계획하고 여행하기 vs 즉흥적으로 여행하기",
+            "korean_context": "여행을 떠날 때, 숙소와 동선을 시간 단위로 꼼꼼하게 계획해서 떠나는 스타일과, 아무런 계획 없이 발길 닿는 대로 떠나는 스타일이 있습니다. 계획적인 여행은 시간과 비용을 효율적으로 사용할 수 있고, 실패할 확률이 적다는 장점이 있습니다. 하지만 즉흥적인 여행은 계획에 얽매이지 않고, 예상치 못한 발견과 우연한 만남을 즐기는 자유로움과 설렘을 느낄 수 있습니다.",
+            "foreign_topic": "Traveling with a Detailed Plan vs. Spontaneously",
+            "foreign_context": "There are two travel styles: planning every detail meticulously or traveling spontaneously without a set plan. A planned trip is efficient and minimizes risks. A spontaneous trip, however, offers the freedom and excitement of unexpected discoveries and chance encounters."
+        },
+        "generated_passage": "푸른 바다 위로 떠오르는 일출을 바라보며, 엘리자는 낡은 가죽 지도를 펼쳤다. 그녀는 철저한 계획가였지만, 오늘 아침은 달랐다. 지도 위에 표시된 '마법의 섬'이라는 모호한 표시 아래 숨겨진 비밀을 찾기 위해, 그녀는 모든 일정표를 찢어버렸다. 항구 마을의 낡은 카페에서 만난 낯선 해적이 던져준 희미한 단서 – \"바람의 노래를 따라라\" – 는 그녀를 이끌었던 유일한 나침반이 되었다. 엘리자는 즉흥적인 모험 속에서도 마음속 깊은 곳에는 안전지대를 마련했는데, 낡은 항해 일지에 기록된 고대 해양 신화 덕분이었다. 그 신화는 예측 불가능한 상황에서도 희망의 빛을 비추어주곤 했으니까. 그렇게 그녀는 돛을 펼친 작은 배를 타고, 바람의 속삭임에 귀 기울이며 미지의 세계로 향했다. 예상치 못한 폭풍우 속에서도 그녀는 흔들리지 않았다; 즉흥성의 짜릿함 속에서도, 오랜 지식이 주는 안정감이 그녀를 지켜냈다."
+    },
+    {
+        "source_item": {
+            "korean_topic": "단골 가게만 가기 vs 새로운 가게 도전하기",
+            "korean_context": "식당이나 카페를 갈 때, 맛과 서비스가 보장된 익숙한 단골 가게만 가는 사람과, 항상 새로운 가게를 찾아다니는 것을 즐기는 사람이 있습니다. 단골 가게에 가면 실패할 확률 없이 편안한 식사를 할 수 있지만, 항상 똑같은 경험만 하게 됩니다. 새로운 가게에 도전하면 맛있는 곳을 발견하는 큰 기쁨을 누릴 수도 있지만, 반대로 돈과 시간을 낭비하는 실패를 경험할 위험도 있습니다.",
+            "foreign_topic": "Going to a Regular Spot vs. Trying a New Place",
+            "foreign_context": "When dining out, some people prefer the guaranteed satisfaction of their regular spots, while others enjoy exploring new ones. Going to a regular place is safe and comfortable but repetitive. Trying a new place offers the chance for a delightful discovery but also carries the risk of a disappointing and wasteful experience."
+        },
+        "generated_passage": "어둠 속에서 빛나는 네온사인은 낡은 카페 '블루 문'을 알렸다. 이곳은 마을의 이야기꾼들 사이에서 전설처럼 회자되었는데, 매일 저녁 8시면 문 앞에 긴 줄이 늘어섰던 시절이 있었다고 한다. 하지만 최근 몇 달 동안은 그 빛조차 희미해졌고, 소문은 호기심 어린 속삭임으로 변했다. 주인 할머니의 손길로 빚어진 따뜻한 커피와 숨겨진 레시피의 디저트 덕분이라던데, 이제는 그 맛마저도 불확실했다는 게 마을 아이들 사이의 소문이었다. 한편 멀리 떨어진 도시에서 온 젊은 여행자 지수는 이 변화를 기회로 여겼다. 블루 문과 같은 익숙함 뒤에 숨은 비밀을 찾아내거나, 어쩌면 완전히 새로운 맛의 충격을 경험할지 모른다는 기대감에 가슴이 두근거렸다. 그녀는 줄 없이 조용히 문을 열고 들어갔으며, 그곳에서 예상치 못한 만남과 잊을 수 없는 맛의 여정이 시작되려 했다."
+    },
+    {
+        "source_item": {
+            "korean_topic": "오래된 물건 버리기 vs 간직하기",
+            "korean_context": "더 이상 사용하지는 않지만, 과거의 추억이 담겨있는 오래된 물건들을 버릴 것인지, 계속 간직할 것인지 결정하기 어렵습니다. 과감히 버리면 집이 넓어지고, 과거에 얽매이지 않고 현재에 집중하는 데 도움이 될 수 있습니다. 하지만 계속 간직하면, 물건을 보며 소중한 추억을 떠올리고 삶의 의미를 되새길 수 있지만, 짐이 계속 늘어나는 것을 감수해야 합니다.",
+            "foreign_topic": "Throwing Away Old Things vs. Keeping Them",
+            "foreign_context": "It's difficult to decide whether to discard old items that hold memories but are no longer used. Getting rid of them can create physical space and help you focus on the present. Keeping them, however, allows you to cherish precious memories, but you must accept the clutter that comes with accumulating possessions."
+        },
+        "generated_passage": "낡은 사진 앨범 한 권이 먼지 쌓인 책장 가장자리에 놓여 있었다. 각 페이지마다 햇살 가득했던 여름날의 웃음소리와 차가운 눈 덮인 겨울밤의 고요함이 담겨 있었다. 하지만 이제 그 사진 속 인물들은 모두 먼 곳으로 떠나버렸고, 앨범 자체도 빛바래고 닳아갔다. 매일 아침, 깨어난 순간부터 저녁 노을까지 그녀는 이 앨범을 바라보곤 했다. 한때는 그 안에 담긴 추억들이 삶의 중심축이었지만, 시간이 흐르며 그것들은 점점 희미해졌다. 어느 날 밤, 창문 너머로 별이 반짝이는 밤하늘을 바라보며 그녀는 결심했다. 앨범을 정리하기로 했다. 단순히 물리적 공간 확보 때문이 아니라, 과거의 무게에서 벗어나 현재의 가능성을 향해 나아가려는 의지였다. 낡은 사진들은 디지털 아카이브에 옮겨져 보존되겠지만, 실제 앨범은 작은 나무 상자에 담아 오래된 도서관의 가장 은밀한 구석에 숨길 계획이었다. 가끔가다 마음이 흔들릴 때면 그곳으로 찾아가, 디지털 화면 너머로는 느낄 수 없는 질감과 냄새 속에서 희미해진 추억을 되새길 수 있도록 말이다. 이렇게 함으로써 그녀는 과거와 현재 사이에서 균형을 찾았다고 느꼈다."
+    },
+    {
+        "source_item": {
+            "korean_topic": "가까운 곳에 취업하기 vs 멀더라도 조건이 좋은 곳에 취업하기",
+            "korean_context": "직장을 구할 때, 집에서 가까워 출퇴근이 편한 곳과, 매일 먼 거리를 출퇴근해야 하지만 연봉이나 비전 같은 조건이 훨씬 좋은 곳 사이에서 선택해야 합니다. 가까운 곳에 다니면 출퇴근 시간을 아껴 개인적인 삶의 질을 높일 수 있습니다. 하지만 조건이 좋은 곳을 선택하면 당장은 힘들더라도, 장기적인 관점에서 경력 개발에 더 큰 도움이 될 수 있습니다.",
+            "foreign_topic": "A Job Close to Home vs. a Better Job Far Away",
+            "foreign_context": "When choosing a job, you might have to decide between one that is close to home and one that is far away but offers much better conditions. A nearby job saves commute time and improves your quality of life. A better job far away, however, might be more beneficial for your long-term career development, despite the difficult commute."
+        },
+        "generated_passage": "어둠 속에서 희미한 별빛이 반짝이는 외계 행성 '노바'에서, 젊은 천문학자 아리아는 두 가지 기회 앞에 섰다. 고향 행성인 '테라' 근처 연구소는 안정적인 환경과 익숙한 동료들로 가득했지만, 연구 성과가 제한적이었고 혁신적인 발견은 희박했다. 반면, 먼 우주에 위치한 '코스모스 아카데미'는 최첨단 장비와 세계적인 과학자들과의 협업 기회를 제공했으나, 매일 빛의 속도에 가까운 우주선으로 출퇴근해야 했다. 테라의 평화로운 일상을 포기할 것인가, 아니면 노바의 혼돈 속에서 빛나는 지식의 별을 찾아가야 할 것인가? 아리아는 밤하늘을 바라보며, 단기적인 편안함 대신 장기적인 우주 탐사의 선구자가 되기 위한 선택을 앞두고 있었다."
+    }
+]

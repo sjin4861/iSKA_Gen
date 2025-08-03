@@ -1,0 +1,452 @@
+[
+    {
+        "source_item": {
+            "korean_topic": "중장년층의 재취업 문제",
+            "korean_context": "빠른 기술 발전과 정년 단축으로 인해, 평생직장의 개념이 사라지면서 수십 년간의 경험을 가진 중장년층이 너무 이른 나이에 노동 시장에서 밀려나고 있습니다. 이들은 새로운 기술을 배울 기회가 부족했고, 사회는 이들의 경력을 활용할 준비가 되어 있지 않습니다. 이로 인해 숙련된 인력이 낭비되고, 노년 빈곤이 심화되는 등 심각한 사회적 비용이 발생하고 있습니다.",
+            "foreign_topic": "The Challenge of Reskilling an Aging Workforce",
+            "foreign_context": "In many developed economies, rapid technological advancement is making the existing skills of older workers obsolete, creating a significant 'reskilling' challenge. Companies often prefer hiring 'digital natives' over investing in training their experienced employees. This results in a wasted pool of talent, increases the burden on social welfare systems, and poses a major obstacle to lifelong career development."
+        },
+        "generated_passage": "중장년층 노동자들이 빠르게 변화하는 기술과 짧아진 정년으로 인해 노동 시장에서 조기 퇴출당하고 있다. 오랜 경력을 지닌 이들이 새로운 기술을 습득할 기회는 제한적이며, 사회 역시 이들의 전문성을 활용하려는 준비가 부족하다. 이로 인해 숙련된 인력의 낭비가 가속화되고, 노년층의 경제적 어려움이 가중되며, 사회적 비용 부담이 급증하고 있다. 특히 선진국에서는 기술적 진보가 기존 고령 노동자의 역량을 진부화시키고 있으며, 기업들은 경험 있는 직원 대신 디지털 네이티브 채용을 선호해 인재 자원의 비효율적 사용이 두드러진다. 이러한 상황은 단순한 인력 문제를 넘어, 사회적 안전망 강화와 지속 가능한 경력 개발 체계의 필요성을 강력히 제기하고 있다."
+    },
+    {
+        "source_item": {
+            "korean_topic": "층간소음 문제",
+            "korean_context": "아파트와 같은 공동주택이 보편적인 한국에서, 이웃 간의 층간소음 문제는 단순한 불편을 넘어 심각한 사회적 갈등으로 번지고 있습니다. 이는 바닥 충격음이 잘 전달되는 건축 구조와, 서로 다른 생활 패턴을 가진 이웃에 대한 이해 부족에서 비롯됩니다. 층간소음으로 인한 스트레스는 폭행 등 극단적인 범죄로 이어지기도 하며, 공동체 문화를 파괴하는 주된 원인이 되고 있어 해결이 시급합니다.",
+            "foreign_topic": "Noise Pollution Between Floors in Apartments",
+            "foreign_context": "In densely populated urban areas, noise complaints between apartment neighbors are a major source of conflict. The problem is often caused by poor sound insulation in buildings and a general lack of consideration for others. This ongoing issue degrades residents' quality of life and can escalate simple disputes into serious confrontations, necessitating effective solutions."
+        },
+        "generated_passage": "아파트 층간소음은 현대 한국 사회의 대표적인 골칫거리로, 건축 구조의 취약성과 이웃 간 생활 패턴 차이로 인해 발생한다. 이로 인한 스트레스는 단순한 소음 불만을 넘어 폭행과 같은 극단적 사건으로 이어질 수 있으며, 공동체의 결속력을 심각하게 훼손하고 있다. 해결책으로는 먼저 모든 건물에 방음벽 설치를 의무화하고, 주민들에게는 소음 저감 교육을 의무적으로 실시해야 한다. 그러나 이러한 방안은 초기 비용 증가와 주민들의 반발을 초래할 수 있다. 그럼에도 불구하고 장기적으로는 평온한 주거 환경 조성과 이웃 간 상호 이해를 증진시켜 사회적 갈등을 줄일 것으로 기대된다."
+    },
+    {
+        "source_item": {
+            "korean_topic": "일회용 컵 남용 문제",
+            "korean_context": "한국의 카페 문화가 발달하면서, 하루에 소비되는 일회용 플라스틱 컵과 종이컵의 양이 엄청나게 늘어났습니다. 편리함을 추구하는 소비 습관과 매장 내 다회용 컵 관리의 어려움이 주된 원인입니다. 이로 인해 막대한 양의 쓰레기가 발생하고 있으며, 이는 환경오염과 자원 낭비의 심각한 원인이 되고 있습니다.",
+            "foreign_topic": "Overuse of Disposable Cups",
+            "foreign_context": "The global coffee shop culture has led to a massive increase in the consumption of single-use cups. This problem is driven by consumer demand for convenience and the logistical challenges for businesses to wash and reuse cups. As a result, billions of non-recyclable cups end up in landfills each year, creating a significant environmental burden."
+        },
+        "generated_passage": "한국의 카페 문화가 번창함에 따라, 일회용 플라스틱 컵과 종이컵을 매일 엄청난 양으로 소비하고 있다. 편리함 추구와 매장 내 다회용 컵 관리의 어려움 때문에 이 문제는 더욱 심각하다. 결과적으로 거대한 쓰레기 더미가 쌓이고 있으며, 이는 환경 오염과 자원의 무분별한 낭비를 초래하고 있다. 전 세계적으로도 커피 전문점 문화의 확산으로 일회용 컵 남용이 급증하고 있어, 매년 수십억 개의 비재활용성 컵이 매립지로 향한다. 이러한 상황은 지구의 환경에 큰 부담을 주고 있는 실정이다."
+    },
+    {
+        "source_item": {
+            "korean_topic": "유기동물 문제",
+            "korean_context": "매년 수많은 반려동물이 길거리에 버려져 유기동물이 되고 있으며, 이는 심각한 사회 문제입니다. 충동적인 입양 후 경제적 부담이나 관리의 어려움을 감당하지 못하는 것이 주된 원인으로 꼽힙니다. 버려진 동물들은 질병과 굶주림에 시달리며, 이들을 구조하고 보호하는 데 막대한 사회적 비용이 발생하고 있습니다.",
+            "foreign_topic": "The Problem of Abandoned Pets",
+            "foreign_context": "Each year, millions of companion animals are abandoned by their owners, leading to overcrowded shelters and high euthanasia rates. This is often caused by people acquiring pets impulsively without understanding the long-term financial and time commitments. The issue represents a significant ethical problem and places a heavy burden on animal welfare organizations."
+        },
+        "generated_passage": "매년 수많은 동물들이 길에 버려지고 있어 큰 사회 문제로 대두되고 있다. 사람들은 종종 충동적으로 반려동물을 입양하지만, 이후 경제적 부담이나 관리의 어려움 때문에 이를 감당하지 못하게 된다. 이로 인해 버려진 동물들은 질병과 굶주림 속에서 고통받고, 이들을 보호하고 구조하는 데 드는 비용은 막대하다. 해결책으로는 입양 전 충분한 교육과 상담 제공, 그리고 입양 후 지속적인 지원 시스템이 필요하다. 그러나 이러한 방안은 실행 비용과 인력 부족이라는 부작용이 따를 수 있다."
+    },
+    {
+        "source_item": {
+            "korean_topic": "청년 실업 문제",
+            "korean_context": "많은 청년들이 대학을 졸업하고도 일자리를 찾지 못해 어려움을 겪는 청년 실업 문제가 장기화되고 있습니다. 기업이 원하는 인재상과 구직자의 눈높이 차이, 그리고 양질의 일자리 부족이 복합적으로 작용한 결과입니다. 이로 인해 청년들은 경제적 어려움과 사회적 고립감을 느끼게 되며, 이는 국가 전체의 성장 동력을 약화시키는 원인이 됩니다.",
+            "foreign_topic": "Youth Unemployment Issue",
+            "foreign_context": "Youth unemployment is a persistent global issue where a significant number of young people are unable to find jobs after completing their education. The problem stems from a mismatch between the skills taught in schools and those demanded by the labor market, as well as overall economic downturns. This leads to social instability and a 'lost generation' of talent, hindering long-term economic growth."
+        },
+        "generated_passage": "청년들이 대학 졸업 후 직장을 구하지 못하는 상황이 지속되고 있다. 기업에서는 특정 기술을 원하지만, 학생들은 그와 다른 것을 배운다는 불일치가 주요 원인이다. 게다가 좋은 일자리가 부족해서 청년들의 고민이 깊어지고 있다. 이로 인한 경제적 어려움과 사회적 소외는 국가 발전에 큰 걸림돌이 된다. 마치 잃어버린 세대처럼, 이들은 기회를 잃어가고 있으며, 이런 현상은 장기적으로 국가 경제의 활력을 저하시키는 심각한 문제로 대두되고 있다."
+    },
+    {
+        "source_item": {
+            "korean_topic": "음식물 쓰레기 문제",
+            "korean_context": "한국은 풍부한 반찬 문화와 국물 요리 때문에 다른 나라에 비해 음식물 쓰레기 발생량이 많은 편입니다. 필요 이상으로 많은 음식을 조리하는 습관과, 외식 시 남은 음식을 포장하지 않는 문화가 주요 원인입니다. 이렇게 버려지는 음식물 쓰레기를 처리하는 데 막대한 비용이 들고, 매립 시 발생하는 메탄가스는 지구 온난화를 가속화합니다.",
+            "foreign_topic": "The Food Waste Problem",
+            "foreign_context": "In many developed countries, a significant portion of food is wasted at the retail and consumer levels. This is caused by aesthetic standards for produce, bulk purchasing habits, and confusion over expiration dates. Food waste is a major environmental issue as it contributes to greenhouse gas emissions in landfills and wastes the resources used to produce it."
+        },
+        "generated_passage": "한국에서 음식물이 많이 버려지는 이유는 여러 가지다. 먼저 반찬을 다양하게 만들고 국물 요리를 자주 해 먹는 문화로 인해 음식물 쓰레기가 많다. 또한 사람들이 필요 이상으로 음식을 많이 만들고, 외식을 한 후 남은 음식을 포장해가지 않는 습관이 있다. 이로 인해 음식물 쓰레기를 처리하는 데 드는 비용이 엄청나고, 매립지에서 나오는 메탄가스가 지구를 더 덥게 만든다. 이 문제를 해결하려면 음식 주문 시 적정량을 요청하도록 교육하고, 남은 음식은 포장해 갈 수 있는 문화를 정착시켜야 한다. 하지만 이러한 변화가 쉽지만은 않아 저항이 있을 수 있고, 새로운 시스템이 도입되면서 초기에는 혼란이 생길 수도 있다."
+    },
+    {
+        "source_item": {
+            "korean_topic": "악성 댓글 문제",
+            "korean_context": "인터넷 공간의 익명성을 방패 삼아 타인을 비방하고 상처를 주는 악성 댓글이 심각한 사회 문제로 자리 잡았습니다. 일부 이용자들의 왜곡된 관심 욕구와, 처벌이 미약하다는 인식이 이러한 행동을 부추기고 있습니다. 악성 댓글은 피해자에게 깊은 정신적 고통을 안겨주며, 심지어는 극단적인 선택으로 이어지게 하는 등 사회 전체를 병들게 합니다.",
+            "foreign_topic": "The Problem of Malicious Online Comments",
+            "foreign_context": "Cyberbullying, through malicious and hateful online comments, has become a pervasive problem on social media and news platforms. This behavior is fueled by anonymity and a lack of immediate consequences for the perpetrators. The psychological damage inflicted on victims can be severe, leading to anxiety, depression, and a toxic online environment for everyone."
+        },
+        "generated_passage": "인터넷 공간에서 익명성이라는 보호막 아래, 사람들이 서로를 헐뜯고 상처주는 악성 댓글이 만연하게 되었다. 이는 일부 사용자의 왜곡된 관심과 처벌의 경미함이 결합되어 발생한 현상으로, 피해자에게는 극심한 정신적 고통을 안기며, 심지어 극단적 선택까지 유발하는 등 사회적 병리 현상을 초래한다. 이와 같은 온라인 괴롭힘은 단순한 개인의 문제가 아닌 사회 전체의 건강성을 위협하는 요소로 부상했으며, 즉각적인 대책 마련이 시급한 상황이다."
+    },
+    {
+        "source_item": {
+            "korean_topic": "독거노인 고독사 문제",
+            "korean_context": "가족 및 사회와 단절된 채 홀로 사는 노인이 아무도 모르게 죽음을 맞이하는 '고독사'가 계속해서 증가하고 있습니다. 핵가족화로 인한 전통적인 가족 돌봄 기능의 약화와, 노년층의 사회적 관계망 부족이 핵심 원인입니다. 이는 개인의 비극을 넘어, 우리 사회의 복지 시스템에 큰 구멍이 뚫려있음을 보여주는 심각한 문제입니다.",
+            "foreign_topic": "The Problem of Lonely Deaths Among the Elderly",
+            "foreign_context": "The phenomenon of elderly people dying alone and remaining undiscovered for long periods is a growing social issue in many aging societies. It is primarily caused by weakening family ties and a lack of community support systems for seniors living alone. This tragic issue highlights a failure in social safety nets and raises questions about how society cares for its most vulnerable members."
+        },
+        "generated_passage": "핵가족화로 인해 전통적인 가족의 돌봄이 사라지고, 노인들이 사회적으로 고립되면서 고독사가 급증하고 있다. 이 문제는 단순히 개인 차원의 슬픔을 넘어서, 사회 전체의 복지 시스템이 심각하게 구멍 난 것을 드러낸다. 예를 들어, 노인 A가 집에서 갑자기 사망했지만 그의 가족들은 며칠 동안 그 사실을 몰랐다. 이는 지역 사회의 지원 체계가 부재함을 보여준다. 따라서, 모든 동네마다 \"경로당\"과 같은 모임을 활성화하고, 정기적으로 노인의 안부를 확인하는 자원봉사 프로그램을 도입해야 한다. 이러한 조치는 고독사의 위험을 줄이고 사회적 유대감을 강화하는 데 기여할 것이다. 그러나 과도한 간섭으로 인한 사생활 침해나 자원봉사에 대한 부담 증가 등의 부작용이 발생할 수 있으므로 적절한 균형이 필요하다."
+    },
+    {
+        "source_item": {
+            "korean_topic": "스마트폰 과의존 문제",
+            "korean_context": "현대인들은 잠자는 시간을 제외하고 거의 모든 순간 스마트폰을 손에서 놓지 못하는 '스마트폰 과의존' 상태에 빠져 있습니다. 스마트폰이 제공하는 즉각적인 즐거움과, 연결되어 있지 않으면 불안감을 느끼는 '포모(FOMO)' 증후군이 주요 원인입니다. 이로 인해 사람들은 현실 세계의 대인 관계에 소홀해지고, 거북목 증후군 등 건강 문제와 집중력 저하를 겪고 있습니다.",
+            "foreign_topic": "Smartphone Overdependence Problem",
+            "foreign_context": "Overdependence on smartphones has become a modern epidemic, with people compulsively checking their devices at all times. This is driven by the constant stream of notifications and the 'fear of missing out' (FOMO) that social media cultivates. The consequences include diminished real-life social interaction, poor posture, and a decreased ability to concentrate on tasks."
+        },
+        "generated_passage": "스마트폰에 대한 과도한 의존은 현대인의 삶에서 심각한 문제로 대두되고 있다. 우리는 잠을 자는 시간 외에는 항상 스마트폰을 손에 쥐고 있으며, 이는 즉각적인 즐거움을 주는 스마트폰의 특성과, 연결되지 않으면 불안을 느끼는 포모(FOMO) 증후군의 영향 때문이다. 이러한 상황은 실제 대면 관계를 소홀히 하게 만들고, 거북목 증후군과 같은 건강 문제를 초래하며, 집중력을 저하시킨다. 또한, 소셜 미디어에서 발생하는 끊임없는 알림은 우리의 주의를 산만하게 하여 생산성을 떨어뜨린다. 이 문제는 단순한 개인의 습관을 넘어 사회 전반에 걸쳐 영향을 미치고 있어 시급한 해결이 필요하다."
+    },
+    {
+        "source_item": {
+            "korean_topic": "대도시 교통 체증 문제",
+            "korean_context": "서울과 같은 대도시의 도로는 매일 출퇴근 시간마다 극심한 교통 체증으로 몸살을 앓고 있습니다. 이는 자가용 이용자의 지속적인 증가와, 도시의 도로 용량이 한계에 다다랐기 때문입니다. 교통 체증은 시민들의 시간과 에너지를 낭비시키고, 자동차 배기가스로 인한 대기오염을 심화시키는 등 막대한 사회적 비용을 유발합니다.",
+            "foreign_topic": "Traffic Congestion in Big Cities",
+            "foreign_context": "Major metropolitan areas worldwide suffer from chronic traffic congestion, particularly during peak hours. This problem is caused by an over-reliance on private cars, insufficient public transportation infrastructure, and inefficient urban planning. The daily gridlock results in lost productivity, increased air pollution, and a lower quality of life for commuters."
+        },
+        "generated_passage": "서울 도심은 매일 아침과 저녁, 마치 거대한 벌레처럼 꿈틀거린다. 수많은 자동차가 도로를 점령하며, 사람들은 차 안에서 몇 시간을 보내야만 한다. 이 모든 혼란은 개인 차량 이용의 급증과 도로의 용량 부족에서 비롯된다. 교통 체증은 단순한 시간 낭비를 넘어, 심각한 대기 오염을 초래하고 시민들의 삶의 질을 떨어뜨린다. 전문가들은 대중교통 시스템의 개선과 도시 계획의 재조정이 필요하다고 주장한다. 그러나 이러한 변화가 실제로 이루어지기까지는 많은 시간이 걸릴 것이며, 단기적으로는 오히려 혼잡도가 더 악화될 수도 있다는 우려도 제기된다."
+    },
+    {
+        "source_item": {
+            "korean_topic": "학교 폭력 문제",
+            "korean_context": "학교 폭력은 피해 학생에게 평생 지울 수 없는 상처를 남기는 심각한 범죄 행위입니다. 가해 학생의 잘못된 인성과 공감 능력 부족, 그리고 '친구끼리의 장난'으로 치부하며 방관하는 주변의 시선이 폭력을 키우는 원인입니다. 학교 폭력은 피해 학생의 정상적인 학교생활을 불가능하게 만들고, 건강한 사회 구성원으로 성장하는 것을 방해합니다.",
+            "foreign_topic": "The School Bullying Problem",
+            "foreign_context": "School bullying remains a critical issue that inflicts deep and lasting psychological scars on victims. The causes range from a lack of empathy in bullies to a bystander culture where other students fail to intervene. This behavior creates a toxic learning environment and can have devastating effects on a student's mental health and academic performance."
+        },
+        "generated_passage": "학교 폭력은 심각한 문제로, 피해 학생에게는 평생 잊지 못할 상처를 남긴다. 가해 학생들은 종종 인성 결여와 공감력 부족으로 인해 이런 행동을 하며, 주변 사람들은 이를 단순한 '장난'으로 여겨 방관하는 경향이 있다. 이로 인해 피해 학생은 정상적인 학교생활은 물론, 건강한 사회인으로 성장하는데 큰 지장을 받는다. 또한, 이러한 폭력은 학습 환경을 악화시키고, 피해자의 정신 건강과 학업 성취에 치명적인 영향을 미친다. 따라서 학교 내 예방 프로그램 강화와, 학생들 간의 상호 존중 교육 실시가 필요하다. 그러나 이 과정에서 교사의 업무 부담이 증가할 수 있으며, 일부 학생들의 저항도 예상된다."
+    },
+    {
+        "source_item": {
+            "korean_topic": "플라스틱 쓰레기 문제",
+            "korean_context": "한 번 쓰고 버려지는 플라스틱 포장재와 제품들로 인해 전 지구가 플라스틱 쓰레기로 뒤덮이고 있습니다. 저렴하고 편리하다는 이유로 플라스틱 사용이 무분별하게 이루어지고 있으며, 재활용 시스템 또한 제대로 작동하지 않고 있습니다. 썩지 않는 플라스틱 쓰레기는 토양과 해양 생태계를 파괴하고, 미세 플라스틱 형태로 결국 우리 몸에 다시 돌아와 건강을 위협합니다.",
+            "foreign_topic": "The Plastic Waste Problem",
+            "foreign_context": "The planet is facing a crisis due to the overwhelming amount of plastic waste generated by single-use products and packaging. This is driven by a culture of convenience and inadequate recycling infrastructure worldwide. Non-biodegradable plastic pollutes oceans, harms wildlife, and breaks down into microplastics that contaminate our food and water systems."
+        },
+        "generated_passage": "플라스틱 쓰레기가 지구를 뒤덮고 있다. 일회용 제품과 포장재 사용의 편리함 때문에 플라스틱 소비가 급증하고 있지만, 재활용 시스템은 제대로 기능하지 않아 문제이다. 이 비생분해성 플라스틱은 토양, 해양을 오염시키며, 결국에는 미세플라스틱으로 변해 인체에까지 영향을 미친다. 세계가 이 문제에 대한 해결책을 시급히 찾아야 한다."
+    },
+    {
+        "source_item": {
+            "korean_topic": "직장 내 번아웃 증후군",
+            "korean_context": "많은 직장인들이 과도한 업무와 스트레스로 인해 신체적, 정신적 에너지가 모두 소진되는 '번아웃 증후군'을 겪고 있습니다. 이는 성과 중심의 경쟁적인 조직 문화와, 일과 삶의 균형이 무너진 생활에서 비롯됩니다. 번아웃은 개인의 건강을 해칠 뿐만 아니라, 업무 효율성을 떨어뜨리고 잦은 이직을 유발하여 기업과 사회 전체에 손실을 가져옵니다.",
+            "foreign_topic": "Workplace Burnout Syndrome",
+            "foreign_context": "Burnout, a state of emotional, physical, and mental exhaustion caused by prolonged stress, is a major issue in the modern workplace. It stems from excessive workloads, a lack of autonomy, and a toxic 'always-on' work culture. This syndrome not only harms individual well-being but also leads to decreased productivity, high employee turnover, and significant costs for businesses."
+        },
+        "generated_passage": "많은 직장인들이 과도한 업무량과 스트레스로 인해 심각한 번아웃 증후군을 앓고 있다. 이는 성과 위주의 경쟁적 조직문화와 일과 삶의 불균형에서 기인한다. 번아웃은 개인 건강에 악영향을 미치고, 업무 효율성을 저하시키며, 빈번한 이직으로 이어져 기업과 사회에 큰 손실을 초래한다. 특히, 직원들이 자율성을 잃고 항상 연결된 상태로 일해야 하는 문화가 이러한 현상을 악화시키고 있다."
+    },
+    {
+        "source_item": {
+            "korean_topic": "노년층의 디지털 소외 문제",
+            "korean_context": "은행 업무, 기차표 예매 등 사회의 거의 모든 서비스가 디지털화되면서, 스마트폰이나 키오스크 사용에 익숙하지 않은 노년층이 큰 불편을 겪고 있습니다. 빠른 기술 발전에 비해 노년층을 위한 디지털 교육이 턱없이 부족한 것이 현실입니다. 이로 인해 노년층은 일상생활에서 소외감을 느끼고, 꼭 필요한 사회 서비스로부터 단절되는 '디지털 격차' 문제를 겪고 있습니다.",
+            "foreign_topic": "The Digital Divide Among Seniors",
+            "foreign_context": "As society rapidly shifts to digital-first services, many elderly people are being left behind due to their unfamiliarity with smartphones and computers. The problem is caused by a lack of accessible technology training and user-friendly design for seniors. This digital divide prevents them from accessing essential services like banking and healthcare, leading to social isolation and inequality."
+        },
+        "generated_passage": "요즘 세상이 빠르게 디지털로 변하면서, 할아버지 할머니들이 힘들어하고 있어. 은행 일도, 기차표 사는 것도 다 스마트폰으로 해야 하는데, 이들은 그런 기계를 잘 못 다루거든. 교육 프로그램도 별로 없어서 더 어려워해. 이러다 보니, 필요한 서비스도 못 받고 혼자 지내는 일이 많아졌어. 진짜 걱정이야."
+    },
+    {
+        "source_item": {
+            "korean_topic": "패스트패션으로 인한 의류 폐기물 문제",
+            "korean_context": "최신 유행을 빠르게 반영하여 저렴하게 판매하는 '패스트패션' 산업의 성장으로, 옷이 쉽게 만들어지고 쉽게 버려지고 있습니다. 소비자들은 싼값에 유행을 따를 수 있지만, 이는 곧 엄청난 양의 의류 폐기물 문제로 이어집니다. 매년 수많은 옷들이 소각되거나 매립되어 심각한 환경오염을 유발하고 있으며, 이는 지속 불가능한 생산 및 소비 방식입니다.",
+            "foreign_topic": "Clothing Waste from Fast Fashion",
+            "foreign_context": "The fast fashion industry, which produces trendy, inexpensive clothing, has created a major environmental problem of textile waste. Consumers buy more and discard clothes faster than ever before, driven by low prices and rapidly changing trends. This results in massive amounts of clothing ending up in landfills, contributing to pollution and representing a huge waste of resources."
+        },
+        "generated_passage": "패스트패션의 확산으로 인해 옷이 너무 빨리 만들어져 버려지는 현상이 심각하다. 저렴한 가격과 유행의 빠른 변화로 소비자들이 옷을 자주 구매하지만, 이로 인해 매해 막대한 양의 의류가 소각되거나 매립된다. 결과적으로 환경 오염은 가중되고, 자원 낭비가 심화되는 상황이다. 이러한 문제는 지속 가능하지 않은 생산과 소비 방식의 산물이다."
+    },
+    {
+        "source_item": {
+            "korean_topic": "농촌의 빈집 문제",
+            "korean_context": "젊은이들이 일자리를 찾아 도시로 떠나면서, 농촌 지역에는 사람이 살지 않는 빈집이 급격히 늘어나고 있습니다. 이는 농촌 인구의 고령화와 인구 감소가 낳은 필연적인 결과입니다. 방치된 빈집들은 마을의 미관을 해치고, 붕괴 위험이나 범죄 발생의 원인이 되는 등 지역 사회에 큰 골칫거리가 되고 있습니다.",
+            "foreign_topic": "The Empty Homes Problem in Rural Areas",
+            "foreign_context": "In many countries, rural areas are experiencing a sharp increase in abandoned homes as young people migrate to cities for jobs and education. This issue is a direct consequence of rural depopulation and an aging population. These derelict properties become eyesores, can attract crime, and signify a broader decline in rural communities, demanding urgent revitalization strategies."
+        },
+        "generated_passage": "젊은이들이 도시로 이동하면서 농촌엔 빈집이 많아지고 있어, 이 문제는 농촌 고령화 및 인구 감소와 직결돼. 방치된 빈집은 마을 경관을 망치고, 붕괴 위험도 있으며 범죄까지 유발해. 이런 상황은 지역 사회에 심각한 골칫거리를 안겨주고 있어. 해결책으로는 빈집을 청년 창업 공간으로 전환하거나, 관광 자원으로 활용하는 방안을 제안한다. 하지만 이는 초기 투자 비용이 크고, 지역 주민의 동의가 필요해 부작용이 발생할 수도 있다."
+    },
+    {
+        "source_item": {
+            "korean_topic": "비효율적인 회의 문화",
+            "korean_context": "많은 회사들이 명확한 목적 없이 시작해 결론 없이 끝나는 비효율적인 회의로 많은 시간을 낭비하고 있습니다. 뚜렷한 안건 없이 '일단 모이고 보자'는 식의 관행과, 자유로운 의견 교환을 막는 수직적인 조직 문화가 원인입니다. 이러한 회의 문화는 직원들의 귀중한 업무 시간을 빼앗고, 창의적인 아이디어가 나오는 것을 막으며, 조직 전체의 생산성을 저해합니다.",
+            "foreign_topic": "Inefficient Meeting Culture",
+            "foreign_context": "Many organizations suffer from an inefficient meeting culture, where employees spend hours in pointless and poorly managed meetings. This is often caused by a lack of clear agendas, inviting too many unnecessary people, and a hierarchical structure that discourages open debate. This wasteful practice drains employee productivity, morale, and valuable time that could be spent on actual work."
+        },
+        "generated_passage": "회사들은 종종 명확한 목표 없이 회의를 시작하여 결국 아무런 결론도 내리지 못하고 끝나곤 한다. 이는 '일단 모여서 보자'라는 잘못된 관행이 주된 원인으로, 모든 사람이 자유롭게 의견을 나누지 못하게 하는 수직적 조직 문화와 맞물려 있다. 결과적으로 직원들은 귀중한 업무 시간을 잃고, 창의적인 아이디어 발상이 억제되며, 전체 조직의 생산성이 크게 저하된다. 또한, 불필요하게 많은 인원이 참석하는 회의가 늘어나고, 이로 인해 의사소통의 효율성도 떨어지며, 직원 간의 협력도 약화되는 부작용이 발생한다."
+    },
+    {
+        "source_item": {
+            "korean_topic": "아동 비만 문제",
+            "korean_context": "달고 기름진 패스트푸드와 탄산음료 섭취는 늘고, 스마트폰 게임 등으로 신체 활동은 줄어들면서 아동 비만율이 급격히 증가하고 있습니다. 잘못된 식습관과 운동 부족이 가장 큰 원인입니다. 아동 비만은 성인병으로 이어질 확률이 높으며, 아이들의 신체적 건강뿐만 아니라 자신감 하락 등 정신 건강에도 나쁜 영향을 미칩니다.",
+            "foreign_topic": "The Childhood Obesity Problem",
+            "foreign_context": "Childhood obesity rates are rising globally, posing a serious public health threat. The primary causes are the increased consumption of high-calorie, processed foods and a sedentary lifestyle with less physical activity. This condition increases the risk of developing chronic diseases like diabetes and can negatively impact a child's mental health and self-esteem."
+        },
+        "generated_passage": "패스트푸드와 탄산음료가 많아지고 운동은 줄어들어 어린이들의 비만 문제가 심각해지고 있다. 잘못된 식습관과 활동 부족이 주원인으로, 이는 성인에게도 질병을 유발할 수 있는 위험 요소가 된다. 게다가 아이들의 자신감도 떨어져 정신 건강에도 악영향을 미친다. 전문가들은 이 문제를 해결하기 위해 학교와 가정에서 건강한 식단과 운동을 장려해야 한다고 주장한다. 그러나 이러한 노력이 실효성을 거두려면, 부모들이 먼저 자녀의 식습관을 개선하고 함께 운동하는 습관을 들여야 할 것이다. 하지만 이런 변화가 쉽지 않아 부작용이 발생할 수도 있다. 예를 들어, 새로운 식단을 거부하는 아이들이 생길 수 있으며, 과도한 운동으로 인한 피로감이나 스트레스도 고려해야 한다."
+    },
+    {
+        "source_item": {
+            "korean_topic": "재생에너지의 간헐성 문제",
+            "korean_context": "태양광, 풍력과 같은 재생에너지는 탄소 배출이 없는 청정에너지이지만, 날씨에 따라 발전량이 불안정하다는 치명적인 단점이 있습니다. 해가 없거나 바람이 불지 않으면 전기를 생산할 수 없는 '간헐성' 문제가 바로 그것입니다. 이로 인해 안정적인 전력 공급이 어려워, 재생에너지 확대에 가장 큰 걸림돌이 되고 있습니다.",
+            "foreign_topic": "The Intermittency of Renewable Energy",
+            "foreign_context": "Renewable energy sources like solar and wind are crucial for combating climate change, but they suffer from a major drawback: intermittency. The sun doesn't always shine, and the wind doesn't always blow, making their power output unreliable and difficult to predict. This variability poses a significant challenge for maintaining a stable and consistent electricity grid."
+        },
+        "generated_passage": "태양광과 풍력 같은 재생에너지가 기후 변화 대응에 필수적이지만, 날씨 의존적 특성 때문에 발전이 불규칙하다는 심각한 문제에 직면해 있다. 태양이 비치지 않거나 바람이 불지 않을 때는 전력을 생산할 수 없어 안정적 공급에 차질을 빚고 있다. 이는 재생에너지의 확장에 커다란 장애물이 되며, 전력망의 안정성을 위협하고 있다."
+    },
+    {
+        "source_item": {
+            "korean_topic": "보이스피싱 사기 문제",
+            "korean_context": "전화나 문자를 이용해 다른 사람을 속여 돈을 빼앗는 보이스피싱 범죄가 날이 갈수록 교묘해지고, 그 피해가 끊이지 않고 있습니다. 범죄 조직들은 사람들의 불안감이나 절박한 심리를 교묘하게 이용하고 있으며, 해외에 서버를 두는 등 단속을 피하는 수법도 지능화되고 있습니다. 보이스피싱은 피해자에게 막대한 금전적 손실과 함께 깊은 정신적 충격을 남기는 악질적인 범죄입니다.",
+            "foreign_topic": "The Voice Phishing Scam Problem",
+            "foreign_context": "Voice phishing scams, where criminals deceive victims into transferring money over the phone, are a rampant and evolving form of fraud. Scammers exploit victims' trust or fear using sophisticated social engineering tactics. These crimes cause devastating financial losses and significant emotional distress, undermining public trust in communication systems."
+        },
+        "generated_passage": "보이스피싱 범죄는 날로 교묘해져, 전화나 문자 메시지를 통해 사람들을 속여서 금전을 탈취하는 방식으로 기승을 부리고 있다. 범죄 조직은 피해자들의 불안한 심리나 절박함을 노리며, 심지어 해외 서버까지 활용해 단속을 피하고 있다. 이러한 보이스피싱은 단순한 금전적 피해를 넘어, 피해자들에게 심각한 정신적 상처를 남긴다. 따라서 우리는 이 문제의 근본 원인인 범죄 조직의 지능화와 심리적 조작을 차단해야 하며, 동시에 피해자 보호를 위한 법적·심리적 지원 체계를 강화해야 한다. 그러나 이러한 대책들이 오히려 개인의 사생활을 침해하거나 과도한 규제 부담으로 이어질 우려도 존재한다."
+    },
+    {
+        "source_item": {
+            "korean_topic": "도시의 빛 공해 문제",
+            "korean_context": "밤에도 대낮처럼 밝은 도시의 과도한 인공조명은 사람과 생태계에 나쁜 영향을 미치는 '빛 공해'를 유발합니다. 에너지 낭비에 대한 인식 부족과, 밤거리를 무조건 밝게 해야 안전하다는 오해가 빛 공해의 원인입니다. 이로 인해 사람들은 수면 장애를 겪고, 동식물은 고유의 생체 리듬을 잃어버리는 등 생태계 교란이 심각해지고 있습니다.",
+            "foreign_topic": "The Problem of Light Pollution in Cities",
+            "foreign_context": "Excessive and misdirected artificial light in urban areas creates 'light pollution,' which has numerous negative effects. This is caused by poorly designed lighting fixtures and a general lack of awareness about the issue. Light pollution disrupts human sleep patterns, wastes enormous amounts of energy, and has a detrimental impact on nocturnal wildlife and ecosystems."
+        },
+        "generated_passage": "도심 속 밤하늘을 가리는 과도한 불빛은 마치 낮처럼 밝다. 이는 사람들이 에너지 절약의 중요성을 이해하지 못하고, 밤이 반드시 밝아야 안전하다고 여기는 잘못된 믿음에서 비롯된다. 이러한 '빛 공해'는 인간의 수면을 방해하고, 동물들의 생태계를 혼란스럽게 하며, 에너지를 낭비하는 결과를 초래한다. 결국 도심의 밤은 본연의 어둠 대신, 불필요한 빛과 소음으로 가득 차 진정한 휴식과 자연과의 조화는 멀어져 가고 있다."
+    },
+    {
+        "source_item": {
+            "korean_topic": "대학 서열화 문제",
+            "korean_context": "한국 사회는 소위 '명문대'를 정점으로 모든 대학이 줄지어 서열화되어 있으며, 이는 많은 사회 문제의 원인이 되고 있습니다. 학벌을 중시하는 사회 풍조와, 대학의 실제 교육 경쟁력보다는 간판을 보고 평가하는 관행이 이러한 서열화를 고착시켰습니다. 이로 인해 학생들은 적성과 상관없이 서열이 높은 대학에 가기 위한 무한 경쟁에 내몰리고, 대학 교육의 다양성이 훼손되고 있습니다.",
+            "foreign_topic": "The University Ranking Problem",
+            "foreign_context": "The intense focus on university rankings creates a hierarchical system that can be detrimental to education. This is driven by a societal emphasis on prestige and a belief that a degree from a top-ranked university guarantees success. This system forces students into a high-pressure competition for limited spots and can overshadow the actual quality and diversity of education offered by different institutions."
+        },
+        "generated_passage": "한국 사회는 '명문대'라는 특정 대학을 중심으로 한 서열화가 심각한 문제로 자리 잡고 있다. 이 현상은 학벌 중심의 사회 분위기와 대학 간판만 보고 평가하는 관행 때문에 더욱 고착화되고 있다. 결과적으로, 학생들은 자신의 적성이나 흥미와 무관하게 상위권에 있는 대학에 입학하기 위해 치열한 경쟁을 벌여야 하며, 이는 대학 교육의 다양성을 심각하게 훼손시키고 있다. 더욱이, 이러한 서열화는 학생들이 진정한 자기 발전을 추구하기보다 단순히 이름값 좋은 학교에 진학하는 데 집중하도록 만들고 있다. 따라서, 대학 서열화의 근본적인 원인을 해결하지 않으면, 학생들의 개별적인 성장과 사회의 전반적인 발전도 기대하기 어려울 것이다."
+    },
+    {
+        "source_item": {
+            "korean_topic": "배달 쓰레기 문제",
+            "korean_context": "배달 음식 시장이 급격히 성장하면서, 음식을 담는 플라스틱 용기와 비닐 등 배달 쓰레기 문제가 심각해졌습니다. 한 번의 주문에도 여러 개의 플라스틱 용기가 사용되는 과대포장 관행과, 편리함을 우선시하는 소비 문화가 원인입니다. 이렇게 발생한 막대한 양의 배달 쓰레기는 재활용이 어려운 경우가 많아, 환경에 큰 부담을 주고 있습니다.",
+            "foreign_topic": "The Delivery Waste Problem",
+            "foreign_context": "The boom in food delivery services has led to a surge in single-use plastic containers and packaging waste. The problem is fueled by consumer demand for convenience and a lack of sustainable packaging options from restaurants. This mountain of waste, much of which is not recyclable, is exacerbating the plastic pollution crisis."
+        },
+        "generated_passage": "배달 음식 서비스가 급증하면서, 플라스틱 용기로 인한 쓰레기가 급증하고 있다. 소비자들은 편리함에 집착하여, 한 끼 식사를 위해 여러 개의 플라스틱 용기를 받는다. 이는 재활용이 불가능한 경우가 많아 환경 파괴의 주범이 되고 있다. 식당들은 비용 절감을 이유로 여전히 일회용 포장재를 사용하고 있으며, 이러한 관행은 지속 가능하지 않다. 따라서, 재활용 가능한 포장재로의 전환과 소비자 인식 개선이 시급하다. 그러나 이러한 변화를 강제할 법적 규제가 부족할 경우, 기업들은 단기적 이익만을 추구하며 변화가 지연될 위험이 크다."
+    },
+    {
+        "source_item": {
+            "korean_topic": "가짜뉴스 확산 문제",
+            "korean_context": "소셜 미디어를 통해, 사실 확인이 되지 않은 거짓 정보가 진짜 뉴스처럼 포장되어 빠르게 확산되는 문제가 심각합니다. 사람들은 자극적인 제목과 내용에 쉽게 현혹되며, 자신의 기존 신념에 맞는 정보만 선택적으로 믿으려는 경향이 가짜뉴스 확산을 부추깁니다. 가짜뉴스는 사회적 불신을 조장하고, 민주주의의 근간을 흔드는 위험한 요소가 되고 있습니다.",
+            "foreign_topic": "The Spread of Fake News",
+            "foreign_context": "The proliferation of misinformation and disinformation, or 'fake news,' through social media platforms is a major threat to society. It is spread rapidly due to sensationalist content and algorithms that cater to users' confirmation biases. Fake news erodes public trust in institutions, deepens social divisions, and can have dangerous real-world consequences."
+        },
+        "generated_passage": "소셜 미디어에서 가짜 뉴스가 급속도로 퍼지고 있어 큰 문제로 대두되고 있다. 자극적인 제목과 사람들의 기존 신념을 강화하는 정보만을 선별적으로 받아들이는 경향 때문에 가짜 뉴스는 더욱 확산된다. 이러한 현상은 사회적 불신을 키우고 민주주의 원칙을 위협하며, 심각한 사회적 분열을 초래하고 있다. 예를 들어, 한 정치인이 허위 사실로 비난받고 있다는 가짜 뉴스가 퍼지면서 지역 사회의 갈등이 격화되기도 했다. 이 문제를 해결하기 위해 모든 플랫폼이 팩트체크 시스템을 도입하고, 사용자에게 정보의 출처를 명확히 표시해야 한다. 그러나 이는 플랫폼의 수익 모델에 영향을 줄 수 있으며, 일부 사용자들은 과도한 검열로 느낄 위험이 있다. 그럼에도 불구하고, 장기적으로 볼 때 사회 신뢰 회복과 건강한 민주주의 구현을 위해서는 필수적인 조치이다."
+    },
+    {
+        "source_item": {
+            "korean_topic": "현대인의 수면 부족 문제",
+            "korean_context": "많은 현대인들이 만성적인 수면 부족에 시달리고 있으며, 이는 개인의 건강을 넘어 사회 전체의 생산성에도 영향을 미칩니다. 과도한 업무와 학업 스트레스, 그리고 잠들기 직전까지 스마트폰을 사용하는 습관이 수면 부족의 주된 원인입니다. 수면 부족은 집중력 저하, 면역력 약화, 우울증 등 다양한 건강 문제를 유발하는 '만병의 근원'입니다.",
+            "foreign_topic": "The Problem of Sleep Deprivation in Modern Society",
+            "foreign_context": "Chronic sleep deprivation has become a widespread issue in modern society, with significant health and economic consequences. It is primarily caused by long work hours, high stress levels, and the pervasive use of electronic devices before bedtime. A lack of adequate sleep is linked to a host of problems, including impaired cognitive function, weakened immunity, and an increased risk of chronic diseases."
+        },
+        "generated_passage": "현대 사회에서 많은 사람들이 잠을 충분히 자지 못하고 있어 큰 문제로 대두되고 있다. 과도한 업무량과 학업 스트레스, 그리고 잠자기 직전 스마트폰 사용이 주요 원인으로 지목된다. 이로 인해 집중력 저하와 면역력 약화, 심지어 우울증과 같은 심각한 건강 문제가 발생하고 있다. 이러한 수면 부족은 개인의 삶의 질을 저하시킬 뿐만 아니라 사회 전체의 생산성도 떨어뜨린다. 해결 방안으로, 기업들은 직원들의 근무 시간을 유연하게 조정하고, 학교에서는 학생들의 학습 부담을 줄이는 정책을 도입해야 한다. 또한, 잠들기 전 스마트폰 사용을 제한하는 캠페인을 통해 건강한 수면 습관을 장려할 필요가 있다. 그러나 이러한 변화가 모든 사람에게 즉시 수용되지 않을 수 있고, 일부 기업이나 기관은 비용 증가를 우려할 가능성도 존재한다. 그럼에도 불구하고 장기적으로 볼 때, 개선된 수면 환경은 개인과 사회의 전반적인 건강과 효율성을 높이는 데 기여할 것이다."
+    },
+    {
+        "source_item": {
+            "korean_topic": "전동 킥보드 무단 방치 문제",
+            "korean_context": "공유 전동 킥보드는 편리한 단거리 이동 수단으로 인기를 끌고 있지만, 이용자들이 아무 곳에나 무단으로 방치하는 문제가 심각합니다. 명확한 주차 규정이 없고, 이용자들의 시민 의식이 부족한 것이 가장 큰 원인입니다. 보도나 차도에 방치된 킥보드는 보행자의 통행을 방해하고, 도시 미관을 해치며, 안전사고를 유발하는 골칫거리가 되었습니다.",
+            "foreign_topic": "The Problem of Abandoned Electric Scooters",
+            "foreign_context": "Shared electric scooters offer a convenient transportation option, but their widespread use has created a problem of them being left abandoned on sidewalks and public spaces. This is largely due to a lack of designated parking areas and irresponsible user behavior. Abandoned scooters obstruct pedestrian walkways, create safety hazards, and contribute to urban clutter."
+        },
+        "generated_passage": "공유 전동 킥보드가 도시 내에서 인기 있는 교통수단이 되고 있으나, 사용자들이 아무데나 방치해두는 문제로 인해 심각한 혼란을 초래하고 있다. 명확한 주차 규칙이 부재하며, 시민들의 의식 부족이 주된 원인으로 지목된다. 보도에 방치된 킥보드는 보행자 이동을 방해하고 도시 경관을 훼손할 뿐만 아니라 안전 사고의 위험을 증가시킨다. 이에 대한 해결책으로, 각 구역에 지정된 주차 공간을 마련하고, 사용자에게 주차 규정을 엄격히 교육해야 한다. 그러나 이러한 조치는 사용자 불편을 초래할 수 있으며, 규정 위반 시 제재에 대한 반발도 예상된다."
+    },
+    {
+        "source_item": {
+            "korean_topic": "명절 기간의 교통 대란",
+            "korean_context": "설이나 추석 같은 명절이 되면, 수많은 사람들이 동시에 고향을 방문하면서 전국의 고속도로가 극심한 정체를 빚습니다. 짧은 기간에 이동 수요가 집중되는 것이 근본적인 원인입니다. 이로 인해 시민들은 도로 위에서 많은 시간을 허비하게 되며, 이는 사회 전체적으로도 막대한 경제적 손실을 야기합니다.",
+            "foreign_topic": "Holiday Traffic Congestion",
+            "foreign_context": "During major national holidays, such as Thanksgiving or Christmas, mass travel leads to severe traffic jams on highways and crowded airports. This problem is caused by a massive, simultaneous surge in travel demand as people visit family. This holiday gridlock results in wasted time, increased stress, and a higher risk of accidents, turning a festive season into a frustrating experience."
+        },
+        "generated_passage": "설날에 많은 사람들이 고향으로 이동하면서 전국 고속도로가 심하게 막힌다. 이 현상은 단기간에 여행 수요가 급증하기 때문에 발생한다. 결과적으로, 운전자들은 도로에서 오랜 시간을 소비하며, 이는 사회적 경제 손실까지 초래한다. 한편, 해외의 경우도 비슷하여 추수감사절이나 크리스마스 때 대규모 이동이 공항과 고속도로를 혼잡하게 만든다. 이러한 교통 체증은 시간 낭비와 스트레스를 유발하고 사고 위험도 높인다. 결국 명절은 즐거운 축제가 아닌 괴로운 경험으로 변모한다."
+    },
+    {
+        "source_item": {
+            "korean_topic": "학생들의 독서량 감소 문제",
+            "korean_context": "스마트폰과 유튜브 등 자극적인 볼거리가 넘쳐나면서, 글을 읽고 생각하는 힘을 길러주는 독서를 멀리하는 학생들이 늘고 있습니다. 영상 매체에 익숙해진 아이들이 긴 글을 읽는 데 어려움을 느끼고, 입시 위주의 교육이 독서의 즐거움을 앗아간 것이 원인입니다. 독서량 감소는 학생들의 어휘력과 문해력 저하로 이어져, 전반적인 학습 능력에 부정적인 영향을 미칩니다.",
+            "foreign_topic": "The Decline in Student Reading",
+            "foreign_context": "There is a growing concern over the decline in reading for pleasure among students. This trend is largely attributed to the overwhelming amount of digital entertainment available, such as social media and video games, which provide more immediate gratification. A lack of reading can negatively impact vocabulary development, critical thinking skills, and academic performance."
+        },
+        "generated_passage": "스마트폰과 유튜브의 영향으로 학생들은 점점 책을 읽지 않는 경향이 강해지고 있다. 이러한 현상은 특히 영상 매체에 익숙한 아이들에게서 두드러지며, 긴 글을 이해하는 능력이 점차 퇴화하고 있다. 교육 시스템이 입시에 초점을 맞추다 보니 독서는 그저 불필요한 시간으로 치부되고 있다. 결과적으로, 학생들의 어휘력과 문해력이 크게 저하되어 학습에 심각한 지장을 초래하고 있다. 이처럼 독서량 감소는 단순한 취미를 넘어, 미래 인재 양성에 있어 치명적인 문제로 다가오고 있다."
+    },
+    {
+        "source_item": {
+            "korean_topic": "지역 축제의 상업화 문제",
+            "korean_context": "전국 각지에서 열리는 지역 축제들이 고유의 특색은 잃어버리고, 비싼 바가지요금과 비슷비슷한 볼거리로 채워지고 있다는 비판이 많습니다. 지자체들이 단기적인 관광객 유치에만 급급하여 축제의 본질적인 의미를 고민하지 않기 때문입니다. 이로 인해 방문객들은 실망감을 느끼고, 한 번 찾은 축제를 다시 찾지 않게 되면서 결국 축제의 지속가능성을 해치게 됩니다.",
+            "foreign_topic": "The Commercialization of Local Festivals",
+            "foreign_context": "Many local festivals are criticized for becoming overly commercialized, losing their unique cultural character in the process. This happens when organizers prioritize profit over authenticity, leading to generic stalls, overpriced food, and a lack of genuine local flavor. As a result, festivals can lose their community spirit and become unsatisfying, tourist-oriented events."
+        },
+        "generated_passage": "전국 각지에서는 축제가 열리고 있지만, 이 축제들은 본래의 매력을 잃고 말았다. 지자체는 관광객을 끌어들이기 위해 노력하지만, 정작 축제의 본질을 외면하고 있다. 그래서 비싼 입장료와 똑같은 프로그램들로 가득 차버렸다. 방문자들은 이러한 상황에 실망해 다시는 돌아오지 않으며, 이는 축제의 지속 가능성을 위협한다. 마치 한 편의 영화처럼 겉만 화려하고 속은 텅 빈 축제에 불과하다."
+    },
+    {
+        "source_item": {
+            "korean_topic": "몰래카메라 범죄 문제",
+            "korean_context": "화장실이나 숙박업소 등에서 초소형 카메라를 이용해 타인의 신체를 몰래 촬영하는 범죄가 심각한 사회적 불안을 야기하고 있습니다. 카메라 기술의 발달로 범죄가 쉬워진 반면, 가해자에 대한 처벌은 미약하다는 인식이 문제입니다. 이러한 범죄는 피해자에게 씻을 수 없는 정신적 상처를 남기며, 일상 공간에 대한 근본적인 불신과 공포를 확산시킵니다.",
+            "foreign_topic": "The Spycam Crime Problem",
+            "foreign_context": "The proliferation of crimes involving hidden cameras (spycams) placed in private spaces like restrooms and hotels is a deeply disturbing issue. The easy availability of miniature cameras and a perception of weak legal penalties have fueled this problem. These crimes are a severe violation of privacy that causes immense psychological trauma and erodes the public's sense of safety."
+        },
+        "generated_passage": "최근 화장실과 숙박업소에서 발생하는 몰래카메라 범죄가 사회 전반에 큰 불안 요소로 대두되고 있다. 기술 발전으로 인해 소형 카메라가 쉽게 보급되었지만, 이에 대한 법적 제재는 여전히 미흡하다. 이로 인해 가해자들은 처벌을 두려워할 필요가 없다는 인식을 갖게 된다. 피해자는 단순히 신체 침해를 넘어 심리적 트라우마를 겪으며, 일상생활에서의 불안감이 증폭된다. 이 문제는 단순한 범죄를 넘어 사회 전반의 신뢰를 무너뜨리고 있으며, 해결책 마련이 시급하다."
+    },
+    {
+        "source_item": {
+            "korean_topic": "젠트리피케이션 문제",
+            "korean_context": "특색 있고 저렴했던 구도심 지역이 인기를 끌면서, 임대료가 급등하여 원래 살던 주민이나 영세 상인들이 쫓겨나는 현상을 젠트리피케이션이라고 합니다. 외부 자본이 유입되면서 지역이 활성화되지만, 그 과정에서 지역의 고유한 특성이 사라지고 부동산 가격만 폭등하는 것이 문제입니다. 결국 원주민들은 삶의 터전을 잃게 되고, 도시는 개성을 잃고 획일화되는 결과를 낳습니다.",
+            "foreign_topic": "The Problem of Gentrification",
+            "foreign_context": "Gentrification occurs when investment flows into a low-income neighborhood, leading to rising rents and property values. While this can bring new businesses and improved infrastructure, it often displaces longtime residents and small businesses who can no longer afford to live there. The process can destroy the unique cultural fabric of a community, replacing it with a more generic and exclusive environment."
+        },
+        "generated_passage": "구도심이 최근 인기를 끌면서 많은 사람들이 몰려들고 있다. 이로 인해 임대료가 급증하고, 원래 이곳에 거주하던 주민들이 높은 비용 때문에 쫓겨나고 있다. 외부 자본의 유입으로 새로운 카페와 상점들이 생기지만, 이는 곧 지역 고유의 문화를 잠식하고 부동산 가격만을 상승시키는 결과를 초래한다. 주민들은 점차 삶의 터전을 잃어가고 있으며, 도시는 점점 개성이 사라져가고 있다. 이러한 현상은 마치 마법처럼 일어난 듯하지만, 사실 경제적 불평등과 자본 집중의 결과물이다. 따라서 정부는 임대료 상한제를 도입하고, 원주민을 위한 주거 지원 프로그램을 확대해야 한다. 이렇게 하면 도시의 다양성과 고유성을 지키면서도 지역 경제를 활성화할 수 있을 것이다. 하지만 이런 정책에도 불구하고, 일부에서는 개발 이익을 누리는 소수만이 혜택을 보고, 오히려 기존 주민들의 불만이 커질 가능성도 존재한다."
+    },
+    {
+        "source_item": {
+            "korean_topic": "해양 미세플라스틱 문제",
+            "korean_context": "플라스틱 쓰레기가 바다로 흘러 들어가 잘게 부서지면서, 5mm 미만의 작은 플라스틱 조각인 '미세플라스틱'이 해양 생태계를 위협하고 있습니다. 우리가 무심코 버린 플라스틱뿐만 아니라, 치약이나 세정제에 포함된 마이크로비즈도 주된 오염원입니다. 해양 생물들이 미세플라스틱을 먹이로 오인하여 섭취하고, 이는 먹이 사슬을 통해 결국 인간의 식탁까지 위협하게 됩니다.",
+            "foreign_topic": "The Ocean Microplastics Problem",
+            "foreign_context": "The world's oceans are contaminated with microplastics, tiny plastic particles resulting from the breakdown of larger debris and microbeads in cosmetics. Marine animals often ingest these plastics, causing internal injuries and starvation. This pollution poses a major threat to marine ecosystems and potentially to human health as these particles move up the food chain."
+        },
+        "generated_passage": "플라스틱 쓰레기가 바다로 흘러들어가면서, 5mm보다 작은 미세플라스틱이 해양 생물을 위협하고 있어. 우리가 일상에서 버리는 플라스틱은 물론, 치약의 마이크로비즈 같은 것도 문제의 원인이야. 해양 생물들은 이 미세플라스틱을 음식으로 착각해 먹고, 그 결과 먹이 사슬을 타고 인간에게도 영향을 미치게 돼. 바다 속 생명체들의 건강뿐 아니라 우리의 식탁까지 위험해지는 심각한 상황이 지속되고 있는 거야."
+    },
+    {
+        "source_item": {
+            "korean_topic": "1인 가구의 사회적 고립 문제",
+            "korean_context": "혼자 사는 1인 가구의 비율이 빠르게 증가하면서, 이들의 사회적 고립과 외로움 문제가 새로운 사회 문제로 떠오르고 있습니다. 개인주의적 가치관의 확산과 불안정한 주거 및 고용 형태가 1인 가구의 증가와 고립을 부추깁니다. 사회적 관계망이 약한 1인 가구는 우울증이나 고독사 등 위험에 더 쉽게 노출될 수 있어, 이를 위한 사회적 대책이 필요합니다.",
+            "foreign_topic": "The Social Isolation of Single-Person Households",
+            "foreign_context": "As the number of people living alone increases, social isolation and loneliness have become significant public health concerns. This trend is driven by changing social norms and economic factors that lead to more people living by themselves. Lacking a strong social support network, individuals in single-person households are at a higher risk for mental health issues and other emergencies."
+        },
+        "generated_passage": "최근 한국 사회에서 혼자 사는 1인 가구가 급증하고 있으며, 이로 인한 사회적 고립 문제가 심각한 상황에 이르렀다. 개인주의 가치관 확산이 이러한 현상을 가속화하고 있으며, 불안정한 주거와 고용 환경도 한몫하고 있다. 1인 가구들은 사회적 관계망이 부족해 우울증과 같은 정신 건강 문제에 취약하며, 심지어 고독사로 이어질 위험성도 크다. 따라서 이들을 위한 적극적인 사회적 지원 체계가 시급히 필요하다. 예를 들어, 지역 커뮤니티 센터에서 정기적인 모임과 활동을 제공하고, 온라인 플랫폼을 통한 소통 기회를 확대하는 것이 하나의 대안이 될 수 있다. 하지만 이는 참여율 저조나 개인정보 보호 문제와 같은 부작용을 낳을 수도 있다."
+    },
+    {
+        "source_item": {
+            "korean_topic": "블록체인 기술의 전력 소모 문제",
+            "korean_context": "블록체인 기술, 특히 비트코인과 같은 암호화폐의 채굴 과정은 막대한 양의 전력을 소모하여 '전기 먹는 하마'로 불립니다. 복잡한 암호를 풀기 위해 고성능 컴퓨터를 24시간 가동해야 하는 작업증명(PoW) 방식이 그 원인입니다. 이는 국가 전체의 전력망에 부담을 주고, 화석 연료 발전을 통해 생산된 전기를 사용할 경우 심각한 탄소 배출 문제를 야기합니다.",
+            "foreign_topic": "The Energy Consumption of Blockchain Technology",
+            "foreign_context": "Blockchain technologies, particularly cryptocurrencies like Bitcoin that use a 'Proof-of-Work' consensus mechanism, consume vast amounts of electricity. The 'mining' process requires immense computational power, leading to an energy consumption that surpasses that of many countries. This raises serious environmental concerns, as much of this energy is generated from fossil fuels, contributing to carbon emissions."
+        },
+        "generated_passage": "비트코인과 같은 암호화폐 채굴은 엄청난 전력을 소모해 '전력 괴물'이라 불린다. 고성능 컴퓨터가 24시간 작동하며 복잡한 암호 풀이에 몰두하는데, 이 방식은 국가의 전력 시스템에 큰 부담을 준다. 특히 화석 연료를 사용해 전기를 생산하면 이산화탄소 배출이 급증해 환경 파괴가 가속화된다. 이런 상황을 타개하려면 에너지 효율이 높은 합의 알고리즘 도입이 필요하다. 그러나 새 시스템이 기존 인프라를 대체하기엔 기술적·경제적 장벽이 높고, 초기 전환 비용이 상당할 것이다. 그럼에도 불구하고 장기적으로 친환경 에너지로의 전환이 이루어진다면 탄소 발자국 감소와 지속 가능한 발전이라는 긍정적 효과를 기대할 수 있다."
+    },
+    {
+        "source_item": {
+            "korean_topic": "자영업자의 과당 경쟁 문제",
+            "korean_context": "한국은 인구 대비 자영업자의 비율이 매우 높아, 비슷한 업종끼리의 과도한 경쟁이 벌어지고 있습니다. 이는 은퇴 후 많은 사람들이 특별한 기술 없이 쉽게 창업할 수 있는 치킨집이나 카페 등으로 몰리기 때문입니다. 과당 경쟁은 수익성 악화로 이어져, 많은 자영업자들이 빚을 지고 폐업하는 악순환의 원인이 되고 있습니다.",
+            "foreign_topic": "The Problem of Excessive Competition Among Small Businesses",
+            "foreign_context": "In many economies, there is an oversaturation of small businesses in certain sectors, such as cafes and retail, leading to intense competition. This is often caused by a lack of diverse job opportunities, forcing people into self-employment. This hyper-competition results in low profit margins and high failure rates, creating economic instability for small business owners."
+        },
+        "generated_passage": "한국의 자영업자들은 마치 끝없는 바다 위에 떠 있는 작은 배와 같다. 인구 대비 자영업자 수가 지나치게 많아 치킨집, 카페 등 비슷한 업종들이 서로 목을 매는 경쟁을 벌이고 있다. 은퇴 후의 삶을 위해 특별한 준비 없이 창업에 뛰어드는 이들이 많아지면서, 이 경쟁은 더욱 치열해졌다. 그 결과, 많은 자영업자들이 수익성을 잃고 빚에 허덕이다 결국 폐업의 길을 걷게 된다. 이런 악순환을 끊지 못하면, 우리 경제는 더욱 큰 타격을 받을 것이다."
+    },
+    {
+        "source_item": {
+            "korean_topic": "게임 중독 문제",
+            "korean_context": "일부 청소년과 성인들이 현실 세계보다 게임에 몰두하며 일상생활에 어려움을 겪는 게임 중독 문제가 심각합니다. 게임이 제공하는 즉각적인 보상과 성취감이 현실의 어려움을 회피하는 수단이 되기 때문입니다. 게임 중독은 학업 및 업무 능력 저하, 대인관계 단절, 건강 악화 등 개인의 삶을 파괴하는 심각한 질병으로 인식되고 있습니다.",
+            "foreign_topic": "The Problem of Gaming Addiction",
+            "foreign_context": "Gaming addiction, or 'gaming disorder,' is a condition where individuals are unable to control their gaming habits, prioritizing it over other life interests and activities. It is driven by the immersive nature and reward systems of modern video games. This addiction can lead to serious negative consequences, including poor academic or work performance, social isolation, and neglect of personal health."
+        },
+        "generated_passage": "청소년들과 몇몇 성인들 사이에서 게임 중독이 심각한 문제로 대두되고 있다. 게임은 즉각적인 보상과 성취감을 제공하며, 이는 현실의 어려움과 스트레스를 피하는 수단으로 작용한다. 결과적으로 학업과 업무 능력이 저하되고 대인관계가 단절되며, 신체적 건강이 악화되는 등 개인의 삶이 크게 파괴된다. 전문가들은 이러한 현상을 '게이밍 장애'로 명명하고 있으며, 이는 현대 사회의 주요 정신 건강 문제로 인식되고 있다. 게임 개발사들은 중독성 있는 요소를 제거하거나 제한해야 하며, 정부와 교육기관은 예방 프로그램을 강화하고 조기 개입 시스템을 구축해야 한다. 그러나 이 같은 조치가 시행되더라도 게임의 본질적인 매력 때문에 완전한 해결이 어려울 수 있다는 부작용이 예상된다."
+    },
+    {
+        "source_item": {
+            "korean_topic": "산불 예방 및 대응 문제",
+            "korean_context": "기후 변화로 인해 날씨가 건조해지면서, 대형 산불의 발생 빈도와 규모가 점차 커지고 있습니다. 등산객의 부주의한 실화가 가장 큰 원인이지만, 산림이 빽빽하게 우거져 한번 불이 붙으면 쉽게 확산되는 것도 문제입니다. 산불은 수십 년간 가꾼 숲을 한순간에 잿더미로 만들고, 인명과 재산에 막대한 피해를 입히는 재앙입니다.",
+            "foreign_topic": "The Problem of Wildfire Prevention and Response",
+            "foreign_context": "Wildfires are becoming more frequent and intense due to climate change and prolonged droughts. While many are started by human carelessness, factors like poor forest management also contribute to their spread. These fires cause devastating damage to ecosystems, destroy homes and communities, and pose a significant threat to human life."
+        },
+        "generated_passage": "기후 변화로 인해 지구가 점점 더 건조해지고 있어 대형 산불이 자주 발생하고 있다. 이는 주로 등산객들의 부주의로 인한 실화에서 비롯되지만, 숲이 너무 울창해서 불이 나면 순식간에 번지는 문제도 크다. 이런 산불은 오랜 시간에 걸쳐 정성껏 가꾼 숲을 순식간에 파괴하고, 인명 피해와 재산 손실을 초래하며 심각한 재난을 일으킨다. 특히, 한 번 발생한 화재는 진화하기가 어렵고, 소방 자원만으로는 대처가 불가능한 경우가 많아 피해가 더욱 커진다. 따라서 산불 예방을 위해서는 산림 관리 체계를 개선하고, 등산객 교육을 강화해야 하며, 조기 경보 시스템을 도입하는 것이 필요하다. 그러나 이러한 조치들은 시간과 비용이 소요되며, 일부 지역에서는 주민 반발이 있을 수 있다. 그럼에도 불구하고 장기적인 생태계 보호와 인명 안전을 위해 필수적인 투자로 여겨진다."
+    },
+    {
+        "source_item": {
+            "korean_topic": "무분별한 옥외 광고물 문제",
+            "korean_context": "도시의 거리에는 허가받지 않은 현수막, 전단지, 입간판 등 불법 옥외 광고물이 넘쳐나고 있습니다. 단속이 제대로 이루어지지 않고, 적발되어도 처벌이 가볍기 때문에 이러한 문제가 반복됩니다. 무분별한 광고물은 도시의 미관을 해칠 뿐만 아니라, 운전자와 보행자의 시야를 가려 안전을 위협하는 요인이 됩니다.",
+            "foreign_topic": "The Problem of Unregulated Outdoor Advertising",
+            "foreign_context": "City streets are often cluttered with illegal and unregulated advertisements like banners, flyers, and signboards. This problem persists due to a lack of enforcement and weak penalties for offenders. This visual pollution not only creates an unattractive urban landscape but can also distract drivers and pedestrians, creating safety hazards."
+        },
+        "generated_passage": "도시의 거리 곳곳에는 허가받지 않은 현수막과 전단지가 마치 폭풍처럼 쏟아져 내린다. 이들은 불법으로 설치되어 도시 경관을 망치고 있으며, 운전자와 보행자들의 시야를 가리 안전까지 위협하고 있다. 단속은 거의 이루어지지 않으며, 어쩌다 적발되더라도 처벌 수위가 낮아 문제는 계속 재발한다. 이런 혼란 속에서 시민들에게는 불편함만 가중되고, 도시의 품격이 땅에 떨어지는 현실이 지속되고 있다."
+    },
+    {
+        "source_item": {
+            "korean_topic": "캠퍼스 내 쓰레기 문제",
+            "korean_context": "대학 캠퍼스 곳곳에 학생들이 버리고 간 일회용 컵과 음식물 쓰레기가 넘쳐나 문제가 되고 있습니다. 쓰레기통 부족 문제도 있지만, 분리배출을 제대로 하지 않고 아무 곳에나 쓰레기를 버리는 일부 학생들의 부족한 시민 의식이 더 큰 원인입니다. 이는 캠퍼스 미관을 해치고, 악취를 유발하며, 청소 노동자들의 업무를 가중시키는 원인이 됩니다.",
+            "foreign_topic": "The Campus Litter Problem",
+            "foreign_context": "Many university campuses struggle with a litter problem, with disposable cups, food wrappers, and other trash overflowing from bins or being left on the ground. This is caused by a combination of insufficient waste receptacles and a lack of civic responsibility among some students. A littered campus is not only unsightly but also creates extra work for cleaning staff and reflects poorly on the university community."
+        },
+        "generated_passage": "대학 캠퍼스에 쓰레기가 넘쳐나는 심각한 상황이 발생했다. 일회용 컵과 음식물이 쓰레기통에 넘치거나 길거리에 버려져 있다. 이는 쓰레기통 수가 부족한 것도 이유지만, 학생들 중 일부가 분리배출 규칙을 무시하고 아무데나 버리는 부주의한 행동이 주된 원인으로 지목된다. 이로 인해 캠퍼스는 미관상 좋지 않을 뿐만 아니라 불쾌한 냄새가 나고, 청소 담당자의 업무 부담이 급증했다. 해결책으로는 우선 각 건물마다 충분한 수의 쓰레기통을 설치하고, 분리배출 안내 표지판을 명확히 하는 것이 필요하다. 또한, 학생들을 대상으로 환경 보호 교육을 강화하여 책임 의식을 높이는 프로그램이 요구된다. 이러한 조치를 통해 캠퍼스 환경이 개선되고 청소 인력의 부담이 줄어들 것으로 기대된다. 그러나 단기적으로는 교육 효과가 미미할 수 있고, 초기 설치 비용이 발생할 수 있다는 점도 고려해야 한다."
+    },
+    {
+        "source_item": {
+            "korean_topic": "지식재산권 침해 문제",
+            "korean_context": "인터넷의 발달로 영화, 음악, 소프트웨어 등 창작물을 불법으로 복제하고 공유하는 행위가 만연해 있습니다. 정당한 대가를 치르지 않고 콘텐츠를 이용하려는 일부 사람들의 잘못된 인식과, 불법 복제물을 쉽게 찾아볼 수 있는 환경이 문제입니다. 이러한 지식재산권 침해는 창작자의 의욕을 꺾고, 결국 문화 산업 전체의 발전을 저해하는 심각한 범죄입니다.",
+            "foreign_topic": "The Problem of Intellectual Property Infringement",
+            "foreign_context": "The digital age has made it incredibly easy to illegally copy and distribute creative works like movies, music, and software. This problem is driven by a public perception that digital content should be free and the widespread availability of pirated material online. Intellectual property theft discourages creators, harms the creative industries, and undermines the value of innovation."
+        },
+        "generated_passage": "영화와 음악을 무료로 다운로드할 수 있다는 잘못된 인식이 퍼져 있어, 인터넷에서 불법 복제가 급증하고 있다. 이런 현상은 디지털 시대에 창작물 보호가 얼마나 중요한지를 간과하게 만든다. 많은 사람들이 저작권법을 무시하고 손쉽게 불법 파일을 공유하지만, 이는 창작자들의 노력을 훼손하고 문화 산업의 성장을 방해한다. 지식재산권 침해가 지속되면 창작자들은 경제적 손실을 입고, 새로운 작품 제작에 대한 의욕도 감소할 것이다. 따라서 불법 복제 방지를 위해 강력한 법적 조치와 함께, 대중의 인식 개선을 위한 교육 캠페인이 필요하다. 그러나 지나친 규제는 오히려 혁신을 저해할 수 있으며, 글로벌 협력 부족은 실효성 있는 해결책을 어렵게 만들 수 있다."
+    },
+    {
+        "source_item": {
+            "korean_topic": "반려동물 소음 및 배설물 문제",
+            "korean_context": "공동주택이나 공원에서 일부 반려동물의 짖는 소음이나, 배설물을 치우지 않는 문제로 이웃 간의 갈등이 발생하고 있습니다. 이는 반려동물에 대한 책임 의식이 부족한 일부 견주들의 '펫티켓' 실종이 가장 큰 원인입니다. 이러한 문제는 동물에 대한 부정적인 인식을 확산시키고, 모든 반려동물 양육인들이 잠재적인 가해자로 오해받게 만드는 원인이 됩니다.",
+            "foreign_topic": "The Problem of Pet Noise and Waste",
+            "foreign_context": "Conflicts often arise in communities over issues like excessive barking or owners failing to clean up their pets' waste in public areas. This problem stems from irresponsible pet ownership and a lack of consideration for others, often called 'petiquette'. This behavior creates neighborhood disputes, fosters a negative image of pets, and can lead to stricter regulations for all pet owners."
+        },
+        "generated_passage": "공동주택에서 발생하는 반려동물 관련 갈등은 주로 몇 가지 원인으로 발생한다. 첫째, 일부 견주들이 반려동물의 짖는 소리를 통제하지 못하거나, 배설물을 제대로 처리하지 않아 이웃들과의 마찰이 생긴다. 둘째, 이러한 행동은 '펫티켓'의 부재로 간주되며, 이는 반려동물 전반에 대한 부정적 이미지를 강화시킨다. 결과적으로 모든 반려동물 양육자들이 잠재적인 문제아로 오인받는 상황이 벌어진다. 이 문제의 해결을 위해서는 각 반려인의 책임감을 높이고, 정기적인 교육 프로그램을 도입하여 올바른 펫티켓을 확립해야 한다. 또한 지역 사회 차원에서 깨끗한 공원 조성을 위해 청결 유지 캠페인을 진행하고, 위반 시 적절한 제재를 가하는 것도 필요하다. 그러나 이러한 조치들이 지나치게 강압적일 경우, 반려동물 애호가들 사이에서 반발심을 일으킬 수 있으며, 반대로 교육이 부족할 시 실질적인 개선 효과가 미미할 가능성도 존재한다."
+    },
+    {
+        "source_item": {
+            "korean_topic": "심야 택시 승차난 문제",
+            "korean_context": "금요일 밤이나 주말 등 늦은 밤 시간에는 택시를 잡으려는 사람은 많지만, 운행하는 택시는 부족하여 '택시 대란'이 벌어집니다. 이는 심야 운행의 어려움과 낮은 수익성 때문에 택시 기사들이 운행을 기피하기 때문입니다. 이로 인해 시민들은 귀가에 큰 불편을 겪고, 일부 택시는 부당한 요금을 요구하거나 단거리 승객을 거부하는 등 불법 행위를 하기도 합니다.",
+            "foreign_topic": "The Late-Night Taxi Shortage Problem",
+            "foreign_context": "In many cities, it is extremely difficult to find a taxi late at night, especially on weekends. This shortage is caused by a mismatch between high passenger demand and a low supply of drivers, who may be reluctant to work late hours due to safety concerns or low profitability. This situation leaves passengers stranded and can lead to illegal practices like fare gouging or ride refusals."
+        },
+        "generated_passage": "금요일 밤이 되면, 서울의 거리는 택시 잡는 사람들로 북새통을 이룬다. 그러나 도로 위는 텅 비어있어, 시민들은 발만 동동거린다. 이 현상은 택시 기사들의 야간 운행이 저조하기 때문. 그들은 안전 문제와 적은 수익 때문에 밤에 일하는 것을 꺼린다. 그 결과, 일부 운전사들은 정당한 요금보다 비싼 값을 받거나, 짧은 거리의 승객이 나타나면 아예 차를 돌리기도 한다. 이러한 상황은 시민들의 귀갓길 불안을 가중시키고, 도시 내 불법 영업 행위의 증가를 초래한다."
+    },
+    {
+        "source_item": {
+            "korean_topic": "대학가 원룸의 비싼 월세 문제",
+            "korean_context": "대학생들이 거주하는 대학가 원룸의 월세가 학생들의 경제적 수준에 비해 지나치게 비싸다는 문제가 있습니다. 대학 주변의 높은 임대료 수요를 이용해 건물주들이 높은 수익을 추구하는 것이 주된 원인입니다. 이로 인해 많은 대학생들이 주거비 부담으로 고통받고 있으며, 이는 학업에 집중하는 것을 방해하고 아르바이트에 내몰리게 하는 원인이 됩니다.",
+            "foreign_topic": "The Problem of High Rent for University Students",
+            "foreign_context": "Students in university towns often face exorbitantly high rents for small studio apartments. This problem is driven by high demand and a rental market that exploits students' need to live close to campus. The financial burden of high rent causes significant stress for students, forcing many to take on debt or work long hours, which can negatively affect their studies."
+        },
+        "generated_passage": "대학가에서 원룸 월세가 너무 비싸서 학생들이 힘들어하고 있어. 건물주들이 학생들한테 높은 임대료를 받는 걸 악용해서 이익을 많이 챙기고 있거든. 그래서 학생들은 돈 때문에 스트레스 받고, 학업을 포기하거나 아르바이트를 해야 하는 상황이 많아. 이런 문제 해결을 위해 정부가 대학가 임대료를 규제해야 해. 하지만 이 경우, 건물주의 수익이 줄어들어 부동산 투자에 부정적인 영향을 줄 수 있다는 부작용이 있을 수도 있어. 그래도 학생들에게는 큰 도움이 될 거야."
+    },
+    {
+        "source_item": {
+            "korean_topic": "대포차 문제",
+            "korean_context": "실제 소유자와 자동차 등록 서류상의 명의자가 다른 불법 차량인 '대포차'가 각종 범죄에 악용되고 있습니다. 명의 이전 절차의 허점을 이용하거나, 폐업한 법인 명의의 차량을 불법으로 유통시키는 것이 주된 수법입니다. 대포차는 뺑소니 사고, 납치, 강도 등 강력 범죄의 도구로 사용되어 사회 안전을 심각하게 위협하고 있습니다.",
+            "foreign_topic": "The Problem of 'Cannonball' (Illegally Registered) Cars",
+            "foreign_context": "Illegally registered vehicles, where the legal owner and the actual user are different, pose a significant threat to public safety. These 'ghost cars' are created by exploiting loopholes in vehicle registration systems and are frequently used to commit crimes like hit-and-runs, theft, and other felonies. Because they are untraceable, they allow criminals to operate with a layer of anonymity, making law enforcement difficult."
+        },
+        "generated_passage": "대포차는 실제 소유주와 등록된 명의자가 일치하지 않는 불법 차량으로, 주로 명의 이전 절차의 허점이나 폐업 법인의 명의를 악용해 발생한다. 이러한 차량은 뺑소니, 납치, 강도 등의 강력 범죄에 사용되며 사회 안전을 크게 위협한다. 불법 등록된 차량, 즉 '고스트 카'는 범죄자들이 익명성을 유지하며 활동할 수 있는 수단이 되어 법 집행을 어렵게 만든다. 이 문제는 단순한 법적 규제의 미비만이 아닌, 복잡한 사회적 안전망의 부재를 반영한다. 따라서, 대포차 근절을 위해서는 명의 이전 절차 강화, 실시간 차량 위치 추적 시스템 도입, 그리고 관련 법규의 엄격한 집행이 필요하다. 그러나 이러한 조치들은 개인정보 보호 문제와 시스템 구축 비용 증가라는 부작용을 초래할 수도 있다. 그럼에도 불구하고, 공공안전을 위해 반드시 추진되어야 할 과제이다."
+    },
+    {
+        "source_item": {
+            "korean_topic": "저출산으로 인한 학령인구 감소",
+            "korean_context": "세계 최저 수준의 저출산 현상이 지속되면서, 학교에 입학하는 학생 수가 급격히 줄어들고 있습니다. 이로 인해 문을 닫는 학교가 속출하고, 특히 지방의 소규모 학교들은 존폐 위기에 놓였습니다. 학령인구 감소는 교육 시스템의 붕괴를 넘어, 미래의 생산가능인구 감소로 이어져 국가의 존립 자체를 위협하는 심각한 문제입니다.",
+            "foreign_topic": "Declining School-Age Population Due to Low Birth Rates",
+            "foreign_context": "Persistently low birth rates in many countries are leading to a rapid decline in the school-age population. This trend is causing school closures, particularly in rural areas, and forcing a complete re-evaluation of the education system. A shrinking younger generation poses a long-term threat to a nation's economic vitality and its ability to support an aging population."
+        },
+        "generated_passage": "저출산 현상으로 인해 학령인구가 급감하면서, 전국 각지의 학교들이 폐교 위기에 몰리고 있다. 특히 지방 소도시에서는 학교 문 닫기가 일상화되고 있으며, 이는 단순한 교육 시설 부족을 넘어 국가 전체의 생산가능인구 감소로 이어질 수 있는 심각한 문제로 부각되고 있다. 전문가들은 이 상황이 지속될 경우, 미래 세대 노동력 부족으로 경제 기반 자체가 위협받을 것이라고 경고한다. 따라서 정부는 출산 장려 정책과 함께 기존 학교의 통합 또는 온라인 교육 시스템 강화 등 혁신적인 해결책을 시급히 모색해야 한다. 그러나 이러한 변화가 지역 사회의 전통과 문화를 훼손할 위험성도 내포하고 있어 신중한 접근이 필요하다."
+    },
+    {
+        "source_item": {
+            "korean_topic": "공공 와이파이의 느린 속도와 보안 문제",
+            "korean_context": "정부는 시민들의 통신비 부담을 줄이기 위해 공공장소에 무료 와이파이를 확대하고 있지만, 속도가 너무 느리거나 연결이 자주 끊겨 불만이 많습니다. 한정된 예산으로 많은 접속자를 감당해야 하는 기술적 한계 때문입니다. 또한, 보안에 취약한 공공 와이파이는 개인 정보 유출의 통로가 될 수 있다는 심각한 문제점도 안고 있습니다.",
+            "foreign_topic": "The Problem of Slow and Insecure Public Wi-Fi",
+            "foreign_context": "Many public Wi-Fi networks offered in cities are criticized for being slow, unreliable, and insecure. This is often due to insufficient bandwidth to support a large number of users and a lack of investment in robust infrastructure. Using these unsecured networks also puts users at risk of having their personal data intercepted by hackers, creating a significant cybersecurity threat."
+        },
+        "generated_passage": "공공장소에서 제공되는 무료 와이파이에 대한 불만이 급증하고 있다. 정부의 노력으로 와이파이가 확대되었지만, 속도는 매우 느리고 자주 끊기는 문제가 심각하다. 이는 제한된 예산으로 다수의 사용자를 지원해야 하는 기술적 한계 때문이다. 게다가 보안 취약점으로 인해 개인 정보가 쉽게 노출될 위험이 있어 사이버 보안 위협까지 가중되고 있다. 이러한 상황은 시민들의 불만을 초래하며, 빠른 해결책이 시급한 실정이다."
+    },
+    {
+        "source_item": {
+            "korean_topic": "역사 왜곡 콘텐츠 문제",
+            "korean_context": "유튜브나 소셜 미디어를 통해, 검증되지 않은 정보를 바탕으로 역사를 자의적으로 해석하거나 왜곡하는 콘텐츠가 무분별하게 유통되고 있습니다. 일부 제작자들은 상업적 이익이나 정치적 목적으로 의도적으로 역사를 왜곡하고 있으며, 청소년들이 이러한 콘텐츠에 무방비로 노출되는 것이 큰 문제입니다. 이는 올바른 역사 인식을 방해하고, 사회적 갈등을 유발하는 심각한 부작용을 낳습니다.",
+            "foreign_topic": "The Problem of Historical Distortion in Content",
+            "foreign_context": "The spread of content that distorts or fabricates history is a growing problem on digital platforms. This is often motivated by political agendas or commercial interests, and it is easily consumed by an unsuspecting public. The proliferation of historical misinformation erodes shared understanding, fuels nationalism and conflict, and makes it difficult for people to distinguish fact from fiction."
+        },
+        "generated_passage": "최근 디지털 플랫폼에서 역사적 사실을 왜곡하거나 조작한 콘텐츠가 범람하고 있다. 이 현상은 주로 상업적 이익과 정치적 목적을 가진 몇몇 제작자들에 의해 촉발되며, 특히 청소년들에게 무방비 상태로 노출되어 그들의 역사 인식에 악영향을 미친다. 왜곡된 정보는 마치 진실인냥 받아들여져 사회적 갈등을 증폭시키고, 사람들 간의 신뢰를 저하시킨다. 예를 들어, 특정 국가의 역사를 왜곡하여 민족주의적 감정을 부추기는 영상들이 무분별하게 공유된다. 이런 상황에서 우리는 왜곡된 정보의 확산을 막기 위해 강력한 사실 확인 시스템을 구축하고, 교육 프로그램을 강화해야 한다. 그러나 지나친 검열로 인해 표현의 자유가 침해될 위험도 존재한다. 따라서 균형을 유지하며, 투명한 절차를 통한 사실 확인과 교육적 접근이 필요하다."
+    },
+    {
+        "source_item": {
+            "korean_topic": "산후우울증 문제",
+            "korean_context": "많은 여성들이 출산 후 급격한 호르몬 변화와 육아 스트레스로 인해 산후우울증을 겪지만, 이를 개인의 나약함으로 치부하는 사회적 분위기가 있습니다. 이 때문에 여성들은 자신의 감정을 숨기고 제때에 치료받지 못하는 경우가 많습니다. 방치된 산후우울증은 산모 개인의 고통을 넘어, 아기와의 애착 관계 형성을 방해하고 가정 전체의 불행으로 이어질 수 있습니다.",
+            "foreign_topic": "The Problem of Postpartum Depression",
+            "foreign_context": "Postpartum depression is a serious mental health issue affecting many new mothers, yet it is often stigmatized or dismissed as 'baby blues'. This is caused by a combination of hormonal changes, sleep deprivation, and a lack of social support. Untreated postpartum depression can have severe consequences for the mother's well-being and can negatively impact the child's development."
+        },
+        "generated_passage": "출산 후 많은 엄마들이 급격한 호르몬 변화랑 육아 스트레스 때문에 산후우울증에 걸리는데, 사회에서는 이걸 개인 탓으로 돌리는 분위기야. 그래서 엄마들은 자기 감정을 숨기고 제때 도움도 못 받는 경우가 많아. 이런 방치된 우울증은 엄마만의 고통이 아니라 아기와의 애착 형성에도 문제를 일으키고, 결국 가족 모두에게 불행을 가져와. 전문가들은 심리 상담과 치료를 권장하지만, 여전히 많은 이들이 이러한 도움을 받지 못하고 있어. 이는 심각한 사회적 문제로, 우리 모두의 관심과 지원이 필요해."
+    },
+    {
+        "source_item": {
+            "korean_topic": "특허 괴물 문제",
+            "korean_context": "직접 제품을 생산하지는 않으면서, 다른 기업으로부터 사들인 특허를 무기로 무차별적인 특허 소송을 제기하여 거액의 합의금을 노리는 기업을 '특허 괴물(Patent Troll)'이라고 합니다. 이들은 혁신적인 기술을 개발하는 기업들을 공격하여 막대한 소송 비용을 발생시킵니다. 이는 기업의 정상적인 연구개발 활동을 위축시키고, 기술 혁신을 저해하는 심각한 문제입니다.",
+            "foreign_topic": "The Problem of Patent Trolls",
+            "foreign_context": "Patent trolls, or patent assertion entities, are companies that make money by suing other businesses for patent infringement without producing any products themselves. They exploit the high cost of litigation to extort settlements from innovative companies, both large and small. This practice stifles innovation, drains resources from research and development, and is a significant drag on the economy."
+        },
+        "generated_passage": "특허 괴물은 제품 생산 없이 타인의 특허를 매입해 무차별 소송을 제기하며 거액을 요구하는 기업이다. 이들은 혁신적 기술 개발 기업에 소송을 걸어 천문학적 비용을 부담시키며, 연구개발 활동을 심각하게 방해하고 있다. 이로 인해 기술 혁신이 저해되고 경제 성장이 둔화되고 있다. 해결책으로는 특허괴물 활동 규제를 강화하고, 소송 비용 상한선을 설정하는 것이 필요하다. 그러나 이러한 규제가 기업의 정당한 권리 보호를 제한할 수 있는 부작용이 발생할 가능성도 있다."
+    },
+    {
+        "source_item": {
+            "korean_topic": "감정노동자 보호 문제",
+            "korean_context": "콜센터 상담원, 판매원 등 고객을 응대하는 감정노동자들이 일부 고객들의 폭언과 무리한 요구에 시달리며 정신적 고통을 호소하고 있습니다. '고객은 왕'이라는 잘못된 인식과, 노동자의 인권을 보호해주지 못하는 기업의 소극적인 태도가 문제입니다. 이러한 스트레스는 감정노동자들의 우울증과 자존감 하락으로 이어지며, 이들의 건강권을 심각하게 위협합니다.",
+            "foreign_topic": "The Problem of Protecting Emotional Laborers",
+            "foreign_context": "Workers in service industries, who are required to manage their emotions as part of their job, often face abuse and harassment from customers. This problem is exacerbated by a 'customer is always right' culture and inadequate support from employers. The constant emotional strain can lead to severe mental health issues, including anxiety and burnout, for these essential workers."
+        },
+        "generated_passage": "콜센터 상담원과 판매원 같은 감정노동자들은 고객으로부터 폭언을 듣고 무리한 요구를 받는 경우가 빈번하다. 이는 '고객이 왕이다'라는 잘못된 인식 때문에 더욱 심각해지고 있다. 기업들은 이런 노동자들의 인권을 보호하는데 소극적이며, 이로 인해 감정노동자들은 극심한 스트레스를 겪고 있다. 이 스트레스는 우울증이나 자존감 저하로 이어져 그들의 건강까지 위협하고 있다. 해결책으로는 기업이 감정노동자 보호를 위한 명확한 정책과 교육을 실시하고, 스트레스 관리 프로그램을 도입하는 것이 필요하다. 그러나 이러한 변화가 기업 내 비용 증가와 직원들의 반발이라는 부작용을 초래할 가능성도 있다. 그럼에도 불구하고 장기적으로는 감정노동자의 복지가 향상되어 생산성이 높아질 것으로 기대된다."
+    }
+]
