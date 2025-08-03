@@ -1,0 +1,34 @@
+# ==================================================
+# 훈련 기본 설정 (Paths & Core Settings)
+# ==================================================
+
+output_dir: "./saves/completeness_for_guidelines" # 훈련 결과물(모델, 체크포인트 등)이 저장될 폴더 경로
+max_length: 1024 # 토크나이저가 처리할 텍스트의 최대 길이 (토큰 수)
+
+# ==================================================
+# 훈련 하이퍼파라미터 (Training Hyperparameters)
+# ==================================================
+
+num_train_epochs: 3 # 전체 데이터셋을 총 3번 반복하여 학습
+learning_rate: 0.00005 # 모델의 학습 속도 (가중치 업데이트 강도)
+
+per_device_train_batch_size: 4 # 각 GPU가 한 번에 처리할 데이터의 개수
+gradient_accumulation_steps: 4 # 4번의 스텝마다 그래디언트를 업데이트 (실질 배치 사이즈: 4 * 4 = 16)
+
+# ==================================================
+# Reward Model 고급 기법 (Advanced RM Techniques)
+# ==================================================
+
+center_rewards_coefficient: 0.01 # 리워드 중앙 정렬(Centering Rewards) 기법을 활성화하고, 보조 손실 함수의 가중치를 0.01로 설정
+
+# ==================================================
+# 평가 및 로깅/저장 설정 (Evaluation & Logging/Saving)
+# ==================================================
+
+eval_strategy: "steps" # 훈련 중 검증(evaluation)을 스텝(step) 단위로 수행
+eval_steps: 10 # 10 스텝마다 검증 데이터셋으로 성능 측정
+
+save_strategy: "epoch" # 모델의 체크포인트를 에포크(epoch)가 끝날 때마다 저장
+logging_steps: 10 # 10 스텝마다 훈련 손실(loss)과 같은 로그를 출력
+
+report_to: "tensorboard" # 훈련 과정을 TensorBoard에 기록하여 시각화

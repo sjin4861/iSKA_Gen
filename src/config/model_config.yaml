@@ -1,0 +1,8 @@
+base_model_path: "K-intelligence/Midm-2.0-Mini-Instruct"
+
+#K-intelligence/Midm-2.0-Mini-Instruct
+#LGAI-EXAONE/EXAONE-4.0-1.2B
+peft_config:
+  r: 16
+  lora_alpha: 32
+  lora_dropout: 0.05
