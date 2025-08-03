@@ -73,60 +73,69 @@ class OptionsAgent:
         """
         if not response_str or not response_str.strip():
             return None
-            
         response_str = response_str.strip()
-        
+
+        # 1차 시도: 전체 응답을 JSON으로 파싱 (마지막 쉼표 등 자동 제거)
         try:
-            # 1차 시도: 전체 응답을 JSON으로 파싱
-            options_data = json.loads(response_str)
+            cleaned = response_str
+            # 마지막 줄바꿈, 쉼표, 공백 등 제거
+            cleaned = cleaned.replace("\n", " ").replace("\r", " ")
+            cleaned = cleaned.rstrip(", ")
+            # 중괄호 내부 마지막 쉼표 제거
+            import re
+            cleaned = re.sub(r',\s*([}\]])', r'\1', cleaned)
+            options_data = json.loads(cleaned)
+            # answer_idx가 1~4 범위(1-based)로 들어오면 0-based로 보정
+            if isinstance(options_data, dict) and "answer_idx" in options_data:
+                idx = options_data["answer_idx"]
+                if isinstance(idx, int) and idx >= 1 and idx <= 4:
+                    options_data["answer_idx"] = idx - 1
             if self._validate_options_data(options_data):
                 return options_data
         except json.JSONDecodeError:
             pass
-        
+
+        # 2차 시도: JSON 패턴 찾기
         try:
-            # 2차 시도: JSON 패턴 찾기
             import re
-            # {"options": [...], "answer_idx": ...} 패턴 찾기
             json_pattern = r'\{[^}]*"options"[^}]*"answer_idx"[^}]*\}'
             json_match = re.search(json_pattern, response_str, re.DOTALL)
-            
             if json_match:
                 json_str = json_match.group(0)
+                json_str = re.sub(r',\s*([}\]])', r'\1', json_str)
                 options_data = json.loads(json_str)
+                if isinstance(options_data, dict) and "answer_idx" in options_data:
+                    idx = options_data["answer_idx"]
+                    if isinstance(idx, int) and idx >= 1 and idx <= 4:
+                        options_data["answer_idx"] = idx - 1
                 if self._validate_options_data(options_data):
                     return options_data
         except (json.JSONDecodeError, AttributeError):
             pass
-        
+
+        # 3차 시도: 수동으로 options와 answer_idx 추출
         try:
-            # 3차 시도: 수동으로 options와 answer_idx 추출
             options = []
             answer_idx = None
-            
-            # options 배열 추출
             options_pattern = r'"options"\s*:\s*\[(.*?)\]'
             options_match = re.search(options_pattern, response_str, re.DOTALL)
             if options_match:
                 options_str = options_match.group(1)
-                # 각 선택지 추출
                 option_pattern = r'"([^"]+)"'
                 options = re.findall(option_pattern, options_str)
-            
-            # answer_idx 추출
             idx_pattern = r'"answer_idx"\s*:\s*(\d+)'
             idx_match = re.search(idx_pattern, response_str)
             if idx_match:
                 answer_idx = int(idx_match.group(1))
-            
+                if answer_idx >= 1 and answer_idx <= 4:
+                    answer_idx -= 1
             if options and len(options) >= 4 and answer_idx is not None:
                 return {
-                    "options": options[:4],  # 처음 4개만 사용
+                    "options": options[:4],
                     "answer_idx": answer_idx
                 }
         except Exception:
             pass
-        
         return None
     
     def _validate_options_data(self, data: Dict) -> bool:
