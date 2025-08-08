@@ -36,6 +36,9 @@ def convert_to_reward_format(input_file: str, train_output_file: str, eval_outpu
                         "rejected": rejected_response.strip()
                     }
                     all_records.append(new_record)
+                else:
+                    print(f"⚠️ 일부 필드가 비어있는 레코드가 발견되었습니다: {record}")
+
     
     except json.JSONDecodeError as e:
         print(f"❌ JSON 파일을 읽는 중 오류가 발생했습니다: {e}")
@@ -77,12 +80,14 @@ def convert_to_reward_format(input_file: str, train_output_file: str, eval_outpu
 # --- 실행 예시 ---
 if __name__ == "__main__":
     # 변환할 원본 데이터 파일 경로
-    source_dataset_path = "src/data/completeness_for_guidelines_rm.json" # 실제 파일 경로로 수정하세요
+    source_dataset_path = "src/data/logical_flow_rm.json" # 실제 파일 경로로 수정하세요
     
     # 저장될 훈련 데이터 파일 경로
-    train_dataset_path = "src/data/completeness_for_guidelines_rm_train.jsonl"
+    train_dataset_path = "src/data/logical_flow_rm_train.jsonl"
     # 저장될 검증 데이터 파일 경로
-    eval_dataset_path = "src/data/completeness_for_guidelines_rm_eval.jsonl"
+    eval_dataset_path = "src/data/logical_flow_rm_eval.jsonl"
 
     # 함수 실행 (검증 데이터 50개 분리)
+    # import pdb
+    # pdb.set_trace()  # 디버깅을 위해 중단점 설정
     convert_to_reward_format(source_dataset_path, train_dataset_path, eval_dataset_path, eval_split_size=50)
