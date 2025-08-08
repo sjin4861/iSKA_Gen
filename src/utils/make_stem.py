@@ -74,16 +74,12 @@ def generate_stem(benchmark_file : str, passage_model_name : str, model_name : s
             for j in range(len(problem_types)):
                 problem_type = problem_types[j]
                 eval_goal = eval_goals[j]
-                # 첫 번째 stem은 객관식 문제 생성 프롬프트 사용
-                if j == 0:
-                    prompt_key = "stem_agent.mcq_few_shot"
-                else:
-                    prompt_key = template_key
+                
                 generated_stem = stem_agent.generate_stem(
                     passage=passage_data['generated_passage'],
                     problem_type=problem_type,
                     eval_goal=eval_goal,
-                    template=prompt_key
+                    template=template_key
                 )
                 stem_data[f'problem_type_{j+1}'] = problem_type
                 stem_data[f'eval_goal_{j+1}'] = eval_goal
