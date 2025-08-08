@@ -21,17 +21,23 @@ except ImportError:
 load_dotenv()
 _CFG = get_settings()
 _LLM_CFG = _CFG.get('llm', {})
+_CHATGPT_CFG = _CFG.get('chatgpt', {})
 
 # === Configuration Constants ===
-_MAX_TOKENS = int(_LLM_CFG.get('max_tokens', 512))
-_TEMPERATURE = float(_LLM_CFG.get('temperature', 0.7))
-_REPETITION_PENALTY = float(_LLM_CFG.get('repetition_penalty', 1.1))
-_TOP_P = float(_LLM_CFG.get('top_p', 0.9))
-_TOP_K = int(_LLM_CFG.get('top_k', 50))
+# LLM (로컬 모델) 설정
+_LLM_MAX_TOKENS = int(_LLM_CFG.get('max_tokens', 512))
+_LLM_TEMPERATURE = float(_LLM_CFG.get('temperature', 0.7))
+_LLM_REPETITION_PENALTY = float(_LLM_CFG.get('repetition_penalty', 1.1))
+_LLM_TOP_P = float(_LLM_CFG.get('top_p', 0.9))
+_LLM_TOP_K = int(_LLM_CFG.get('top_k', 50))
+_LLM_NO_REPEAT_NGRAM_SIZE = int(_LLM_CFG.get('no_repeat_ngram_size', 0))
 
-# === Batch API Configuration ===
-_BATCH_COMPLETION_WINDOW = "24h"
-_BATCH_POLL_INTERVAL = 10
+# ChatGPT (OpenAI) 설정
+_CHATGPT_MAX_TOKENS = int(_CHATGPT_CFG.get('max_tokens', 1024))
+_CHATGPT_TEMPERATURE = float(_CHATGPT_CFG.get('temperature', 0))
+_CHATGPT_TOP_P = float(_CHATGPT_CFG.get('top_p', 1.0))
+_CHATGPT_FREQUENCY_PENALTY = float(_CHATGPT_CFG.get('frequency_penalty', 0.0))
+_CHATGPT_PRESENCE_PENALTY = float(_CHATGPT_CFG.get('presence_penalty', 0.0))
 
 # === Local Models Configuration ===
 _LOCAL_MODELS_DIR = os.getenv('LOCAL_MODELS_PATH') or os.path.expanduser(_LLM_CFG.get('local_models_dir', '~/models'))
@@ -42,7 +48,10 @@ _FALLBACK_TORCH_DTYPE = torch.float16
 _DEFAULT_OPENAI_MODEL = 'gpt-4o-mini'
 _DEFAULT_LOCAL_MODEL = 'default'
 _DEFAULT_DEVICE = 'auto'
-_DEFAULT_MAX_TOKENS_OPENAI = 1024
+
+# === Batch API Configuration (필요한 경우만) ===
+_BATCH_COMPLETION_WINDOW = "24h"
+_BATCH_POLL_INTERVAL = 10
 
 # === File Names ===
 _TEMP_BATCH_FILE = "temp_batch_input.jsonl"
@@ -70,8 +79,11 @@ class OpenAIModelClient(BaseModelClient):
         self.model_name = model_name
         self.client = OpenAI(api_key=api_key or os.getenv('OPENAI_API_KEY'))
         self.default_params = {
-            "temperature": _LLM_CFG.get('temperature', _TEMPERATURE),
-            "max_tokens": _LLM_CFG.get('max_tokens', _DEFAULT_MAX_TOKENS_OPENAI),
+            "temperature": _CHATGPT_TEMPERATURE,
+            "max_tokens": _CHATGPT_MAX_TOKENS,
+            "top_p": _CHATGPT_TOP_P,
+            "frequency_penalty": _CHATGPT_FREQUENCY_PENALTY,
+            "presence_penalty": _CHATGPT_PRESENCE_PENALTY,
             **kwargs
         }
         print(f"✅ OpenAI 클라이언트가 '{self.model_name}' 모델로 초기화되었습니다.")
@@ -84,7 +96,10 @@ class OpenAIModelClient(BaseModelClient):
             "model": self.model_name,
             "messages": messages,
             "temperature": params.get('temperature'),
-            "max_tokens": params.get('max_tokens')
+            "max_tokens": params.get('max_tokens'),
+            "top_p": params.get('top_p'),
+            "frequency_penalty": params.get('frequency_penalty'),
+            "presence_penalty": params.get('presence_penalty')
         }
 
         # JSON 모드 강제 여부 확인
@@ -342,11 +357,12 @@ class LocalModelClient(BaseModelClient):
             
         # default_params 설정
         self.default_params = {
-            "temperature": _LLM_CFG.get('temperature', _TEMPERATURE),
-            "max_new_tokens": _LLM_CFG.get('max_tokens', _MAX_TOKENS),
-            "repetition_penalty": _LLM_CFG.get('repetition_penalty', _REPETITION_PENALTY),
-            "top_p": _LLM_CFG.get('top_p', _TOP_P),
-            "top_k": _LLM_CFG.get('top_k', _TOP_K),
+            "temperature": _LLM_TEMPERATURE,
+            "max_new_tokens": _LLM_MAX_TOKENS,
+            "repetition_penalty": _LLM_REPETITION_PENALTY,
+            "top_p": _LLM_TOP_P,
+            "top_k": _LLM_TOP_K,
+            "no_repeat_ngram_size": _LLM_NO_REPEAT_NGRAM_SIZE,
         }
             
         print(f"✅ 로컬 모델 로딩 완료 ({self.target_device})")
@@ -387,6 +403,7 @@ class LocalModelClient(BaseModelClient):
                     "repetition_penalty": params['repetition_penalty'],
                     "top_p": params['top_p'],
                     "top_k": params['top_k'],
+                    "no_repeat_ngram_size": params['no_repeat_ngram_size'],
                     "pad_token_id": self.tokenizer.eos_token_id,
                     "do_sample": True,  # temperature > 0일 때 필요
                 }
@@ -464,11 +481,7 @@ def create_client_from_settings() -> BaseModelClient:
         external_services = _CFG.get('external_services', {})
         openai_config = external_services.get('openai', {})
         model_name = openai_config.get('model', _DEFAULT_OPENAI_MODEL)
-        return OpenAIModelClient(
-            model_name=model_name,
-            max_completion_tokens=_LLM_CFG.get('max_tokens'),
-            temperature=_LLM_CFG.get('temperature')
-        )
+        return OpenAIModelClient(model_name=model_name)
     elif client_type == "local":
         # 로컬 모델 설정 - 기본 llm 설정을 사용하되 local_model에서 오버라이드
         local_config = _LLM_CFG.get('local_model', {})
