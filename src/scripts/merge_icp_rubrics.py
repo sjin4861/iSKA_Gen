@@ -5,8 +5,8 @@ from collections import defaultdict
 import datetime
 
 # Define the base path and output directory
-base_path = "/home/sjin4861/25-1/HCLT/iSKA_Gen/src/data/pairwise_data/v3/icp"
-output_dir = "/home/sjin4861/25-1/HCLT/iSKA_Gen/src/data/rm_training/icp/2025-08-02"
+base_path = "src/data/pairwise_data/train/v3/icp"
+output_dir = "src/data/rm_training/icp/2025-08-02"
 os.makedirs(output_dir, exist_ok=True)
 
 # Get the list of model pairs
