@@ -4,7 +4,21 @@ from transformers import AutoTokenizer, AutoModelForSequenceClassification
 from peft import PeftModel
 import yaml
 import sys
+import random
+import numpy as np
 from pathlib import Path
+
+# --- 랜덤 시드 고정 ---
+def set_seed(seed=42):
+    random.seed(seed)
+    np.random.seed(seed)
+    torch.manual_seed(seed)
+    torch.cuda.manual_seed(seed)
+    torch.cuda.manual_seed_all(seed)
+    torch.backends.cudnn.deterministic = True
+    torch.backends.cudnn.benchmark = False
+
+set_seed(42)
 # --- 1. 프로젝트 경로 설정 ---
 PROJECT_ROOT = Path(__file__).resolve().parents[2]
 if str(PROJECT_ROOT) not in sys.path:
@@ -14,10 +28,10 @@ if str(PROJECT_ROOT) not in sys.path:
 from src.model_loader import load_model_for_reward_training
 
 BASE_MODEL = "K-intelligence/Midm-2.0-Mini-Instruct"
-ADAPTER_PATH = "./saves/logical_flow_rm/checkpoint-366" # 훈련 결과 경로
-TRAIN_DATA_PATH = "src/data/logical_flow_rm_train.jsonl"
-EVAL_DATA_PATH = "src/data/logical_flow_rm_eval.jsonl"
-TEST_DATA_PATH = "src/data/logical_flow_rm_test.jsonl"
+ADAPTER_PATH = "./saves/all_in_one/checkpoint-2196" # 훈련 결과 경로
+TRAIN_DATA_PATH = "saves/all_in_one/all_in_one_rm_train.jsonl"
+EVAL_DATA_PATH = "saves/all_in_one/all_in_one_rm_eval.jsonl"
+TEST_DATA_PATH = "saves/all_in_one/all_in_one_rm_test.jsonl"
 device = "cuda" if torch.cuda.is_available() else "cpu"
 
 # ==============================================================================
