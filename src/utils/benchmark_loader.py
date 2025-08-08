@@ -104,7 +104,13 @@ def get_benchmark_by_id(file_or_version: str, benchmark_id: int) -> Optional[Dic
                 benchmarks = load_benchmarks(file_name)
             except FileNotFoundError:
                 return None
-    return benchmarks
+    
+    # 특정 benchmark_id에 해당하는 항목만 찾아서 반환
+    for benchmark in benchmarks:
+        if benchmark.get('id') == benchmark_id:
+            return benchmark
+    
+    return None
 
 def get_guideline_by_id(file_or_version: str, benchmark_id: int) -> Optional[Dict[str, Any]]:
     """
@@ -117,17 +123,16 @@ def get_guideline_by_id(file_or_version: str, benchmark_id: int) -> Optional[Dic
     Returns:
         Optional[Dict[str, Any]]: {"problem_types": [...], "eval_goals": [...], "guideline": ...} 또는 None
     """
-    # import pdb
-    # pdb.set_trace()
-    total_bench = get_benchmark_by_id(file_or_version, benchmark_id)
-    bench = total_bench[benchmark_id-1]
+    bench = get_benchmark_by_id(file_or_version, benchmark_id)
     if not bench:
         return None
+    
     result = {}
     if "problem_types" in bench:
         result["problem_types"] = bench["problem_types"]
     if "eval_goals" in bench:
         result["eval_goals"] = bench["eval_goals"]
+    
     return result if result else None
 
 def list_available_benchmarks() -> List[str]:
