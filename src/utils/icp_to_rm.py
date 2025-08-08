@@ -86,15 +86,16 @@ def find_icp_files():
     ICP 데이터셋 폴더에서 모든 ICP 파일들을 찾아서 반환합니다.
     반환값: {rubric: filepath} 형태의 딕셔너리
     """
-    icp_dir = Path('src/data/rm_training/icp/2025-08-02/aidx')
+    icp_dir = Path('src/data/rm_training/icp/2025-08-02/midm')
     icp_files = {}
     
     # 유효한 루브릭 목록
-    valid_rubrics = {
-        'logical_flow', 'korean_quality', 'l2_learner_suitability',
-        'clarity_of_core_theme', 'completeness_for_guidelines',
-        'reference_groundedness'
-    }
+    valid_rubrics = {'clarity_of_core_theme'}
+    # {
+    #     'logical_flow', 'korean_quality', 'l2_learner_suitability',
+    #     'clarity_of_core_theme', 'completeness_for_guidelines',
+    #     'reference_groundedness'
+    # }
     
     # ICP 파일들을 찾아서 rubric별로 정리
     for file in icp_dir.glob('ICP_*_*.json'):
@@ -166,8 +167,8 @@ def process_single_rubric(icp_file, rubric, prompt_yaml, out_base_dir):
 
 if __name__ == "__main__":
     prompt_yaml = 'src/config/prompts/iska/preference_eval.yaml'
-    out_base_dir = 'src/data/pairwise_data/v3/icp/aidx'
-    
+    out_base_dir = 'src/data/pairwise_data/v3/icp/midm'
+
     # 모든 ICP 파일 찾기
     icp_files = find_icp_files()
     
