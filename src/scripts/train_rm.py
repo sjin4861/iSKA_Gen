@@ -30,12 +30,12 @@ def main():
 
     # --- 5. 데이터셋 로드 및 전처리 ---
     train_dataset = load_and_preprocess_data_chat(
-        str(PROJECT_ROOT / "src/data/completeness_for_guidelines_rm_train.jsonl"), # 데이터 파일 경로
+        str(PROJECT_ROOT / "src/data/all_in_one_rm_train.jsonl"), # 데이터 파일 경로
         tokenizer, 
         training_config["max_length"]
     )
     eval_dataset = load_and_preprocess_data_chat(
-        str(PROJECT_ROOT / "src/data/completeness_for_guidelines_rm_eval.jsonl"), # 데이터 파일 경로
+        str(PROJECT_ROOT / "src/data/all_in_one_rm_eval.jsonl"), # 데이터 파일 경로
         tokenizer, 
         training_config["max_length"]
     )
@@ -53,6 +53,7 @@ def main():
         peft_config=peft_config,
     )
     
+    # --- ✨ 핵심 변경 사항: 체크포인트 경로를 trainer.train()에 전달 ---
     trainer.train()
     print(f"✅ 훈련 완료! 모델이 '{training_args.output_dir}'에 저장되었습니다.")
 
