@@ -34,10 +34,26 @@ def get_settings() -> Settings:
     with _CFG_PATH.open(encoding="utf-8") as f:
         settings = yaml.safe_load(f) or {}
     
-    # Allow environment overrides for llm max_tokens and temperature
+    # 설정 파일 값이 없을 때만 환경 변수로 대체 (설정 파일 우선순위)
     llm_env_tokens = os.getenv('LLM_MAX_TOKENS') or os.getenv('VLLM_MAX_TOKENS')  # 하위 호환성
     llm_env_temp = os.getenv('LLM_TEMPERATURE') or os.getenv('VLLM_TEMPERATURE')  # 하위 호환성
+    
     if 'llm' in settings:
+        # max_tokens가 설정 파일에 없을 때만 환경 변수 사용
+        if 'max_tokens' not in settings['llm'] and llm_env_tokens is not None:
+            try:
+                settings['llm']['max_tokens'] = int(llm_env_tokens)
+            except ValueError:
+                pass
+        # temperature가 설정 파일에 없을 때만 환경 변수 사용
+        if 'temperature' not in settings['llm'] and llm_env_temp is not None:
+            try:
+                settings['llm']['temperature'] = float(llm_env_temp)
+            except ValueError:
+                pass
+    elif llm_env_tokens is not None or llm_env_temp is not None:
+        # llm 섹션이 없으면 새로 생성하고 환경 변수 적용
+        settings['llm'] = {}
         if llm_env_tokens is not None:
             try:
                 settings['llm']['max_tokens'] = int(llm_env_tokens)
