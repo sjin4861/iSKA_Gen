@@ -113,14 +113,6 @@ class PassageEvaluator:
             self.llm_client = llm_client
             print("✅ 지문 평가기가 사용자 제공 클라이언트로 초기화되었습니다.")
         
-        # 평가 지표별 기본 설정
-        self.evaluation_config = {
-            "coherence": {"weight": 0.3, "max_score": 5},
-            "consistency": {"weight": 0.3, "max_score": 5},  # factual_consistency -> consistency
-            "naturalness": {"weight": 0.2, "max_score": 5},
-            "korean_quality": {"weight": 0.2, "max_score": 5}
-        }
-
     def calculate_normalized_score(self, original_text: str, corrected_text: str) -> float:
         """
         레벤슈타인 거리를 이용해 0~1 사이의 정규화된 점수를 계산합니다.
@@ -145,25 +137,21 @@ class PassageEvaluator:
         else:
             return 1  # 심각한 오류
 
-    def evaluate_coherence(self, passage: str, problem_types: List[str], eval_goals: List[str], 
-                          template_key: Optional[str] = None) -> int:
+    def evaluate_completeness_for_guidelines(self, passage: str, problem_types: List[str], eval_goals: List[str]) -> int:
         """
-        일관성 평가를 수행합니다.
+        완성도 평가를 수행합니다 (평가 지침 부합성).
         
         Args:
             passage: 평가할 지문
             problem_types: 문제 유형 리스트
             eval_goals: 평가 목표 리스트  
-            template_key: 프롬프트 템플릿 키 (None이면 기본값 사용)
             
         Returns:
-            int: 일관성 점수 (1-5점)
-        """
-        template_key = template_key or self.template_key
-        
+            int: 완성도 점수 (1-5점)
+        """        
         try:
             prompt = get_prompt(
-                'passage_eval.coherence',
+                'passage_eval.completeness_for_guidelines',
                 agent='iska',
                 problem_type1=problem_types[0], eval_goal1=eval_goals[0],
                 problem_type2=problem_types[1], eval_goal2=eval_goals[1],
@@ -174,43 +162,76 @@ class PassageEvaluator:
             response = self.llm_client.call([{"role": "user", "content": prompt}])
             
             # 점수 파싱
-            score = self._parse_score_from_response(response, "coherence")
+            score = self._parse_score_from_response(response, "completeness_for_guidelines")
             
             return score if score is not None else 3
             
         except Exception as e:
-            print(f"❌ 일관성 평가 중 오류 발생: {e}")
+            print(f"❌ 완성도 평가 중 오류 발생: {e}")
             return 3
 
-    def evaluate_consistency(self, passage: str, home_context: Optional[str] = None, 
-                           foreign_context: Optional[str] = None, template_key: Optional[str] = None) -> int:
+    def evaluate_clarity_of_core_theme(self, passage: str, home_topic: str, foreign_topic: str) -> int:
         """
-        일치성 평가를 수행합니다 (컨텍스트 기반).
+        핵심주제 명확성 평가를 수행합니다.
         
         Args:
             passage: 평가할 지문
-            home_context: 한국 컨텍스트 (None 가능)
-            foreign_context: 외국 컨텍스트 (None 가능)
-            template_key: 프롬프트 템플릿 키
+            home_topic: 한국 주제
+            foreign_topic: 외국 주제
             
         Returns:
-            int: 일치성 점수 (1-5점)
-        """
-        template_key = template_key or self.template_key
-        
+            int: 핵심주제 명확성 점수 (1-5점)
+        """        
         try:
             prompt = get_prompt(
-                'passage_eval.consistency',
+                'passage_eval.clarity_of_core_theme',
                 agent='iska',
-                home_context=home_context or "N/A",
-                foreign_context=foreign_context or "N/A",
+                home_topic=home_topic,
+                foreign_topic=foreign_topic,
                 passage=passage
             )
             
             response = self.llm_client.call([{"role": "user", "content": prompt}])
             
             # 점수 파싱
-            score = self._parse_score_from_response(response, "consistency")
+            score = self._parse_score_from_response(response, "clarity_of_core_theme")
+            
+            return score if score is not None else 3
+            
+        except Exception as e:
+            print(f"❌ 핵심주제 명확성 평가 중 오류 발생: {e}")
+            return 3
+
+    def evaluate_reference_groundedness(self, passage: str, home_context: Optional[str] = None, 
+                           foreign_context: Optional[str] = None, home_topic: str = "", foreign_topic: str = "") -> int:
+        """
+        참고자료 기반성 평가를 수행합니다.
+        
+        Args:
+            passage: 평가할 지문
+            home_context: 한국 컨텍스트 (None 가능)
+            foreign_context: 외국 컨텍스트 (None 가능)
+            home_topic: 한국 주제
+            foreign_topic: 외국 주제
+            
+        Returns:
+            int: 참고자료 기반성 점수 (1-5점)
+        """        
+        try:
+            prompt = get_prompt(
+                'passage_eval.reference_groundedness',
+                agent='iska',
+                korean_context=home_context or "N/A",
+                foreign_context=foreign_context or "N/A",
+                korean_topic=home_topic or "N/A",
+                foreign_topic=foreign_topic or "N/A",
+                passage=passage
+            )
+            
+            response = self.llm_client.call([{"role": "user", "content": prompt}])
+            
+            # 점수 파싱
+            score = self._parse_score_from_response(response, "reference_groundedness")
             
             # 점수 범위 제한
             if score is not None:
@@ -221,58 +242,75 @@ class PassageEvaluator:
                 return 3  # 기본 점수
             
         except Exception as e:
-            print(f"❌ 일치성 평가 중 오류 발생: {e}")
+            print(f"❌ 참고자료 기반성 평가 중 오류 발생: {e}")
             return 3  # 오류 시 기본 점수
 
-    def evaluate_naturalness(self, passage: str, home_topic: str, foreign_topic: str, 
-                           template_key: Optional[str] = None) -> int:
+    def evaluate_logical_flow(self, passage: str) -> int:
         """
-        자연스러움 평가를 수행합니다.
+        논리적 흐름 평가를 수행합니다.
         
         Args:
             passage: 평가할 지문
-            home_topic: 한국 주제
-            foreign_topic: 외국 주제
-            template_key: 프롬프트 템플릿 키
             
         Returns:
-            int: 자연스러움 점수 (1-5점)
-        """
-        template_key = template_key or self.template_key
-        
+            int: 논리적 흐름 점수 (1-5점)
+        """        
         try:
             prompt = get_prompt(
-                'passage_eval.naturalness',
+                'passage_eval.logical_flow',
                 agent='iska',
-                home_topic=home_topic,
-                foreign_topic=foreign_topic,
                 passage=passage
             )
             
             response = self.llm_client.call([{"role": "user", "content": prompt}])
             
             # 점수 파싱
-            score = self._parse_score_from_response(response, "naturalness")
+            score = self._parse_score_from_response(response, "logical_flow")
             
             return score if score is not None else 3
             
         except Exception as e:
-            print(f"❌ 자연스러움 평가 중 오류 발생: {e}")
+            print(f"❌ 논리적 흐름 평가 중 오류 발생: {e}")
             return 3
 
-    def evaluate_korean_quality(self, passage: str, template_key: Optional[str] = None) -> int:
+    def evaluate_l2_learner_suitability(self, passage: str) -> int:
+        """
+        L2 학습자 적합성 평가를 수행합니다.
+        
+        Args:
+            passage: 평가할 지문
+            
+        Returns:
+            int: L2 학습자 적합성 점수 (1-5점)
+        """        
+        try:
+            prompt = get_prompt(
+                'passage_eval.l2_learner_suitability',
+                agent='iska',
+                passage=passage
+            )
+            
+            response = self.llm_client.call([{"role": "user", "content": prompt}])
+            
+            # 점수 파싱
+            score = self._parse_score_from_response(response, "l2_learner_suitability")
+            
+            return score if score is not None else 3
+            
+        except Exception as e:
+            print(f"❌ L2 학습자 적합성 평가 중 오류 발생: {e}")
+            return 3
+
+    def evaluate_korean_quality(self, passage: str) -> int:
         """
         한국어 품질 평가를 수행합니다.
         
         Args:
             passage: 평가할 지문
-            template_key: 프롬프트 템플릿 키
             
         Returns:
             int: 한국어 품질 점수 (1-5점)
-        """
-        template_key = template_key or self.template_key
-        
+        """        
         try:
             prompt = get_prompt(
                 'passage_eval.korean_quality',
@@ -326,11 +364,12 @@ class PassageEvaluator:
                 print("⚠️ 문제 유형과 평가 목표가 각각 최소 3개씩 필요합니다.")
                 return {
                     "scores": {
-                        "is_guideline_compliant": False,
-                        "is_factually_consistent": False,
-                        "is_natural": False,
-                        "has_high_korean_quality": False,
-                        "is_learner_appropriate": False
+                        "completeness_for_guidelines": False,
+                        "clarity_of_core_theme": False,
+                        "reference_groundedness": False,
+                        "logical_flow": False,
+                        "korean_quality": False,
+                        "l2_learner_suitability": False
                     },
                     "feedback": "평가 메타데이터가 불충분합니다. 문제 유형과 평가 목표가 각각 3개씩 필요합니다."
                 }
@@ -358,11 +397,12 @@ class PassageEvaluator:
             print(f"❌ 이진 루브릭 평가 중 오류 발생: {e}")
             return {
                 "scores": {
-                    "is_guideline_compliant": False,
-                    "is_factually_consistent": False,
-                    "is_natural": False,
-                    "has_high_korean_quality": False,
-                    "is_learner_appropriate": False
+                    "completeness_for_guidelines": False,
+                    "clarity_of_core_theme": False,
+                    "reference_groundedness": False,
+                    "logical_flow": False,
+                    "korean_quality": False,
+                    "l2_learner_suitability": False
                 },
                 "feedback": f"평가 중 오류가 발생했습니다: {str(e)}"
             }
@@ -377,41 +417,77 @@ class PassageEvaluator:
             json_match = re.search(r'\{.*\}', response, re.DOTALL)
             if json_match:
                 json_str = json_match.group(0)
+                print(f"🔍 파싱 시도한 JSON: {json_str}")
+                
                 result = json.loads(json_str)
                 
-                # 필수 평가 항목 키들
-                required_keys = [
-                    "is_guideline_compliant", "is_factually_consistent", "is_natural", 
-                    "has_high_korean_quality", "is_learner_appropriate"
-                ]
+                # 키 매핑 딕셔너리: API 응답 키 -> 표준 키
+                key_mapping = {
+                    "is_completeness_for_guidelines": "completeness_for_guidelines",
+                    "is_clarity_of_core_theme": "clarity_of_core_theme", 
+                    "is_reference_grounded": "reference_groundedness",
+                    "is_logical_flow": "logical_flow",
+                    "has_high_korean_quality": "korean_quality",
+                    "is_learner_appropriate": "l2_learner_suitability"
+                }
                 
                 # Case 1: scores 키가 있는 경우 (중첩 구조)
                 if "scores" in result and isinstance(result["scores"], dict):
-                    scores = result["scores"]
-                    if all(key in scores for key in required_keys):
-                        # boolean 값 확인 및 변환
-                        for key in required_keys:
-                            if isinstance(scores[key], str):
-                                scores[key] = scores[key].lower() == "true"
-                            elif not isinstance(scores[key], bool):
-                                scores[key] = False
-                        
+                    raw_scores = result["scores"]
+                    scores = {}
+                    
+                    # 키 매핑 적용
+                    for api_key, standard_key in key_mapping.items():
+                        if api_key in raw_scores:
+                            value = raw_scores[api_key]
+                            if isinstance(value, str):
+                                scores[standard_key] = value.lower() == "true"
+                            elif isinstance(value, bool):
+                                scores[standard_key] = value
+                            else:
+                                scores[standard_key] = False
+                        elif standard_key in raw_scores:
+                            # 이미 표준 키인 경우
+                            value = raw_scores[standard_key]
+                            if isinstance(value, str):
+                                scores[standard_key] = value.lower() == "true"
+                            elif isinstance(value, bool):
+                                scores[standard_key] = value
+                            else:
+                                scores[standard_key] = False
+                    
+                    # 모든 6개 루브릭이 매핑되었는지 확인
+                    if len(scores) == 6:
                         return {
                             "scores": scores,
                             "feedback": result.get("feedback", "")
                         }
                 
                 # Case 2: 평가 항목이 최상위에 직접 있는 경우 (플랫 구조)
-                elif all(key in result for key in required_keys):
-                    scores = {}
-                    for key in required_keys:
-                        if isinstance(result[key], str):
-                            scores[key] = result[key].lower() == "true"
-                        elif isinstance(result[key], bool):
-                            scores[key] = result[key]
+                scores = {}
+                
+                # 키 매핑 적용
+                for api_key, standard_key in key_mapping.items():
+                    if api_key in result:
+                        value = result[api_key]
+                        if isinstance(value, str):
+                            scores[standard_key] = value.lower() == "true"
+                        elif isinstance(value, bool):
+                            scores[standard_key] = value
                         else:
-                            scores[key] = False
-                    
+                            scores[standard_key] = False
+                    elif standard_key in result:
+                        # 이미 표준 키인 경우
+                        value = result[standard_key]
+                        if isinstance(value, str):
+                            scores[standard_key] = value.lower() == "true"
+                        elif isinstance(value, bool):
+                            scores[standard_key] = value
+                        else:
+                            scores[standard_key] = False
+                
+                # 모든 6개 루브릭이 매핑되었는지 확인
+                if len(scores) == 6:
                     return {
                         "scores": scores,
                         "feedback": result.get("feedback", "")
@@ -419,7 +495,6 @@ class PassageEvaluator:
             
             # JSON 파싱 실패 시 기본값 반환
             print("⚠️ JSON 파싱에 실패했습니다. 기본값을 반환합니다.")
-            print(f"🔍 파싱 시도한 JSON: {json_str if 'json_str' in locals() else 'JSON 추출 실패'}")
             return self._get_default_binary_result("JSON 파싱 실패")
             
         except json.JSONDecodeError as e:
@@ -430,22 +505,22 @@ class PassageEvaluator:
             return self._get_default_binary_result(f"파싱 오류: {str(e)}")
 
     def _get_default_binary_result(self, error_message: str) -> Dict:
-        """기본 이진 평가 결과를 반환합니다."""
+        """기본 이진 평가 결과를 반환합니다 (6개 루브릭)."""
         return {
             "scores": {
-                "is_guideline_compliant": False,
-                "is_factually_consistent": False,
-                "is_natural": False,
-                "has_high_korean_quality": False,
-                "is_learner_appropriate": False
+                "completeness_for_guidelines": False,
+                "clarity_of_core_theme": False,
+                "reference_groundedness": False,
+                "logical_flow": False,
+                "korean_quality": False,
+                "l2_learner_suitability": False
             },
             "feedback": error_message
         }
 
     def evaluate_passage_metrics(self, passage: str, problem_types: List[str], eval_goals: List[str], 
                                 home_context: Optional[str] = None, foreign_context: Optional[str] = None,
-                                home_topic: str = "", foreign_topic: str = "",
-                                template_key: Optional[str] = None) -> Dict:
+                                home_topic: str = "", foreign_topic: str = "") -> Dict:
         """
         모든 평가 지표를 종합적으로 실행합니다.
         
@@ -457,36 +532,32 @@ class PassageEvaluator:
             foreign_context: 외국 컨텍스트 (선택적)
             home_topic: 한국 주제
             foreign_topic: 외국 주제
-            template_key: 프롬프트 템플릿 키
             
         Returns:
             Dict: 종합 평가 결과
-        """
-        template_key = template_key or self.template_key
-        
+        """        
         print("🔍 지문 종합 평가를 시작합니다...")
         
         results = {}
         
-        # 각 평가 지표별 실행
-        print("   📊 일관성 평가 중...")
-        results['coherence_score'] = self.evaluate_coherence(passage, problem_types, eval_goals, template_key)
+        # 각 평가 지표별 실행 (6개 루브릭)
+        print("   � 완성도 평가 중...")
+        results['completeness_for_guidelines_score'] = self.evaluate_completeness_for_guidelines(passage, problem_types, eval_goals)
         
-        print("   📋 일치성 평가 중...")
-        results['consistency_score'] = self.evaluate_consistency(passage, home_context, foreign_context, template_key)
+        print("   🎯 핵심주제 명확성 평가 중...")
+        results['clarity_of_core_theme_score'] = self.evaluate_clarity_of_core_theme(passage, home_topic, foreign_topic)
         
-        print("   🌊 자연스러움 평가 중...")
-        results['naturalness_score'] = self.evaluate_naturalness(passage, home_topic, foreign_topic, template_key)
+        print("   📚 참고자료 기반성 평가 중...")
+        results['reference_groundedness_score'] = self.evaluate_reference_groundedness(passage, home_context, foreign_context, home_topic, foreign_topic)
+        
+        print("   🔗 논리적 흐름 평가 중...")
+        results['logical_flow_score'] = self.evaluate_logical_flow(passage)
         
         print("   🇰🇷 한국어 품질 평가 중...")
-        results['korean_quality_score'] = self.evaluate_korean_quality(passage, template_key)
+        results['korean_quality_score'] = self.evaluate_korean_quality(passage)
         
-        # 종합 점수 계산
-        overall_score = self._calculate_overall_score_simple(results)
-        
-        # 메타 정보 추가
-        results['overall_score'] = overall_score
-        results['template_used'] = template_key
+        print("   🎓 L2 학습자 적합성 평가 중...")
+        results['l2_learner_suitability_score'] = self.evaluate_l2_learner_suitability(passage)
         results['evaluation_timestamp'] = self._get_timestamp()
         
         print("✅ 지문 종합 평가 완료!")
@@ -581,13 +652,14 @@ class PassageEvaluator:
         total_count = len(scores)
         failed_items = [key for key, value in scores.items() if not value]
         
-        # 한국어 항목명 매핑
+        # 한국어 항목명 매핑 (6개 루브릭)
         korean_labels = {
-            "is_guideline_compliant": "평가 지침 부합성",
-            "is_factually_consistent": "사실 기반성",
-            "is_natural": "연결 자연스러움",
-            "has_high_korean_quality": "한국어 품질",
-            "is_learner_appropriate": "L2 학습자 적합성"
+            "completeness_for_guidelines": "평가 지침 완성도",
+            "clarity_of_core_theme": "핵심주제 명확성",
+            "reference_groundedness": "참고자료 기반성",
+            "logical_flow": "논리적 흐름",
+            "korean_quality": "한국어 품질",
+            "l2_learner_suitability": "L2 학습자 적합성"
         }
         
         summary = {
@@ -677,25 +749,6 @@ class PassageEvaluator:
         
         return response.strip()
 
-    def _calculate_overall_score_simple(self, results: Dict) -> float:
-        """가중치를 적용하여 전체 점수를 계산합니다 (단순 버전)."""
-        total_weighted_score = 0.0
-        total_weight = 0.0
-        
-        score_keys = {
-            "coherence_score": 0.3,
-            "consistency_score": 0.3,
-            "naturalness_score": 0.2,
-            "korean_quality_score": 0.2
-        }
-        
-        for score_key, weight in score_keys.items():
-            if score_key in results and isinstance(results[score_key], (int, float)):
-                total_weighted_score += results[score_key] * weight
-                total_weight += weight
-        
-        return total_weighted_score / total_weight if total_weight > 0 else 0.0
-
     def _get_timestamp(self) -> str:
         """현재 타임스탬프를 반환합니다."""
         from datetime import datetime
@@ -709,10 +762,12 @@ class PassageEvaluator:
         summary = {
             "총점": results['overall_score'],
             "평가 항목별 점수": {
-                "일관성": results.get('coherence_score', 'N/A'),
-                "일치성": results.get('consistency_score', 'N/A'),
-                "자연스러움": results.get('naturalness_score', 'N/A'),
-                "한국어 품질": results.get('korean_quality_score', 'N/A')
+                "완성도": results.get('completeness_for_guidelines_score', 'N/A'),
+                "핵심주제 명확성": results.get('clarity_of_core_theme_score', 'N/A'),
+                "참고자료 기반성": results.get('reference_groundedness_score', 'N/A'),
+                "논리적 흐름": results.get('logical_flow_score', 'N/A'),
+                "한국어 품질": results.get('korean_quality_score', 'N/A'),
+                "L2 학습자 적합성": results.get('l2_learner_suitability_score', 'N/A')
             },
             "평가 시간": results.get('evaluation_timestamp', 'N/A'),
             "사용된 템플릿": results.get('template_used', 'N/A')
@@ -720,114 +775,6 @@ class PassageEvaluator:
         
         return summary
 
-# ========================= 편의 기능들 =========================
-
-def create_passage_evaluator(model_type: str = "openai", model_name: Optional[str] = None, 
-                            template_key: str = "iska", **kwargs) -> PassageEvaluator:
-    """
-    지문 평가기를 생성하는 편의 함수
-    
-    Args:
-        model_type: 모델 타입 ("openai", "local")
-        model_name: 모델 이름 (None이면 기본값 사용)
-        template_key: 프롬프트 템플릿 키
-        **kwargs: 추가 파라미터
-        
-    Returns:
-        PassageEvaluator: 초기화된 평가기
-    """
-    if model_type == "openai":
-        client = ModelClientFactory.create_openai_client(
-            model_name=model_name or "gpt-4o-mini", **kwargs
-        )
-    elif model_type == "local":
-        # 추후 Reward Model 사용 시
-        client = ModelClientFactory.create_local_client(
-            model_name=model_name or "reward-model-korean", **kwargs
-        )
-    else:
-        raise ValueError(f"지원하지 않는 모델 타입: {model_type}")
-    
-    return PassageEvaluator(llm_client=client, template_key=template_key)
-
-
-def create_binary_passage_evaluator(model_type: str = "openai", model_name: Optional[str] = None, 
-                                   template_key: str = "iska", **kwargs) -> PassageEvaluator:
-    """
-    이진 루브릭 전용 지문 평가기를 생성하는 편의 함수
-    
-    Args:
-        model_type: 모델 타입 ("openai", "local")
-        model_name: 모델 이름 (None이면 기본값 사용)
-        template_key: 프롬프트 템플릿 키
-        **kwargs: 추가 파라미터
-        
-    Returns:
-        PassageEvaluator: 이진 루브릭용 평가기
-    """
-    print("📋 이진 루브릭 전용 평가기를 생성합니다...")
-    return create_passage_evaluator(model_type, model_name, template_key, **kwargs)
-
-
-def evaluate_passage_with_binary_rubric(passage: str, problem_types: List[str], eval_goals: List[str],
-                                       korean_topic: str, foreign_topic: str,
-                                       korean_context: str, foreign_context: str,
-                                       model_type: str = "openai", model_name: Optional[str] = None) -> Dict:
-    """
-    이진 루브릭으로 지문을 평가하는 원스톱 함수
-    
-    Args:
-        passage: 평가할 지문
-        problem_types: 문제 유형 리스트 (3개)
-        eval_goals: 평가 목표 리스트 (3개)
-        korean_topic: 한국 주제
-        foreign_topic: 외국 주제
-        korean_context: 한국 참고 자료
-        foreign_context: 외국 참고 자료
-        model_type: 모델 타입
-        model_name: 모델 이름
-        
-    Returns:
-        Dict: 평가 결과
-    """
-    evaluator = create_binary_passage_evaluator(model_type, model_name)
-    
-    return evaluator.evaluate_binary_rubric(
-        passage=passage,
-        problem_types=problem_types,
-        eval_goals=eval_goals,
-        korean_topic=korean_topic,
-        foreign_topic=foreign_topic,
-        korean_context=korean_context,
-        foreign_context=foreign_context
-    )
-
-
-def create_reward_model_evaluator(model_name: str = "reward-model-korean", 
-                                gpus: Optional[List[int]] = None,
-                                template_key: str = "iska") -> PassageEvaluator:
-    """
-    Reward Model 기반 평가기를 생성하는 편의 함수 (추후 사용)
-    
-    Args:
-        model_name: Reward Model 이름
-        gpus: 사용할 GPU 리스트
-        template_key: 프롬프트 템플릿 키
-        
-    Returns:
-        PassageEvaluator: Reward Model 기반 평가기
-    """
-    print("🎯 Reward Model 기반 평가기를 생성합니다...")
-    
-    client = ModelClientFactory.create_local_client(
-        model_name=model_name,
-        gpus=gpus
-    )
-    
-    evaluator = PassageEvaluator(llm_client=client, template_key=template_key)
-    print(f"✅ Reward Model 평가기 생성 완료: {model_name}")
-    
-    return evaluator
 
 
 # ========================= 사용 예시 =========================
@@ -836,8 +783,9 @@ if __name__ == "__main__":
     print("🔍 PassageEvaluator 사용 예시")
     
     # 기본 OpenAI 평가기 생성
-    evaluator = create_passage_evaluator("openai", "gpt-4o-mini")
-    
+    llm_client = OpenAIModelClient(model_name="gpt-4o-mini")
+    evaluator = PassageEvaluator(llm_client)
+
     # 샘플 데이터를 더 간결하게
     sample_passage = "한국의 추석은 가족이 모여 조상을 기리는 전통 명절입니다. 미국의 추수감사절과 비슷하게 가족의 화합을 중시하지만, 종교적 색채보다는 유교적 전통이 강합니다."
     
@@ -860,12 +808,14 @@ if __name__ == "__main__":
             foreign_topic="미국의 추수감사절"
         )
         
-        # 결과 출력
+        # 결과 출력 (6개 루브릭)
         print(f"📊 평가 결과:")
-        print(f"   일관성: {results.get('coherence_score', 'N/A')}점")
-        print(f"   일치성: {results.get('consistency_score', 'N/A')}점")
-        print(f"   자연스러움: {results.get('naturalness_score', 'N/A')}점")
+        print(f"   완성도: {results.get('completeness_for_guidelines_score', 'N/A')}점")
+        print(f"   핵심주제 명확성: {results.get('clarity_of_core_theme_score', 'N/A')}점")
+        print(f"   참고자료 기반성: {results.get('reference_groundedness_score', 'N/A')}점")
+        print(f"   논리적 흐름: {results.get('logical_flow_score', 'N/A')}점")
         print(f"   한국어 품질: {results.get('korean_quality_score', 'N/A')}점")
+        print(f"   L2 학습자 적합성: {results.get('l2_learner_suitability_score', 'N/A')}점")
         print(f"   총점: {results.get('overall_score', 'N/A'):.2f}점")
         
         # 결과 요약
