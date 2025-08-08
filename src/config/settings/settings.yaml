@@ -1,8 +1,18 @@
 # config/settings.yaml
+
+# 로컬 LLM 설정 (Transformers 기반 모델)
 llm:
-  max_tokens: 512
+  max_tokens: 1024
   device: "auto"  # "cuda", "cpu", "auto"
   temperature: 0.7
   repetition_penalty: 1.1   # generation repetition penalty
   top_p: 0.9               # nucleus sampling probability
   top_k: 50                # top-k sampling
+
+# ChatGPT/OpenAI API 설정
+chatgpt:
+  max_tokens: 1024
+  temperature: 0           # 일관성을 위해 0으로 설정
+  top_p: 1.0              # temperature가 0일 때 top_p는 1.0 권장
+  frequency_penalty: 0.0   # 반복 단어 빈도 패널티
+  presence_penalty: 0.0    # 새로운 주제 생성 패널티
