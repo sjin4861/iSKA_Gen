@@ -1,4 +1,4 @@
-# iSKA-Gen: Inter-lingual Speaking Knowledge Assessment Generation
+# iSKA-Gen
 
 iSKA-Gen은 한국어 학습자를 위한 개인화된 말하기 평가 문항을 자동으로 생성하는 파이프라인 프로젝트입니다. 이 프로젝트는 학습자의 프로필과 관심사를 바탕으로, 두 문화권의 주제를 비교하는 고품질의 지문과 관련 문항을 생성하는 것을 목표로 합니다.
 
