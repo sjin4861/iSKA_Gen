@@ -108,26 +108,18 @@ def get_setting(setting_path: str, default=None):
 
 def get_merged_setting(setting_path: str, env_var: str) -> str:
     """설정 파일에서 값을 가져오고, 환경 변수로 대체 가능한 값을 처리합니다."""
-    settings = get_settings()
-    
-    # 설정 경로를 점으로 분리하여 중첩된 딕셔너리 접근
-    keys = setting_path.split('.')
-    value = settings
-    
-    for key in keys:
-        if isinstance(value, dict) and key in value:
-            value = value[key]
-        else:
-            value = None
-            break
-    
-    # 환경 변수 치환 처리 (${VAR_NAME} 형태)
+    # 먼저 설정 파일에서 값을 가져옵니다.
+    # 기존 구현은 Settings 객체 자체에서 딕셔너리 키를 조회하려고 하여 항상 실패했습니다.
+    # 따라서 get_setting을 활용해 설정 값을 안전하게 가져오도록 수정합니다.
+    value = get_setting(setting_path)
+
+    # 설정 파일 값이 "${VAR}" 형태라면 해당 환경 변수를 참조합니다.
     if isinstance(value, str) and value.startswith("${") and value.endswith("}"):
         env_var_name = value[2:-1]  # ${ 와 } 제거
         value = os.getenv(env_var_name)
-    
-    # 환경 변수로 대체
+
+    # 설정 값이 없거나 None이면 지정된 환경 변수를 사용합니다.
     if value is None:
         value = os.getenv(env_var)
-    
+
     return value
