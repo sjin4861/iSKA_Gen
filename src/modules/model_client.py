@@ -422,6 +422,168 @@ class LocalModelClient(BaseModelClient):
             print(f"❌ 로컬 모델 추론 중 오류 발생: {e}")
             return ""
 
+
+class VLLMOpenAIClient(BaseModelClient):
+    """
+    vLLM으로 서빙되는 모델을 OpenAI API처럼 사용하는 클라이언트
+    
+    🚀 Features:
+    - vLLM server와 OpenAI API 호환 인터페이스
+    - 자동 서버 상태 확인 및 연결
+    - 멋진 로깅과 오류 처리
+    - 유연한 설정 관리
+    """
+    
+    def __init__(
+        self,
+        model_name: str,
+        base_url: str = "http://localhost:8000/v1",
+        api_key: str = "EMPTY",
+        max_tokens: int = 1024,
+        temperature: float = 0.7,
+        timeout: int = 120,
+        max_retries: int = 3
+    ):
+        """
+        vLLM OpenAI 호환 클라이언트 초기화
+        
+        Args:
+            model_name: 사용할 모델명 (예: "gpt-oss-20b")
+            base_url: vLLM 서버 URL
+            api_key: API 키 (vLLM에서는 보통 "EMPTY" 사용)
+            max_tokens: 최대 토큰 수
+            temperature: 생성 온도
+            timeout: 요청 타임아웃 (초)
+            max_retries: 최대 재시도 횟수
+        """
+        super().__init__(model_name)
+        
+        self.base_url = base_url
+        self.api_key = api_key
+        self.max_tokens = max_tokens
+        self.temperature = temperature
+        self.timeout = timeout
+        self.max_retries = max_retries
+        
+        # OpenAI 클라이언트 초기화
+        self.client = OpenAI(
+            api_key=self.api_key,
+            base_url=self.base_url,
+            timeout=self.timeout
+        )
+        
+        print(f"🚀 vLLM OpenAI Client initialized for {model_name}")
+        print(f"   🌐 Server URL: {base_url}")
+        print(f"   ⚙️  Max tokens: {max_tokens}, Temperature: {temperature}")
+        
+        # 서버 연결 확인
+        self._check_server_health()
+    
+    def _check_server_health(self) -> bool:
+        """
+        vLLM 서버 상태 확인
+        
+        Returns:
+            bool: 서버가 정상인지 여부
+        """
+        try:
+            # 간단한 요청으로 서버 상태 확인
+            response = self.client.chat.completions.create(
+                model=self.model_name,
+                messages=[{"role": "user", "content": "ping"}],
+                max_tokens=1,
+                timeout=10
+            )
+            print(f"✅ vLLM server is healthy and responding")
+            return True
+            
+        except Exception as e:
+            print(f"⚠️  vLLM server health check failed: {e}")
+            print(f"   📝 Make sure vLLM server is running at {self.base_url}")
+            print(f"   💡 Start server with: python -m vllm.entrypoints.openai.api_server --model {self.model_name}")
+            return False
+    
+    def call(self, messages: List[Dict], **kwargs) -> str:
+        """
+        vLLM 서버에 추론 요청
+        
+        Args:
+            messages: 대화 메시지 리스트
+            **kwargs: 추가 매개변수
+            
+        Returns:
+            str: 생성된 응답
+        """
+        # 매개변수 설정 (kwargs로 오버라이드 가능)
+        params = {
+            'model': self.model_name,
+            'messages': messages,
+            'max_tokens': kwargs.get('max_tokens', self.max_tokens),
+            'temperature': kwargs.get('temperature', self.temperature),
+            'top_p': kwargs.get('top_p', 0.9),
+            'frequency_penalty': kwargs.get('frequency_penalty', 0.0),
+            'presence_penalty': kwargs.get('presence_penalty', 0.0),
+        }
+        
+        # 재시도 로직
+        for attempt in range(self.max_retries):
+            try:
+                print(f"🤖 Generating with {self.model_name} (attempt {attempt + 1}/{self.max_retries})...")
+                
+                response = self.client.chat.completions.create(**params)
+                
+                if response.choices and len(response.choices) > 0:
+                    content = response.choices[0].message.content
+                    if content:
+                        print(f"✅ Generation successful ({len(content)} chars)")
+                        return content.strip()
+                
+                print(f"⚠️  Empty response from vLLM server")
+                return ""
+                
+            except RateLimitError as e:
+                wait_time = 2 ** attempt  # 지수 백오프
+                print(f"⏳ Rate limit hit, waiting {wait_time}s before retry...")
+                time.sleep(wait_time)
+                
+            except APITimeoutError as e:
+                print(f"⏰ Request timeout (attempt {attempt + 1}): {e}")
+                if attempt == self.max_retries - 1:
+                    return ""
+                    
+            except Exception as e:
+                print(f"❌ vLLM API error (attempt {attempt + 1}): {e}")
+                if attempt == self.max_retries - 1:
+                    return ""
+                time.sleep(1)  # 짧은 대기 후 재시도
+        
+        print(f"💥 All {self.max_retries} attempts failed")
+        return ""
+    
+    def __repr__(self) -> str:
+        return f"VLLMOpenAIClient(model='{self.model_name}', url='{self.base_url}')"
+
+
+def create_vllm_client(
+    model_name: str = "gpt-oss-20b",
+    base_url: str = "http://localhost:8000/v1",
+    **kwargs
+) -> VLLMOpenAIClient:
+    """
+    vLLM OpenAI 호환 클라이언트 생성 함수
+    
+    Args:
+        model_name: 모델명
+        base_url: vLLM 서버 URL
+        **kwargs: 추가 설정
+        
+    Returns:
+        VLLMOpenAIClient 인스턴스
+    """
+    print(f"🔧 Creating vLLM client for {model_name}...")
+    return VLLMOpenAIClient(model_name=model_name, base_url=base_url, **kwargs)
+
+
 # Factory function to create appropriate client
 def create_model_client(
     client_type: str,
@@ -432,19 +594,23 @@ def create_model_client(
     Factory function to create appropriate model client.
     
     Args:
-        client_type: "openai" or "local"
+        client_type: "openai", "local", or "vllm"
         model_name: Name of the model
         **kwargs: Additional arguments for specific clients
     
     Returns:
         BaseModelClient instance
     """
-    if client_type.lower() == "openai":
+    client_type_lower = client_type.lower()
+    
+    if client_type_lower == "openai":
         return OpenAIModelClient(model_name=model_name, **kwargs)
-    elif client_type.lower() == "local":
+    elif client_type_lower == "local":
         return LocalModelClient(model_name=model_name, **kwargs)
+    elif client_type_lower == "vllm":
+        return VLLMOpenAIClient(model_name=model_name, **kwargs)
     else:
-        raise ValueError(f"Unknown client type: {client_type}. Supported: 'openai', 'local'")
+        raise ValueError(f"Unknown client type: {client_type}. Supported: 'openai', 'local', 'vllm'")
 
 # Utility function to list available local models
 def list_local_models() -> List[str]:

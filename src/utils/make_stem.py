@@ -15,7 +15,7 @@ sys.path.append(str(Path.cwd().parent / 'modules'))
 from modules.iska.stem_agent import StemAgent
 from modules.model_client import LocalModelClient
 from utils.output_saver import save_model_output
-from utils.benchmark_loader import load_benchmarks, get_benchmark_by_id
+from utils.benchmark_loader import get_guideline_by_id
 from utils.output_loader import load_passages, debug_available_files
 
 def generate_stem(benchmark_file : str, passage_model_name : str, model_name : str,  template_key : str, passage_template_key: Optional[str] = None, benchmark_version: str = "v1.0.0", gpus : list = [0], BENCH_ID_LIST : list =  [1, 3, 7, 8, 10], date_str: Optional[str] = None):
@@ -32,7 +32,6 @@ def generate_stem(benchmark_file : str, passage_model_name : str, model_name : s
         gpus (list): 사용할 GPU 리스트
         BENCH_ID_LIST (list): 처리할 벤치마크 ID 리스트
     """
-    benchmarks = load_benchmarks(benchmark_file)
 
     llm_client = LocalModelClient(model_name=model_name, gpus = gpus)
     stem_agent = StemAgent(llm_client=llm_client)
@@ -58,14 +57,13 @@ def generate_stem(benchmark_file : str, passage_model_name : str, model_name : s
         print(f"✅ {len(passages)}개의 passage 로드 완료")
 
         # 벤치마크 정보 가져오기
-        benchmark = get_benchmark_by_id(benchmark_file, id)
-        if not benchmark:
+        guideline = get_guideline_by_id(benchmark_file, id)
+        if not guideline:
             print(f"❌ 벤치마크 ID {id}를 찾을 수 없습니다.")
             continue
-        problem_types = benchmark['problem_types']
-        eval_goals = benchmark['eval_goals']
+        problem_types = guideline['problem_types']
+        eval_goals = guideline['eval_goals']
         stem_datas = []
-
         for i, passage_data in enumerate(passages):
             print(f"  📄 Passage {i+1}/{len(passages)} 처리 중...")
             stem_data = {
@@ -86,16 +84,22 @@ def generate_stem(benchmark_file : str, passage_model_name : str, model_name : s
                 stem_data[f'stem_{j+1}'] = generated_stem if generated_stem else "문항 생성 실패"
             stem_datas.append(stem_data)
 
-        # output_saver를 사용하여 결과 저장
+        # output_saver를 사용하여 결과 저장 (passage 모델 정보 포함)
+        # 템플릿 키에 passage 모델명 포함하여 구분 가능하게 함
+        modified_template_key = f"{template_key}_from_{passage_model_name}"
+        
         saved_file = save_model_output(
             model_name=model_name,
             benchmark_id=id,
             benchmark_version=benchmark_version,
-            template_key=f"{template_key}",
+            template_key=modified_template_key,
             data=stem_datas,
             date_str=date_str
         )
         print(f"✅ 벤치마크 ID {id}에 대한 stem 생성 완료 및 저장: {saved_file}")
+        print(f"   📂 지문 모델: {passage_model_name}")
+        print(f"   🤖 Stem 생성 모델: {model_name}")
+        print(f"   📄 저장된 파일: {saved_file.name}")
 
         # 메모리 정리
         gc.collect()
