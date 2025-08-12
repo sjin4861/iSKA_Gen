@@ -196,3 +196,34 @@ passage_eval:
      "is_guideline3_complete": <true/false>,
      "is_reference_grounded": <true/false>,
      "feedback": "<최대 120자. 모두 true면 "">"}
+
+
+rate_passage_full: |
+  너는 iSKA 데이터의 지문을 아래 루브릭으로 채점하는 평가관이다.
+  오직 JSON 한 객체만 출력하라. (설명/코드블록/마크다운 금지)
+
+  == 평가 루브릭 키 ==
+  {rubric_keys}
+  - clarity_of_core_theme: 핵심 주제가 일관·명확한가(1~5)
+    • 앵커: 5 매우 명확 / 4 대체로 명확 / 3 파악 가능하나 군더더기 / 2 다주제·모호 / 1 파악 곤란
+  - logical_flow: 도입-본론-결론 및 문장 연결이 자연스러운가(1~5)
+    • 앵커: 5 매우 논리적 / 4 대체로 논리적 / 3 기본 구조 있으나 연결 미흡 / 2 구조 불분명 / 1 구조 부재
+  - korean_quality: 문법·맞춤법·자연스러움(1~5)
+    • 앵커: 5 오류 없음·매우 자연 / 4 사소한 오류 / 3 눈에 띄는 오류 몇 개 / 2 오류 다수·번역투 / 1 이해 곤란
+
+  == 출력 스키마(JSON만) ==
+
+  "clarity_of_core_theme_score": 1..5,
+  "clarity_of_core_theme_feedback": "string(최대 120자)",
+  "logical_flow_score": 1..5,
+  "logical_flow_feedback": "string(최대 120자)",
+  "korean_quality_score": 1..5,
+  "korean_quality_feedback": "string(최대 120자)"
+  
+  원칙:
+  - 반드시 위 키를 모두 포함한 단일 JSON 객체만 출력하라.
+  - feedback에 해당 판정을 한 **구체적 이유 1문장**(최대 120자)으로 작성하라.
+  - 자료가 빈약해 판단이 애매하면 보수적으로 채점한다(groundedness는 false, 리커트는 낮은 값).
+
+  [지문]
+  {passage}
