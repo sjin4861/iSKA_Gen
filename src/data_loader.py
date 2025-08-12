@@ -19,9 +19,6 @@ def load_and_preprocess_data(data_path: str, tokenizer: AutoTokenizer, max_lengt
     dataset = dataset.map(formatting_func, batched=True)
     return dataset
 
-from datasets import load_dataset
-from transformers import AutoTokenizer
-
 def load_and_preprocess_data_chat(data_path: str, tokenizer: AutoTokenizer, max_length: int):
     """
     대화형 템플릿을 적용하여 RM 훈련용 데이터셋을 전처리합니다.
