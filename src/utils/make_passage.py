@@ -389,7 +389,6 @@ def generate_passage(
         )
         print(f"Generated passage for benchmark ID {id} and saved to {saved_file}")
 
-
 def generate_single_passage(
     korean_topic: str,
     korean_context: str,
@@ -542,7 +541,6 @@ def generate_single_passage(
         print(f"   ❌ 지문 생성 중 예외 발생: {e}")
         return result
 
-
 def generate_single_passage_from_benchmark(
     benchmark_file: str,
     benchmark_id: int,
@@ -641,7 +639,6 @@ def generate_single_passage_from_benchmark(
                 "benchmark_id": benchmark_id,
             }
         }
-
 
 def generate_domestic_passage_from_benchmark(
     benchmark_file: str,
@@ -746,7 +743,6 @@ def generate_domestic_passage_from_benchmark(
                 "item_index": item_index
             }
         }
-
 
 def generate_image_caption_and_situation_for_benchmark(
     benchmark_file: str,
@@ -892,7 +888,6 @@ def generate_image_caption_and_situation_for_benchmark(
             }
         }
 
-
 def generate_single_image_caption_and_situation(
     topic: str,
     model_name: str = "EXAONE-3.0-7.8B-Instruct",
@@ -995,5 +990,3 @@ def generate_single_image_caption_and_situation(
         }
         print(f"   ❌ 생성 중 예외 발생: {e}")
         return result
-
- 
