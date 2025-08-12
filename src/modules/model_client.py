@@ -1,13 +1,14 @@
 import os
 import sys
 import time
-from typing import List, Dict, Optional
+from typing import Any, List, Dict, Optional
 from openai import OpenAI, RateLimitError, APITimeoutError
 import torch
 from transformers import AutoTokenizer, AutoModelForCausalLM, pipeline
 import json
 from dotenv import load_dotenv
 from pathlib import Path
+import logging
 
 # 경로 설정
 sys.path.append(str(Path.cwd().parent.parent))
@@ -17,7 +18,8 @@ try:
     from src.utils.settings_loader import get_settings
 except ImportError:
     from utils.settings_loader import get_settings
-
+    
+logger = logging.getLogger(__name__)
 load_dotenv()
 _CFG = get_settings()
 _LLM_CFG = _CFG.get('llm', {})
@@ -218,144 +220,152 @@ class OpenAIModelClient(BaseModelClient):
 
 class LocalModelClient(BaseModelClient):
     """
-    로컬 HuggingFace 모델 추론용 클라이언트 (강화된 GPU 제어 기능)
+    로컬 HuggingFace 모델 추론용 클라이언트.
+    - gpus=[0,1,2] 등으로 사용할 물리 GPU 지정 가능
+    - device_map='auto' + (선택) max_memory 기반 멀티 GPU 샤딩
+    - flash_attention_2 / 4bit/8bit 양자화 선택적 지원
     """
-    def __init__(self, model_name: str, **kwargs):
-        """
-        클래스를 초기화하고, 지정된 GPU에 모델을 로드합니다.
 
+    def __init__(
+        self,
+        model_name: str,
+        *,
+        gpus: Optional[List[int]] = None,
+        device: str = None,                    # 'cpu' | 'cuda' | 'auto' (기본: _LLM_CFG.device or 'auto')
+        use_max_memory: bool = True,
+        attn_impl: Optional[str] = None,       # 'flash_attention_2' 등
+        load_in_4bit: bool = False,
+        load_in_8bit: bool = False,
+        bnb_4bit_compute_dtype: Optional[str] = None,  # 'bfloat16' | 'float16' 등
+        trust_remote_code: bool = True,
+        **kwargs: Any
+    ):
+        """
         Args:
-            model_name (str): '~/models/' 디렉토리 내의 모델 폴더 이름.
-            **kwargs: 'gpus' (List[int])와 같은 추가 인자를 받을 수 있습니다.
+            model_name: ~/models 아래 모델 디렉토리명
+            gpus: 사용할 물리 GPU 인덱스 목록 (예: [0,1,2]). 지정 시 해당 GPU만 노출되도록 설정
+            device: 'cpu' | 'cuda' | 'auto' (미지정 시 설정파일 기본값/_DEFAULT_DEVICE)
+            use_max_memory: True면 각 GPU 총용량-1GiB 상한으로 max_memory 전달
+            attn_impl: 'flash_attention_2' 사용 등
+            load_in_4bit / load_in_8bit: bitsandbytes 양자화 옵션
+            bnb_4bit_compute_dtype: 4bit 시 연산 dtype
+            trust_remote_code: 리포의 커스텀 코드 신뢰
+            kwargs: from_pretrained에 그대로 전달할 추가 인자
         """
         self.model_name = model_name
         self.model_path = os.path.join(_LOCAL_MODELS_DIR, model_name)
-        
         if not os.path.exists(self.model_path):
             raise FileNotFoundError(f"Model not found at {self.model_path}")
 
-        # --- 강화된 GPU 설정 로직 ---
-        gpus = kwargs.pop('gpus', None)
-        device_setting = kwargs.pop('device', _LLM_CFG.get('device', _DEFAULT_DEVICE))
-        self.target_gpus = gpus
-        
-        # 설정 파일의 device 값에 따른 처리
-        if device_setting == "cpu":
-            # CPU 강제 사용
-            self.device_map = "cpu"
-            self.target_device = "cpu"
-            print("🎯 CPU 모드: 설정에 의한 CPU 사용")
-        elif gpus is not None and torch.cuda.is_available():
-            if isinstance(gpus, list) and all(isinstance(i, int) for i in gpus):
-                # 1. CUDA_VISIBLE_DEVICES를 먼저 설정 (매우 중요!)
-                os.environ['CUDA_VISIBLE_DEVICES'] = ','.join(map(str, gpus))
-                print(f"🎯 CUDA_VISIBLE_DEVICES 설정: {','.join(map(str, gpus))}")
-                
-                # 2. PyTorch CUDA 캐시 정리
-                torch.cuda.empty_cache()
-                print("🧹 CUDA 캐시 정리 완료")
-                
-                # 3. GPU 설정 - CUDA_VISIBLE_DEVICES 설정 후에는 0부터 시작
-                if len(gpus) == 1:
-                    # 단일 GPU 사용 - CUDA_VISIBLE_DEVICES 설정 후에는 0번 인덱스
-                    self.device_map = {"": "cuda:0"}
-                    self.target_device = "cuda:0"
-                    print(f"🎯 단일 GPU 모드: 실제 GPU {gpus[0]} → 논리적 GPU 0")
-                else:
-                    # 다중 GPU 사용 - 논리적 GPU 인덱스 매핑
-                    gpu_mapping = {f"cuda:{i}": f"cuda:{i}" for i in range(len(gpus))}
-                    self.device_map = gpu_mapping
-                    self.target_device = "cuda:0"  # 첫 번째 논리적 GPU
-                    print(f"🎯 다중 GPU 모드: 실제 GPU {gpus} → 논리적 GPU 0~{len(gpus)-1}")
-                    print(f"🔗 디바이스 매핑: {gpu_mapping}")
-            else:
-                print("⚠️ 'gpus' 인자는 정수 리스트여야 합니다 (예: [2, 3]). auto로 설정합니다.")
-                self.device_map = "auto"
-                self.target_device = "cuda:0" if torch.cuda.is_available() else "cpu"
+        # --- 디바이스/환경 결정 ---
+        device = device or _LLM_CFG.get('device', _DEFAULT_DEVICE)
+
+        # dtype 해석
+        def _to_torch_dtype(name_or_none: Optional[str], default_dtype: torch.dtype) -> torch.dtype:
+            if not name_or_none:
+                return default_dtype
+            name = name_or_none.lower()
+            if name in ("bf16", "bfloat16"):
+                return torch.bfloat16
+            if name in ("fp16", "float16", "half"):
+                return torch.float16
+            if name in ("fp32", "float32"):
+                return torch.float32
+            return default_dtype
+
+        torch_dtype = _DEFAULT_TORCH_DTYPE
+
+        # CUDA 사용 가능성
+        cuda_available = torch.cuda.is_available()
+
+        # gpus 지정 처리: CUDA 컨텍스트 생성 전이어야 안전
+        if gpus is not None:
+            if not isinstance(gpus, list) or not all(isinstance(i, int) for i in gpus):
+                raise ValueError("gpus 인자는 정수 리스트여야 합니다. 예: [0,1,2]")
+            if not cuda_available:
+                raise RuntimeError("CUDA가 사용 불가한 환경에서 gpus가 지정되었습니다.")
+            if torch.cuda.is_initialized():
+                # 이미 초기화되면 환경변수 변경이 반영되지 않음
+                raise RuntimeError("CUDA가 이미 초기화되었습니다. gpus 제한은 CUDA 초기화 전에 설정해야 합니다.")
+            # 물리 인덱스 유효성 확인
+            physical_count = torch.cuda.device_count()
+            invalid = [i for i in gpus if i < 0 or i >= physical_count]
+            if invalid:
+                raise ValueError(f"유효하지 않은 GPU 인덱스: {invalid}. 사용 가능 범위: 0..{physical_count-1}")
+            os.environ["CUDA_VISIBLE_DEVICES"] = ",".join(map(str, gpus))
+
+        # 최종 가시 GPU 개수(논리 인덱스 기준)
+        logical_cuda = cuda_available and (torch.cuda.device_count() > 0)
+
+        # device_map 결정
+        if device == "cpu" or not logical_cuda:
+            device_map = "cpu"
+            input_device = torch.device("cpu")
         else:
-            # GPU 지정 없음 - 설정 파일 기반 처리
-            if device_setting == "auto" and torch.cuda.is_available():
-                self.device_map = "auto"
-                self.target_device = "cuda:0"
-                print("🎯 AUTO 모드: 설정에 의한 자동 디바이스 매핑")
-            elif device_setting == "cuda" and torch.cuda.is_available():
-                self.device_map = "auto"
-                self.target_device = "cuda:0"
-                print("🎯 CUDA 모드: 설정에 의한 GPU 사용")
-            else:
-                self.device_map = "cpu"
-                self.target_device = "cpu"
-                print("🎯 CPU 모드: CUDA 사용 불가 또는 설정에 의한 CPU 사용")
-        # ------------------------------------
-            
-        print(f"🔄 로컬 모델 로딩 중: {self.model_path}...")
-        
-        # GPU 메모리 사용량 체크 (CUDA_VISIBLE_DEVICES 설정 후)
-        if torch.cuda.is_available() and gpus:
-            print("📊 GPU 메모리 상태:")
-            for logical_idx in range(len(gpus)):
-                try:
-                    memory_allocated = torch.cuda.memory_allocated(logical_idx) / 1024**3
-                    memory_cached = torch.cuda.memory_reserved(logical_idx) / 1024**3
-                    memory_total = torch.cuda.get_device_properties(logical_idx).total_memory / 1024**3
-                    actual_gpu = gpus[logical_idx]
-                    print(f"   논리적 GPU {logical_idx} (실제 GPU {actual_gpu}): {memory_allocated:.1f}GB 할당, {memory_cached:.1f}GB 캐시, {memory_total:.1f}GB 총용량")
-                except Exception as e:
-                    print(f"   GPU {logical_idx} 메모리 정보 조회 실패: {e}")
-        
-        try:
-            self.tokenizer = AutoTokenizer.from_pretrained(self.model_path, trust_remote_code=True)
-            
-            # 메모리 효율적인 로딩 옵션
-            load_options = {
-                "torch_dtype": _DEFAULT_TORCH_DTYPE,
-                "device_map": self.device_map,
-                "trust_remote_code": True,
-                "low_cpu_mem_usage": True,  # CPU 메모리 사용량 최소화
-            }
-            
-            print(f"🔧 모델 로딩 옵션: device_map={self.device_map}")
-            
-            self.model = AutoModelForCausalLM.from_pretrained(self.model_path, **load_options)
-            
-            # 모델이 로드된 후 디바이스 확인
-            if hasattr(self, 'target_device'):
-                print(f"🔧 모델 타겟 디바이스: {self.target_device}")
-                # 단일 GPU 사용 시 명시적 이동 (안전성 확보)
-                if gpus and len(gpus) == 1:
-                    try:
-                        self.model = self.model.to(self.target_device)
-                        print(f"✅ 모델을 {self.target_device}로 명시적 이동 완료")
-                    except Exception as e:
-                        print(f"⚠️ 모델 디바이스 이동 실패: {e}")
-                    
-        except Exception as e:
-            print(f"❌ 모델 로딩 실패: {e}")
-            # 폴백: 더 보수적인 설정으로 재시도
-            print("🔄 보수적인 설정으로 재시도...")
-            try:
-                self.model = AutoModelForCausalLM.from_pretrained(
-                    self.model_path,
-                    torch_dtype=_FALLBACK_TORCH_DTYPE,  # bfloat16 대신 float16
-                    device_map="cpu",  # 일단 CPU로 로드
-                    trust_remote_code=True,
-                    low_cpu_mem_usage=True
-                )
-                # 나중에 첫 번째 GPU로 이동
-                if torch.cuda.is_available() and gpus:
-                    self.target_device = f"cuda:{gpus[0]}"
-                    self.model = self.model.to(self.target_device)
-                    print(f"🔧 모델을 {self.target_device}로 이동 완료")
-                else:
-                    self.target_device = "cpu"
-            except Exception as e2:
-                raise RuntimeError(f"모델 로딩 완전 실패: {e2}")
-        
-        # pad_token 설정
+            device_map = "auto"  # 멀티/단일 GPU 모두 안전
+            input_device = torch.device("cuda:0")
+
+        # max_memory 구성(선택)
+        max_memory = None
+        if logical_cuda and device_map == "auto" and use_max_memory:
+            max_memory = {}
+            for i in range(torch.cuda.device_count()):
+                total_gb = torch.cuda.get_device_properties(i).total_memory / 1024**3
+                # 여유 1GiB 남겨두기
+                max_memory[i] = f"{int(total_gb - 1)}GiB"
+
+        # Tokenizer
+        self.tokenizer = AutoTokenizer.from_pretrained(self.model_path, trust_remote_code=trust_remote_code)
         if self.tokenizer.pad_token is None:
             self.tokenizer.pad_token = self.tokenizer.eos_token
-            
-        # default_params 설정
+
+        # --- 모델 로딩 옵션 구성 ---
+        load_opts: Dict[str, Any] = dict(
+            trust_remote_code=trust_remote_code,
+            low_cpu_mem_usage=True,
+        )
+
+        # attn impl
+        if attn_impl:
+            load_opts["attn_implementation"] = attn_impl
+
+        # 양자화 옵션 우선 (4bit/8bit) → dtype은 프레임워크가 관리
+        if load_in_4bit or load_in_8bit:
+            load_opts["device_map"] = device_map
+            if max_memory:
+                load_opts["max_memory"] = max_memory
+            if load_in_4bit:
+                load_opts["load_in_4bit"] = True
+                if bnb_4bit_compute_dtype:
+                    load_opts["bnb_4bit_compute_dtype"] = _to_torch_dtype(bnb_4bit_compute_dtype, torch.bfloat16)
+            if load_in_8bit:
+                load_opts["load_in_8bit"] = True
+        else:
+            load_opts["torch_dtype"] = torch_dtype
+            load_opts["device_map"] = device_map
+            if max_memory:
+                load_opts["max_memory"] = max_memory
+
+        # 추가 인자 병합(필요 시 revision, trust_remote_code 외)
+        load_opts.update(kwargs)
+
+        # --- 모델 로드 ---
+        try:
+            self.model = AutoModelForCausalLM.from_pretrained(self.model_path, **load_opts)
+        except Exception as e:
+            # 보수적 폴백: CPU + fp16
+            logger.warning("모델 로딩 실패. 보수적 설정으로 재시도합니다: %s", e)
+            self.model = AutoModelForCausalLM.from_pretrained(
+                self.model_path,
+                trust_remote_code=trust_remote_code,
+                low_cpu_mem_usage=True,
+                device_map="cpu",
+                torch_dtype=_FALLBACK_TORCH_DTYPE
+            )
+            input_device = torch.device("cpu")
+
+        # 기본 생성 파라미터
+        self._input_device = input_device
         self.default_params = {
             "temperature": _LLM_TEMPERATURE,
             "max_new_tokens": _LLM_MAX_TOKENS,
@@ -363,206 +373,139 @@ class LocalModelClient(BaseModelClient):
             "top_p": _LLM_TOP_P,
             "top_k": _LLM_TOP_K,
             "no_repeat_ngram_size": _LLM_NO_REPEAT_NGRAM_SIZE,
+            "do_sample": True,
+            "pad_token_id": self.tokenizer.eos_token_id,
         }
-            
-        print(f"✅ 로컬 모델 로딩 완료 ({self.target_device})")
 
-    def call(self, messages: List[Dict], **kwargs) -> str:
-        params = self.default_params.copy()
-        params.update(kwargs)
-        
-        # --- ✨ 추론 기능 토글 추가 ✨ ---
-        # 1. 'enable_thinking' 인자를 kwargs에서 추출합니다. (기본값: False)
-        enable_thinking = params.pop('enable_thinking', False)
-        
-        # 2. apply_chat_template에 전달할 인자를 구성합니다.
-        chat_template_kwargs = {
-            "tokenize": False,
-            "add_generation_prompt": True
-        }
-        
-        # 3. 토글이 True일 경우에만 'enable_thinking' 인자를 추가합니다.
-        if enable_thinking:
-            chat_template_kwargs['enable_thinking'] = True
-            print("💡 추론(Thinking) 모드가 활성화되었습니다.")
-        
-        prompt = self.tokenizer.apply_chat_template(messages, **chat_template_kwargs)
-        # --- ✨ 추론 기능 토글 끝 ✨ ---
-        
-        # 입력을 올바른 디바이스로 보내기
-        inputs = self.tokenizer(prompt, return_tensors="pt").to(self.target_device)
-        
+    # 간단한 백업 포맷(토크나이저에 chat_template가 없을 때)
+    @staticmethod
+    def _fallback_chat_format(messages: List[Dict[str, str]]) -> str:
+        # ChatML 유사 포맷
+        parts = []
+        for m in messages:
+            role = m.get("role", "user")
+            content = m.get("content", "")
+            if role == "system":
+                parts.append(f"<<SYS>>\n{content}\n<</SYS>>\n")
+            elif role == "user":
+                parts.append(f"[INST] {content} [/INST]")
+            else:
+                parts.append(content)
+        return "\n".join(parts)
+
+    def call(self, messages: List[Dict[str, str]], **kwargs) -> str:
+        params = {**self.default_params, **kwargs}
+
+        # prompt 생성 (chat_template 우선, 실패 시 fallback)
+        try:
+            prompt = self.tokenizer.apply_chat_template(
+                messages, tokenize=False, add_generation_prompt=True
+            )
+        except Exception:
+            prompt = self._fallback_chat_format(messages)
+
+        # 입력 텐서를 입력 디바이스로
+        inputs = self.tokenizer(prompt, return_tensors="pt").to(self._input_device)
+
         try:
             with torch.no_grad():
-                # 🔧 model.generate에 전달할 파라미터 필터링
-                generate_kwargs = {
-                    "input_ids": inputs.input_ids,
-                    "attention_mask": inputs.attention_mask,
-                    "temperature": params['temperature'],
-                    "max_new_tokens": params['max_new_tokens'],
-                    "repetition_penalty": params['repetition_penalty'],
-                    "top_p": params['top_p'],
-                    "top_k": params['top_k'],
-                    "no_repeat_ngram_size": params['no_repeat_ngram_size'],
-                    "pad_token_id": self.tokenizer.eos_token_id,
-                    "do_sample": True,  # temperature > 0일 때 필요
-                }
-                
-                # token_type_ids가 있으면서 모델이 지원하는 경우에만 추가
-                if hasattr(inputs, 'token_type_ids') and inputs.token_type_ids is not None:
-                    # 모델이 token_type_ids를 지원하는지 확인
-                    if 'token_type_ids' in self.model.forward.__code__.co_varnames:
-                        generate_kwargs['token_type_ids'] = inputs.token_type_ids
-                    # 지원하지 않는 모델의 경우 token_type_ids는 제외
-                
-                outputs = self.model.generate(**generate_kwargs)
-            response_text = self.tokenizer.decode(outputs[0][len(inputs.input_ids[0]):], skip_special_tokens=True)
-            return response_text.strip()
+                outputs = self.model.generate(
+                    input_ids=inputs.input_ids,
+                    attention_mask=inputs.attention_mask,
+                    temperature=params["temperature"],
+                    max_new_tokens=params["max_new_tokens"],
+                    repetition_penalty=params["repetition_penalty"],
+                    top_p=params["top_p"],
+                    top_k=params["top_k"],
+                    no_repeat_ngram_size=params["no_repeat_ngram_size"],
+                    do_sample=params["do_sample"],
+                    pad_token_id=params["pad_token_id"],
+                )
+            gen = outputs[0][inputs.input_ids.shape[1]:]
+            text = self.tokenizer.decode(gen, skip_special_tokens=True)
+            return text.strip()
         except Exception as e:
-            print(f"❌ 로컬 모델 추론 중 오류 발생: {e}")
+            logger.error("로컬 모델 추론 오류: %s", e)
             return ""
 
-
 class VLLMOpenAIClient(BaseModelClient):
-    """
-    vLLM으로 서빙되는 모델을 OpenAI API처럼 사용하는 클라이언트
-    
-    🚀 Features:
-    - vLLM server와 OpenAI API 호환 인터페이스
-    - 자동 서버 상태 확인 및 연결
-    - 멋진 로깅과 오류 처리
-    - 유연한 설정 관리
-    """
-    
+    """vLLM(OpenAI 호환 서버) 클라이언트"""
     def __init__(
         self,
         model_name: str,
         base_url: str = "http://localhost:8000/v1",
         api_key: str = "EMPTY",
-        max_tokens: int = 1024,
-        temperature: float = 0.7,
         timeout: int = 120,
-        max_retries: int = 3
+        max_retries: int = 3,
+        **default_params,
     ):
-        """
-        vLLM OpenAI 호환 클라이언트 초기화
-        
-        Args:
-            model_name: 사용할 모델명 (예: "gpt-oss-20b")
-            base_url: vLLM 서버 URL
-            api_key: API 키 (vLLM에서는 보통 "EMPTY" 사용)
-            max_tokens: 최대 토큰 수
-            temperature: 생성 온도
-            timeout: 요청 타임아웃 (초)
-            max_retries: 최대 재시도 횟수
-        """
-        super().__init__(model_name)
-        
+        self.model_name = model_name
         self.base_url = base_url
         self.api_key = api_key
-        self.max_tokens = max_tokens
-        self.temperature = temperature
         self.timeout = timeout
         self.max_retries = max_retries
-        
-        # OpenAI 클라이언트 초기화
-        self.client = OpenAI(
-            api_key=self.api_key,
-            base_url=self.base_url,
-            timeout=self.timeout
-        )
-        
-        print(f"🚀 vLLM OpenAI Client initialized for {model_name}")
-        print(f"   🌐 Server URL: {base_url}")
-        print(f"   ⚙️  Max tokens: {max_tokens}, Temperature: {temperature}")
-        
-        # 서버 연결 확인
-        self._check_server_health()
-    
-    def _check_server_health(self) -> bool:
-        """
-        vLLM 서버 상태 확인
-        
-        Returns:
-            bool: 서버가 정상인지 여부
-        """
-        try:
-            # 간단한 요청으로 서버 상태 확인
-            response = self.client.chat.completions.create(
-                model=self.model_name,
-                messages=[{"role": "user", "content": "ping"}],
-                max_tokens=1,
-                timeout=10
-            )
-            print(f"✅ vLLM server is healthy and responding")
-            return True
-            
-        except Exception as e:
-            print(f"⚠️  vLLM server health check failed: {e}")
-            print(f"   📝 Make sure vLLM server is running at {self.base_url}")
-            print(f"   💡 Start server with: python -m vllm.entrypoints.openai.api_server --model {self.model_name}")
-            return False
-    
-    def call(self, messages: List[Dict], **kwargs) -> str:
-        """
-        vLLM 서버에 추론 요청
-        
-        Args:
-            messages: 대화 메시지 리스트
-            **kwargs: 추가 매개변수
-            
-        Returns:
-            str: 생성된 응답
-        """
-        # 매개변수 설정 (kwargs로 오버라이드 가능)
-        params = {
-            'model': self.model_name,
-            'messages': messages,
-            'max_tokens': kwargs.get('max_tokens', self.max_tokens),
-            'temperature': kwargs.get('temperature', self.temperature),
-            'top_p': kwargs.get('top_p', 0.9),
-            'frequency_penalty': kwargs.get('frequency_penalty', 0.0),
-            'presence_penalty': kwargs.get('presence_penalty', 0.0),
+        self.default_params = {
+            "max_tokens": 1024,
+            "temperature": 0.7,
+            "top_p": 0.9,
+            "frequency_penalty": 0.0,
+            "presence_penalty": 0.0,
+            **default_params,
         }
-        
-        # 재시도 로직
+        self.client = OpenAI(api_key=self.api_key, base_url=self.base_url, timeout=self.timeout)
+        self._check_server_health()
+
+    def _check_server_health(self) -> bool:
+        try:
+            models = self.client.models.list()
+            ids = {m.id for m in models.data}
+            ok = self.model_name in ids or bool(ids)  # 모델명 매치가 안 돼도 서버 응답만 확인해도 충분
+            print("✅ vLLM server healthy:", ok, "models:", list(ids)[:3], "...")
+            return ok
+        except Exception as e:
+            print(f"⚠️ vLLM server health check failed: {e} (URL: {self.base_url})")
+            return False
+
+    def call(self, messages: List[Dict], **kwargs) -> str:
+        params = {**self.default_params, **kwargs}
         for attempt in range(self.max_retries):
             try:
-                print(f"🤖 Generating with {self.model_name} (attempt {attempt + 1}/{self.max_retries})...")
-                
-                response = self.client.chat.completions.create(**params)
-                
-                if response.choices and len(response.choices) > 0:
-                    content = response.choices[0].message.content
-                    if content:
-                        print(f"✅ Generation successful ({len(content)} chars)")
-                        return content.strip()
-                
-                print(f"⚠️  Empty response from vLLM server")
-                return ""
-                
-            except RateLimitError as e:
-                wait_time = 2 ** attempt  # 지수 백오프
-                print(f"⏳ Rate limit hit, waiting {wait_time}s before retry...")
-                time.sleep(wait_time)
-                
-            except APITimeoutError as e:
-                print(f"⏰ Request timeout (attempt {attempt + 1}): {e}")
-                if attempt == self.max_retries - 1:
-                    return ""
-                    
+                resp = self.client.chat.completions.create(
+                    model=self.model_name,
+                    messages=messages,
+                    max_tokens=params["max_tokens"],
+                    temperature=params["temperature"],
+                    top_p=params.get("top_p", 0.9),
+                    frequency_penalty=params.get("frequency_penalty", 0.0),
+                    presence_penalty=params.get("presence_penalty", 0.0),
+                    response_format=params.get("response_format"),
+                    seed=params.get("seed"),
+                )
+                content = resp.choices[0].message.content or ""
+                return content.strip()
+            except (RateLimitError, APITimeoutError) as e:
+                backoff = 2 ** attempt
+                print(f"⏳ vLLM rate/timeout, retry in {backoff}s: {e}")
+                time.sleep(backoff)
             except Exception as e:
-                print(f"❌ vLLM API error (attempt {attempt + 1}): {e}")
+                print(f"❌ vLLM error (attempt {attempt+1}/{self.max_retries}): {e}")
                 if attempt == self.max_retries - 1:
                     return ""
-                time.sleep(1)  # 짧은 대기 후 재시도
-        
-        print(f"💥 All {self.max_retries} attempts failed")
+                time.sleep(1)
         return ""
-    
-    def __repr__(self) -> str:
-        return f"VLLMOpenAIClient(model='{self.model_name}', url='{self.base_url}')"
 
+    def stream(self, messages: List[Dict], **kwargs):
+        """선택: 토큰 스트리밍 제너레이터"""
+        params = {**self.default_params, **kwargs}
+        with self.client.chat.completions.with_streaming_response.create(
+            model=self.model_name,
+            messages=messages,
+            max_tokens=params["max_tokens"],
+            temperature=params["temperature"],
+        ) as stream:
+            for event in stream:
+                if event.type == "token":
+                    yield event.data  # 토큰 단위
 
 def create_vllm_client(
     model_name: str = "gpt-oss-20b",
