@@ -22,7 +22,7 @@ iSKA-Gen은 한국어 학습자를 위한 개인화된 말하기 평가 문항�
 │   ├───modules/        # 생성/평가 에이전트, RM 등 핵심 로직
 │   ├───scripts/        # 파이프라인 실행 스크립트
 │   └───utils/          # 데이터 로더, 세팅 관리 등 유틸리티
-├───tests/              # 테스트 코드
+├───tests/              # 모델 클라이언트 및 지문 생성 테스트 코드
 ├───saves/              # 훈련된 모델 및 결과 저장 (.gitignore)
 ├───.tmp/               # 임시 파일 저장 (.gitignore)
 ├───pixi.toml           # 의존성 및 환경 관리
@@ -106,6 +106,39 @@ pixi shell
   # evaluator.py: 생성된 지문의 품질을 평가 Guideline에 따라 평가
   python src/scripts/evaluator.py
   ```
+
+### 5.3. 테스트 실행
+
+각 모델 클라이언트의 동작을 확인하고 지문 생성 파이프라인을 테스트할 수 있습니다.
+
+- **모든 테스트 자동 실행**
+  ```bash
+  # 모든 클라이언트 타입과 지문 생성 테스트를 자동으로 실행
+  python tests/run_all_tests.py
+  ```
+
+- **개별 클라이언트 테스트**
+  ```bash
+  # OpenAI 클라이언트 테스트
+  python tests/test_model_clients.py --client openai --model gpt-4o-mini
+  
+  # 로컬 모델 클라이언트 테스트
+  python tests/test_model_clients.py --client local --model EXAONE-3.5-7.8B-Instruct --gpus 0
+  
+  # vLLM 서버 클라이언트 테스트
+  python tests/test_model_clients.py --client vllm --model test-model
+  ```
+
+- **지문 생성 테스트**
+  ```bash
+  # 특정 벤치마크로 지문 생성 테스트
+  python tests/test_passage_generation.py --client openai --benchmark 1
+  
+  # 모든 벤치마크로 포괄적 테스트
+  python tests/test_passage_generation.py --client all
+  ```
+
+> 자세한 테스트 사용법은 [tests/README.md](tests/README.md)를 참고하세요.
 
 ---
 
