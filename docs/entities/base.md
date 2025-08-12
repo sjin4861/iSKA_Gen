@@ -1,0 +1,3 @@
+# Base
+
+::: domain.entities.base

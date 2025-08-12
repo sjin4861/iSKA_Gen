@@ -1,0 +1,3 @@
+# Primitives
+
+::: domain.entities.primitives

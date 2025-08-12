@@ -1,0 +1,3 @@
+# Results
+
+::: domain.entities.results

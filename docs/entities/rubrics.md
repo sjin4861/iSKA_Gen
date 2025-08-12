@@ -1,0 +1,3 @@
+# Rubrics
+
+::: domain.entities.rubrics
