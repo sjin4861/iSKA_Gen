@@ -3,7 +3,7 @@ from typing import List, Dict, Any
 from pathlib import Path
 
 from src.domain.repositories.analysis_repository import AnalysisRepository
-from src.data.datasources.fs.raw_outputs_reader import RawOutputsFSReader
+from src.data.datasources.fs.raw_output_fs import RawOutputsFSReader
 from src.data.datasources.fs.evaluations_reader import EvaluationsFSReader
 
 class AnalysisRepositoryImpl(AnalysisRepository):
