@@ -3,26 +3,34 @@ from typing import Any, Dict, List, Optional
 from pathlib import Path
 from datetime import datetime
 from .file_system import read_json, write_json_atomic, merge_list_by_indices
-from ...settings import RAW_OUTPUTS_DIR, stem_file_name
+from .data_store_fs import DataStoreFSDataSource
 
-class StemFSStore:
+class StemStoreFSDataSource:
     """
     stems 파일 I/O.
-    data_store/raw_outputs/{date}/stem/{model}/{template}/benchmark_{id}_{ver}_{template}.json
+    DataStoreFSDataSource를 기반으로 한 레거시 호환성 래퍼
     """
-    def _dir_for(self, date_str: Optional[str], model: str, template_key: str) -> Path:
-        eff_date = date_str or datetime.now().strftime("%Y-%m-%d")
-        return Path(RAW_OUTPUTS_DIR) / eff_date / "stem" / model / template_key
+    def __init__(self, data_store: Optional[DataStoreFSDataSource] = None):
+        self.data_store = data_store or DataStoreFSDataSource()
 
     def resolve_path(self, model: str, benchmark_id: int, version: str, template_key: str, date_str: Optional[str] = None) -> Path:
-        d = self._dir_for(date_str, model, template_key)
-        return d / stem_file_name(benchmark_id, version, template_key)
+        """파일 경로 해석 - stem 타입으로 조정"""
+        if date_str is None:
+            date_str = datetime.now().strftime("%Y-%m-%d")
+        
+        # stem용 경로 생성 (passage_processed 대신 stem 사용)
+        dir_path = self.data_store.raw_outputs_path / date_str / "stem" / model
+        filename = self.data_store.get_file_name_pattern(benchmark_id, version, template_key)
+        return dir_path / filename
 
     def load_list(self, model: str, benchmark_id: int, version: str, template_key: str, date_str: Optional[str] = None) -> Optional[List[Dict[str, Any]]]:
-        return read_json(self.resolve_path(model, benchmark_id, version, template_key, date_str))
+        path = self.resolve_path(model, benchmark_id, version, template_key, date_str)
+        return read_json(path)
 
     def save_list(self, data: List[Dict[str, Any]], model: str, benchmark_id: int, version: str, template_key: str, date_str: Optional[str] = None) -> Path:
-        return write_json_atomic(self.resolve_path(model, benchmark_id, version, template_key, date_str), data)
+        path = self.resolve_path(model, benchmark_id, version, template_key, date_str)
+        write_json_atomic(path, data)
+        return path
 
     def patch_by_indices(self, model: str, benchmark_id: int, version: str, template_key: str, patch: Dict[int, Dict[str, Any]], date_str: Optional[str] = None) -> Path:
         orig = self.load_list(model, benchmark_id, version, template_key, date_str) or []
