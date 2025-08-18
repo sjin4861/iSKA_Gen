@@ -1,201 +1,143 @@
-# src/data/repositories/passage_repository_impl.py
 from __future__ import annotations
-from typing import List, Dict, Any, Optional  # ✅ Any 임포트 추가!
-
-from src.domain.repositories.llm_gateway import LLMGateway
+from typing import List, Dict, Any, Optional, Iterable
+from datetime import datetime
+from src.domain.entities.sources import SourceItem
 from src.domain.repositories.passage_repository import PassageRepository
-from src.data.datasources.fs.content_store import ContentFSStore
-from src.data.repositories.llm_gateway_impl import LLMGatewayImpl  # infra 구현
+from src.domain.entities.output_query import OutputQuery
+from src.domain.entities.outputs import CandidateOutput
+from src.domain.entities.enums import ContentType
 
-from src.utils.prompt_loader import get_prompt
-import re
-
-def _strip_and_squash(text: str) -> str:
-    if not text:
-        return ""
-    text = text.replace("**", "")
-    text = text.replace("[지문]:", "")
-    text = re.sub(r"\s+", " ", text).strip()
-    return text
+from src.data.datasources.fs.raw_output_fs import RawOutputFSDataSource
+from src.data.datasources.fs.data_store_fs import DataStoreFSDataSource
+from src.data.datasources.fs.templates_fs import TemplatesFSDataSource
+from src.data.datasources.fs.text_generation import TextGenerationDataSource
 
 class PassageRepositoryImpl(PassageRepository):
     """
-    FS(ContentFSStore) + LLMGateway 조합.
-    - 도메인에선 LLM 백엔드를 몰라도 됨 (OpenAI/Local/vLLM 교체 용이).
+    - find(): Raw_Output에서 passage 후보를 로드
+    - generate_one(): 템플릿 + 생성기(text-gen DS)로 한 건 생성
+    - generate_and_fill_missing(): 존재하지 않는 소스에 대해 생성 후 DataStore에 저장
     """
 
     def __init__(
         self,
-        fs: Optional[ContentFSStore] = None,
-        llm: Optional[LLMGateway] = None,
-        *,
-        # llm 미주입 시 내부에서 기본 게이트웨이 생성에 쓰일 옵션
-        client_type: str = "local",
-        model_name: str = "EXAONE-3.5-7.8B-Instruct",
-        gpus: Optional[List[int]] = None,
-        default_llm_params: Optional[Dict[str, Any]] = None,
-        **client_kwargs: Any,
+        raw_output_ds: RawOutputFSDataSource,
+        data_store_ds: DataStoreFSDataSource,
+        templates_ds: TemplatesFSDataSource,
+        textgen_ds: TextGenerationDataSource,
     ):
-        self.fs = fs or ContentFSStore()
+        self.raw_output = raw_output_ds
+        self.store = data_store_ds
+        self.templates = templates_ds
+        self.textgen = textgen_ds
 
-        # ✅ 모호성 가드: llm이 주입되었는데 또 빌더 옵션도 들어오면 경고/예외
-        if llm is not None and (client_type or model_name or gpus or default_llm_params or client_kwargs):
-            # 여기서는 조용히 무시해도 되지만, 디버깅 편의를 위해 명시적으로 막는 쪽 권장
-            # raise ValueError("llm 인스턴스가 주입된 경우 client_type/model_name 등 빌더 옵션을 함께 전달하지 마세요.")
-            pass
+    # --- 조회 ---
+    def find(self, query: OutputQuery) -> Iterable[CandidateOutput]:
+        return self.raw_output.find_candidates(ContentType.passage, query)
 
-        self.llm: LLMGateway = llm or LLMGatewayImpl(
-            client_type=client_type,
-            model_name=model_name,
-            default_params=default_llm_params or {"temperature": 0.7},
-            gpus=gpus or [0],
-            **client_kwargs,
-        )
-
-    # ---------- 내부: 프롬프트 구성 ----------
-    def _build_prompt(
-        self,
-        *,
-        template_key: str,
-        source: Dict[str, Any],
-        problem_types: List[str],
-        eval_goals: List[str],
-    ) -> str:
-        is_domestic_like = any(k in template_key for k in ("domestic", "dialogue"))
-        if is_domestic_like:
-            topic = source.get("topic") or source.get("korean_topic") or ""
-            context = source.get("context") or source.get("korean_context") or ""
-            prompt = get_prompt(
-                template_key, agent="iska",
-                topic=topic, context=context,
-                problem_type1=problem_types[0] if len(problem_types) > 0 else "",
-                problem_type2=problem_types[1] if len(problem_types) > 1 else "",
-                problem_type3=problem_types[2] if len(problem_types) > 2 else "",
-                eval_goal1=eval_goals[0] if len(eval_goals) > 0 else "",
-                eval_goal2=eval_goals[1] if len(eval_goals) > 1 else "",
-                eval_goal3=eval_goals[2] if len(eval_goals) > 2 else "",
-            )
-        else:
-            prompt = get_prompt(
-                template_key, agent="iska",
-                korean_topic=source.get("korean_topic", ""),
-                korean_context=source.get("korean_context", ""),
-                foreign_topic=source.get("foreign_topic", ""),
-                foreign_context=source.get("foreign_context", ""),
-                problem_type1=problem_types[0] if len(problem_types) > 0 else "",
-                problem_type2=problem_types[1] if len(problem_types) > 1 else "",
-                problem_type3=problem_types[2] if len(problem_types) > 2 else "",
-                eval_goal1=eval_goals[0] if len(eval_goals) > 0 else "",
-                eval_goal2=eval_goals[1] if len(eval_goals) > 1 else "",
-                eval_goal3=eval_goals[2] if len(eval_goals) > 2 else "",
-            )
-        return prompt
-
-    def _call_llm_once(
-        self,
-        *,
-        template_key: str,
-        source: Dict[str, Any],
-        problem_types: List[str],
-        eval_goals: List[str],
-        gen_params: Optional[Dict[str, Any]] = None,
-    ) -> str:
-        prompt = self._build_prompt(
-            template_key=template_key, source=source,
-            problem_types=problem_types, eval_goals=eval_goals,
-        )
-        messages = [{"role": "user", "content": prompt}]
-        raw = self.llm.generate(messages, **(gen_params or {}))
-        return _strip_and_squash(raw)
-
-    # ---------- 공개 API ----------
+    # --- 생성 ---
     def generate_one(
-        self,
-        *,
-        source: Dict[str, Any],
-        problem_types: List[str],
-        eval_goals: List[str],
-        model_name: str,          # 인터페이스 호환용(지금은 내부 사용 X)
-        template_key: str,
-        min_length: int,
-        max_length: int,
-        max_retries: int,
+        self, *, source: Dict[str, Any], problem_types: List[str], eval_goals: List[str],
+        model_name: str, template_key: str, min_length: int, max_length: int, max_retries: int
     ) -> Optional[str]:
-        tries = 0
-        while tries < max_retries:
-            tries += 1
-            out = self._call_llm_once(
-                template_key=template_key,
-                source=source,
-                problem_types=problem_types,
-                eval_goals=eval_goals,
-                gen_params=None,
-            )
-            if not out:
+        """
+        source 예시: {"source_id": "...", "text": "..."} 또는 {"source_id": "...", "content": "..."}
+        """
+        prompt = self.templates.get(
+            template_key,
+            problem_type1=problem_types[0],
+            eval_goal1=eval_goals[0],
+            problem_type2=problem_types[1],
+            eval_goal2=eval_goals[1],
+            problem_type3=problem_types[2],
+            eval_goal3=eval_goals[2],
+            korean_topic=source.get("korean_topic"),
+            korean_context=source.get("korean_context"),
+            foreign_topic=source.get("foreign_topic"),
+            foreign_context=source.get("foreign_context"),
+        )
+
+        # prompt = None
+        # if template_key == "passage_agent.create_passage_rubric_aware":
+        #     prompt = self.templates.get(
+        #         template_key,
+        #         problem_type1=problem_types[0],
+        #         eval_goal1=eval_goals[0],
+        #         problem_type2=problem_types[1],
+        #         eval_goal2=eval_goals[1],
+        #         problem_type3=problem_types[2],
+        #         eval_goal3=eval_goals[2],
+        #         korean_topic=source.get("korean_topic"),
+        #         korean_context=source.get("korean_context"),
+        #         foreign_topic=source.get("foreign_topic"),
+        #         foreign_context=source.get("foreign_context"),
+        #     )
+        # elif template_key == "passage_agent.create_domestic_passage":
+        #     prompt = self.templates.get(
+        #         template_key,
+        #         problem_type1=problem_types[0],
+        #         eval_goal1=eval_goals[0],
+        #         problem_type2=problem_types[1],
+        #         eval_goal2=eval_goals[1],
+        #         problem_type3=problem_types[2],
+        #         eval_goal3=eval_goals[2],
+        #         topic=source.get("topic"),
+        #         context=source.get("context"),
+        #     )
+        # else: 
+        #     return None  # 지원하지 않는 템플릿
+
+        for i in range(max_retries):
+            gen = self.textgen.generate(prompt)
+            if len(gen) < min_length:
+                print(f"  ❌ 생성 실패 (길이 부족): {len(gen)} < {min_length} (시도 {i+1}/{max_retries})")
                 continue
-            n = len(out)
-            if n < min_length or n > max_length:
+            elif len(gen) > max_length:
+                print(f"  ❌ 생성 실패 (길이 초과): {len(gen)} > {max_length} (시도 {i+1}/{max_retries})")
                 continue
-            return out
+            else: 
+                return gen.strip()
         return None
 
     def generate_and_fill_missing(
-        self,
-        *,
-        model_name: str,
-        template_key: str,
-        benchmark_id: int,
-        benchmark_version: str,
-        problem_types: List[str],
-        eval_goals: List[str],
-        sources: List[Dict[str, Any]],
-        date_str: Optional[str],
-        min_length: int,
-        max_length: int,
-        max_retries: int,
+        self, *, model_name: str, template_key: str,
+        benchmark_id: int, benchmark_version: str,
+        problem_types: List[str], eval_goals: List[str],
+        sources: List[Dict[str, Any]], date_str: Optional[str],
+        min_length: int, max_length: int, max_retries: int
     ) -> dict:
-        rows = self.fs.load_passage_list(
-            model_name, benchmark_id, benchmark_version, template_key, date_str
-        ) or []
-        null_idxs = self.fs.find_null_indices(rows)
-
-        patch: Dict[int, Dict[str, Any]] = {}
-        filled: List[int] = []
-        failed: List[int] = []
-
-        for idx in null_idxs:
-            src = sources[idx]
+        filled, failed = [], []
+        day = date_str
+        for s in sources:
+            source_id = s.get("source_id") or s.get("id") or s.get("name")
+            if not source_id:
+                failed.append({"source": s, "reason": "missing source_id"})
+                continue
+            # 이미 저장돼 있으면 skip
+            if self.store.exists(source_id=source_id, benchmark_id=benchmark_id, model_name=model_name, kind=ContentType.passage):
+                continue
+        
             text = self.generate_one(
-                source=src,
-                problem_types=problem_types,
-                eval_goals=eval_goals,
+                source=s, problem_types=problem_types, eval_goals=eval_goals,
+                model_name=model_name, template_key=template_key,
+                min_length=min_length, max_length=max_length, max_retries=max_retries
+            )
+            if not text:
+                failed.append({"source_id": source_id, "reason": "generation_failed"})
+                continue
+
+            c = CandidateOutput(
+                source_id=source_id,
+                benchmark_id=benchmark_id,
                 model_name=model_name,
-                template_key=template_key,
-                min_length=min_length,
-                max_length=max_length,
-                max_retries=max_retries,
+                candidate_id=f"{source_id}:{model_name}:{benchmark_version}",
+                content_type=ContentType.passage,
+                content=text,
+                stems=None,            # stems가 필요하면 sources에서 가져와 채우기
+                generated_at=datetime.utcnow(),
+                meta={"benchmark_version": benchmark_version, "template_key" : template_key}
             )
-            if text:
-                if "korean_topic" in src:
-                    si = {
-                        "topic": src.get("korean_topic", ""),
-                        "context": src.get("korean_context", ""),
-                        "foreign_topic": src.get("foreign_topic"),
-                        "foreign_context": src.get("foreign_context"),
-                    }
-                else:
-                    si = {"topic": src.get("topic", ""), "context": src.get("context", "")}
-                patch[idx] = {"source_item": si, "generated_passage": text}
-                filled.append(idx)
-            else:
-                failed.append(idx)
+            self.store.append_candidate(c, date_str=day)
+            filled.append(c.candidate_id)
 
-        if patch:
-            self.fs.patch_by_indices(
-                model_name, benchmark_id, benchmark_version, template_key, patch, date_str
-            )
-
-        final = self.fs.load_passage_list(
-            model_name, benchmark_id, benchmark_version, template_key, date_str
-        ) or []
-        return {"filled": filled, "failed": failed, "total": len(final)}
+        return {"filled": filled, "failed": failed, "total": len(sources)}
