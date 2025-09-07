@@ -50,23 +50,9 @@ iSKA-Gen은 여러 `Agent`들이 체인 형태로 작동하여 최종 결과물�
 
 ---
 
-## 4. Reward Model 훈련 및 평가 (RM Experiment)
 
-생성된 수많은 지문 후보군에서 가장 품질이 좋은 지문을 자동으로 선별하기 위해 6가지 품질 기준(Rubric)에 따라 Reward Model(RM)을 훈련하고, 최적의 선정 방법론을 찾는 실험을 진행합니다.
 
-- **평가 루브릭 (6가지)**:
-    1.  **평가 지침 완전성 (Completeness for Guidelines)**
-    2.  **핵심 주제 명확성 (Clarity of Core Theme)**
-    3.  **참고 자료 기반성 (Reference-Groundedness)**
-    4.  **논리적 흐름 및 구조 (Logical Flow & Structure)**
-    5.  **한국어 품질 (Korean Quality)**
-    6.  **L2 학습자 적합성 (L2 Learner Suitability)**
-
-> 자세한 실험 설계 및 결과는 [RM_Experiment_v1.0.0.md](RM_Experiment_v1.0.0.md) 문서를 참고하세요.
-
----
-
-## 5. 실행 방법
+## 4. 실행 방법
 
 ### 5.1. 환경 설정
 
