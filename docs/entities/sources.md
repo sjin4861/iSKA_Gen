@@ -1,3 +1,0 @@
-# Sources
-
-::: domain.entities.sources

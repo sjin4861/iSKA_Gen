@@ -3,137 +3,99 @@
 passage_repository처럼 클린 아키텍처로 stem 생성하는 예시 스크립트
 """
 from __future__ import annotations
+from datetime import datetime
 from typing import List, Dict, Any, Optional
+import sys
+from pathlib import Path
+sys.path.append(str(Path(__file__).resolve().parents[2]))  # 프로젝트 루트 경로 추가
 
-from src.domain.repositories.stem_repository import StemRepository
+from src.domain.entities.enums import ContentType
+from src.domain.entities.output_query import OutputQuery
+from src.domain.usecases.benchmark.load_collection import LoadCollectionUseCase
 from src.data.repositories.stem_repository_impl import StemRepositoryImpl
-from src.domain.usecases.stem.fill_missing_stems import FillMissingStemsUseCase, FillMissingStemsInput
-from src.domain.usecases.stem.generate_single_stem import GenerateSingleStemUseCase, GenerateSingleStemInput
-
+from src.data.datasources.fs.raw_output_fs import RawOutputFSDataSource
+from src.data.datasources.fs.data_store_fs import DataStoreFSDataSource
+from src.data.datasources.fs.templates_fs import TemplatesFSDataSource
+from src.data.datasources.fs.text_generation import TextGenerationDataSource
+from src.modules.model_client import LocalModelClient
 from src.data.repositories.benchmark_repository_impl import BenchmarkRepositoryImpl
-from src.data.repositories.content_repository_impl import ContentRepositoryImpl
 
-# 설정
-MODEL = "EXAONE-3.5-7.8B-Instruct"  
-PASSAGE_MODEL = "EXAONE-3.5-7.8B-Instruct"
-TEMPLATE_KEY = "stem_agent.few_shot"
-DATE = "2025-08-10"
-BENCH_ID_LIST = [2]  # 실제 데이터가 있는 벤치마크 ID로 수정
+# ===== 설정 =====
+# MODEL = "EXAONE-3.5-7.8B-Instruct"
+MODEL_LIST = [
+    "A.X-4.0-Light",
+    "EXAONE-3.5-7.8B-Instruct",
+    "Midm-2.0-Base-Instruct",
+    "llama3.1_korean_v1.1_sft_by_aidx",
+]
+
+# ✅ few_shot_new 템플릿 사용
+TEMPLATE_KEY = "stem_agent.few_shot_new"
+
+# ✅ 실제 저장본 날짜 고정
+DATE = "2025-08-23"
+
+# 벤치마크 2(단일 지문) 우선
+BENCH_ID_LIST = [1, 2]
+
 
 def main():
     print("🚀 Stem 생성기 (Clean Architecture) 시작")
-    
+
+    benchmarks_root = Path("data_store/benchmarks/v1")
+    benchmark_filename = "iSKA-Gen_Benchmark_v1.1.0_20250808_test.json"
+    benchmark_repo = BenchmarkRepositoryImpl(benchmarks_root, benchmark_filename)
+    load_collection_uc = LoadCollectionUseCase(benchmark_repo)
+    collection_output = load_collection_uc.execute()
+    benchmarks = collection_output.collection.benchmarks    
+    print(f"✅ 벤치마크 로드 완료: {len(benchmarks)}개 세트")
+
+
     # Repository 초기화
-    stem_repo: StemRepository = StemRepositoryImpl(
-        client_type="local",
-        model_name=MODEL,
-        gpus=[0],
-        default_llm_params={"temperature": 0.7}
-    )
-    
-    benchmark_repo = BenchmarkRepositoryImpl()
-    content_repo = ContentRepositoryImpl()
-    
-    # UseCase 초기화  
-    fill_stems_uc = FillMissingStemsUseCase(stem_repo)
-    
-    for bench_id in BENCH_ID_LIST:
-        print(f"\n📝 벤치마크 ID {bench_id}에 대한 stem 생성 중...")
-        
-        try:
-            # 벤치마크 정보 가져오기
-            benchmark = benchmark_repo.get_benchmark_by_id(bench_id, "v1.1.0")
-            if not benchmark:
-                print(f"❌ 벤치마크 ID {bench_id}를 찾을 수 없습니다.")
-                continue
-                
+    raw_output_ds = RawOutputFSDataSource(Path("data_store/raw_outputs"))
+    data_store_ds = DataStoreFSDataSource(Path("data_store"))
+    templates_ds = TemplatesFSDataSource(agent="iska", user_path=Path("src/config/prompts"))
+
+    for model_name in MODEL_LIST:
+        model_client = LocalModelClient(model_name=model_name, gpus=[2])
+        print(f"✅ 모델 클라이언트 초기화: {model_name}")
+        textgen_ds = TextGenerationDataSource(model_client)
+        stem_repo = StemRepositoryImpl(raw_output_ds, data_store_ds, templates_ds, textgen_ds)
+
+        for bench_id in BENCH_ID_LIST:
+            print(f"\n📝 벤치마크 ID {bench_id}에 대한 stem 생성 중...")
+            benchmark = benchmarks[bench_id - 1]  # 벤치마크 ID는 1부터 시작하므로 -1
             problem_types = benchmark.problem_types
             eval_goals = benchmark.eval_goals
-            
-            # passage 데이터 로드 (실제 존재하는 템플릿 키 사용)
-            passages = content_repo.load_passage_list(
-                model_name=PASSAGE_MODEL,
+
+            # ✅ 2025-08-19, bench_id=2, 해당 템플릿만 조회
+            q = OutputQuery(
+                date_from=datetime.strptime(DATE, "%Y-%m-%d"),
+                date_to=datetime.strptime(DATE, "%Y-%m-%d"),
+                model_name=model_name,
                 benchmark_id=bench_id,
-                benchmark_version="v1.1.0",
-                template_key="passage_agent.create_domestic_passage",  # 실제 존재하는 템플릿
-                date_str=DATE
+                limit=None,
             )
-            
-            if not passages:
-                print(f"❌ 모델 '{PASSAGE_MODEL}'의 벤치마크 ID {bench_id} passage 데이터를 찾을 수 없습니다.")
-                continue
-                
-            print(f"✅ {len(passages)}개의 passage 로드 완료")
-            
-            # 실제로 생성된 passage가 있는 항목만 필터링
-            valid_passages = [p for p in passages if p.get('generated_passage')]
-            if not valid_passages:
-                print("❌ 생성된 passage가 없습니다.")
-                continue
-                
-            print(f"✅ {len(valid_passages)}개의 유효한 passage 확인")
-            
-            # Stem 생성 실행
-            result = fill_stems_uc.execute(FillMissingStemsInput(
-                model_name=MODEL,
-                template_key=TEMPLATE_KEY,
+
+            candidates = list(raw_output_ds.find_candidates(ContentType.passage, q))
+            # ✅ 생성 실행 (few_shot_new 사용, 저장 날짜 DATE, passage_model_name 지정)
+            result = stem_repo.generate_and_fill_missing(
+                model_name=model_name,
+                template_key=TEMPLATE_KEY,          # "stem_agent.few_shot_new"
                 benchmark_id=bench_id,
                 benchmark_version="v1.1.0",
                 problem_types=problem_types,
                 eval_goals=eval_goals,
-                passages=valid_passages[:3],  # 테스트를 위해 처음 3개만 사용
+                contents=candidates,
                 date_str=DATE,
                 max_retries=3,
-                passage_model_name=PASSAGE_MODEL
-            ))
-            
-            print(f"✅ 벤치마크 ID {bench_id}에 대한 stem 생성 완료")
-            print(f"   📈 생성 성공: {len(result.filled_indices)}개")
-            print(f"   ❌ 생성 실패: {len(result.failed_indices)}개") 
-            print(f"   📊 전체: {result.total_after}개")
-            
-        except Exception as e:
-            print(f"❌ 벤치마크 ID {bench_id} 처리 중 오류: {e}")
-            import traceback
-            traceback.print_exc()
-            continue
+                content_model_name=model_name,   # 저장 키에 *_from_{model_name} suffix
+            )
 
-def test_single_stem():
-    """단일 stem 생성 테스트"""
-    print("\n🧪 단일 stem 생성 테스트")
-    
-    # Repository 초기화
-    stem_repo: StemRepository = StemRepositoryImpl(
-        client_type="local", 
-        model_name=MODEL,
-        gpus=[0]
-    )
-    
-    # UseCase 초기화
-    single_stem_uc = GenerateSingleStemUseCase(stem_repo)
-    
-    # 테스트 데이터
-    sample_passage = """한국의 설날은 음력 1월 1일로, 가족들이 모여 차례를 지내고 떡국을 먹는 명절입니다. 
-    반면, 서구권의 새해 첫날(New Year's Day)은 양력 1월 1일로, 주로 파티를 열거나 불꽃놀이를 보며 새해를 맞이하는 축제 분위기가 강습니다."""
-    
-    result = single_stem_uc.execute(GenerateSingleStemInput(
-        passage=sample_passage,
-        problem_type="자문화와 비교하기",
-        eval_goal="문화적 차이 이해 및 표현 능력 평가",
-        model_name=MODEL,
-        template_key=TEMPLATE_KEY,
-        max_retries=3
-    ))
-    
-    if result.success:
-        print("✅ 단일 stem 생성 성공!")
-        print(f"생성된 stem: {result.stem}")
-    else:
-        print("❌ 단일 stem 생성 실패")
-
+            print(f"✅ 생성 성공: {len(result.get('filled', []))}개 | ❌ 실패: {len(result.get('failed', []))}개 | 📊 전체: {result.get('total', 0)}개")
+        model_client.close()
 if __name__ == "__main__":
-    # 단일 stem 테스트 먼저 실행
-    test_single_stem()
-    
-    # 전체 stem 생성 실행
-    # main()
+    # 실사용: 메인 실행
+    main()
+    # 필요할 때만 단일 테스트
+    # test_single_stem()

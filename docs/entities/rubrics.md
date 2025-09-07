@@ -1,3 +1,0 @@
-# Rubrics
-
-::: domain.entities.rubrics

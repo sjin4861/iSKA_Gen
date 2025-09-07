@@ -5,6 +5,11 @@ from abc import ABC, abstractmethod
 class StemRepository(ABC):
     """Stem 생성/수정/저장까지 단일 창구"""
     
+    # TODO: [ARCHITECTURE] 다음 메서드들을 domain/usecases/stem/로 분리 필요:
+    # - generate_and_fill_missing -> GenerateAndFillMissingStemsUseCase (이미 fill_missing_stems.py 존재하지만 정리 필요)
+    # - generate_one -> GenerateOneStemUseCase (이미 generate_single_stem.py 존재하지만 정리 필요)
+    # Repository는 순수한 데이터 접근 인터페이스만 제공해야 함
+    
     @abstractmethod
     def generate_and_fill_missing(
         self, *, 

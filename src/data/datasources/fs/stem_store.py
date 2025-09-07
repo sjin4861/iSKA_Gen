@@ -29,6 +29,8 @@ class StemStoreFSDataSource:
 
     def save_list(self, data: List[Dict[str, Any]], model: str, benchmark_id: int, version: str, template_key: str, date_str: Optional[str] = None) -> Path:
         path = self.resolve_path(model, benchmark_id, version, template_key, date_str)
+        # ✅ 상위 폴더 보장
+        path.parent.mkdir(parents=True, exist_ok=True)
         write_json_atomic(path, data)
         return path
 

@@ -8,10 +8,7 @@ version = "0.1.0"
 [activation]
 env = { PYTHONPATH = "src" }
 
-
-
 [tasks]
-serve-vllm = "python -m vllm.entrypoints.openai.api_server --model ${MODEL} --host 0.0.0.0 --port 8000 --max-model-len 32768"
 
 [dependencies]
 setuptools = ">=79,<80"
@@ -30,10 +27,8 @@ mkdocstrings = ">=0.30.0,<0.31"
 mkdocstrings-python = ">=1.16.12,<2"
 
 [pypi-dependencies]  # pip
-openai = ">=1.87.0,<=1.90.0"
-vllm = "==0.9.2"
+openai = "==1.99.9"
 pillow = ">=10.3,<11"
-transformers = ">=4.54,<5"
 accelerate = ">=0.33"
 safetensors = ">=0.4"
 tiktoken = ">=0.7"
@@ -44,7 +39,7 @@ kaleido = ">=1.0.0"
 tensorboard = ">=2.20.0,<3"
 plotly = ">=6.2.0,<7"
 
-# PyTorch GPU via PyPI (CUDA 12.6 wheels)
-torch = { version = "==2.7.0", index = "https://download.pytorch.org/whl/cu126" }
-torchvision = { version = "==0.22.0", index = "https://download.pytorch.org/whl/cu126" }
-torchaudio = { version = "==2.7.0", index = "https://download.pytorch.org/whl/cu126" }
+# PyTorch GPU via PyPI (CUDA 12.8 wheels)
+torch = { version = "==2.7.1", index = "https://download.pytorch.org/whl/cu128" }
+torchvision = { version = "==0.22.1", index = "https://download.pytorch.org/whl/cu128" }
+torchaudio = { version = "==2.7.1", index = "https://download.pytorch.org/whl/cu128" }

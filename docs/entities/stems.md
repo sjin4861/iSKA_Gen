@@ -1,3 +1,0 @@
-# Stems
-
-::: domain.entities.stems

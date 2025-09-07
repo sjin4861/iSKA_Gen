@@ -72,7 +72,7 @@ def run_command(command: List[str], description: str) -> Dict[str, Any]:
 
 def main():
     """메인 실행 함수"""
-    print("🧪 iSKA-Gen 모델 클라이언트 테스트 실행기")
+    print("🧪 iSKA-Gen 전체 테스트 실행기")
     print("=" * 80)
     
     # Python 실행 명령어 결정
@@ -80,20 +80,52 @@ def main():
     
     test_results = []
     
-    # 1. 기본 모델 클라이언트 테스트
+    # 1. Datasource 테스트들
+    print("\n📁 Datasource 테스트")
+    print("-" * 40)
+    
+    test_results.append(run_command(
+        [python_cmd, "-m", "pytest", "tests/test_file_system.py", "-v"],
+        "파일 시스템 유틸리티 테스트"
+    ))
+    
+    test_results.append(run_command(
+        [python_cmd, "-m", "pytest", "tests/test_templates_fs.py", "-v"],
+        "템플릿 파일 시스템 테스트"
+    ))
+    
+    test_results.append(run_command(
+        [python_cmd, "-m", "pytest", "tests/test_benchmark_store.py", "-v"],
+        "벤치마크 스토어 테스트"
+    ))
+    
+    test_results.append(run_command(
+        [python_cmd, "-m", "pytest", "tests/test_stem_store.py", "-v"],
+        "Stem 스토어 테스트"
+    ))
+    
+    test_results.append(run_command(
+        [python_cmd, "-m", "pytest", "tests/test_raw_output_fs.py", "-v"],
+        "Raw Output 파일 시스템 테스트"
+    ))
+    
+    # 2. 기본 모델 클라이언트 테스트
+    print("\n🤖 모델 클라이언트 테스트")
+    print("-" * 40)
+    
     test_results.append(run_command(
         [python_cmd, "tests/test_model_clients.py", "--client", "all"],
         "기본 모델 클라이언트 연결 테스트"
     ))
     
-    # 2. OpenAI 클라이언트 개별 테스트 (API 키가 있는 경우)
+    # 3. OpenAI 클라이언트 개별 테스트 (API 키가 있는 경우)
     if os.getenv("OPENAI_API_KEY"):
         test_results.append(run_command(
             [python_cmd, "tests/test_model_clients.py", "--client", "openai", "--model", "gpt-4o-mini"],
             "OpenAI 클라이언트 상세 테스트"
         ))
         
-        # 3. 지문 생성 테스트 (OpenAI)
+        # 지문 생성 테스트 (OpenAI)
         test_results.append(run_command(
             [python_cmd, "tests/test_passage_generation.py", "--client", "openai", "--benchmark", "1"],
             "OpenAI 모델을 사용한 지문 생성 테스트"
@@ -125,6 +157,20 @@ def main():
     test_results.append(run_command(
         [python_cmd, "tests/test_model_clients.py", "--client", "vllm"],
         "vLLM 서버 연결 테스트"
+    ))
+    
+    # 6. 기타 기존 테스트들
+    print("\n📋 기타 테스트")
+    print("-" * 40)
+    
+    test_results.append(run_command(
+        [python_cmd, "-m", "pytest", "tests/test_benchmark.py", "-v"],
+        "벤치마크 엔티티 테스트"
+    ))
+    
+    test_results.append(run_command(
+        [python_cmd, "-m", "pytest", "tests/test_image_caption_simple.py", "-v"],
+        "이미지 캡션 테스트"
     ))
     
     # 결과 요약

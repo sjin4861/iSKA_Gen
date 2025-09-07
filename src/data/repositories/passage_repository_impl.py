@@ -43,6 +43,20 @@ class PassageRepositoryImpl(PassageRepository):
         """
         source 예시: {"source_id": "...", "text": "..."} 또는 {"source_id": "...", "content": "..."}
         """
+        # prompt = self.templates.get(
+        #     template_key,
+        #     problem_type1=problem_types[0],
+        #     eval_goal1=eval_goals[0],
+        #     problem_type2=problem_types[1],
+        #     eval_goal2=eval_goals[1],
+        #     problem_type3=problem_types[2],
+        #     eval_goal3=eval_goals[2],
+        #     korean_topic=source.get("korean_topic"),
+        #     korean_context=source.get("korean_context"),
+        #     foreign_topic=source.get("foreign_topic"),
+        #     foreign_context=source.get("foreign_context"),
+        # )
+
         prompt = self.templates.get(
             template_key,
             problem_type1=problem_types[0],
@@ -51,10 +65,8 @@ class PassageRepositoryImpl(PassageRepository):
             eval_goal2=eval_goals[1],
             problem_type3=problem_types[2],
             eval_goal3=eval_goals[2],
-            korean_topic=source.get("korean_topic"),
-            korean_context=source.get("korean_context"),
-            foreign_topic=source.get("foreign_topic"),
-            foreign_context=source.get("foreign_context"),
+            topic=source.get("topic"),
+            context=source.get("context")
         )
 
         # prompt = None

@@ -1,6 +1,6 @@
 # src/domain/entities/benchmark.py
 from typing import List, Optional
-from pydantic import ConfigDict, Field
+from pydantic import AliasChoices, ConfigDict, Field
 from src.domain.entities.base import DomainModel
 
 
@@ -52,9 +52,12 @@ class BenchmarkCollection(DomainModel):
     """
     전체 벤치마크 데이터 컬렉션
     """
-    benchmarks: List[BenchmarkSet] = Field(..., description="여러 벤치마크 세트")
-
-    model_config = ConfigDict(extra="forbid")
+    benchmarks: List[BenchmarkSet] = Field(
+            validation_alias=AliasChoices("benchmark", "benchmarks"),
+            serialization_alias="benchmarks",
+            description="여러 벤치마크 세트",
+        )
+    model_config = ConfigDict(populate_by_name=True, extra="forbid")
 
 # ===== 사용 예시 =====
 if __name__ == "__main__":

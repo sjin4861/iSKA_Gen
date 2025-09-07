@@ -1,13 +1,14 @@
 from __future__ import annotations
 
+from curses import raw
 import json
 from pathlib import Path
 from typing import List
 
 from pydantic import TypeAdapter
 
-from domain.repositories.benchmark_repository import BenchmarkRepository
-from domain.entities.benchmark import (
+from src.domain.repositories.benchmark_repository import BenchmarkRepository
+from src.domain.entities.benchmark import (
     BenchmarkSet,
     BenchmarkCollection,
     BenchmarkItemFlat,
@@ -29,10 +30,8 @@ class BenchmarkRepositoryImpl(BenchmarkRepository):
 
     def load_collection(self) -> BenchmarkCollection:
         raw = json.loads(self.benchmarks_path.read_text(encoding="utf-8"))
-        adapter = TypeAdapter(List[BenchmarkSet])
-        sets: List[BenchmarkSet] = adapter.validate_python(raw)
-        return BenchmarkCollection(benchmarks=sets)
-
+        return BenchmarkCollection.model_validate(raw)
+    
     def get_set_by_id(self, bench_id: int) -> BenchmarkSet:
         coll = self.load_collection()
         for s in coll.benchmarks:

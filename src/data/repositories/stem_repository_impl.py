@@ -1,126 +1,92 @@
 # src/data/repositories/stem_repository_impl.py
 from __future__ import annotations
+from datetime import datetime
 from typing import List, Dict, Any, Optional
 import re
 
-from src.domain.repositories.llm_gateway import LLMGateway
+from src.domain.entities import sources
+from src.domain.entities.enums import ContentType
+from src.domain.entities.outputs import CandidateOutput
 from src.domain.repositories.stem_repository import StemRepository
-from src.data.datasources.fs.stem_store import StemFSStore
-from src.data.repositories.llm_gateway_impl import LLMGatewayImpl
+from src.data.datasources.fs.stem_store import StemStoreFSDataSource
 
+from src.data.datasources.fs.raw_output_fs import RawOutputFSDataSource
+from src.data.datasources.fs.data_store_fs import DataStoreFSDataSource
+from src.data.datasources.fs.templates_fs import TemplatesFSDataSource
+from src.data.datasources.fs.text_generation import TextGenerationDataSource
 from src.utils.prompt_loader import get_prompt
 
 def _strip_and_squash(text: str) -> str:
     """생성된 stem 텍스트 정리"""
     if not text:
         return ""
+    # 불필요 포맷 제거
     text = text.replace("**", "")
     text = text.replace("[문항]:", "")
-    text = text.replace("[stem]:", "") 
+    text = text.replace("[stem]:", "")
+    text = text.replace("[출력]:", "")
+    text = text.replace("출력:", "")
+    # 공백 정규화
     text = re.sub(r"\s+", " ", text).strip()
     return text
 
 class StemRepositoryImpl(StemRepository):
     """
-    FS(StemFSStore) + LLMGateway 조합.
-    - 도메인에선 LLM 백엔드를 몰라도 됨 (OpenAI/Local/vLLM 교체 용이).
+    - PassageRepositoryImpl과 동일한 DI/인터페이스 스타일
+      * templates_ds.get(...) 으로 프롬프트 구성
+      * textgen_ds.generate(...) 로 생성
+      * raw_outputs/stem/... 구조(StemStoreFSDataSource)에 JSON 리스트 저장
     """
 
     def __init__(
         self,
-        fs: Optional[StemFSStore] = None,
-        llm: Optional[LLMGateway] = None,
-        *,
-        # llm 미주입 시 내부에서 기본 게이트웨이 생성에 쓰일 옵션
-        client_type: str = "local",
-        model_name: str = "EXAONE-3.5-7.8B-Instruct",
-        gpus: Optional[List[int]] = None,
-        default_llm_params: Optional[Dict[str, Any]] = None,
-        **client_kwargs: Any,
+        raw_output_ds: RawOutputFSDataSource,
+        data_store_ds: DataStoreFSDataSource,
+        templates_ds: TemplatesFSDataSource,
+        textgen_ds: TextGenerationDataSource,
     ):
-        self.fs = fs or StemFSStore()
+        self.raw_output = raw_output_ds
+        self.store = data_store_ds
+        self.templates = templates_ds
+        self.textgen = textgen_ds
 
-        # ✅ 모호성 가드: llm이 주입되었는데 또 빌더 옵션도 들어오면 경고/예외
-        if llm is not None and (client_type or model_name or gpus or default_llm_params or client_kwargs):
-            pass
-
-        self.llm: LLMGateway = llm or LLMGatewayImpl(
-            client_type=client_type,
-            model_name=model_name,
-            default_params=default_llm_params or {"temperature": 0.7},
-            gpus=gpus or [0],
-            **client_kwargs,
-        )
-
-    # ---------- 내부: 프롬프트 구성 ----------
-    def _build_prompt(
-        self,
-        *,
-        template_key: str,
-        passage: str,
-        problem_type: str,
-        eval_goal: str,
-    ) -> str:
-        """stem 생성을 위한 프롬프트 구성"""
-        prompt = get_prompt(
-            template_key, 
-            agent="iska",
-            passage=passage,
-            problem_type=problem_type,
-            eval_goal=eval_goal
-        )
-        return prompt
-
-    def _call_llm_once(
-        self,
-        *,
-        template_key: str,
-        passage: str,
-        problem_type: str,
-        eval_goal: str,
-        gen_params: Optional[Dict[str, Any]] = None,
-    ) -> str:
-        """LLM 호출하여 stem 생성"""
-        prompt = self._build_prompt(
-            template_key=template_key,
-            passage=passage,
-            problem_type=problem_type,
-            eval_goal=eval_goal,
-        )
-        messages = [{"role": "user", "content": prompt}]
-        raw = self.llm.generate(messages, **(gen_params or {}))
-        return _strip_and_squash(raw)
-
-    # ---------- 공개 API ----------
+    # --- 단일 생성 ---
     def generate_one(
         self,
         *,
-        passage: str,
+        content: str,
         problem_type: str,
         eval_goal: str,
-        model_name: str,          # 인터페이스 호환용(지금은 내부 사용 X)
+        model_name: str,       # 인터페이스 정합성 유지(내부 사용 안 함)
         template_key: str,
         max_retries: int,
     ) -> Optional[str]:
-        """단일 stem 생성"""
-        tries = 0
-        while tries < max_retries:
-            tries += 1
+        """
+        템플릿 키 예:
+          - stem_agent.few_shot_new (권장)
+          - stem_agent.basic / stem_agent.few_shot / stem_agent.unified_fewshot
+        """
+        # 프롬프트 구성
+        prompt = self.templates.get(
+            template_key,
+            content=content,
+            problem_type=problem_type,
+            eval_goal=eval_goal,
+        )
+
+        # 생성 시도
+        for i in range(max_retries):
             try:
-                stem = self._call_llm_once(
-                    template_key=template_key,
-                    passage=passage,
-                    problem_type=problem_type,
-                    eval_goal=eval_goal,
-                    gen_params=None,
-                )
-                if stem:
-                    return stem
+                out = self.textgen.generate(prompt)
+                out = _strip_and_squash(out)
+                if out:
+                    return out
             except Exception as e:
-                print(f"Stem 생성 시도 {tries} 실패: {e}")
+                print(f"  ⚠️ stem generate_one 실패(시도 {i+1}/{max_retries}): {e}")
                 continue
         return None
 
+    # --- 일괄 생성/보강 ---
     def generate_and_fill_missing(
         self,
         *,
@@ -130,91 +96,68 @@ class StemRepositoryImpl(StemRepository):
         benchmark_version: str,
         problem_types: List[str],
         eval_goals: List[str],
-        passages: List[Dict[str, Any]],
+        contents: List[Dict[str, Any]],
         date_str: Optional[str],
         max_retries: int,
-        passage_model_name: Optional[str] = None,
+        content_model_name: Optional[str] = None,
     ) -> dict:
-        """기존 stem 데이터에서 누락된 부분을 찾아 생성하여 채움"""
-        # 기존 stem 데이터 로드
-        existing_stems = self.fs.load_list(
-            model_name, benchmark_id, benchmark_version, template_key, date_str
-        ) or []
+        """
+        contents 원소 예:
+          {
+            "generated_content": "...",      # 필수
+            "source_item": {...},            # 선택(메타)
+            "source_id": "bench_1_item_0"    # 선택(있으면 보존)
+          }
 
-        filled: List[int] = []
-        failed: List[int] = []
-        stem_data_list: List[Dict[str, Any]] = []
-
-        # 각 passage에 대해 stem 생성
-        for i, passage_data in enumerate(passages):
-            print(f"  📄 Passage {i+1}/{len(passages)} 처리 중...")
+        저장 경로는 기존 파이프라인과 동일:
+          data_store/raw_outputs/{date}/stem/{model}/benchmark_{id}_v{ver}_{template_key}.json
+          * content_model_name가 주어지면 template_key 뒤에 `_from_{content_model_name}`를 덧붙여 동일 키로 로드/세이브
+        """
+        # 로드/세이브 키를 통일(중요!)
+        filled, failed = [], []
+        for i, row in enumerate(contents):
             
-            # 기존 데이터가 있는지 확인
-            existing_stem = None
-            if i < len(existing_stems):
-                existing_stem = existing_stems[i]
+            print(f"  📄 Passage {i+1}/{len(contents)} 처리 중...")
 
-            stem_data = {
-                "source_passage": passage_data.get('generated_passage', ''),
-                "source_item": passage_data.get('source_item', {})
-            }
+            src_content = row.get("content")
+            src_item = row.get("source_item")
+            src_id = row.get("source_id")
 
-            # 각 problem_type과 eval_goal에 대해 stem 생성
-            all_success = True
-            for j in range(len(problem_types)):
-                problem_type = problem_types[j]
-                eval_goal = eval_goals[j]
-                
-                field_stem = f'stem_{j+1}'
-                field_problem_type = f'problem_type_{j+1}'
-                field_eval_goal = f'eval_goal_{j+1}'
+            stems = []
+            all_pass = True
+            for j in range(3):
+                pt = problem_types[j]
+                eg = eval_goals[j]
 
-                # 기존 데이터에 해당 stem이 있고 유효한지 확인
-                if (existing_stem and 
-                    existing_stem.get(field_stem) and 
-                    existing_stem.get(field_stem) != "문항 생성 실패"):
-                    # 기존 데이터 사용
-                    stem_data[field_problem_type] = existing_stem.get(field_problem_type, problem_type)
-                    stem_data[field_eval_goal] = existing_stem.get(field_eval_goal, eval_goal)
-                    stem_data[field_stem] = existing_stem[field_stem]
+                # 새로 생성
+                gen = self.generate_one(
+                    content=src_content,
+                    problem_type=pt,
+                    eval_goal=eg,
+                    model_name=model_name,
+                    template_key=template_key,  # 프롬프트 키는 원본 사용
+                    max_retries=max_retries,
+                )
+                if gen:
+                    stems.append(gen)
                 else:
-                    # 새로 생성
-                    generated_stem = self.generate_one(
-                        passage=passage_data.get('generated_passage', ''),
-                        problem_type=problem_type,
-                        eval_goal=eval_goal,
-                        model_name=model_name,
-                        template_key=template_key,
-                        max_retries=max_retries,
-                    )
-                    
-                    stem_data[field_problem_type] = problem_type
-                    stem_data[field_eval_goal] = eval_goal
-                    
-                    if generated_stem:
-                        stem_data[field_stem] = generated_stem
-                    else:
-                        stem_data[field_stem] = "문항 생성 실패"
-                        all_success = False
+                    failed.append(src_id)
+                    stems.append("문항 생성 실패")
+                    all_pass = False
+                    break
+            if all_pass:
+                c = CandidateOutput(source_id=src_id,
+                                benchmark_id=benchmark_id,
+                                model_name=content_model_name,
+                                candidate_id=f"bench_{benchmark_id}_item_{i}",
+                                content_type=ContentType.stem,
+                                content=src_content,
+                                stems=stems,
+                                generated_at=datetime.utcnow(),
+                                meta={ "benchmark_version": benchmark_version, "template_key": template_key},
+                                source_item=src_item
+                            )
+                self.store.append_candidate(c, date_str=date_str)
+                filled.append(c.candidate_id)
 
-            stem_data_list.append(stem_data)
-            
-            if all_success:
-                filled.append(i)
-            else:
-                failed.append(i)
-
-        # 생성된 stem 데이터 저장
-        if stem_data_list:
-            # passage 모델명을 포함한 템플릿 키 생성
-            if passage_model_name:
-                modified_template_key = f"{template_key}_from_{passage_model_name}"
-            else:
-                modified_template_key = template_key
-                
-            self.fs.save_list(
-                stem_data_list, model_name, benchmark_id, benchmark_version, 
-                modified_template_key, date_str
-            )
-
-        return {"filled": filled, "failed": failed, "total": len(stem_data_list)}
+        return {"filled": filled, "failed": failed, "total": len(filled) + len(failed)}

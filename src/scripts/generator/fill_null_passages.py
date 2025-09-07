@@ -35,7 +35,7 @@ from data.repositories.benchmark_repository_impl import BenchmarkRepositoryImpl
 from data.repositories.passage_repository_impl import PassageRepositoryImpl
 
 # ---- artifact kind selector (passage만) ----
-from domain.entities.content_types import ArtifactKind
+from src.domain.entities.contents import ArtifactKind
 
 # -------------------------------
 # settings & helpers

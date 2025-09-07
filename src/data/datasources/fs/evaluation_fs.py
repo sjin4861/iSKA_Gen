@@ -15,9 +15,9 @@ from src.data.datasources.fs.templates_fs import TemplatesFSDataSource
 # 루브릭별 평가 로직 선택
 CONTENT_PLUS_STEM_RUBRIC = [
     RubricID.completeness_for_guidelines, 
-    RubricID.l2_learner_suitability,
+    # RubricID.l2_learner_suitability,
     RubricID.R1_GUIDELINE_COMPLETENESS,
-    RubricID.R6_L2_APPROPRIATENESS
+    # RubricID.R6_L2_APPROPRIATENESS
 ]
 
 class EvaluationFSDataSource:
@@ -560,7 +560,7 @@ class EvaluationFSDataSource:
             Content Only 평가 로직: content만 사용하여 LLM에게 평가 요청
             R2-R5 루브릭에서 사용 (stems 정보 제외)
             """
-            content = candidate.content or ""
+            content = candidate.get("content")
             
             if not content.strip():
                 return {
@@ -688,10 +688,9 @@ class EvaluationFSDataSource:
                 template_ds = TemplatesFSDataSource(agent="iska")
                 
                 # 벤치마크별 템플릿 선택
-                benchmark_id = getattr(candidate, 'benchmark_id', None)
+                benchmark_id = candidate.get('benchmark_id')
                 is_listening_benchmark = benchmark_id in [3, 4]  # 듣고 말하기
                 is_visual_benchmark = benchmark_id in [5]        # 보고 말하기
-                
                 # 루브릭별 템플릿 키 매핑 (벤치마크에 따라 다름)
                 if is_listening_benchmark:
                     # 듣고 말하기 템플릿 (벤치마크 3, 4)
@@ -700,6 +699,7 @@ class EvaluationFSDataSource:
                         "reference_groundedness": "rubric_evaluation_listening.background_consistency",
                         "logical_flow": "rubric_evaluation_listening.dialogue_flow_and_structure",
                         "korean_quality": "rubric_evaluation_listening.korean_quality",
+                        "l2_learner_suitability": "rubric_evaluation_listening.colloquial_response_suitability",
                         "R2_TOPIC_CLARITY": "rubric_evaluation_listening.conversation_topic_consistency",
                         "R3_SOURCE_GROUNDEDNESS": "rubric_evaluation_listening.background_consistency",
                         "R4_LOGICAL_STRUCTURE": "rubric_evaluation_listening.dialogue_flow_and_structure",
@@ -712,6 +712,7 @@ class EvaluationFSDataSource:
                         "reference_groundedness": "rubric_evaluation_visual.image_groundedness",
                         "logical_flow": "rubric_evaluation_visual.visual_reproducibility",
                         "korean_quality": "rubric_evaluation_visual.problem_korean_quality",
+                        "l2_learner_suitability": "rubric_evaluation_visual.visual_cues_response_suitability",
                         "R2_TOPIC_CLARITY": "rubric_evaluation_visual.visual_theme_salience",
                         "R3_SOURCE_GROUNDEDNESS": "rubric_evaluation_visual.image_groundedness",
                         "R4_LOGICAL_STRUCTURE": "rubric_evaluation_visual.visual_reproducibility",
@@ -724,16 +725,16 @@ class EvaluationFSDataSource:
                         "reference_groundedness": "rubric_evaluation.reference_groundedness",
                         "logical_flow": "rubric_evaluation.logical_flow_and_structure",
                         "korean_quality": "rubric_evaluation.korean_quality",
+                        "l2_learner_suitability": "rubric_evaluation.l2_learner_suitability",
                         "R2_TOPIC_CLARITY": "rubric_evaluation.core_theme_clarity",
                         "R3_SOURCE_GROUNDEDNESS": "rubric_evaluation.reference_groundedness",
                         "R4_LOGICAL_STRUCTURE": "rubric_evaluation.logical_flow_and_structure",
-                        "R5_KOREAN_QUALITY": "rubric_evaluation.korean_quality"
+                        "R5_KOREAN_QUALITY": "rubric_evaluation.korean_quality",
                     }
                 
                 # 루브릭 ID에 해당하는 템플릿 키 찾기
                 rubric_key = rubric_id.value if hasattr(rubric_id, 'value') else str(rubric_id)
                 template_key = template_key_map.get(rubric_key)
-                
                 if template_key:
                     try:
                         if is_listening_benchmark:

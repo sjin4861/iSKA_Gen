@@ -11,6 +11,49 @@ from src.domain.entities.outputs import CandidateOutput
 from src.domain.entities.enums import ContentType
 from src.domain.entities.output_query import OutputQuery
 
+BENCH_META = {
+    1: {
+        "problem_types": ["제목을 붙인 근거 설명하기", "자문화와 비교하기", "원인과 전망 예측하기"],
+        "eval_goals": [
+            "글의 전체적인 주제와 핵심 내용을 정확히 파악하는 능력을 평가한다.",
+            "지문에 제시된 특정 문화 현상을 자신의 문화적 배경과 관련지어 공통점과 차이점을 구체적으로 비교 설명하는 능력을 평가한다.",
+            "글에 제시된 사회/문화적 현상의 원인을 추론하고, 이를 근거로 미래에 나타날 변화나 결과를 논리적으로 설명하는 능력을 평가한다.",
+        ],
+    },
+    2: {
+    "problem_types": ["문제 상황 요약하기", "문제 해결 방안 제안하기", "기대 효과 및 부작용 설명하기"],
+      "eval_goals": [
+        "제시된 갈등 상황의 핵심 원인과 현재 상태를 정확히 분석하고, 이를 바탕으로 문제점을 간결하게 요약하는 능력을 평가한다.",
+        "주어진 문제를 해결하기 위한 독창적이면서 실현 가능한 방안을 제시하는 능력을 평가한다.",
+        "자신이 제안한 해결 방안이 가져올 긍정적인 기대 효과와 발생 가능한 부작용을 균형 있게 설명하는 능력을 평가한다."
+      ],
+    },
+    3: {
+        "problem_types": ["찬성/반대 입장 논거 파악하기", "논리적 근거 제시하기", "예상 반론에 재반박하기"],
+      "eval_goals": [
+        "제시된 지문에서 특정 입장(찬성 또는 반대)의 핵심 논거를 정확히 파악하고, 그 근거를 자신의 말로 요약하여 설명하는 능력을 평가한다.",
+        "자신의 주장을 뒷받침하기 위해 타당한 이유와 구체적인 사례를 들어 논리적으로 설명하는 능력을 평가한다.",
+        "자신의 주장과 반대되는 견해를 예상하고, 그에 대한 논리적인 재반박을 통해 자신의 주장을 강화하는 능력을 평가한다."
+      ],
+    },
+    4: {
+        "problem_types": ["두 대안의 핵심 차이점 파악하기", "주어진 기준에 따라 장단점 분석하기", "최종 선택 및 결정 이유 정당화하기"],
+      "eval_goals": [
+        "제시된 두 가지 선택지의 가장 본질적인 차이점이 무엇인지 정확히 파악하는 능력을 평가한다.",
+        "가격, 시간, 편의성 등 주어진 특정 기준에 따라 각 옵션의 장점과 단점을 체계적으로 분석하는 능력을 평가한다.",
+        "모든 정보를 종합하여 최종적으로 하나의 옵션을 선택하고, 자신의 선택을 논리적으로 정당화하는 능력을 평가한다."
+      ],
+    },
+    5: {
+        "problem_types": ["사진 속 문제 상황 묘사하기", "관련 개인 경험 이야기하기", "문제 해결을 위한 자신의 의견 제안하기"],
+      "eval_goals": [
+        "제시된 사진의 핵심 문제 상황을 구체적인 시각적 단서를 들어 묘사하는 능력을 평가한다.",
+        "사진 속 상황과 관련된 자신의 실제 경험을 자연스럽게 설명하는 능력을 평가한다.",
+        "묘사한 문제 상황을 해결하기 위한 합리적인 방안이나 제도를 제시하는 능력을 평가한다."
+      ],
+    }
+}
+
 class RawOutputFSDataSource:
     """
     실제 폴더 구조(예시):
@@ -56,7 +99,6 @@ class RawOutputFSDataSource:
         3: ContentType.audio_script, # 듣고 말하기 - create_dialogue_passage
         4: ContentType.audio_script, # 듣고 말하기 - create_dialogue_passage
         5: ContentType.image_caption # 보고 말하기 - create_image_caption_and_situation
-        # TODO: 새로운 벤치마크 추가 시 여기에 매핑 추가 필요
     }
 
     # benchmark_3_v1.1.0_passage_agent.create_dialogue_passage.json
@@ -87,12 +129,18 @@ class RawOutputFSDataSource:
             return self.BENCHMARK_CONTENT_TYPE_MAP[benchmark_id]
         return ContentType.passage  # 기본값
 
+    def _get_bench_meta(self, bench_id: int) -> Tuple[List[str], List[str]]:
+        meta = BENCH_META.get(bench_id) or {}
+        pts = list(meta.get("problem_types", []) or [])
+        egs = list(meta.get("eval_goals", []) or [])
+        return pts, egs
+
+    # ... 기존 코드 유지 ...
     # --------------------------------------------------------------------- #
     # Public
     # --------------------------------------------------------------------- #
     def find_candidates(self, kind: ContentType, q: OutputQuery) -> Iterable[CandidateOutput]:
         count = 0
-        # breakpoint()
         for day_dir in self._iter_date_dirs(q):
             kind_dir = self._resolve_kind_dir(day_dir, kind)
             if not kind_dir:
@@ -124,6 +172,7 @@ class RawOutputFSDataSource:
                                     file_meta=(f_bid, f_ver, f_tkey),
                                     template_key=tdir.name,
                                     file_path=str(file),
+                                    index=count
                                 ):
                                     yield candidate
                                     count += 1
@@ -257,6 +306,7 @@ class RawOutputFSDataSource:
         file_meta: Tuple[Optional[int], Optional[str], Optional[str]],
         template_key: str,
         file_path: str,
+        index:int=0
     ) -> Iterator[CandidateOutput]:
         """
         Stem 데이터를 처리하여 통합된 후보 생성
@@ -268,33 +318,36 @@ class RawOutputFSDataSource:
         """
         source_passage = row.get("source_passage", "")
         f_bid, f_ver, f_tkey = file_meta
-        benchmark_id = int(row.get("benchmark_id") or f_bid or -1)
+        benchmark_id = f_bid
         
         # 벤치마크 ID에 따라 실제 content_type 결정 (기본값은 passage)
         actual_content_type = ContentType.passage
         if benchmark_id in self.BENCHMARK_CONTENT_TYPE_MAP:
             actual_content_type = self.BENCHMARK_CONTENT_TYPE_MAP[benchmark_id]
-        
         # stem_1, stem_2, stem_3 찾기
-        stem_contents = []
-        problem_types = []
-        eval_goals = []
-        
-        # 최대 3개까지 stem 수집 (completeness_for_guidelines_binary에서 필요)
-        for idx in range(1, 4):  # stem_1, stem_2, stem_3
-            stem_content = row.get(f"stem_{idx}", "")
-            problem_type = row.get(f"problem_type_{idx}", "")
-            eval_goal = row.get(f"eval_goal_{idx}", "")
-            
-            if stem_content.strip():  # 비어있지 않은 stem만 추가
-                stem_contents.append(stem_content)
-                problem_types.append(problem_type)
-                eval_goals.append(eval_goal)
-        
+        stem_contents = [row.get(f"stem_{i}") for i in range(1, 4)]
+        bench_pts, bench_egs = self._get_bench_meta(benchmark_id)
+
+        # 길이 맞추기 (stem 개수 기준)
+        def _align(lst: List[str], n: int) -> List[str]:
+            if not lst:
+                return [""] * n
+            if len(lst) >= n:
+                return lst[:n]
+            return lst + [""] * (n - len(lst))
+
+        n = len(stem_contents)
+        problem_types = _align(bench_pts, n)
+        eval_goals = _align(bench_egs, n)  
         # stem이 하나도 없으면 건너뛰기
         if not stem_contents:
             return
-        
+        if not any(problem_types):
+            tmp = [row.get(f"problem_type_{i+1}", "") for i in range(n)]
+            problem_types = _align(tmp, n)
+        if not any(eval_goals):
+            tmp = [row.get(f"eval_goal_{i+1}", "") for i in range(n)]
+            eval_goals = _align(tmp, n)
         # === source_item 복원 ===
         # 1) row에 이미 들어있으면 그대로 사용
         source_item = row.get("source_item")
@@ -309,9 +362,15 @@ class RawOutputFSDataSource:
                     "foreign_topic": row.get("foreign_topic"),
                     "foreign_context": row.get("foreign_context"),
                 }
-            elif benchmark_id in (2, 3, 4):
+            elif benchmark_id == 2:
                 source_item = {
                     "source_kind": "passage_single",
+                    "topic": row.get("topic") or row.get("korean_topic") or "",
+                    "context": row.get("context") or row.get("korean_context") or "",
+                }
+            elif benchmark_id in (3, 4):
+                source_item = {
+                    "source_kind": "audio_script",
                     "topic": row.get("topic") or row.get("korean_topic") or "",
                     "context": row.get("context") or row.get("korean_context") or "",
                 }
@@ -348,7 +407,7 @@ class RawOutputFSDataSource:
             # content_type 접두어로 구분도 가능하지만 bench 기준으로 식별
             return f"b{benchmark_id}_src_{h}"
 
-        source_id = _make_source_id()
+        source_id = str(index)#_make_source_id()
         candidate_id = f"{source_id}:{model_name}:{template_key}:{date_str}"
 
         # === meta 구성 ===
@@ -396,14 +455,14 @@ class RawOutputFSDataSource:
         
         # 일반 데이터 처리
         content = (
-            row.get("content")
+            row.get("source_passage")
             or row.get("passage")
             or row.get("output")
-            or row.get("text")
+            or row.get("content")
             or ""
         )
-        
-        stems = row.get("stems")
+
+        stems = [row.get(f"stem_{i}") for i in range(1, 4)]
         if isinstance(stems, str):
             stems = [s.strip() for s in stems.split(";;") if s.strip()]
         
