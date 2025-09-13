@@ -18,19 +18,15 @@ iSKA-Gen은 한국어 학습자를 위한 개인화된 말하기 평가 문항�
 /home/sjin4861/25-1/HCLT/iSKA_Gen/
 ├───src/
 │   ├───config/         # 모델, 프롬프트, 환경 설정
-│   ├───data/           # 데이터 소스 및 리포지토리
-│   ├───domain/         # 핵심 도메인 엔티티 및 유스케이스
 │   ├───modules/        # 생성/평가 에이전트 등 핵심 로직
 │   ├───scripts/        # 파이프라인 실행 스크립트
 │   └───utils/          # 데이터 로더, 세팅 관리 등 유틸리티
 ├───tests/              # 단위/통합 테스트 코드
-├───pixi.toml           # 의존성 및 환경 관리
+├───pyproject.toml      # 의존성 및 환경 관리
 └───README.md
 ```
 
 - **`src/config`**: 모델 설정, 훈련 인자, 프롬프트 등 프로젝트의 핵심 설정 파일들을 관리합니다.
-- **`src/data`**: 파일 시스템, 데이터베이스 등 다양한 데이터 소스와 상호작용하는 리포지토리 구현을 포함합니다.
-- **`src/domain`**: 프로젝트의 핵심 비즈니스 로직과 데이터 구조(엔티티, 유스케이스)를 정의합니다.
 - **`src/modules`**: `Generator`, `Evaluator` 등 실제 생성 및 평가 작업을 수행하는 핵심 모듈이 위치합니다.
 - **`src/scripts`**: 데이터셋 생성, 모델 훈련, 전체 파이프라인 실행 등 주요 작업을 수행하는 스크립트들을 포함합니다.
 - **`src/utils`**: 데이터 로딩, 프롬프트 관리 등 프로젝트 전반에서 사용되는 유틸리티 함수들을 제공합니다.
@@ -41,90 +37,46 @@ iSKA-Gen은 한국어 학습자를 위한 개인화된 말하기 평가 문항�
 
 ### 3.1. 환경 설정
 
-본 프로젝트는 `pixi`를 사용하여 패키지 및 환경을 관리합니다.
+본 프로젝트는 `uv`를 사용하여 패키지 및 환경을 관리합니다.
 
 ```bash
 # 의존성 설치
-pixi install
+uv pip install -r requirements.txt
 
-# pixi 쉘 환경 활성화
-pixi shell
-
-### LangChain 평가 PoC (선택)
-```bash
-# stem JSONL 평가 (l2_learner_suitability + korean_quality)
-python -m src.scripts.unified_evaluation_langchain \
-  --input data_store/chosen/chosen_dataset_test.jsonl \
-  --eval-model http://localhost:8000/v1 \
-  --rubrics l2_learner_suitability korean_quality \
-  --output outputs/eval_poc.jsonl --limit 5
-
-# EXAONE-4.0-32B vLLM 서버를 통한 간편 실행 (헬스체크 포함)
-chmod +x run_eval_stems.sh
-./run_eval_stems.sh data_store/chosen/chosen_dataset_test.jsonl 8
-```
+# 가상환경 활성화
+source .venv/bin/activate
 ```
 
 ### 3.2. 주요 스크립트 실행
 
-주요 작업은 `src/scripts` 내의 파이썬 스크립트를 통해 실행할 수 있습니다. 각 스크립트는 `main` 함수 내에서 실행 로직을 확인할 수 있으며, 커맨드라인 인자를 통해 세부 동작을 제어할 수 있습니다.
+주요 작업은 `scripts` 디렉토리 내의 쉘 스크립트를 통해 실행할 수 있습니다.
 
-- **지문 생성 파이프라인 실행**
+- **샘플 생성**
   ```bash
-  # generator.py: Topic, Context, Passage, Stem 등 전체 생성 파이프라인을 실행
-  python src/scripts/generator.py
+  # bench_id=1, spec_type=small, model=A.X-4.0-Light 로 샘플 생성
+  ./scripts/run_generate_sample.sh 1 small A.X-4.0-Light
   ```
 
-
-- **생성물 품질 평가**
+- **샘플 평가**
   ```bash
-  # evaluator.py: 생성된 지문의 품질을 평가 Guideline에 따라 평가
-  python src/scripts/evaluator.py
+  # 생성된 샘플 평가
+  ./scripts/run_evaluate_sample.sh outputs/samples/2025-09-13/sample_1_0.jsonl 1 all EXAONE-4.0-32B
   ```
 
-- **Small Evaluator 훈련 및 평가**
+- **리포트 생성**
   ```bash
-  # 1. rm_dataset_generation.py: RM 훈련을 위한 데이터셋을 생성
-  python src/scripts/rm_dataset_generation.py
-
-  # 2. train_rm.py: 생성된 데이터셋으로 RM을 훈련
-  python src/scripts/train_rm.py
-
-  # 3. evaluate_rm.py: 훈련된 RM의 성능을 평가
-  python src/scripts/evaluate_rm.py
+  # 생성 및 평가 결과를 종합하여 HTML 리포트 생성
+  ./scripts/run_render_report.sh outputs/samples/2025-09-13/sample_1_0.jsonl
   ```
+
 ### 3.3. 테스트 실행
 
-각 모델 클라이언트의 동작을 확인하고 지문 생성 파이프라인을 테스트할 수 있습니다.
+`pytest`를 사용하여 테스트를 실행할 수 있습니다.
 
-- **모든 테스트 자동 실행**
-  ```bash
-  # 모든 클라이언트 타입과 지문 생성 테스트를 자동으로 실행
-  python tests/run_all_tests.py
-  ```
-
-- **개별 클라이언트 테스트**
-  ```bash
-  # OpenAI 클라이언트 테스트
-  python tests/test_model_clients.py --client openai --model gpt-4o-mini
-  
-  # 로컬 모델 클라이언트 테스트
-  python tests/test_model_clients.py --client local --model EXAONE-3.5-7.8B-Instruct --gpus 0
-  
-  # vLLM 서버 클라이언트 테스트
-  python tests/test_model_clients.py --client vllm --model test-model
-  ```
-
-- **지문 생성 테스트**
-  ```bash
-  # 특정 벤치마크로 지문 생성 테스트
-  python tests/test_passage_generation.py --client openai --benchmark 1
-  
-  # 모든 벤치마크로 포괄적 테스트
-  python tests/test_passage_generation.py --client all
-  ```
-
-> 자세한 테스트 사용법은 [tests/README.md](tests/README.md)를 참고하세요.
+```bash
+# 모든 테스트 실행
+uv run pytest
+```
 
 ---
 
@@ -149,29 +101,3 @@ chmod +x run_eval_stems.sh
 1. 한국과 유럽의 직장 문화 차이를 설명해 보세요.
 2. 한국과 유럽의 직장 문화에서 야근에 대한 접근 방식의 차이를 설명해 보세요.
 3. 한국과 유럽의 직장 문화 차이를 설명하고, 한국의 야근 문화 변화가 미칠 긍정적 영향을 말해 보세요.
-
-### 예시 3: 종이 신문과 뉴스 앱 (대화 기반)
-
-**[1-3] 다음 대화를 듣고 질문에 답하시오.**
-> **남자:** 요즘 뉴스를 어떻게 주로 접해? 나는 종이 신문을 계속 보고 있는데, 깊이 있는 기사들이 많아서 좋아. 하지만 가격이 좀 부담스러웠어.
-> **여자:** 나도 종이 신문이 좋긴 한데, 요즘은 뉴스 앱을 더 많이 사용해. 언제 어디서나 바로바로 볼 수 있어서 편리하거든. 그리고 대부분의 뉴스가 무료로 제공되니까 부담도 덜해.
-> **남자:** 맞아, 편리함은 인정하지만, 뉴스 앱에서 가끔 자극적인 제목이나 확인되지 않은 정보들이 많아서 걱정돼. 특히 중요한 사안에 대해 깊이 있는 분석을 받으려면 종이 신문이 더 나은 것 같아.
-> **여자:** 그건 사실이야. 하지만 뉴스 앱에서는 알고리즘이 사용자 맞춤형 콘텐츠를 추천해 줘서 내가 관심 있는 분야의 뉴스를 쉽게 접할 수 있어. 게다가 속보도 빠르게 알 수 있지.
-> **남자:** 그래도 난 종이 신문의 전문가가 검증한 기사가 더 신뢰할 만하다고 생각해. 뉴스 앱은 신속하긴 하지만, 오보가 나올 가능성도 높다고 봐. 그래서 중요한 결정은 여전히 신문으로 하는 게 나을 듯 해.
-> **여자:** 그렇다면 우리가 각각의 장단점을 잘 따져봐야겠네. 결국 내 선택은 편리함과 접근성을 우선시하는 쪽인데, 너는 깊이 있는 정보와 신뢰성을 중시하는 거구나. 우리 둘 다 나름의 이유가 확실하네!
-
-**Questions**
-1. 종이 신문과 뉴스 앱의 주요 차이점을 설명해 보세요.
-2. 종이 신문과 뉴스 앱의 장단점을 비교해 보세요.
-3. 종이 신문과 뉴스 앱 중 어느 것을 선택할 것인지 결정하고 그 이유를 설명해 보세요.
-
-### 예시 4: 쓰레기 무단 투기 문제 (이미지 기반)
-
-**[1-3] 다음 사진을 보고 질문에 답하시오.**
-> **<상황>**
-> 아파트 단지 내에서 쓰레기 무단 투기와 분리배출이 제대로 이루어지지 않아 환경 오염과 주민 불편이 발생하고 있습니다. 이는 공공장소에서의 기본 예절을 지키지 않은 문제로, 주민들은 이를 해결하기 위해 어떻게 해야 할지 고민하고 있습니다. 학습자는 자신이 경험한 비슷한 상황과 해결책을 생각해 볼 수 있습니다.
-
-**Questions**
-1. 사진의 쓰레기장에서 어떤 문제들이 발견되는지 설명해 보세요.
-2. 자신의 경험과 비교하여 이 아파트 쓰레기 문제를 설명해 보세요.
-3. 주민들이 함께 모여 쓰레기 분리배출 규칙을 만들고, 이를 잘 지킬 수 있도록 서로 독려하며, 무단 투기 시 벌금을 부과하는 방안을 설명해 보세요.
