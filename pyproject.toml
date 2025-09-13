@@ -1,0 +1,49 @@
+[project]
+name = "iSKA_Gen"
+version = "1.1.0"
+authors = [{ name = "sjin4861", email = "sjin4861@postech.ac.kr" }]
+description = "Inference & tooling for EXAONE-4.0-32B with vLLM 0.10.0"
+requires-python = ">=3.10,<3.13"
+license = "MIT"
+
+dependencies = [
+    "pillow>=10.3,<11",
+    "accelerate>=0.33",
+    "safetensors>=0.4",
+    "tiktoken>=0.7",
+    "bitsandbytes>=0.43",
+    "trl>=0.20.0,<0.21",
+    "peft>=0.16.0,<0.17",
+    "kaleido>=1.0.0",
+    "tensorboard>=2.20.0,<3",
+    "plotly>=6.2.0,<7",
+
+    # vLLM 0.10.0과 호환: Transformers 4.53+ 필요
+    "transformers>=4.54,<5",
+
+    # LangChain / OpenAI / dotenv
+    "langchain>=0.2.14,<0.3",
+    "langchain-openai>=0.1.23,<0.2",
+    "python-dotenv>=1.0.1,<2",
+
+    # vLLM 고정 (EXAONE-4.0-32B 구동용)
+    "vllm==0.10.0",
+
+    # 테스트
+    "pytest>=8.2,<9",
+]
+
+[project.optional-dependencies]
+dev = [
+    "ipykernel>=6.29.5,<7",
+    "ipywidgets>=8.1.7,<9",
+    "jupyterlab>=4.4.5,<5",
+    "mkdocs>=1.6.1,<2",
+    "mkdocs-material>=9.6.16,<10",
+    "mkdocstrings>=0.30.0,<0.31",
+    "mkdocstrings-python>=1.16.12,<2",
+]
+
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"

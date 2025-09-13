@@ -49,6 +49,20 @@ pixi install
 
 # pixi 쉘 환경 활성화
 pixi shell
+
+### LangChain 평가 PoC (선택)
+```bash
+# stem JSONL 평가 (l2_learner_suitability + korean_quality)
+python -m src.scripts.unified_evaluation_langchain \
+  --input data_store/chosen/chosen_dataset_test.jsonl \
+  --eval-model http://localhost:8000/v1 \
+  --rubrics l2_learner_suitability korean_quality \
+  --output outputs/eval_poc.jsonl --limit 5
+
+# EXAONE-4.0-32B vLLM 서버를 통한 간편 실행 (헬스체크 포함)
+chmod +x run_eval_stems.sh
+./run_eval_stems.sh data_store/chosen/chosen_dataset_test.jsonl 8
+```
 ```
 
 ### 3.2. 주요 스크립트 실행
