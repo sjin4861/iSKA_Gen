@@ -50,7 +50,7 @@ iSKA-Gen은 한국어 학습자를 위한 개인화된 말하기 평가 문항�
 
 ```bash
 # 의존성 설치
-uv pip install -r requirements.txt
+uv sync
 
 # 가상환경 활성화
 source .venv/bin/activate
