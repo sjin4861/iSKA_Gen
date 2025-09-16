@@ -2,6 +2,8 @@
 
 iSKA-Gen은 한국어 학습자를 위한 개인화된 말하기 평가 문항을 자동으로 생성하는 파이프라인 프로젝트입니다. 이 프로젝트는 학습자의 프로필과 관심사를 바탕으로, 두 문화권의 주제를 비교하는 고품질의 지문과 관련 문항을 생성하는 것을 목표로 합니다.
 
+<img width="1664" height="584" alt="image" src="https://github.com/user-attachments/assets/aa96a553-c43e-4b43-91c8-e839a0ecf588" />
+
 ---
 
 ## 1. 프로젝트 목표
@@ -15,6 +17,7 @@ iSKA-Gen은 한국어 학습자를 위한 개인화된 말하기 평가 문항�
 - **소형 평가기 학습 및 비용 절감**  
   자동 평가 결과를 활용해 선호도(pairwise preference) 데이터셋을 구축하고, 이를 바탕으로 2B 규모의 소형 평가기를 학습시켜 L2 학습자 적합성을 세밀하게 판별합니다. 이를 통해 단일 LLM 평가의 편향을 보완하고 평가 비용을 절감할 수 있는 가능성을 탐구합니다.
 
+<img width="500" height="300" alt="image" src="https://github.com/user-attachments/assets/ee37f172-4333-402a-a98b-0b97b01e59c2" /> <img width="450" height="300" alt="image" src="https://github.com/user-attachments/assets/b26fc248-9a34-4d74-aa71-f247db8f49e1" />
 
 ---
 
@@ -87,6 +90,8 @@ uv run pytest
 ---
 
 ## 4. 생성 결과물 예시
+
+<img width="872" height="689" alt="image" src="https://github.com/user-attachments/assets/bddc8a7b-5cd5-4515-9106-f2e5fd99d1ea" />
 
 ### 예시 1: 전동 킥보드 주차 문제 (지문 기반)
 
